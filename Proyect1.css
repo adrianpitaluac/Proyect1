@@ -1,0 +1,2532 @@
+/* ................................................................................... */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing:auto;
+    font-weight: 200;
+    font-style: normal;
+    }
+a:visited{
+    color: white
+}
+body{
+    background-color: black;
+}
+/* img {
+    width: 100%;
+    height: auto;
+}     */
+
+/* ---------------- NAV --------------- */
+.nav{
+    position: sticky;
+    top: 0px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    /*margin: 20px; */
+    /* border: solid rgb(241, 48, 48) 1px; */
+    padding: 5px;
+    display: grid;
+    grid-template-areas: "1 2 3 4 5 6 7";
+    grid-template-columns: 40% 1% 10% 10% 10% 10% 10%;
+    grid-template-rows: 100%;
+    justify-content: space-around;
+
+}
+    #navDiv1{
+        grid-area: "1";
+        /* border: solid rgb(255, 0, 0) 1px; */
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+    #navDiv2{
+        grid-area: "2";
+        /* border: solid rgb(249, 0, 0) 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navDiv3{
+        grid-area: "3";
+        /* border: solid red 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navDiv4{
+        grid-area: "4";
+        /* border: solid red 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navDiv5{
+        grid-area: "5";
+        /* border: solid red 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navDiv6{
+        grid-area: "6";
+        /* border: solid red 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navDiv7{
+        grid-area: "7";
+        /* border: solid red 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+    /*border: solid black 1px;*/
+    padding: 10px;
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    }
+    a{
+        /*border: solid rgb(248, 0, 0) 2px;*/
+        padding: 0px;
+        width: 95%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    a:visited{
+        color: white
+    }
+        .navLogo{
+            height: 100%;
+            /* border: solid red 1px; */
+        }
+
+/* -------------------------------------- */
+
+/* ---------------- FOOTER --------------- */
+.footer{
+    height: 60vh;
+    display: grid;
+    grid-template-areas: "1 2 3 4"
+                         "a a a a";
+    grid-template-columns: 40% 20% 20% 20%;
+    grid-template-rows: 70% 30%;
+    column-gap: 5px;
+    row-gap: 5px;
+    background-color: rgb(0, 0, 0);
+    /* margin: 20px; */
+    /* border: solid green 5px; */
+    padding: 20px;
+    color: white;
+    justify-content: space-evenly;
+
+}
+    .footerDiv1{
+        grid-area: "1";
+        /* border: solid orange 5px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerDiv2{
+        grid-area: "2";
+        /* border: solid orange 5px; */
+        display: flex;
+    }
+    .footerDiv3{
+        grid-area: "3";
+        /* border: solid orange 5px; */
+        display: flex;
+    }
+    .footerDiv4{
+        grid-area: "4";
+        /* border: solid orange 5px; */
+        display: flex;
+    }
+    .footerDiv5{
+        grid-area: a;
+        /* border: solid orange 5px; */
+        display: flex;
+    }
+    .footerDiv1p{
+        width: 100%;
+        height: 90%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerDiv2p{
+        width: 100%;
+        height: 90%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+    }
+    .footerDiv3p{
+        width: 100%;
+        height: 60%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: start;
+    }
+        .footerLogo{
+            height: 30%;
+            /* width: 50%; */
+
+        }
+/* -------------------------------------- */
+
+/* ................................................................................... */
+
+
+/* ......................................  INDEX  ............................................. */
+
+/* ---------------- HEADER --------------- */
+#headerIndex{
+    height: 75vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 255, 247);
+    /*margin: 20px;*/
+    border: solid blue 20px;
+    padding: 10px;
+}
+    .headerIndexDiv{
+        border: solid blue 5px;
+        height: 60%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+        .headerIndexH1{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight:bolder;
+        }
+        .headerIndexH3{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 50%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+/* -------------------------------------- */
+
+/* ------ SECTION 1 ----- */
+.sectionIndex1{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "1 a"
+                         "2 a"
+                         "3 a";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgb(220, 220, 220);
+    /* margin: 20px; */
+    /* border: solid blue 20px; */
+    padding: 50px;
+    /* background-image: url('Pictures/Services/Section1.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* color: white; */
+}
+    #sectionIndex1Div1{
+        grid-area: 1;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    #sectionIndex1Div2{
+        grid-area: 2;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionIndex1Div3{
+        grid-area: 3;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionIndex1Div4{
+        grid-area: a;
+        border: solid rgb(0, 255, 38) 5px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionIndex1Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            height: 30%;
+            text-align: center;
+        }
+        .sectionIndex1Divp{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+        .sectionIndex1Div4p{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 90%;
+            text-align: center;
+        }
+/* ----------- */
+
+/* ------ SECTION 2----- */
+.sectionIndex2{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "a 1"
+                         "a 2"
+                         "a 3";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgb(5, 255, 247);
+    /* margin: 20px; */
+    border: solid blue 20px;
+    padding: 50px;
+}
+    #sectionIndex2Div1{
+        grid-area: 1;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    #sectionIndex2Div2{
+        grid-area: 2;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionIndex2Div3{
+        grid-area: 3;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionIndex2Div4{
+        grid-area: a;
+        border: solid rgb(0, 255, 38) 5px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionIndex2Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            height: 30%;
+            text-align: center;
+        }
+        .sectionIndex2Divp{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+        .sectionIndex2Div4p{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 90%;
+            text-align: center;
+        }
+/* ----------- */
+
+/* ------ SECTION 3----- */
+.sectionIndex3{
+    height: 60vh;
+    display: grid;
+    grid-template-areas: "1 2"
+                         "3 4"
+                         "5 6";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgb(5, 255, 247);
+    /* margin: 20px; */
+    border: solid blue 20px;
+    padding: 50px;
+}
+    #sectionIndex3Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionIndex3Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #sectionIndex3Div3{
+        grid-area: "3";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #sectionIndex3Div4{
+        grid-area: "4";
+        border: solid red 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #sectionIndex3Div5{
+        grid-area: "5";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #sectionIndex3Div6{
+        grid-area: "6";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+        .sectionIndex3Div{
+            border: solid black 1px;
+            margin: 5px;
+            padding: 10px;
+            width: 90%;
+            height: 10%;
+            text-align: start;
+        }
+        .sectionIndex3Divp{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 10px;
+            width: 90%;
+            height: 50%;
+            text-align: start;
+        }
+/* ----------- */
+
+/* ---------------- SECTION 3_2 --------------- */
+.sectionIndex3_2{
+    height: 75vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 255, 247);
+    /* margin: 20px; */
+    border: solid blue 20px;
+    padding: 10px;
+}
+    .sectionIndex3_2Div{
+        border: solid blue 5px;
+        height: 60%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+        .sectionIndex3_2H1{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .sectionIndex3_2p{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 50%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+/* -------------------------------------- */
+
+/* ------ SECTION 4----- */
+.sectionIndex4{
+    height: 30vh;
+    display: grid;
+    grid-template-areas: "1 2";
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    background-color: rgb(5, 255, 247);
+    /* margin: 20px; */
+    border: solid blue 20px;
+    padding: 20px;
+}
+    #sectionIndex4Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+    }
+    #sectionIndex4Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionIndex4Div1p{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 40%;
+            text-align: start;
+        }
+        .sectionIndex4Div1h{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 20%;
+            text-align: start;
+        }
+        .sectionIndex4Div2p{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+/* ----------- */    
+
+/* ......................................  INDEX  ............................................. */
+
+
+/* ......................................  SERVICES  ............................................. */
+
+/* ---------------- HEADER --------------- */
+#headerServices{
+    height: 75vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 112, 112);
+    /* margin: 20px; */
+    border: solid rgb(255, 17, 0) 20px;
+    padding: 10px;
+}
+    .headerServicesDiv{
+        border: solid rgb(255, 0, 0) 5px;
+        height: 90%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+        .headerServicesH1{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .headerServicesp1{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .headerServicesp2{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+/* -------------------------------------- */
+
+/* ------ SECTION 1 ----- */
+.sectionServices1{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "1 a"
+                         "2 a"
+                         "3 a";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgb(247, 112, 112);
+    /* margin: 20px; */
+    border: solid rgb(255, 17, 0) 20px;
+    padding: 50px;
+}
+    #sectionServices1Div1{
+        grid-area: 1;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    #sectionServices1Div2{
+        grid-area: 2;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionServices1Div3{
+        grid-area: 3;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionServices1Div4{
+        grid-area: a;
+        border: solid rgb(0, 255, 38) 5px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionServices1Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            height: 30%;
+            text-align: center;
+        }
+        .sectionServices1Divp{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+        .sectionServices1Div4p{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 90%;
+            text-align: center;
+        }
+/* ----------- */
+
+/* ------ SECTION 2----- */
+.sectionServices2{
+    height: 60vh;
+    display: grid;
+    grid-template-areas: "1 2"
+                         "3 4";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0px;
+    row-gap: 0px;
+    background-color: rgb(247, 112, 112);
+    /* margin: 20px; */
+    border: solid rgb(255, 17, 0) 20px;
+    padding: 10px;
+}
+    #sectionServices2Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionServices2Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #sectionServices2Div3{
+        grid-area: "3";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #sectionServices2Div4{
+        grid-area: "4";
+        border: solid red 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+        .sectionServices2Div{
+            border: solid black 1px;
+            margin: 5px;
+            padding: 10px;
+            width: 90%;
+            height: 10%;
+            text-align: start;
+        }
+        .sectionServices2Divp{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 10px;
+            width: 90%;
+            height: 50%;
+            text-align: start;
+        }
+/* ----------- */
+
+/* ------ SECTION 2.5----- */
+.sectionServices2_5{
+    height: 60vh;
+    display: grid;
+    grid-template-areas: "a a a a"
+                         "2 3 4 5";
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 30% 60%;
+    column-gap: 20px;
+    row-gap: 10px;
+    background-color: rgb(247, 112, 112);
+    /* margin: 20px; */
+    border: solid rgb(255, 17, 0) 20px;
+    padding: 10px;
+}
+    #sectionServices2_5Div1{
+        grid-area: a;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+    }
+    #sectionServices2_5Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        align-items: center;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    #sectionServices2_5Div3{
+        grid-area: "3";
+        border: solid orangered 5px;
+        align-items: center;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    #sectionServices2_5Div4{
+        grid-area: "4";
+        border: solid red 5px;
+        align-items: center;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    #sectionServices2_5Div5{
+        grid-area: "5";
+        border: solid red 5px;
+        align-items: center;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+        .sectionServices2_5Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 80%;
+            height: 10%;
+            text-align: start;
+        }
+        .sectionServices2_5Divp{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 80%;
+            height: 60%;
+            text-align: start;
+        }
+/* ----------- */
+
+/* ------ SECTION 3----- */
+.sectionServices3{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "a 1"
+                         "a 2"
+                         "a 3";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 0.5fr 0.5fr 1.5fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgb(247, 112, 112);
+    /* margin: 20px; */
+    border: solid rgb(255, 17, 0) 20px;
+    padding: 50px;
+}
+    #sectionServices3Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    #sectionServices3Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionServices3Div3{
+        grid-area: "3";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionServices3Div4{
+        grid-area: a;
+        border: solid rgb(0, 255, 38) 5px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionServices3Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            height: 30%;
+            text-align: center;
+        }
+        .sectionServices3Divp{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+        .sectionServices3Div4p{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 90%;
+            text-align: center;
+        }
+/* ----------- */
+
+/* ------ SECTION 3.2 ----- */
+
+.sectionServices3_2{
+    height: 70vh;
+    display: grid;
+    grid-template-areas: "1 a"
+                         "2 a";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 15% 85%;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgb(247, 112, 112);
+    /* margin: 20px; */
+    border: solid rgb(255, 17, 0) 20px;
+    padding: 10px;
+}
+    #sectionServices3_2Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    #sectionServices3_2Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionServices3_2Div4{
+        grid-area: a;
+        border: solid rgb(0, 255, 38) 5px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionServices3_2Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            height: 30%;
+            display: flex;
+            justify-content: start;
+        }
+        .sectionServices3_2Divp{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: start;
+        }
+
+/* ----------- */
+
+
+/* ------ SECTION 3.5 ----- */
+.sectionServices3_5{
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-columns: 35% 65%;
+    background-color: rgb(247, 112, 112);
+    /* margin: 20px; */
+    border: solid rgb(255, 17, 0) 20px;
+    padding: 0px;
+
+}
+.sectionServices3_5Section1{
+    grid-area: b;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(247, 112, 112);
+    border: solid rgb(255, 17, 0) 5px;
+    margin: 1px;
+    padding: 0px;
+}
+.sectionServices3_5Section2{
+    grid-area: a;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 112, 112);
+    border: solid rgb(255, 17, 0) 5px;
+    margin: 1px;
+    padding: 0px;
+}
+    .sectionServices3_5Div1{
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .sectionServices3_5Div2{
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 99%;
+    }
+        .sectionServices3_5Divp1{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 5px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+        .sectionServices3_5Divp2{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 5px;
+            width: 99%;
+            height: 80%;
+            text-align: start;
+        }
+        .sectionServices3_5Divp3{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 5px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+/* ----------- */
+
+
+/* ------ SECTION 3.7 ----- */
+
+.sectionServices3_7{
+    height: 60vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 112, 112);
+    /* margin: 20px; */
+    border: solid rgb(255, 17, 0) 20px;
+    padding: 10px;
+}
+    .sectionServices3_7Div{
+        border: solid rgb(255, 17, 0) 5px;
+        height: 60%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+        .sectionServices3_7H1{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .sectionServices3_7H3{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 50%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+/* ----------- */
+
+
+/* ------ SECTION 4----- */
+.sectionServices4{
+    height: 30vh;
+    display: grid;
+    grid-template-areas: "1 2";
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    background-color: rgb(247, 112, 112);
+    /* margin: 20px; */
+    border: solid rgb(255, 17, 0) 20px;
+    padding: 20px;
+}
+    #sectionServices4Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+    }
+    #sectionServices4Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionServices4Div1p{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 40%;
+            text-align: start;
+        }
+        .sectionServices4Div1h{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 20%;
+            text-align: start;
+        }
+        .sectionServices4Div2p{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+/* ----------- */    
+
+/* ......................................  SERVICES  ............................................. */
+
+
+/* ......................................  GALLERY  ............................................. */
+
+/* ---------------- HEADER --------------- */
+#headerGallery{
+    height: 50vh;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(112, 202, 247);
+    /* margin: 20px; */
+    border: solid rgb(0, 76, 255) 20px;
+    padding: 10px;
+}
+    .headerGalleryDiv{
+        border: solid rgb(0, 51, 255) 5px;
+        height: 60%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+        .headerGalleryH1{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .headerGalleryH3{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 50%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+/* -------------------------------------- */
+
+/* ------ SECTION 0.5 ----- */
+.sectionGallery0_5{
+    height: 20vh;
+    display: flex;
+    background-color: rgb(112, 202, 247);
+    /* margin: 20px; */
+    border: solid rgb(0, 76, 255) 20px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+    #sectionGallery0_5Div1{
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 90%;
+    }
+        .sectionGallery0_5Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        .sectionGallery0_5Divp{
+            border: solid black 1px;
+            padding: 10px;
+            margin: 5px;
+            width: 90%;
+            height: 60%;
+            text-align: center;
+        }
+/* ----------- */
+
+/* ------ SECTION 1 ----- */
+.sectionGallery1{
+    height: 60vh;
+    display: grid;
+    grid-template-areas: "a b"
+                         "c d";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgb(112, 202, 247);
+    /* margin: 20px; */
+    border: solid rgb(0, 76, 255) 20px;
+    padding: 20px;
+}
+    #sectionGallery1Div1{
+        grid-area: a;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #sectionGallery1Div2{
+        grid-area: b;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionGallery1Div3{
+        grid-area: c;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionGallery1Div4{
+        grid-area: d;
+        border: solid orangered 5px;
+        padding: 0px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+        .sectionGallery1Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        .sectionGallery1Divp{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 60%;
+            text-align: center;
+        }
+        .sectionGallery1Pic{
+            width: 100%;
+        }
+
+/* ----------- */
+
+/* ------ SECTION 1.5 ----- */
+.sectionGallery1_5{
+    height: 40vh;
+    display: flex;
+    background-color: rgb(112, 202, 247);
+    /* margin: 20px; */
+    border: solid rgb(0, 76, 255) 20px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+    #sectionGallery1_5Div1{
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 90%;
+    }
+        .sectionGallery1_5Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        .sectionGallery1_5Divp{
+            border: solid black 1px;
+            padding: 10px;
+            margin: 5px;
+            width: 90%;
+            height: 20%;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+/* ----------- */
+
+/* ------ SECTION 2----- */
+.sectionGallery2{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "a a a"
+                         "b c d";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 60% 40%;
+    column-gap: 1px;
+    row-gap: 10px;
+    background-color: rgb(112, 202, 247);
+    /* margin: 10px; */
+    border: solid rgb(0, 76, 255) 20px;
+    padding: 10px;
+}
+    #sectionGallery2Div1{
+        grid-area: a;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+    #sectionGallery2Div2{
+        grid-area: b;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #sectionGallery2Div3{
+        grid-area: c;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #sectionGallery2Div4{
+        grid-area: d;
+        border: solid rgb(0, 255, 38) 5px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+        .sectionGallery2Divp{
+            border: solid black 1px;
+            padding: 10px;
+            width: 70%;
+            height: 10%;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sectionGallery2Divp2{
+            border: solid black 1px;
+            padding: 10px;
+            width: 70%;
+            height: 15%;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+        .sectionGallery2Pic{
+            width: 100%;
+        }
+/* ----------- */
+
+/* ------ SECTION 2.5 ----- */
+.sectionGallery2_5{
+    height: 60vh;
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 10px;
+    background-color: rgb(112, 202, 247);
+    /* margin: 20px; */
+    border: solid rgb(0, 76, 255) 20px;
+    padding: 20px;
+}
+    #sectionGallery2_5Div1{
+        grid-area: a;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #sectionGallery2_5Div2{
+        grid-area: b;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionGallery2_5Divh1{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 70%;
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sectionGallery2_5Divh2{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        .sectionGallery2_5Divp{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 30%;
+            text-align: center;
+        }
+        .sectionGallery2_5Pic{
+            width: 100%;
+        }
+/* ----------- */
+
+/* ------ SECTION 3----- */
+.sectionGallery3{
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(112, 202, 247);
+    /* margin: 20px; */
+    border: solid rgb(0, 76, 255) 20px;
+    padding: 10px;
+}
+    .sectionGallery3Div1{
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+    }
+        .sectionGallery3Pic{
+            width: 100%;
+            object-fit: cover;
+
+        }
+    #sectionGallery3Div1Div1{
+        border: solid orangered 1px;
+        height: 50%;
+        width: 90%;
+        overflow: hidden;
+        display: flex;
+    }
+        .sectionGallery3Divh{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+/* ----------- */
+
+/* ------ SECTION 4----- */
+.sectionGallery4{
+    height: 30vh;
+    display: grid;
+    grid-template-areas: "1 2";
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    background-color: rgb(112, 202, 247);
+    /* margin: 20px; */
+    border: solid rgb(0, 76, 255) 20px;
+    padding: 20px;
+}
+    #sectionGallery4Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+    }
+    #sectionGallery4Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+        .sectionGallery4Div1p{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 40%;
+            text-align: start;
+        }
+        .sectionGallery4Div1h{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 20%;
+            text-align: start;
+        }
+        .sectionGallery4Div2p{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+        .sectionGallery4Pic{
+            height: 100%;
+        }
+/* ----------- */   
+/* ......................................  GALLERY  ............................................. */
+
+
+/* ......................................  WRITING  ............................................. */
+
+/* ---------------- HEADER --------------- */
+#headerWriting{
+    height: 75vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(216, 112, 247);
+    /* margin: 20px; */
+    border: solid rgb(111, 0, 255) 20px;
+    padding: 10px;
+}
+    .headerWritingDiv1{
+        border: solid rgb(111, 0, 255) 5px;
+        height: 80%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .headerWritingDiv2{
+        border: solid rgb(111, 0, 255) 5px;
+        height: 50%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+        .headerWritingH1{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 0px;
+            width: 90%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .headerWritingH3{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+/* -------------------------------------- */
+
+/* ------ SECTION 0.5 ----- */
+.sectionWriting0_5{
+    height: 40vh;
+    display: grid;
+    grid-template-areas: "1 2 3";
+    grid-template-columns: 40% 30% 30%;
+    column-gap: 10px;
+    background-color: rgb(216, 112, 247);
+    /* margin: 20px; */
+    border: solid rgb(111, 0, 255) 20px;
+    padding: 10px;
+    justify-content: space-around;
+}
+    #sectionWriting0_5Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionWriting0_5Div1p{
+            border: solid black 1px;
+            margin: 5px;
+            padding: 10px;
+            width: 90%;
+            height: 60%;
+            text-align: start;
+        }
+        .sectionWriting0_5Div1h{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 10%;
+            text-align: start;
+        }
+/* ----------- */   
+
+/* ------ SECTION 0_7----- */
+.sectionWriting0_7{
+    height: 60vh;
+    display: flex;
+    background-color: rgb(216, 112, 247);
+    /* margin: 20px; */
+    border: solid rgb(111, 0, 255) 20px;
+    padding: 10px;
+}
+    #sectionWriting0_7Div1{
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 95%;
+        width: 33%;
+        margin: 10px;
+    }
+    #sectionWriting0_7Div2{
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 60%;
+        width: 33%;
+        margin: 10px;
+    }
+    #sectionWriting0_7Div3{
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 80%;
+        width: 33%;
+        margin: 10px;
+    }
+        .sectionWriting0_7Divp1{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 10px;
+            width: 90%;
+            height: 60%;
+            text-align: start;
+        }
+        .sectionWriting0_7Divh{
+            border: solid black 1px;
+            margin: 5px;
+            padding: 10px;
+            width: 90%;
+            height: 10%;
+            text-align: start;
+        }
+        .sectionWriting0_7Divp2{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 10px;
+            width: 90%;
+            height: 30%;
+            text-align: start;
+        }
+/* ----------- */
+
+/* ---------------- SECTION 0_9 --------------- */
+#sectionWriting0_9{
+    height: 75vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(216, 112, 247);
+    /* margin: 20px; */
+    border: solid rgb(111, 0, 255) 20px;
+    padding: 10px;
+}
+    .sectionWriting0_9Div1{
+        border: solid rgb(111, 0, 255) 5px;
+        height: 80%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .sectionWriting0_9Div2{
+        border: solid rgb(111, 0, 255) 5px;
+        height: 80%;
+        width: 50%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+
+    }
+        .sectionWriting0_9H1{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 0px;
+            width: 90%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .sectionWriting0_9p{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+/* -------------------------------------- */
+
+/* ------ SECTION 1 ----- */
+.sectionWriting1{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "1 a"
+                         "2 a"
+                         "3 a";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgb(216, 112, 247);
+    /* margin: 20px; */
+    border: solid rgb(111, 0, 255) 20px;
+    padding: 50px;
+}
+    #sectionWriting1Div1{
+        grid-area: 1;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    #sectionWriting1Div2{
+        grid-area: 2;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionWriting1Div3{
+        grid-area: 3;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionWriting1Div4{
+        grid-area: a;
+        border: solid rgb(0, 255, 38) 5px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionWriting1Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            height: 30%;
+            text-align: center;
+        }
+        .sectionWriting1Divp{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+        .sectionWriting1Div4p{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 90%;
+            text-align: center;
+        }
+/* ----------- */
+
+/* ------ SECTION 4----- */
+.sectionWriting4{
+    height: 30vh;
+    display: grid;
+    grid-template-areas: "1 2";
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    background-color: rgb(216, 112, 247);
+    /* margin: 20px; */
+    border: solid rgb(111, 0, 255) 20px;
+    padding: 20px;
+}
+    #sectionWriting4Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+    }
+    #sectionWriting4Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionWriting4Div1p{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 40%;
+            text-align: start;
+        }
+        .sectionWriting4Div1h{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 20%;
+            text-align: start;
+        }
+        .sectionWriting4Div2p{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+/* ----------- */   
+/* ......................................  WRITING  ............................................. */
+
+
+/* ......................................  ABOUT  ............................................. */
+
+/* ---------------- HEADER --------------- */
+#headerAbout{
+    height: 85vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 500, 0.5);
+    /* margin: 20px; */
+    /* border: solid rgb(255, 247, 0) 20px; */
+    padding: 10px;
+    overflow: hidden;
+}
+    .headerAboutVideo{
+        z-index: -1;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 70%;
+    }
+
+    .headerAboutDiv{
+        border: solid rgb(255, 247, 0) 20px;
+        height: 80%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        color: white;
+
+    }
+        .headerAboutH1{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 40%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            font-weight: bold;
+            font-size: 120px;
+            transition: 0.5s;
+        }
+        .headerAboutH3{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 50%;
+            height: 80%;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        .headerAboutDiv:hover{
+            -webkit-text-stroke: 2px #fff;
+            color: transparent;
+        }
+/* -------------------------------------- */
+
+/* ------ SECTION 1 ----- */
+.sectionAbout1{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "a 1"
+                         "a 2"
+                         "a 3"
+                         "a 4";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgb(231, 241, 195);
+    /* margin: 20px; */
+    border: solid rgb(255, 247, 0) 20px;
+    padding: 10px;
+}
+    #sectionAbout1Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    #sectionAbout1Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout1Div3{
+        grid-area: "3";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout1Div5{
+        grid-area: "4";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout1Div4{
+        grid-area: a;
+        border: solid red 5px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+        .sectionAbout1Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            height: 30%;
+            text-align: center;
+        }
+        .sectionAbout1Divp{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+        .sectionAbout1Div4p{
+            border: solid black 1px;
+            padding: 10px;
+            width: 90%;
+            height: 90%;
+            text-align: center;
+        }
+        .sectionAbout1Pic{
+            height: 100%;
+        }
+/* ----------- */
+
+/* ------ SECTION 2----- */
+.sectionAbout2{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "1 a"
+                         "2 a"
+                         "b b";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 25% 25% 50%;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgb(231, 241, 195);
+    /* margin: 20px; */
+    border: solid rgb(255, 247, 0) 20px;
+    padding: 10px;
+}
+    #sectionAbout2Div1{
+        grid-area: 1;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    #sectionAbout2Div2{
+        grid-area: 2;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout2Div3{
+        grid-area: b;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout2Div4{
+        grid-area: a;
+        border: solid rgb(0, 255, 38) 5px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+        .sectionAbout2Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            height: 30%;
+            text-align: center;
+        }
+        .sectionAbout2Divp{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            text-align: center;
+        }
+        .sectionAbout2Pic{
+            height: 100%;
+        }
+/* ----------- */
+
+/* ------ SECTION 3----- */
+.sectionAbout3{
+    height: 40vh;
+    display: grid;
+    grid-template-areas: "1 2"
+                         "3 4";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 20% 90%;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgb(231, 241, 195);
+    /* margin: 20px; */
+    border: solid rgb(255, 247, 0) 20px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+    #sectionAbout3Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout3Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #sectionAbout3Div3{
+        grid-area: "3";
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80%;
+    }
+    #sectionAbout3Div4{
+        grid-area: "4";
+        border: solid red 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80%;
+    }
+        .sectionAbout3Divh{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 0px;
+            width: 90%;
+            height: 90%;
+            text-align: start;
+            text-justify: start;
+        }
+        .sectionAbout3Divp{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 10px;
+            width: 90%;
+            height: 15%;
+            text-align: start;
+        }
+/* ----------- */
+
+/* ------ SECTION 4----- */
+.sectionAbout4{
+    height: 70vh;
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d e f";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 50% 50%;
+    column-gap: 20px;
+    background-color: rgb(231, 241, 195);
+    /* margin: 20px; */
+    border: solid rgb(255, 247, 0) 20px;
+    padding: 20px;
+}
+    #sectionAbout4Div1{
+        grid-area: a;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #sectionAbout4Div2{
+        grid-area: b;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout4Div3{
+        grid-area: c;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #sectionAbout4Div4{
+        grid-area: d;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout4Div5{
+        grid-area: e;
+        border: solid orangered 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #sectionAbout4Div6{
+        grid-area: f;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+        .sectionAbout4Divp{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 10px;
+            width: 90%;
+            height: 60%;
+            text-align: start;
+        }
+        .sectionAbout4Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 15%;
+            text-align: start;
+        }
+        .sectionAbout4Pic{
+            height: 100%;
+        }
+/* ----------- */   
+
+/* ------ SECTION 5----- */
+.sectionAbout5{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "a a a"
+                         "b c d";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 40% 60%;
+    column-gap: 20px;
+    row-gap: 10px;
+    background-color: rgb(231, 241, 195);
+    /* margin: 20px; */
+    border: solid rgb(255, 247, 0) 20px;
+    padding: 20px;
+}
+    #sectionAbout5Div1{
+        grid-area: a;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout5Div2{
+        grid-area: b;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout5Div3{
+        grid-area: c;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout5Div4{
+        grid-area: d;
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .sectionAbout5Divp{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            height: 40%;
+            text-align: center;
+        }
+        .sectionAbout5Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 20%;
+            text-align: center;
+        }
+/* ----------- */   
+
+/* ------ SECTION 6----- */
+.sectionAbout6{
+    height: 70vh;
+    display: grid;
+    grid-template-areas: "1 2";
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    background-color: rgb(237, 237, 237);
+    /* margin: 20px; */
+    border: solid rgb(255, 247, 0) 20px;
+    padding: 20px;
+}
+    #sectionAbout6Div1{
+        grid-area: "1";
+        border: solid orangered 5px;
+    }
+    #sectionAbout6Div2{
+        grid-area: "2";
+        border: solid orangered 5px;
+        display: grid;
+        grid-template-areas: "a b c"
+                             "d e f"
+                             "h i j";
+        grid-template-columns: 20% 50% 20%;
+        grid-template-rows: 20% 50% 20%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+        .sectionAbout6Divp{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 0px;
+            width: 90%;
+            height: 10%;
+            text-align: center;
+        }
+        .sectionAbout6Divh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sectionAbout6DivPic{
+            grid-area: e;
+            border: solid pink 5px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            
+        }
+        .sectionAbout6Div2Button{
+            grid-area: i;
+            border: solid black 1px;
+            padding: 10px;
+            background-color: red;
+            color: white;
+        }
+        .sectionAbout6Pic{
+            height: 100%;
+        }
+/* ----------- */ 
+/* ......................................  ABOUT  ............................................. */
+
+/* ......................................  CONTACT  ............................................. */
+
+/* ---------------- HEADER --------------- */
+.headerContactDiv{
+    height: 70vh;
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    background-color: rgb(144, 250, 197);
+    /* margin: 20px; */
+    border: solid rgb(0, 200, 107) 20px;
+    padding: 20px;
+}
+    #headerContactDiv1{
+        grid-area: "a";
+        border: solid orangered 5px;
+    }
+    #headerContactDiv2{
+        grid-area: "b";
+        border: solid orangered 5px;
+        display: grid;
+        grid-template-areas: "a b c"
+                             "d e f"
+                             "h i j";
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 20% 60% 20%;
+        justify-items: center;
+        align-items: center;
+    }
+        .headerContactDivp{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 0px;
+            width: 90%;
+            height: 10%;
+            text-align: center;
+        }
+        .headerContactDivh{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .headerContactDiv2p{
+            grid-area: e;
+            border: solid black 1px;
+            padding: 10px;
+            width: 80%;
+            height: 80%;
+        }
+/* -------------------------------------- */
+
+/* ------ SECTION 1 ----- */
+.sectionContact1{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 250, 197);
+    /* margin: 20px; */
+    border: solid rgb(0, 200, 107) 20px;
+    padding: 10px;
+}
+    .sectionContact1Form{
+        border: solid black 1px;
+        width: 40%;
+        height: 80%;
+        display: grid;
+        padding: 20px;
+
+    }
+    .sectionContact2FormDiv{
+        border: solid black 1px;
+        display: grid;
+        grid-template-areas: "a b"
+                             "c d";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 50% 50%;
+        padding: 10px;
+        column-gap: 10px;
+    }
+        #sectionContact1FormDiv1Label{
+            grid-area: a;
+            border: solid black 1px;
+            width: 50%;
+        }
+        #sectionContact1FormDiv2Label{
+            grid-area: b;
+            border: solid black 1px;
+            width: 50%;
+        }
+        #sectionContact1FormDiv1Input{
+            grid-area: c;
+            height: 40px;
+        }
+        #sectionContact1FormDiv2Input{
+            grid-area: d;
+            height: 40px;
+        }
+    .sectionContact1FormLabel{
+        border: solid black 1px;
+        width: 50%;
+    }
+    .sectionContact1FormInput{
+        border: solid black 1px;
+        width: 90%;
+        height: 40px;
+    }
+    #sectionContact1FormMessageInput{
+        height: 100px;
+        width: 90%;
+    }
+    #sectionContact1FormButton{
+        height: 50px;
+        width: 150px;
+        font-size: 18px;
+    }
+/* ----------- */
+
+/* ......................................  CONTACT  ............................................. */
