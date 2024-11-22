@@ -584,6 +584,7 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        overflow: hidden;
 
     }
         .headerServicesH1{
@@ -616,6 +617,9 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .headerServicesPic{
+            height: 100%;
         }
 /* -------------------------------------- */
 
@@ -663,6 +667,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
         .sectionServices1Divh{
             border: solid black 1px;
@@ -685,6 +690,9 @@ body{
             width: 90%;
             height: 90%;
             text-align: center;
+        }
+        .sectionServices1Pic{
+            width: 100%
         }
 /* ----------- */
 
@@ -874,10 +882,11 @@ body{
     #sectionServices3Div4{
         grid-area: a;
         border: solid rgb(0, 255, 38) 5px;
-        padding: 20px;
+        padding: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
         .sectionServices3Divh{
             border: solid black 1px;
@@ -900,6 +909,9 @@ body{
             width: 90%;
             height: 90%;
             text-align: center;
+        }
+        .sectionServices3Pic{
+            height: 100%;
         }
 /* ----------- */
 
@@ -941,6 +953,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
         .sectionServices3_2Divh{
             border: solid black 1px;
@@ -957,6 +970,9 @@ body{
             width: 90%;
             height: 80%;
             text-align: start;
+        }
+        .sectionServices3_2Pic{
+            width:100%;
         }
 
 /* ----------- */
@@ -1036,6 +1052,9 @@ body{
             height: 80%;
             text-align: center;
         }
+        .sectionServices3_5Pic{
+            height:100%;
+        }
 /* ----------- */
 
 
@@ -1109,6 +1128,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
         .sectionServices4Div1p{
             border: solid black 1px;
@@ -1132,6 +1152,9 @@ body{
             width: 90%;
             height: 80%;
             text-align: center;
+        }
+        .sectionServices4Pic{
+            height:100%;
         }
 /* ----------- */    
 
@@ -1592,6 +1615,7 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        overflow: hidden;
 
     }
     .headerWritingDiv2{
@@ -1625,6 +1649,9 @@ body{
             justify-content: center;
             align-items: center;
         }
+    .headerWritingPic{
+        height: 100%;
+    }
 /* -------------------------------------- */
 
 /* ------ SECTION 0.5 ----- */
@@ -1684,18 +1711,9 @@ body{
         height: 95%;
         width: 33%;
         margin: 10px;
+        overflow: hidden;
     }
     #sectionWriting0_7Div2{
-        border: solid orangered 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        height: 60%;
-        width: 33%;
-        margin: 10px;
-    }
-    #sectionWriting0_7Div3{
         border: solid orangered 5px;
         display: flex;
         flex-direction: column;
@@ -1704,6 +1722,17 @@ body{
         height: 80%;
         width: 33%;
         margin: 10px;
+        overflow: hidden;
+    }
+    #sectionWriting0_7Div3{
+        border: solid orangered 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+        width: 33%;
+        overflow: hidden;
     }
         .sectionWriting0_7Divp1{
             border: solid black 1px;
@@ -1729,6 +1758,15 @@ body{
             height: 30%;
             text-align: start;
         }
+        .sectionWritng0_7Pic1{
+            width: 100%;
+        }
+        .sectionWritng0_7Pic2{
+        width: 60%;
+        }
+        .sectionWritng0_7Pic3{
+            height: 60%;
+        }
 /* ----------- */
 
 /* ---------------- SECTION 0_9 --------------- */
@@ -1750,6 +1788,7 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        overflow: hidden;
 
     }
     .sectionWriting0_9Div2{
@@ -1782,6 +1821,9 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .sectionWritng0_9Pic{
+            height: 100%;
         }
 /* -------------------------------------- */
 
@@ -1913,18 +1955,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 500, 0.5);
-    /* margin: 20px; */
-    /* border: solid rgb(255, 247, 0) 20px; */
-    padding: 10px;
+    background-color: rgba(0, 0, 500, 0.3);
+    padding: 0px;
     overflow: hidden;
 }
-    .headerAboutVideo{
+    .headerAboutWallpaper{
         z-index: -1;
         position: absolute;
-        right: 0;
-        bottom: 0;
-        height: 70%;
+        width: 100%;
     }
 
     .headerAboutDiv{
@@ -2431,9 +2469,10 @@ body{
                              "d e f"
                              "h i j";
         grid-template-columns: 20% 60% 20%;
-        grid-template-rows: 20% 60% 20%;
+        grid-template-rows: 10% 80% 10%;
         justify-items: center;
         align-items: center;
+        overflow: hidden;
     }
         .headerContactDivp{
             border: solid black 1px;
@@ -2459,6 +2498,10 @@ body{
             padding: 10px;
             width: 80%;
             height: 80%;
+        }
+        .headerContactPic{
+            grid-area: e;
+            height: 100%;
         }
 /* -------------------------------------- */
 
