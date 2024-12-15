@@ -293,6 +293,8 @@ html body{
         }
         .footerDiv1{
             grid-area: a;
+            background-color: greenyellow;
+            padding: 5px;
         }
         .footerDiv2{
             grid-area: b;
