@@ -1309,10 +1309,10 @@ html body{
     @media screen and (min-width: 321px) and (max-width: 480px){
         .sectionIndex3_2{
             height: 70vh;
-            border: solid white 20px;
+            border: solid yellowgreen 20px;
         }
         .sectionIndex3_2Div{
-            border: solid white 5px;
+            border: solid yellowgreen 5px;
             height: 80%;
     
         }
