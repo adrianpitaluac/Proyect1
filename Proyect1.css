@@ -8,11 +8,25 @@
     font-weight: 200;
     font-style: normal;
     }
+    @media screen and (max-width: 320px){
+        p{
+            font-size: 4vw;
+        }
+        h1{
+            font-size: 6vw;
+        }
+        h2{
+            font-size: 6vw;
+        }
+        h3{
+            font-size: 6vw;
+        }
+    }
 a:visited{
     color: white
 }
 body{
-    background-color: black;
+    background-color: white;
 }
 /* img {
     width: 100%;
@@ -20,71 +34,6 @@ body{
 }     */
 
 /* ---------------- NAV --------------- */
-.nav{
-    position: sticky;
-    top: 0px;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(5px);
-    /*margin: 20px; */
-    /* border: solid rgb(241, 48, 48) 1px; */
-    padding: 5px;
-    display: grid;
-    grid-template-areas: "1 2 3 4 5 6 7";
-    grid-template-columns: 40% 1% 10% 10% 10% 10% 10%;
-    grid-template-rows: 100%;
-    justify-content: space-around;
-
-}
-    #navDiv1{
-        grid-area: "1";
-        /* border: solid rgb(255, 0, 0) 1px; */
-        display: flex;
-        align-items: center;
-        width: 50%;
-    }
-    #navDiv2{
-        grid-area: "2";
-        /* border: solid rgb(249, 0, 0) 1px; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navDiv3{
-        grid-area: "3";
-        /* border: solid red 1px; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navDiv4{
-        grid-area: "4";
-        /* border: solid red 1px; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navDiv5{
-        grid-area: "5";
-        /* border: solid red 1px; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navDiv6{
-        grid-area: "6";
-        /* border: solid red 1px; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #navDiv7{
-        grid-area: "7";
-        /* border: solid red 1px; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     p{
     /*border: solid black 1px;*/
     padding: 10px;
@@ -105,16 +54,88 @@ body{
     a:visited{
         color: white
     }
-        .navLogo{
-            height: 100%;
-            /* border: solid red 1px; */
+    .navDiv{
+        display: flex;
+        height: 70px;
+        background-color: black;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .navLogoDiv{
+        width: 50px;
+    }
+    .navLogo{
+        height: 100%;
+    }
+    .navNew{
+        height: 100%;
+        background-color: green;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navUl{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+        justify-items: center;
+    }
+    li{
+        text-decoration: none;
+        color: black;
+        height: 50px;
+        width: 70px;
+    }
+    .navButtonAbrir{
+        display: none;
+    }
+    .navButtonCerrar{
+        display: none;
+
+    }
+    @media screen and (max-width: 768px){
+        .navButtonAbrir, .navButtonCerrar{
+            display: block;
+            border: 0;
+            background-color: transparent;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+
         }
+        .navNew{
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: absolute;
+            top:0;
+            right:0;
+            background-color: black;
+            align-items: end;
+            justify-content: start;
+            padding: 4rem;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+            gap: 1rem;
+        }
+        .navNew.visible{
+            opacity: 1;
+            visibility: visible;
+        }
+        .navUl{
+            flex-direction: column;
+
+        }
+    }
 
 /* -------------------------------------- */
 
 /* ---------------- FOOTER --------------- */
 .footer{
-    height: 60vh;
+    height: 70vh;
     display: grid;
     grid-template-areas: "1 2 3 4"
                          "a a a a";
@@ -132,29 +153,29 @@ body{
 }
     .footerDiv1{
         grid-area: "1";
-        /* border: solid orange 5px; */
+        border: solid white 5px; 
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .footerDiv2{
         grid-area: "2";
-        /* border: solid orange 5px; */
+        border: solid white 5px; 
         display: flex;
     }
     .footerDiv3{
         grid-area: "3";
-        /* border: solid orange 5px; */
+        border: solid white 5px; 
         display: flex;
     }
     .footerDiv4{
         grid-area: "4";
-        /* border: solid orange 5px; */
+        border: solid white 5px; 
         display: flex;
     }
     .footerDiv5{
         grid-area: a;
-        /* border: solid orange 5px; */
+        border: solid white 5px; 
         display: flex;
     }
     .footerDiv1p{
@@ -191,6 +212,133 @@ body{
             /* width: 50%; */
 
         }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        .footer{
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+    }
+    @media screen and (min-width: 601px) and (max-width: 767px){
+        .footer{
+            grid-template-areas: "a a a"
+                                 "b c d"
+                                 "e e e";
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 10% 70% 20%;
+        }
+        .footerDiv1{
+            grid-area: a;
+        }
+        .footerDiv2{
+            grid-area: b;
+        }
+        .footerDiv3{
+            grid-area: c;
+        }
+        .footerDiv4{
+            grid-area: d;
+        }
+        .footerDiv5{
+            grid-area: e;
+        }
+        .footerLogo{
+            height: 90%;
+            /* width: 50%; */
+
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 600px){
+        .footer{
+            height: 90vh;
+            grid-template-areas: "a b"
+                                 "c c"
+                                 "d d"
+                                 "e e";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 25% 25% 25% 25%;
+        }
+        .footerDiv1{
+            grid-area: a;
+        }
+        .footerDiv2{
+            grid-area: b;
+        }
+        .footerDiv3{
+            grid-area: c;
+        }
+        .footerDiv4{
+            grid-area: d;
+        }
+        .footerDiv5{
+            grid-area: e;
+        }
+        .footerLogo{
+            height: 30%;
+            /* width: 50%; */
+
+        }
+    }
+    @media screen and (min-width: 321px) and (max-width: 481px){
+        .footer{
+            height: 120vh;
+            grid-template-areas: "a b"
+                                 "c c"
+                                 "d d"
+                                 "e e";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 25% 25% 25% 25%;
+        }
+        .footerDiv1{
+            grid-area: a;
+        }
+        .footerDiv2{
+            grid-area: b;
+        }
+        .footerDiv3{
+            grid-area: c;
+        }
+        .footerDiv4{
+            grid-area: d;
+        }
+        .footerDiv5{
+            grid-area: e;
+        }
+        .footerLogo{
+            height: 30%;
+            /* width: 50%; */
+
+        }
+    }
+    @media screen and (min-width: 0px) and (max-width: 320px){
+        .footer{
+            height: 120vh;
+            grid-template-areas: "a b"
+                                 "c c"
+                                 "d d"
+                                 "e e";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 25% 25% 25% 25%;
+        }
+        .footerDiv1{
+            grid-area: a;
+        }
+        .footerDiv2{
+            grid-area: b;
+        }
+        .footerDiv3{
+            grid-area: c;
+        }
+        .footerDiv4{
+            grid-area: d;
+        }
+        .footerDiv5{
+            grid-area: e;
+        }
+        .footerLogo{
+            height: 30%;
+            /* width: 50%; */
+
+        }
+    }
 /* -------------------------------------- */
 
 /* ................................................................................... */
@@ -205,7 +353,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(5, 255, 247);
+    /*background-color: rgb(5, 255, 247);*/
     /*margin: 20px;*/
     border: solid blue 20px;
     padding: 10px;
@@ -218,6 +366,8 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background-color: rgba(0, 0, 300, 0.3)
+
     }
         .headerIndexH1{
             border: solid black 1px;
@@ -240,6 +390,86 @@ body{
             justify-content: center;
             align-items: center;
         }
+        .headerIndexWallpaper{
+            z-index: -1;
+            position: absolute;
+            max-width: 100%;
+            max-height: 110%;
+            overflow: hidden;
+        }
+
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+    #headerIndex{
+        border: solid pink 20px;
+    }
+    .headerIndexDiv{
+        border: solid pink 5px;
+    }
+}     
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #headerIndex{
+        height: 68vh;
+        border: solid yellow 20px;
+    }
+    .headerIndexDiv{
+        border: solid yellow 5px;
+    }
+}  
+
+@media screen and (min-width: 601px) and (max-width: 767px){
+    #headerIndex{
+        height: 50vh;
+        border: solid red 20px;
+    }
+    .headerIndexDiv{
+        border: solid red 5px;
+    }
+    .headerIndexWallpaper{
+        width: 120%;
+        /*max-height: 140%;*/
+    }
+}  
+
+@media screen and (min-width: 481px) and (max-width: 600px){
+    #headerIndex{
+        height: 50vh;
+        border: solid white 20px;
+    }
+    .headerIndexDiv{
+        border: solid white 5px;
+    }
+    .headerIndexWallpaper{
+        width: 200%;
+        /*max-height: 140%;*/
+    }
+} 
+@media screen and (min-width: 321px) and (max-width: 480px){
+    #headerIndex{
+        height: 60vh;
+        border: solid greenyellow 20px;
+    }
+    .headerIndexDiv{
+        border: solid greenyellow 5px;
+    }
+    .headerIndexWallpaper{
+        width: 100%;
+        /*max-height: 140%;*/
+    }
+} 
+@media screen and (min-width: 0px) and (max-width: 320px){
+    #headerIndex{
+        height: 40vh;
+        border: solid orange 20px;
+    }
+    .headerIndexDiv{
+        border: solid orange 5px;
+    }
+    .headerIndexWallpaper{
+        width: 100%;
+        /*max-height: 140%;*/
+    }
+} 
 /* -------------------------------------- */
 
 /* ------ SECTION 1 ----- */
@@ -255,9 +485,8 @@ body{
     row-gap: 10px;
     background-color: rgb(220, 220, 220);
     /* margin: 20px; */
-    /* border: solid blue 20px; */
+    border: solid blue 20px;
     padding: 50px;
-    /* background-image: url('Pictures/Services/Section1.jpg'); */
     /* background-size: cover; */
     /* background-position: center; */
     /* color: white; */
@@ -293,8 +522,8 @@ body{
     }
         .sectionIndex1Divh{
             border: solid black 1px;
-            margin: 10px;
-            padding: 10px;
+            margin: 20px;
+            padding:10px;
             width: 100%;
             height: 30%;
             text-align: center;
@@ -313,6 +542,174 @@ body{
             height: 90%;
             text-align: center;
         }
+        .sectionIndexDiv4img{
+            max-width: 100%;
+            max-height: 100%;
+
+        }
+    @media screen and (min-width: 1024px) and (max-width: 1199px){
+        #sectionIndex1Div1{
+            border: solid pink 5px;
+        }
+        #sectionIndex1Div2{
+            border: solid pink 5px;
+        }
+        #sectionIndex1Div3{
+            border: solid pink 5px;
+        }
+        #sectionIndex1Div4{
+            border: solid pink 5px;
+        }
+    
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        .sectionIndex1{
+            height: 65vh;
+        }
+        #sectionIndex1Div1{
+            border: solid yellow 5px;
+        }
+        #sectionIndex1Div2{
+            border: solid yellow 5px;
+        }
+        #sectionIndex1Div3{
+            border: solid yellow 5px;
+        }
+        #sectionIndex1Div4{
+            border: solid yellow 5px;
+        }
+    
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 767px){
+        .sectionIndex1{
+            grid-template-columns: 60% 40%;
+            height: 85vh;
+            padding: 20px;
+        }
+        #sectionIndex1Div1{
+            border: solid red 5px;
+        }
+        #sectionIndex1Div2{
+            border: solid red 5px;
+        }
+        #sectionIndex1Div3{
+            border: solid red 5px;
+        }
+        #sectionIndex1Div4{
+            border: solid red 5px;
+        }
+    
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 600px){
+        .sectionIndex1{
+            height: 80vh;
+            padding: 10px;
+            grid-template-areas: "a b"
+                                 "c c"
+                                 "d d";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 40% 30% 30%;
+            row-gap: 0px;
+        }
+        #sectionIndex1Div1{
+            border: solid white 5px;
+            grid-area: a;
+        }
+        #sectionIndex1Div2{
+            border: solid white 5px;
+            grid-area: d;
+        }
+        #sectionIndex1Div3{
+            border: solid white 5px;
+            grid-area: c;
+        }
+        #sectionIndex1Div4{
+            border: solid white 5px;
+            grid-area: b;
+        }
+    
+    }
+    @media screen and (min-width: 321px) and (max-width: 480px){
+        .sectionIndex1{
+            height: 85vh;
+            padding: 5px;
+            grid-template-areas: "a b"
+                                 "c c"
+                                 "d d";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 30% 35% 35%;
+            row-gap: 0px;
+        }
+        #sectionIndex1Div1{
+            border: solid greenyellow 5px;
+            grid-area: a;
+        }
+        #sectionIndex1Div2{
+            border: solid greenyellow 5px;
+            grid-area: d;
+        }
+        #sectionIndex1Div3{
+            border: solid greenyellow 5px;
+            grid-area: c;
+        }
+        #sectionIndex1Div4{
+            border: solid greenyellow 5px;
+            grid-area: b;
+            padding: 5px;
+        }
+        .sectionIndex1Divh{
+            padding: 5px;
+            margin: 5px;
+        }
+    
+    }
+    @media screen and (min-width: 0px) and (max-width: 320px){
+        .sectionIndex1{
+            height: 85vh;
+            padding: 0px;
+            margin: 1px;
+            grid-template-areas: "a b"
+                                 "c c"
+                                 "d d";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 30% 35% 35%;
+            row-gap: 0px;
+        }
+        #sectionIndex1Div1{
+            border: solid orange 5px;
+            grid-area: a;
+        }
+        #sectionIndex1Div2{
+            border: solid orange 5px;
+            grid-area: d;
+        }
+        #sectionIndex1Div3{
+            border: solid orange 5px;
+            grid-area: c;
+        }
+        #sectionIndex1Div4{
+            border: solid orange 5px;
+            grid-area: b;
+            padding: 0px;
+        }
+        .sectionIndex1Divh{
+            padding: 5px;
+            margin: 0px;
+        }
+        .sectionIndexDiv4img{
+            width: 100%;
+        }
+        .sectionIndex1Divp{
+            padding: 0px;
+        }
+        .sectionIndex1Div4p{
+            padding: 0px;
+        }
+    
+    }
 /* ----------- */
 
 /* ------ SECTION 2----- */
@@ -381,6 +778,156 @@ body{
             width: 90%;
             height: 90%;
             text-align: center;
+        }
+        .sectionIndex2Div4img{
+            max-width: 100%;
+            max-height: 100%;
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            #sectionIndex2Div1{
+                border: solid pink 5px;
+            }
+            #sectionIndex2Div2{
+                border: solid pink 5px;
+            }
+            #sectionIndex2Div3{
+                border: solid pink 5px;
+            }
+            #sectionIndex2Div4{
+                border: solid pink 5px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionIndex2{
+                height: 60vh;
+            }
+            #sectionIndex2Div1{
+                border: solid yellow 5px;
+            }
+            #sectionIndex2Div2{
+                border: solid yellow 5px;
+            }
+            #sectionIndex2Div3{
+                border: solid yellow 5px;
+            }
+            #sectionIndex2Div4{
+                border: solid yellow 5px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionIndex2{
+                height: 85vh;
+                grid-template-columns: 40% 60%;
+                padding: 20px;
+            }
+            #sectionIndex2Div1{
+                border: solid red 5px;
+            }
+            #sectionIndex2Div2{
+                border: solid red 5px;
+            }
+            #sectionIndex2Div3{
+                border: solid red 5px;
+            }
+            #sectionIndex2Div4{
+                border: solid red 5px;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 600px){
+            .sectionIndex2{
+                height: 85vh;
+                padding: 20px;
+                grid-template-areas: "a a"
+                                     "b b"
+                                     "c d";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 30% 30% 40%;
+                row-gap: 0px;
+            }
+            #sectionIndex2Div1{
+                border: solid white 5px;
+                grid-area: d;
+            }
+            #sectionIndex2Div2{
+                border: solid white 5px;
+                grid-area: b;
+            }
+            #sectionIndex2Div3{
+                border: solid white 5px;
+                grid-area: a;
+            }
+            #sectionIndex2Div4{
+                border: solid white 5px;
+                grid-area: c;
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 480px){
+            .sectionIndex2{
+                height: 85vh;
+                padding: 5px;
+                grid-template-areas: "a a"
+                                     "b b"
+                                     "c d";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 35% 35% 30%;
+                row-gap: 0px;
+            }
+            #sectionIndex2Div1{
+                border: solid greenyellow 5px;
+                grid-area: d;
+            }
+            #sectionIndex2Div2{
+                border: solid greenyellow 5px;
+                grid-area: b;
+            }
+            #sectionIndex2Div3{
+                border: solid greenyellow 5px;
+                grid-area: a;
+            }
+            #sectionIndex2Div4{
+                border: solid greenyellow 5px;
+                grid-area: c;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 320px){
+            .sectionIndex2{
+                height: 85vh;
+                margin: 1px;
+                padding: 1px;
+                grid-template-areas: "a a"
+                                     "b b"
+                                     "c d";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 35% 35% 30%;
+                row-gap: 0px;
+            }
+            #sectionIndex2Div1{
+                border: solid orange 5px;
+                grid-area: d;
+            }
+            #sectionIndex2Div2{
+                border: solid orange 5px;
+                grid-area: b;
+            }
+            #sectionIndex2Div3{
+                border: solid orange 5px;
+                grid-area: a;
+            }
+            #sectionIndex2Div4{
+                border: solid orange 5px;
+                grid-area: c;
+                padding: 0px;
+            }
+            .sectionIndex2Divh{
+                padding: 5px;
+                margin: 0px;
+            
+            }
+            .sectionIndex2Div4img{
+                width: 100%;
+                
+            }
         }
 /* ----------- */
 
@@ -464,6 +1011,207 @@ body{
             height: 50%;
             text-align: start;
         }
+    @media screen and (min-width: 1024px) and (max-width: 1199px){
+        .sectionIndex3{
+            height: 70vh;
+        }
+        #sectionIndex3Div1{
+            border: solid pink 5px;
+        }
+        #sectionIndex3Div2{
+            border: solid pink 5px;
+        }
+        #sectionIndex3Div3{
+            border: solid pink 5px;
+        }
+        #sectionIndex3Div4{
+            border: solid pink 5px;
+        }
+        #sectionIndex3Div5{
+            border: solid pink 5px;
+        }
+        #sectionIndex3Div6{
+            border: solid pink 5px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        .sectionIndex3{
+            height: 80vh;
+        }
+        #sectionIndex3Div1{
+            border: solid yellow 5px;
+        }
+        #sectionIndex3Div2{
+            border: solid yellow 5px;
+        }
+        #sectionIndex3Div3{
+            border: solid yellow 5px;
+        }
+        #sectionIndex3Div4{
+            border: solid yellow 5px;
+        }
+        #sectionIndex3Div5{
+            border: solid yellow 5px;
+        }
+        #sectionIndex3Div6{
+            border: solid yellow 5px;
+        }
+        .sectionIndex3Divp{
+            height: 70%;
+        }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 767px){
+        .sectionIndex3{
+            height: 120vh;
+            padding: 25px;
+        }
+        #sectionIndex3Div1{
+            border: solid red 5px;
+        }
+        #sectionIndex3Div2{
+            border: solid red 5px;
+        }
+        #sectionIndex3Div3{
+            border: solid red 5px;
+        }
+        #sectionIndex3Div4{
+            border: solid yred 5px;
+        }
+        #sectionIndex3Div5{
+            border: solid red 5px;
+        }
+        #sectionIndex3Div6{
+            border: solid red 5px;
+        }
+        .sectionIndex3Divp{
+            height: 70%;
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 600px){
+        .sectionIndex3{
+            height: 160vh;
+            padding: 25px;
+            grid-template-areas: "a a"
+                                 "b c"
+                                 "d d"
+                                 "e f";
+            grid-template-columns:  50% 50%;
+            grid-template-rows: repeat(4,1fr);
+        }
+        #sectionIndex3Div1{
+            border: solid white 5px;
+            grid-area: a;
+        }
+        #sectionIndex3Div2{
+            border: solid white 5px;
+            grid-area: b;
+        }
+        #sectionIndex3Div3{
+            border: solid white 5px;
+            grid-area: c;
+        }
+        #sectionIndex3Div4{
+            border: solid white 5px;
+            grid-area: d;
+        }
+        #sectionIndex3Div5{
+            border: solid white 5px;
+            grid-area: e;
+        }
+        #sectionIndex3Div6{
+            border: solid white 5px;
+            grid-area: f;
+        }
+        .sectionIndex3Divp{
+            height: 80%;
+        }
+    }
+    @media screen and (min-width: 321px) and (max-width: 480px){
+        .sectionIndex3{
+            height: 230vh;
+            padding: 10px;
+            grid-template-areas: "a"
+                                 "b"
+                                 "c"
+                                 "d"
+                                 "e"
+                                 "f";
+            grid-template-rows: repeat(6,1fr);
+            grid-template-columns: 100%;
+            row-gap: 10px;
+        }
+        #sectionIndex3Div1{
+            border: solid greenyellow 5px;
+            grid-area: a;
+        }
+        #sectionIndex3Div2{
+            border: solid greenyellow 5px;
+            grid-area: b;
+        }
+        #sectionIndex3Div3{
+            border: solid greenyellow 5px;
+            grid-area: c;
+        }
+        #sectionIndex3Div4{
+            border: solid greenyellow 5px;
+            grid-area: d;
+        }
+        #sectionIndex3Div5{
+            border: solid greenyellow 5px;
+            grid-area: e;
+        }
+        #sectionIndex3Div6{
+            border: solid greenyellow 5px;
+            grid-area: f;
+        }
+        .sectionIndex3Divp{
+            height: 80%;
+        }
+    }
+    @media screen and (min-width: 0px) and (max-width: 320px){
+        .sectionIndex3{
+            height: 230vh;
+            padding: 10px;
+            grid-template-areas: "a"
+                                 "b"
+                                 "c"
+                                 "d"
+                                 "e"
+                                 "f";
+            grid-template-rows: repeat(6,1fr);
+            grid-template-columns: 100%;
+            row-gap: 10px;
+        }
+        #sectionIndex3Div1{
+            border: solid orange 5px;
+            grid-area: a;
+        }
+        #sectionIndex3Div2{
+            border: solid orange 5px;
+            grid-area: b;
+        }
+        #sectionIndex3Div3{
+            border: solid orange 5px;
+            grid-area: c;
+        }
+        #sectionIndex3Div4{
+            border: solid orange 5px;
+            grid-area: d;
+        }
+        #sectionIndex3Div5{
+            border: solid orange 5px;
+            grid-area: e;
+        }
+        #sectionIndex3Div6{
+            border: solid orange 5px;
+            grid-area: f;
+        }
+        .sectionIndex3Divp{
+            height: 80%;
+        }
+    }
 /* ----------- */
 
 /* ---------------- SECTION 3_2 --------------- */
@@ -488,6 +1236,7 @@ body{
         flex-direction: column;
 
     }
+
         .sectionIndex3_2H1{
             border: solid black 1px;
             margin: 20px;
@@ -497,6 +1246,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+            color: black;
 
         }
         .sectionIndex3_2p{
@@ -508,15 +1258,81 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+            color: black;
         }
+    @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionIndex3_2{
+                height: 65vh;
+                border: solid pink 20px;
+            }
+            .sectionIndex3_2Div{
+                border: solid pink 5px;
+        
+            }
+    }   
+
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        .sectionIndex3_2{
+            height: 60vh;
+            border: solid yellow 20px;
+        }
+        .sectionIndex3_2Div{
+            border: solid yellow 5px;
+    
+        }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 767px){
+        .sectionIndex3_2{
+            height: 60vh;
+            border: solid red 20px;
+        }
+        .sectionIndex3_2Div{
+            border: solid red 5px;
+    
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 600px){
+        .sectionIndex3_2{
+            height: 60vh;
+            border: solid white 20px;
+        }
+        .sectionIndex3_2Div{
+            border: solid white 5px;
+            height: 80%;
+    
+        }
+    }
+    @media screen and (min-width: 321px) and (max-width: 480px){
+        .sectionIndex3_2{
+            height: 70vh;
+            border: solid white 20px;
+        }
+        .sectionIndex3_2Div{
+            border: solid white 5px;
+            height: 80%;
+    
+        }
+    }
+    @media screen and (min-width: 0px) and (max-width: 320px){
+        .sectionIndex3_2{
+            height: 70vh;
+            border: solid orange 20px;
+        }
+        .sectionIndex3_2Div{
+            border: solid orange 5px;
+            height: 80%;
+    
+        }
+    }
 /* -------------------------------------- */
 
 /* ------ SECTION 4----- */
 .sectionIndex4{
-    height: 30vh;
+    height: 80vh;
     display: grid;
     grid-template-areas: "1 2";
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 50% 50%;
     column-gap: 20px;
     background-color: rgb(5, 255, 247);
     /* margin: 20px; */
@@ -557,6 +1373,145 @@ body{
             height: 80%;
             text-align: center;
         }
+        .sectionIndex4DivImg{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    @media screen and (min-width: 1024px) and (max-width: 1199px){
+        .sectionIndex4{
+            height: 55vh;
+        }
+        #sectionIndex4Div1{
+            border: solid pink 5px;
+        }
+        #sectionIndex4Div2{
+            border: solid pink 5px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        .sectionIndex4{
+            height: 60vh;
+        }
+        #sectionIndex4Div1{
+            border: solid yellow 5px;
+        }
+        #sectionIndex4Div2{
+            border: solid yellow 5px;
+        }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 767px){
+        .sectionIndex4{
+            height: 60vh;
+            grid-template-columns: 40% 60%;
+        }
+        #sectionIndex4Div1{
+            border: solid red 5px;
+        }
+        #sectionIndex4Div2{
+            border: solid red 5px;
+        }
+        .sectionIndex4Div1p{
+            height: 50%;
+            width: 80%;
+        }
+        .sectionIndex4Div1h{
+            width: 80%;
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 600px){
+        .sectionIndex4{
+            height: 70vh;
+            grid-template-areas: "a"
+                                 "b";
+            grid-template-rows: 50% 50%;
+            grid-template-columns: 100%;
+        }
+        #sectionIndex4Div1{
+            border: solid white 5px;
+            grid-area: b;
+        }
+        #sectionIndex4Div2{
+            border: solid white 5px;
+            grid-area: a;
+        }
+        .sectionIndex4Div1p{
+            height: 50%;
+            width: 90%;
+        }
+        .sectionIndex4Div1h{
+            width: 90%;
+        }
+    }
+    @media screen and (min-width: 321px) and (max-width: 480px){
+        .sectionIndex4{
+            height: 70vh;
+            grid-template-areas: "a"
+                                 "b";
+            grid-template-rows: 40% 60%;
+            grid-template-columns: 100%;
+            padding: 5px;
+        }
+        #sectionIndex4Div1{
+            border: solid greenyellow 5px;
+            grid-area: b;
+            row-gap: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+        }
+        #sectionIndex4Div2{
+            border: solid greenyellow 5px;
+            grid-area: a;
+        }
+        .sectionIndex4Div1p{
+            height: 50%;
+            width: 90%;
+            margin: 0px;
+        }
+        .sectionIndex4Div1h{
+            width: 90%;
+            margin: 0px;
+        }
+        .sectionIndex4DivImg{
+            max-width: 100%;
+        }
+    }
+    @media screen and (min-width: 0px) and (max-width: 320px){
+        .sectionIndex4{
+            height: 70vh;
+            grid-template-areas: "a"
+                                 "b";
+            grid-template-rows: 40% 60%;
+            grid-template-columns: 100%;
+            padding: 5px;
+        }
+        #sectionIndex4Div1{
+            border: solid orange 5px;
+            grid-area: b;
+            row-gap: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+        }
+        #sectionIndex4Div2{
+            border: solid orange 5px;
+            grid-area: a;
+        }
+        .sectionIndex4Div1p{
+            height: 50%;
+            width: 90%;
+            margin: 0px;
+        }
+        .sectionIndex4Div1h{
+            width: 90%;
+            margin: 0px;
+        }
+        .sectionIndex4DivImg{
+            max-width: 100%;
+        }
+    }
 /* ----------- */    
 
 /* ......................................  INDEX  ............................................. */

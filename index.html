@@ -4,23 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Proyect1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Proyect1.css">
+    
     <title>Index</title>
 </head>
 <body> 
+        <div class="navDiv">
+            <img class="navLogo" src="Pictures/logo1.webp" alt="LOGO">
+            <button class="navButtonAbrir" id="abrir"><i class="bi bi-list"></i></button>
+            <nav class="navNew" id="nav">
+                <button class="navButtonCerrar" id="cerrar"><i class="bi bi-x-lg"></i></button>
+                <ul class="navUl">
+                    <li><a href="HTML/1.html">Services</a></li>
+                    <li><a href="HTML/2.html">Gallery</a></li>
+                    <li><a href="HTML/3.html">Writing</a></li>
+                    <li><a href="HTML/4.html">About</a></li>
+                    <li><a href="HTML/5.html">Contact</a></li>
+                </ul>
+            </nav> 
+        </div>
+        
         <header id="headerIndex">
-
             <div class="headerIndexDiv">
+
+                <img class="headerIndexWallpaper" src="Pictures/Graduacion.jpg" alt="Graduado">
                 <h1 class="headerIndexH1">Slogan</h1>
                 <h3 class="headerIndexH3">Contactame</h3>
             </div>
             
         </header>
 
-        <nav class="nav">
+
+        <!-- <nav class="nav">
             <div id="navDiv1">
                 <a href="index.html">
                     <img class="navLogo" src="Pictures/logo1.webp" alt="LOGO">
@@ -47,17 +66,19 @@
                     <p>Writing</p>
                 </a>
             </div>
+
             <div id="navDiv6">
                 <a href="HTML/4.html">
                     <p>About</p>
                 </a>
             </div>
+
             <div id="navDiv7">
                 <a href="HTML/5.html">
                     <p>Contact</p>
                 </a>
             </div>
-        </nav>
+        </nav> -->
 
         <main>
             <section class="sectionIndex1" id="sectionIndex1">
@@ -74,7 +95,7 @@
                 </div>
 
                 <div id="sectionIndex1Div4">
-                    <p class="sectionIndex1Div4p">Imagen</p>
+                    <img class="sectionIndexDiv4img" src="Pictures/YO.png" alt="YO">
                 </div>
             </section>
             <section class="sectionIndex2" id="sectionIndex2">
@@ -91,7 +112,7 @@
                 </div>
 
                 <div id="sectionIndex2Div4">
-                    <p class="sectionIndex2Div4p">Imagen</p>
+                    <img class="sectionIndex2Div4img" src="Pictures/YO.png" alt="YO">
                 </div>
             </section>
             <section class="sectionIndex3" id="sectionIndex3">
@@ -132,12 +153,11 @@
                 </div>
 
                 <div id="sectionIndex4Div2">
-                    <p class="sectionIndex4Div2p">Imagen</p>
+                    <img class="sectionIndex4DivImg" src="Pictures/Fotos/Gallery/IMG-20170328-WA0001.jpg" alt="">
                 </div>
             </section>
             <section class="sectionIndex3_2">
-            
-                <div class="sectionIndex3_2Div">
+                <div class="sectionIndex3_2Div">    
                     <h1 class="sectionIndex3_2H1">Slogan</h1>
                     <p class="sectionIndex3_2p">Contactame</p>
                 </div>
@@ -151,7 +171,7 @@
             </div>
 
             <div class="footerDiv2">
-                <p class="footerDiv2p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore expedita, excepturi hic porro, eum cupiditate animi nisi iusto facere placeat voluptate quibusdam corrupti distinctio! Dolores praesentium ab sit accusantium tempora.</p>
+                <p class="footerDiv2p">Derechos reservados</p>
             </div>
 
             <div class="footerDiv3">
@@ -167,5 +187,6 @@
             </div>
         </footer>
 
+        <script src="index.js"></script>
 </body>
 </html>
