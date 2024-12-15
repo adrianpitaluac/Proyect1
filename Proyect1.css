@@ -279,7 +279,7 @@ body{
 
         }
     }
-    @media screen and (min-width: 321px) and (max-width: 481px){
+    @media screen and (min-width: 321px) and (max-width: 480px){
         .footer{
             height: 120vh;
             grid-template-areas: "a b"
