@@ -3332,7 +3332,6 @@ html body{
     background-color: rgb(0, 0, 0);
     /* margin: 20px; */
     /* border: solid green 5px; */
-    padding: 20px;
     color: white;
     justify-content: space-evenly;
 
@@ -3384,20 +3383,11 @@ html body{
         text-align: start;
         border: solid red 2px;
     }
-    .footerDiv3p{
-        width: 100%;
-        height: 60%;
-        margin: 10px;
-        padding: 10px;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        text-align: start;
-    }
         .footerLogo{
             height: 100%;
-
         }
+
+
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .footer{
             grid-template-columns: 25% 25% 25% 25%;
@@ -3477,7 +3467,6 @@ html body{
         .footerDiv1{
             grid-area: a;
             background-color: greenyellow;
-            padding: 5px;
             display: flex;
         }
         .footerDiv2{
