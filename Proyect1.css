@@ -131,216 +131,6 @@ html body{
 
 /* -------------------------------------- */
 
-/* ---------------- FOOTER --------------- */
-.footer{
-    height: 70vh;
-    display: grid;
-    grid-template-areas: "1 2 3 4"
-                         "a a a a";
-    grid-template-columns: 40% 20% 20% 20%;
-    grid-template-rows: 70% 30%;
-    column-gap: 5px;
-    row-gap: 5px;
-    background-color: rgb(0, 0, 0);
-    /* margin: 20px; */
-    /* border: solid green 5px; */
-    padding: 20px;
-    color: white;
-    justify-content: space-evenly;
-
-}
-    .footerDiv1{
-        grid-area: "1";
-        border: solid white 5px; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .footerDiv2{
-        grid-area: "2";
-        border: solid white 5px; 
-        display: flex;
-    }
-    .footerDiv3{
-        grid-area: "3";
-        border: solid white 5px; 
-        display: flex;
-    }
-    .footerDiv4{
-        grid-area: "4";
-        border: solid white 5px; 
-        display: flex;
-    }
-    .footerDiv5{
-        grid-area: a;
-        border: solid white 5px; 
-        display: flex;
-    }
-    .footerDiv1p{
-        width: 100%;
-        height: 90%;
-        margin: 10px;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .footerDiv2p{
-        width: 100%;
-        height: 90%;
-        margin: 10px;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: start;
-        border: solid red 2px;
-    }
-    .footerDiv3p{
-        width: 100%;
-        height: 60%;
-        margin: 10px;
-        padding: 10px;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        text-align: start;
-    }
-        .footerLogo{
-            height: 100%;
-
-        }
-    @media screen and (min-width: 768px) and (max-width: 1023px){
-        .footer{
-            grid-template-columns: 25% 25% 25% 25%;
-        }
-    }
-    @media screen and (min-width: 601px) and (max-width: 767px){
-        .footer{
-            grid-template-areas: "a a a"
-                                 "b c d"
-                                 "e e e";
-            grid-template-columns: 30% 30% 30%;
-            grid-template-rows: 10% 70% 20%;
-        }
-        .footerDiv1{
-            grid-area: a;
-        }
-        .footerDiv2{
-            grid-area: b;
-        }
-        .footerDiv3{
-            grid-area: c;
-        }
-        .footerDiv4{
-            grid-area: d;
-        }
-        .footerDiv5{
-            grid-area: e;
-        }
-        .footerLogo{
-            height: 90%;
-            /* width: 50%; */
-
-        }
-    }
-    @media screen and (min-width: 481px) and (max-width: 600px){
-        .footer{
-            height: 90vh;
-            grid-template-areas: "a b"
-                                 "c c"
-                                 "d d"
-                                 "e e";
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 25% 25% 25% 25%;
-        }
-        .footerDiv1{
-            grid-area: a;
-        }
-        .footerDiv2{
-            grid-area: b;
-        }
-        .footerDiv3{
-            grid-area: c;
-        }
-        .footerDiv4{
-            grid-area: d;
-        }
-        .footerDiv5{
-            grid-area: e;
-        }
-        .footerLogo{
-            height: 30%;
-            /* width: 50%; */
-
-        }
-    }
-    @media screen and (min-width: 321px) and (max-width: 480px){
-        .footer{
-            height: 120vh;
-            grid-template-areas: "a b"
-                                 "c c"
-                                 "d d"
-                                 "e e";
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 25% 25% 25% 25%;
-            background-color: pink;
-        }
-        .footerDiv1{
-            grid-area: a;
-            background-color: greenyellow;
-            padding: 5px;
-        }
-        .footerDiv2{
-            grid-area: b;
-        }
-        .footerDiv3{
-            grid-area: c;
-        }
-        .footerDiv4{
-            grid-area: d;
-        }
-        .footerDiv5{
-            grid-area: e;
-        }
-        .footerLogo{
-            height: 90%;
-            /* width: 50%; */
-        }
-    }
-    @media screen and (min-width: 0px) and (max-width: 320px){
-        .footer{
-            height: 120vh;
-            grid-template-areas: "a b"
-                                 "c c"
-                                 "d d"
-                                 "e e";
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 25% 25% 25% 25%;
-        }
-        .footerDiv1{
-            grid-area: a;
-        }
-        .footerDiv2{
-            grid-area: b;
-        }
-        .footerDiv3{
-            grid-area: c;
-        }
-        .footerDiv4{
-            grid-area: d;
-        }
-        .footerDiv5{
-            grid-area: e;
-        }
-        .footerLogo{
-            height: 30%;
-            /* width: 50%; */
-
-        }
-    }
-/* -------------------------------------- */
-
 /* ................................................................................... */
 
 
@@ -3528,3 +3318,214 @@ html body{
 /* ----------- */
 
 /* ......................................  CONTACT  ............................................. */
+
+/* ---------------- FOOTER --------------- */
+.footer{
+    height: 70vh;
+    display: grid;
+    grid-template-areas: "1 2 3 4"
+                         "a a a a";
+    grid-template-columns: 40% 20% 20% 20%;
+    grid-template-rows: 70% 30%;
+    column-gap: 5px;
+    row-gap: 5px;
+    background-color: rgb(0, 0, 0);
+    /* margin: 20px; */
+    /* border: solid green 5px; */
+    padding: 20px;
+    color: white;
+    justify-content: space-evenly;
+
+}
+    .footerDiv1{
+        grid-area: "1";
+        border: solid white 5px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerDiv2{
+        grid-area: "2";
+        border: solid white 5px; 
+        display: flex;
+    }
+    .footerDiv3{
+        grid-area: "3";
+        border: solid white 5px; 
+        display: flex;
+    }
+    .footerDiv4{
+        grid-area: "4";
+        border: solid white 5px; 
+        display: flex;
+    }
+    .footerDiv5{
+        grid-area: a;
+        border: solid white 5px; 
+        display: flex;
+    }
+    .footerDiv1p{
+        width: 100%;
+        height: 90%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerDiv2p{
+        width: 100%;
+        height: 90%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        border: solid red 2px;
+    }
+    .footerDiv3p{
+        width: 100%;
+        height: 60%;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: start;
+    }
+        .footerLogo{
+            height: 100%;
+
+        }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        .footer{
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+    }
+    @media screen and (min-width: 601px) and (max-width: 767px){
+        .footer{
+            grid-template-areas: "a a a"
+                                 "b c d"
+                                 "e e e";
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 10% 70% 20%;
+        }
+        .footerDiv1{
+            grid-area: a;
+        }
+        .footerDiv2{
+            grid-area: b;
+        }
+        .footerDiv3{
+            grid-area: c;
+        }
+        .footerDiv4{
+            grid-area: d;
+        }
+        .footerDiv5{
+            grid-area: e;
+        }
+        .footerLogo{
+            height: 90%;
+            /* width: 50%; */
+
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 600px){
+        .footer{
+            height: 90vh;
+            grid-template-areas: "a b"
+                                 "c c"
+                                 "d d"
+                                 "e e";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 25% 25% 25% 25%;
+        }
+        .footerDiv1{
+            grid-area: a;
+        }
+        .footerDiv2{
+            grid-area: b;
+        }
+        .footerDiv3{
+            grid-area: c;
+        }
+        .footerDiv4{
+            grid-area: d;
+        }
+        .footerDiv5{
+            grid-area: e;
+        }
+        .footerLogo{
+            height: 30%;
+            /* width: 50%; */
+
+        }
+    }
+    @media screen and (min-width: 321px) and (max-width: 480px){
+        .footer{
+            height: 120vh;
+            grid-template-areas: "a b"
+                                 "c c"
+                                 "d d"
+                                 "e e";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 25% 25% 25% 25%;
+            background-color: pink;
+        }
+        .footerDiv1{
+            grid-area: a;
+            background-color: greenyellow;
+            padding: 5px;
+            display: flex;
+        }
+        .footerDiv2{
+            grid-area: b;
+        }
+        .footerDiv3{
+            grid-area: c;
+        }
+        .footerDiv4{
+            grid-area: d;
+        }
+        .footerDiv5{
+            grid-area: e;
+        }
+        .footerLogo{
+            height: 20%;
+            /* width: 50%; */
+        }
+    }
+    @media screen and (min-width: 0px) and (max-width: 320px){
+        .footer{
+            height: 120vh;
+            grid-template-areas: "a b"
+                                 "c c"
+                                 "d d"
+                                 "e e";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 25% 25% 25% 25%;
+        }
+        .footerDiv1{
+            grid-area: a;
+        }
+        .footerDiv2{
+            grid-area: b;
+        }
+        .footerDiv3{
+            grid-area: c;
+        }
+        .footerDiv4{
+            grid-area: d;
+        }
+        .footerDiv5{
+            grid-area: e;
+        }
+        .footerLogo{
+            height: 100%;
+            /* width: 50%; */
+
+        }
+    }
+/* -------------------------------------- */
