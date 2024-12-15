@@ -145,7 +145,7 @@ html body{
     grid-template-rows: 70% 30%;
     column-gap: 5px;
     row-gap: 5px;
-    background-color: pink;
+    background-color: rgb(0, 0, 0);
     /* margin: 20px; */
     /* border: solid green 5px; */
     padding: 20px;
@@ -198,6 +198,7 @@ html body{
         justify-content: center;
         align-items: center;
         text-align: start;
+        border: solid red 2px;
     }
     .footerDiv3p{
         width: 100%;
@@ -288,6 +289,7 @@ html body{
                                  "e e";
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: 25% 25% 25% 25%;
+            background-color: pink;
         }
         .footerDiv1{
             grid-area: a;
