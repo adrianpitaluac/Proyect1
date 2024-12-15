@@ -26,8 +26,9 @@
 a:visited{
     color: white
 }
-body{
+html body{
     background-color: white;
+    overflow-x: hidden;
 }
 /* img {
     width: 100%;
