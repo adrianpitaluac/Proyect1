@@ -3336,10 +3336,10 @@ html body{
     column-gap: 5px;
     row-gap: 5px;
     background-color: rgb(0, 0, 0);
-    /* margin: 20px; */
-    /* border: solid green 5px; */
+    border: solid white 20px;
     color: white;
     justify-content: space-evenly;
+    padding: 10px;
 
 }
     .footerDiv1{
@@ -3375,12 +3375,13 @@ html body{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0px;
     }
     .footerDiv2p{
         width: 100%;
         height: 100%;
-        /*margin: 10px;
-        padding: 10px;*/
+        margin: 0px;
+        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3396,6 +3397,10 @@ html body{
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .footer{
             grid-template-columns: 25% 25% 25% 25%;
+        }
+        .footerLogo{
+            max-width: 70%;
+
         }
     }
     @media screen and (min-width: 601px) and (max-width: 767px){
@@ -3515,6 +3520,9 @@ html body{
         }
         .footerDiv5{
             grid-area: e;
+        }
+        .footerDiv2p{
+            padding: 0px;
         }
         .footerLogo{
             max-width: 50%; 
