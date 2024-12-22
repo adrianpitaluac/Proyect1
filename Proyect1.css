@@ -58,6 +58,8 @@ html body{
         background-color: black;
         justify-content: space-between;
         padding: 1rem;
+        position: sticky;
+        top:0px
     }
     .navLogoDiv{
         width: 50px;
@@ -108,20 +110,23 @@ html body{
             visibility: hidden;
             display: flex;
             flex-direction: column;
-            height: 100%;
             position: absolute;
             top:0;
             right:0;
             background-color: black;
             align-items: end;
             justify-content: start;
-            padding: 4rem;
+            padding: 20px;
             box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
             gap: 4rem;
+            width:120px;
+            max-width: 120px;
+            height: 100vh;
         }
         .navNew.visible{
             opacity: 1;
             visibility: visible;
+            background-color: red;
         }
         .navUl{
             flex-direction: column;
