@@ -114,7 +114,7 @@ html body{
             top:0;
             right:0;
             background-color: black;
-            align-items: end;
+            align-items: center;
             justify-content: start;
             padding: 20px;
             box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
