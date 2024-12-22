@@ -117,7 +117,7 @@ html body{
             justify-content: start;
             padding: 4rem;
             box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-            gap: 1rem;
+            gap: 4rem;
         }
         .navNew.visible{
             opacity: 1;
@@ -321,7 +321,7 @@ html body{
         .sectionIndex1Divp{
             border: solid black 1px;
             padding: 10px;
-            width: 90%;
+            width: 100%;
             height: 80%;
             text-align: center;
         }
@@ -356,7 +356,7 @@ html body{
 
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .sectionIndex1{
-            height: 65vh;
+            height: 80vh;
         }
         #sectionIndex1Div1{
             border: solid yellow 5px;
@@ -564,7 +564,7 @@ html body{
         .sectionIndex2Divp{
             border: solid black 1px;
             padding: 10px;
-            width: 90%;
+            width: 100%;
             height: 80%;
             text-align: center;
         }
@@ -596,7 +596,7 @@ html body{
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionIndex2{
-                height: 60vh;
+                height: 80vh;
             }
             #sectionIndex2Div1{
                 border: solid yellow 5px;
@@ -729,7 +729,7 @@ html body{
 
 /* ------ SECTION 3----- */
 .sectionIndex3{
-    height: 60vh;
+    height: 70vh;
     display: grid;
     grid-template-areas: "1 2"
                          "3 4"
@@ -804,12 +804,13 @@ html body{
             margin: 0px;
             padding: 10px;
             width: 90%;
-            height: 50%;
+            height: 70%;
             text-align: start;
+            background-color: blue;
         }
     @media screen and (min-width: 1024px) and (max-width: 1199px){
         .sectionIndex3{
-            height: 70vh;
+            height: 90vh;
         }
         #sectionIndex3Div1{
             border: solid pink 5px;
@@ -833,7 +834,7 @@ html body{
 
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .sectionIndex3{
-            height: 80vh;
+            height: 100vh;
         }
         #sectionIndex3Div1{
             border: solid yellow 5px;
