@@ -91,6 +91,12 @@ html body{
         height: 50px;
         width: 70px;
     }
+    li:hover{
+        background-color: blue;
+    }
+    li:active{
+        background-color: pink;
+    }
     .navButtonAbrir{
         display: none;
     }
@@ -120,7 +126,7 @@ html body{
             visibility: hidden;
             display: flex;
             flex-direction: column;
-            position: absolute;
+            position: fixed;
             top:0;
             right:0;
             background-color: black;
@@ -132,11 +138,13 @@ html body{
             width:120px;
             max-width: 120px;
             height: 100vh;
+            z-index: 1000;
         }
         .navNew.visible{
             opacity: 1;
             visibility: visible;
             background-color: red;
+            transition: transform 0.3s ease-in-out;
         }
         .navUl{
             flex-direction: column;
@@ -166,7 +174,7 @@ html body{
             visibility: hidden;
             display: flex;
             flex-direction: column;
-            position: absolute;
+            position: fixed;
             top:0;
             right:0;
             background-color: black;
@@ -178,6 +186,7 @@ html body{
             width:120px;
             max-width: 120px;
             height: 100vh;
+            z-index: 1000;
         }
         .navNew.visible{
             opacity: 1;
@@ -399,6 +408,14 @@ html body{
             max-height: 100%;
 
         }
+        .sectionIndexDiv4img:hover{
+            transform: scale(1.5);
+            transition: 0.5s ease;
+            box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 1);
+            cursor: pointer;
+
+        }
+
     @media screen and (min-width: 1024px) and (max-width: 1199px){
         #sectionIndex1Div1{
             border: solid pink 5px;
