@@ -913,7 +913,6 @@ html body{
             border: solid pink 5px;
         }
     }
-
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .sectionIndex3{
             height: 100vh;
@@ -940,7 +939,6 @@ html body{
             height: 70%;
         }
     }
-
     @media screen and (min-width: 601px) and (max-width: 767px){
         .sectionIndex3{
             height: 120vh;
@@ -1451,6 +1449,59 @@ html body{
         .headerServicesPic{
             height: 100%;
         }
+        
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            #headerServices{
+                border: solid pink 20px;
+            }
+            .headerServicesDiv{
+                border: solid pink 20px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            #headerServices{
+                border: solid yellow 20px;
+                height: 80vh;
+            }
+            .headerServicesDiv{
+                border: solid yellow 20px;
+            }
+            .headerServicesH1{
+                height: 30%;
+            }
+            .headerServicesp1{
+                height: 10%;
+            }
+            .headerServicesp2{
+                height: 30%;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            #headerServices{
+                border: solid red 20px;
+            }
+            .headerServicesDiv{
+                border: solid red 20px;
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 600px){
+            #headerServices{
+                border: solid yellowgreen 20px;
+            }
+            .headerServicesDiv{
+                border: solid yellowgreen 20px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 320px){
+            #headerServices{
+                border: solid orange 20px;
+            }
+            .headerServicesDiv{
+                border: solid orange 20px;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+        }
 /* -------------------------------------- */
 
 /* ------ SECTION 1 ----- */
@@ -1514,15 +1565,107 @@ html body{
             height: 80%;
             text-align: center;
         }
-        .sectionServices1Div4p{
-            border: solid black 1px;
-            padding: 10px;
-            width: 90%;
-            height: 90%;
-            text-align: center;
-        }
         .sectionServices1Pic{
             width: 100%
+        }
+        
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionServices1{
+                border: solid pink 20px;
+            }
+            #sectionServices1Div1{
+                border: solid pink 20px;
+            }
+            #sectionServices1Div2{
+                border: solid pink 20px;
+            }
+            #sectionServices1Div3{
+                border: solid pink 20px;
+            }
+            #sectionServices1Div4{
+                border: solid pink 20px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionServices1{
+                height: 70vh;
+                border: solid yellow 20px;
+                padding: 20px;
+            }
+            #sectionServices1Div1{
+                border: solid yellow 20px;
+            }
+            #sectionServices1Div2{
+                border: solid yellow 20px;
+            }
+            #sectionServices1Div3{
+                border: solid yellow 20px;
+            }
+            #sectionServices1Div4{
+                border: solid yellow 20px;
+                padding: 0px;
+            }
+            .sectionServices1Divp{
+                height: 90%;
+                width: 95%;
+            }
+            .sectionServices1Pic{
+                height: 100%;
+                width: 170%;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionServices1{
+                border: solid red 20px;
+            }
+            #sectionServices1Div1{
+                border: solid red 20px;
+            }
+            #sectionServices1Div2{
+                border: solid red 20px;
+            }
+            #sectionServices1Div3{
+                border: solid red 20px;
+            }
+            #sectionServices1Div4{
+                border: solid red 20px;
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 600px){
+            .sectionServices1{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices1Div1{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices1Div2{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices1Div3{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices1Div4{
+                border: solid yellowgreen 20px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 320px){
+            .sectionServices1{
+                border: solid orange 20px;
+            }
+            #sectionServices1Div1{
+                border: solid orange 20px;
+            }
+            #sectionServices1Div2{
+                border: solid orange 20px;
+            }
+            #sectionServices1Div3{
+                border: solid orange 20px;
+            }
+            #sectionServices1Div4{
+                border: solid orange 20px;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
         }
 /* ----------- */
 
@@ -1589,6 +1732,106 @@ html body{
             height: 50%;
             text-align: start;
         }
+        .sectionServices2Divh{
+            border: solid black 1px;
+            width: 90%;
+            text-align: center;
+        }
+        
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionServices2{
+                border: solid pink 20px;
+            }
+            #sectionServices2Div1{
+                border: solid pink 20px;
+            }
+            #sectionServices2Div2{
+                border: solid pink 20px;
+            }
+            #sectionServices2Div3{
+                border: solid pink 20px;
+            }
+            #sectionServices2Div4{
+                border: solid pink 20px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionServices2{
+                border: solid yellow 20px;
+            }
+            #sectionServices2Div1{
+                border: solid yellow 20px;
+            }
+            #sectionServices2Div2{
+                border: solid yellow 20px;
+            }
+            #sectionServices2Div3{
+                border: solid yellow 20px;
+            }
+            #sectionServices2Div4{
+                border: solid yellow 20px;
+            }
+            .sectionServices2Divp{
+                height: 70%;
+                width: 95%;
+            }
+            .sectionServices2Divh{
+                width: 95%;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionServices2{
+                border: solid red 20px;
+            }
+            #sectionServices2Div1{
+                border: solid red 20px;
+            }
+            #sectionServices2Div2{
+                border: solid red 20px;
+            }
+            #sectionServices2Div3{
+                border: solid red 20px;
+            }
+            #sectionServices2Div4{
+                border: solid red 20px;
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 600px){
+            .sectionServices2{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices2Div1{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices2Div2{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices2Div3{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices2Div4{
+                border: solid yellowgreen 20px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 320px){
+            .sectionServices2{
+                border: solid orange 20px;
+            }
+            #sectionServices2Div1{
+                border: solid orange 20px;
+            }
+            #sectionServices2Div2{
+                border: solid orange 20px;
+            }
+            #sectionServices2Div3{
+                border: solid orange 20px;
+            }
+            #sectionServices2Div4{
+                border: solid orange 20px;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+        }
 /* ----------- */
 
 /* ------ SECTION 2.5----- */
@@ -1598,13 +1841,15 @@ html body{
     grid-template-areas: "a a a a"
                          "2 3 4 5";
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 30% 60%;
-    column-gap: 20px;
+    grid-template-rows: 40% 60%;
+    column-gap: 10px;
     row-gap: 10px;
     background-color: rgb(247, 112, 112);
     /* margin: 20px; */
     border: solid rgb(255, 17, 0) 20px;
     padding: 10px;
+    justify-content: space-around;
+    align-items: center;
 }
     #sectionServices2_5Div1{
         grid-area: a;
@@ -1670,6 +1915,140 @@ html body{
             height: 60%;
             text-align: start;
         }
+        
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionServices2_5{
+                border: solid pink 20px;
+                height: 75vh;
+                padding: 20px;
+            }
+            #sectionServices2_5Div1{
+                border: solid pink 20px;
+            }
+            #sectionServices2_5Div2{
+                border: solid pink 20px;
+            }
+            #sectionServices2_5Div3{
+                border: solid pink 20px;
+            }
+            #sectionServices2_5Div4{
+                border: solid pink 20px;
+            }
+            #sectionServices2_5Div5{
+                border: solid pink 20px;
+            }
+            .sectionServices2_5Divh{
+                height: 30%;
+                width: 90%;
+            }
+            .sectionServices2_5Divp{
+                margin: 10px;
+                width: 90%;
+                height: 80%;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionServices2_5{
+                border: solid yellow 20px;
+                height: 90vh;
+                grid-template-areas: "a a"
+                                     "2 3"
+                                     "4 5";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 30% 35% 35%;
+                padding: 20px;
+            }
+            #sectionServices2_5Div1{
+                border: solid yellow 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #sectionServices2_5Div2{
+                border: solid yellow 20px;
+            }
+            #sectionServices2_5Div3{
+                border: solid yellow 20px;
+            }
+            #sectionServices2_5Div4{
+                border: solid yellow 20px;
+            }
+            #sectionServices2_5Div5{
+                border: solid yellow 20px;
+            }
+            .sectionServices2_5Divh{
+                width: 90%;
+                height: 20%;
+                margin: 5px;
+            }
+            .sectionServices2_5Divp{
+                width: 90%;
+                height: 70%;
+                margin: 5px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionServices2_5{
+                border: solid red 20px;
+            }
+            #sectionServices2_5Div1{
+                border: solid red 20px;
+            }
+            #sectionServices2_5Div2{
+                border: solid red 20px;
+            }
+            #sectionServices2_5Div3{
+                border: solid red 20px;
+            }
+            #sectionServices2_5Div4{
+                border: solid red 20px;
+            }
+            #sectionServices2_5Div5{
+                border: solid red 20px;
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 600px){
+            .sectionServices2_5{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices2_5Div1{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices2_5Div2{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices2_5Div3{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices2_5Div4{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices2_5Div5{
+                border: solid yellowgreen 20px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 320px){
+            .sectionServices2_5{
+                border: solid orange 20px;
+            }
+            #sectionServices2_5Div1{
+                border: solid orange 20px;
+            }
+            #sectionServices2_5Div2{
+                border: solid orange 20px;
+            }
+            #sectionServices2_5Div3{
+                border: solid orange 20px;
+            }
+            #sectionServices2_5Div4{
+                border: solid orange 20px;
+            }
+            #sectionServices2_5Div5{
+                border: solid orange 20px;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+        }
 /* ----------- */
 
 /* ------ SECTION 3----- */
@@ -1733,15 +2112,115 @@ html body{
             height: 80%;
             text-align: center;
         }
-        .sectionServices3Div4p{
-            border: solid black 1px;
-            padding: 10px;
-            width: 90%;
-            height: 90%;
-            text-align: center;
-        }
         .sectionServices3Pic{
             height: 100%;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionServices3{
+                border: solid pink 20px;
+                grid-template-rows: 0.5fr 0.7fr 1.3fr;
+            }
+            #sectionServices3Div1{
+                border: solid pink 20px;
+            }
+            #sectionServices3Div2{
+                border: solid pink 20px;
+            }
+            #sectionServices3Div3{
+                border: solid pink 20px;
+            }
+            #sectionServices3Div4{
+                border: solid pink 20px;
+            }
+            .sectionServices3Divh{
+                height: 70%;
+            }
+            .sectionServices3Divp{
+                border: solid black 1px;
+                padding: 10px;
+                width: 90%;
+                height: 90%;
+                text-align: center;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionServices3{
+                border: solid yellow 20px;
+                padding: 30px;
+                grid-template-rows: 0.5fr 0.8fr 1.2fr;
+            }
+            #sectionServices3Div1{
+                border: solid yellow 20px;
+            }
+            #sectionServices3Div2{
+                border: solid yellow 20px;
+            }
+            #sectionServices3Div3{
+                border: solid yellow 20px;
+            }
+            #sectionServices3Div4{
+                border: solid yellow 20px;
+            }
+            .sectionServices3Divh{
+                height: 50%;
+            }
+            .sectionServices3Divp{
+                height: 90%;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionServices3{
+                border: solid red 20px;
+            }
+            #sectionServices3Div1{
+                border: solid red 20px;
+            }
+            #sectionServices3Div2{
+                border: solid red 20px;
+            }
+            #sectionServices3Div3{
+                border: solid red 20px;
+            }
+            #sectionServices3Div4{
+                border: solid red 20px;
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 600px){
+            .sectionServices3{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices3Div1{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices3Div2{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices3Div3{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices3Div4{
+                border: solid yellowgreen 20px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 320px){
+            .sectionServices3{
+                border: solid orange 20px;
+            }
+            #sectionServices3Div1{
+                border: solid orange 20px;
+            }
+            #sectionServices3Div2{
+                border: solid orange 20px;
+            }
+            #sectionServices3Div3{
+                border: solid orange 20px;
+            }
+            #sectionServices3Div4{
+                border: solid orange 20px;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
         }
 /* ----------- */
 
@@ -1802,7 +2281,102 @@ html body{
             text-align: start;
         }
         .sectionServices3_2Pic{
-            width:100%;
+            height: 100%;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionServices3_2{
+                border: solid pink 20px;
+                height: 90vh;
+            }
+            #sectionServices3_2Div1{
+                border: solid pink 20px;
+            }
+            #sectionServices3_2Div2{
+                border: solid pink 20px;
+            }
+            #sectionServices3_2Div4{
+                border: solid pink 20px;
+            }
+            .sectionServices3_2Divh{
+                height: 70%;
+                width: 90%;
+            }
+            .sectionServices3_2Divp{
+                margin: 10px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionServices3_2{
+                border: solid yellow 20px;
+                height: 90vh;
+                grid-template-columns: 60% 40%;
+            }
+            #sectionServices3_2Div1{
+                border: solid yellow 20px;
+            }
+            #sectionServices3_2Div2{
+                border: solid yellow 20px;
+
+            }
+            #sectionServices3_2Div4{
+                border: solid yellow 20px;
+                overflow: hidden;
+            }
+            .sectionServices3_2Divh{
+                height: 50%;
+                width: 90%;
+            }
+            .sectionServices3_2Divp{
+                margin: 10px;
+            }
+            .sectionServices3_2Pic{
+                height: 50%;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionServices3_2{
+                border: solid red 20px;
+            }
+            #sectionServices3_2Div1{
+                border: solid red 20px;
+            }
+            #sectionServices3_2Div2{
+                border: solid red 20px;
+            }
+            #sectionServices3_2Div4{
+                border: solid red 20px;
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 600px){
+            .sectionServices3_2{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices3_2Div1{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices3_2Div2{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices3_2Div4{
+                border: solid yellowgreen 20px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 320px){
+            .sectionServices3_2{
+                border: solid orange 20px;
+            }
+            #sectionServices3_2Div1{
+                border: solid orange 20px;
+            }
+            #sectionServices3_2Div2{
+                border: solid orange 20px;
+            }
+            #sectionServices3_2Div4{
+                border: solid orange 20px;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
         }
 
 /* ----------- */
@@ -1842,6 +2416,7 @@ html body{
     border: solid rgb(255, 17, 0) 5px;
     margin: 1px;
     padding: 0px;
+    overflow: hidden;
 }
     .sectionServices3_5Div1{
         border: solid orangered 5px;
@@ -1885,6 +2460,99 @@ html body{
         .sectionServices3_5Pic{
             height:100%;
         }
+
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionServices3_5{
+                border: solid pink 20px;
+            }
+            .sectionServices3_5Section1{
+                border: solid pink 20px;
+            }
+            .sectionServices3_5Section2{
+                border: solid pink 20px;
+            }
+            .sectionServices3_5Div1{
+                border: solid pink 20px;
+            }
+            .sectionServices3_5Div2{
+                border: solid pink 5px;
+            }
+            .sectionServices3_5Pic{
+                height: 100%;
+            }
+
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionServices3_5{
+                border: solid yellow 20px;
+            }
+            .sectionServices3_5Section1{
+                border: solid yellow 20px;
+            }
+            .sectionServices3_5Section2{
+                border: solid yellow 20px;
+            }
+            .sectionServices3_5Div1{
+                border: solid yellow 20px;
+            }
+            .sectionServices3_5Div2{
+                border: solid yellow 5px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionServices3_5{
+                border: solid red 20px;
+            }
+            .sectionServices3_5Section1{
+                border: solid red 20px;
+            }
+            .sectionServices3_5Section2{
+                border: solid red 20px;
+            }
+            .sectionServices3_5Div1{
+                border: solid red 20px;
+            }
+            .sectionServices3_5Div2{
+                border: solid red 5px;
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 600px){
+            .sectionServices3_5{
+                border: solid yellowgreen 20px;
+            }
+            .sectionServices3_5Section1{
+                border: solid yellowgreen 20px;
+            }
+            .sectionServices3_5Section2{
+                border: solid yellowgreen 20px;
+            }
+            .sectionServices3_5Div1{
+                border: solid yellowgreen 20px;
+            }
+            .sectionServices3_5Div2{
+                border: solid yellowgreen 5px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 320px){
+            .sectionServices3_5{
+                border: solid orange 20px;
+            }
+            .sectionServices3_5Section1{
+                border: solid orange 20px;
+            }
+            .sectionServices3_5Section2{
+                border: solid orange 20px;
+            }
+            .sectionServices3_5Div1{
+                border: solid orange 20px;
+            }
+            .sectionServices3_5Div2{
+                border: solid orange 5px;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+        }
+        
 /* ----------- */
 
 
@@ -1933,6 +2601,138 @@ html body{
             align-items: center;
         }
 
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionServices3_7{
+                border: solid pink 20px;
+            }
+            .sectionServices3_7Div{
+                border: solid pink 20px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionServices3_7{
+                border: solid yellow 20px;
+            }
+            .sectionServices3_7Div{
+                border: solid yellow 20px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionServices3_7{
+                border: solid red 20px;
+            }
+            .sectionServices3_7Div{
+                border: solid red 20px;
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 600px){
+            .sectionServices3_7{
+                border: solid yellowgreen 20px;
+            }
+            .sectionServices3_7Div{
+                border: solid yellowgreen 20px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 320px){
+            .sectionServices3_7{
+                border: solid orange 20px;
+            }
+            .sectionServices3_7Div{
+                border: solid orange 20px;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+        }
+/* ----------- */
+
+
+/* ------ SECTION 3.9 ----- */
+
+.sectionServices3_9{
+    height: 60vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 112, 112);
+    /* margin: 20px; */
+    border: solid rgb(255, 17, 0) 20px;
+    padding: 10px;
+}
+    .sectionServices3_9Div{
+        border: solid rgb(255, 17, 0) 5px;
+        height: 60%;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+        .sectionServices3_9H1{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .sectionServices3_9H3{
+            border: solid black 1px;
+            margin: 20px;
+            padding: 10px;
+            width: 50%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionServices3_9{
+                border: solid pink 20px;
+            }
+            .sectionServices3_9Div{
+                border: solid pink 20px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionServices3_9{
+                border: solid yellow 20px;
+            }
+            .sectionServices3_9Div{
+                border: solid yellow 20px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionServices3_9{
+                border: solid red 20px;
+            }
+            .sectionServices3_9Div{
+                border: solid red 20px;
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 600px){
+            .sectionServices3_9{
+                border: solid yellowgreen 20px;
+            }
+            .sectionServices3_9Div{
+                border: solid yellowgreen 20px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 320px){
+            .sectionServices3_9{
+                border: solid orange 20px;
+            }
+            .sectionServices3_9Div{
+                border: solid orange 20px;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+        }
 /* ----------- */
 
 
@@ -1985,6 +2785,68 @@ html body{
         }
         .sectionServices4Pic{
             height:100%;
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionServices4{
+                border: solid pink 20px;
+                height: 40vh;
+            }
+            #sectionServices4Div1{
+                border: solid pink 20px;
+            }
+            #sectionServices4Div2{
+                border: solid pink 20px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionServices4{
+                border: solid yellow 20px;
+            }
+            #sectionServices4Div1{
+                border: solid yellow 20px;
+            }
+            #sectionServices4Div2{
+                border: solid yellow 20px;
+            }
+            .sectionServices4Div1p{
+                height: 60%;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionServices4{
+                border: solid red 20px;
+            }
+            #sectionServices4Div1{
+                border: solid red 20px;
+            }
+            #sectionServices4Div2{
+                border: solid yellow  20px;
+            }
+        }
+        @media screen and (min-width: 321px) and (max-width: 600px){
+            .sectionServices4{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices4Div1{
+                border: solid yellowgreen 20px;
+            }
+            #sectionServices4Div2{
+                border: solid yellow  20px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 320px){
+            .sectionServices4{
+                border: solid orange 20px;
+            }
+            #sectionServices4Div1{
+                border: solid orange 20px;
+            }
+            #sectionServices4Div2{
+                border: solid yellow 20px;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
         }
 /* ----------- */    
 
