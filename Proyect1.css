@@ -1479,28 +1479,59 @@ html body{
         @media screen and (min-width: 601px) and (max-width: 767px){
             #headerServices{
                 border: solid red 20px;
+                height: 95vh;
+                flex-direction: column-reverse;
+                padding: 0px;
             }
             .headerServicesDiv{
                 border: solid red 20px;
+                width: 100%;
+            }
+            .headerServicesPic{
+                max-width: 100%;
+                height: 180%;
             }
         }
-        @media screen and (min-width: 321px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px){
             #headerServices{
                 border: solid yellowgreen 20px;
+                height: 170vh;
+                flex-direction: column-reverse;
             }
             .headerServicesDiv{
-                border: solid yellowgreen 20px;
+                border: solid yellowgreen 10px;
+                width: 100%;
             }
-        }
-        @media screen and (min-width: 0px) and (max-width: 320px){
-            #headerServices{
-                border: solid orange 20px;
+            .headerServicesp1{
+                border: solid black 1px;
+                margin: 0px;
+                padding: 5px;
+                width: 95%;
+                height: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
-            .headerServicesDiv{
-                border: solid orange 20px;
+            .headerServicesH1{
+                width: 95%;
+                height: 40%;
+    
+            }
+            .headerServicesp2{
+                border: solid black 1px;
+                margin: 10px;
+                padding: 10px;
+                width: 95%;
+                height: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+            #headerServices{
+                height: 600px;
+            }
         }
 /* -------------------------------------- */
 
@@ -1515,7 +1546,7 @@ html body{
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
-    background-color: rgb(247, 112, 112);
+    background-color: lightblue;
     /* margin: 20px; */
     border: solid rgb(255, 17, 0) 20px;
     padding: 50px;
@@ -1617,55 +1648,81 @@ html body{
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices1{
                 border: solid red 20px;
+                height: 80vh;
+                padding: 10px;
+                grid-template-areas: "1 a"
+                                     "2 a"
+                                     "b b";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 30% 45% 25%;
+                justify-content: space-around;
             }
             #sectionServices1Div1{
                 border: solid red 20px;
+                grid-area: "1";
             }
             #sectionServices1Div2{
                 border: solid red 20px;
+                grid-area: "2";
             }
             #sectionServices1Div3{
                 border: solid red 20px;
+                grid-area: b;
             }
             #sectionServices1Div4{
                 border: solid red 20px;
+                padding: 5px;
+            }
+            .sectionServices1Pic{
+                max-height: 100%;
+                width: 180%;
             }
         }
-        @media screen and (min-width: 321px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices1{
                 border: solid yellowgreen 20px;
+                height: 120vh;
+                grid-template-areas: "a"
+                                     "b"
+                                     "c"
+                                     "d";
+                grid-template-columns: 100%;
+                grid-template-rows: 15% 25% 30% 30%;
+                justify-content: center;
+                padding: 5px;
             }
             #sectionServices1Div1{
                 border: solid yellowgreen 20px;
+                grid-area: a;
             }
             #sectionServices1Div2{
                 border: solid yellowgreen 20px;
+                grid-area: d;
             }
             #sectionServices1Div3{
                 border: solid yellowgreen 20px;
+                grid-area: c;
             }
             #sectionServices1Div4{
                 border: solid yellowgreen 20px;
+                grid-area: b;
+                padding: 0px;
             }
-        }
-        @media screen and (min-width: 0px) and (max-width: 320px){
-            .sectionServices1{
-                border: solid orange 20px;
+            .sectionServices1Divh{
+                height: 70%;
             }
-            #sectionServices1Div1{
-                border: solid orange 20px;
+            .sectionServices1Divp{
+                width: 95%;
+                height: 90%;
             }
-            #sectionServices1Div2{
-                border: solid orange 20px;
-            }
-            #sectionServices1Div3{
-                border: solid orange 20px;
-            }
-            #sectionServices1Div4{
-                border: solid orange 20px;
+            .sectionServices1Pic{
+                width: 120%
             }
         }
         @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+            .sectionServices1{
+                height: 900px;
+            }
         }
 /* ----------- */
 
@@ -1716,14 +1773,6 @@ html body{
         align-items: center;
         flex-direction: column;
     }
-        .sectionServices2Div{
-            border: solid black 1px;
-            margin: 5px;
-            padding: 10px;
-            width: 90%;
-            height: 10%;
-            text-align: start;
-        }
         .sectionServices2Divp{
             border: solid black 1px;
             margin: 0px;
@@ -1782,23 +1831,52 @@ html body{
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices2{
                 border: solid red 20px;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 0px;
             }
-            #sectionServices2Div1{
-                border: solid red 20px;
-            }
-            #sectionServices2Div2{
-                border: solid red 20px;
-            }
-            #sectionServices2Div3{
-                border: solid red 20px;
-            }
-            #sectionServices2Div4{
-                border: solid red 20px;
-            }
+                #sectionServices2Div1{
+                    border: solid red 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                }
+                #sectionServices2Div2{
+                    border: solid red 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                }
+                #sectionServices2Div3{
+                    border: solid red 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                }
+                #sectionServices2Div4{
+                    border: solid red 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                }
+                    .sectionServices2Divp{
+                        width: 70%;
+                        height: 90%;
+                    }
+                    .sectionServices2Divh{
+                        width: 70%;
+                        text-align: center;
+                    }
         }
-        @media screen and (min-width: 321px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices2{
                 border: solid yellowgreen 20px;
+                height: 160vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
             #sectionServices2Div1{
                 border: solid yellowgreen 20px;
@@ -1812,25 +1890,22 @@ html body{
             #sectionServices2Div4{
                 border: solid yellowgreen 20px;
             }
-        }
-        @media screen and (min-width: 0px) and (max-width: 320px){
-            .sectionServices2{
-                border: solid orange 20px;
+            .sectionServices2Divp{
+                border: solid black 1px;
+                margin: 0px;
+                padding: 10px;
+                width: 100%;
+                height: 85%;
+                text-align: start;
             }
-            #sectionServices2Div1{
-                border: solid orange 20px;
-            }
-            #sectionServices2Div2{
-                border: solid orange 20px;
-            }
-            #sectionServices2Div3{
-                border: solid orange 20px;
-            }
-            #sectionServices2Div4{
-                border: solid orange 20px;
+            .sectionServices2Divh{
+                width: 100%;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+            .sectionServices2{
+                height: 900px;
+            }
         }
 /* ----------- */
 
@@ -1844,7 +1919,7 @@ html body{
     grid-template-rows: 40% 60%;
     column-gap: 10px;
     row-gap: 10px;
-    background-color: rgb(247, 112, 112);
+    background-color: purple;
     /* margin: 20px; */
     border: solid rgb(255, 17, 0) 20px;
     padding: 10px;
@@ -1990,6 +2065,14 @@ html body{
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices2_5{
                 border: solid red 20px;
+                height: 120vh;
+                grid-template-areas: "a a"
+                                     "2 3"
+                                     "4 5";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 25% 35% 35%;
+                justify-content: center;
+                align-items: center;
             }
             #sectionServices2_5Div1{
                 border: solid red 20px;
@@ -2007,47 +2090,57 @@ html body{
                 border: solid red 20px;
             }
         }
-        @media screen and (min-width: 321px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices2_5{
                 border: solid yellowgreen 20px;
+                height: 260vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
             #sectionServices2_5Div1{
                 border: solid yellowgreen 20px;
+                grid-area: a;
+
             }
             #sectionServices2_5Div2{
                 border: solid yellowgreen 20px;
+                grid-area: 2;
             }
             #sectionServices2_5Div3{
                 border: solid yellowgreen 20px;
+                grid-area: 3;
             }
             #sectionServices2_5Div4{
                 border: solid yellowgreen 20px;
+                grid-area: 4;
             }
             #sectionServices2_5Div5{
                 border: solid yellowgreen 20px;
+                grid-area: 5;
             }
-        }
-        @media screen and (min-width: 0px) and (max-width: 320px){
-            .sectionServices2_5{
-                border: solid orange 20px;
+            .sectionServices2_5Divh{
+                border: solid black 1px;
+                margin: 10px;
+                padding: 10px;
+                width: 90%;
+                height: 10%;
+                text-align: start;
             }
-            #sectionServices2_5Div1{
-                border: solid orange 20px;
-            }
-            #sectionServices2_5Div2{
-                border: solid orange 20px;
-            }
-            #sectionServices2_5Div3{
-                border: solid orange 20px;
-            }
-            #sectionServices2_5Div4{
-                border: solid orange 20px;
-            }
-            #sectionServices2_5Div5{
-                border: solid orange 20px;
+            .sectionServices2_5Divp{
+                border: solid black 1px;
+                margin: 10px;
+                padding: 10px;
+                width: 90%;
+                height: 80%;
+                text-align: start;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+            .sectionServices2_5{
+                height: 1500px;
+            }
         }
 /* ----------- */
 
@@ -2172,6 +2265,8 @@ html body{
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3{
                 border: solid red 20px;
+                height: 80vh;
+                padding: 10px;
             }
             #sectionServices3Div1{
                 border: solid red 20px;
@@ -2184,41 +2279,49 @@ html body{
             }
             #sectionServices3Div4{
                 border: solid red 20px;
+            }
+            .sectionServices3Divh{
+                margin: 10px;
+                padding: 0px;
+                width: 100%;
+                height: 80%;
+                align-content: end;
+            }
+            .sectionServices3Divp{
+                width: 100%;
+                height: 95%;
             }
         }
-        @media screen and (min-width: 321px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices3{
                 border: solid yellowgreen 20px;
+                height: 150vh;
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
             }
             #sectionServices3Div1{
-                border: solid yellowgreen 20px;
+                border: solid yellowgreen 5px;
             }
             #sectionServices3Div2{
-                border: solid yellowgreen 20px;
+                border: solid yellowgreen 5px;
             }
             #sectionServices3Div3{
-                border: solid yellowgreen 20px;
+                border: solid yellowgreen 5px;
             }
             #sectionServices3Div4{
-                border: solid yellowgreen 20px;
+                border: solid yellowgreen 5px;
             }
-        }
-        @media screen and (min-width: 0px) and (max-width: 320px){
-            .sectionServices3{
-                border: solid orange 20px;
+            .sectionServices3Divh{
+                width: 100%;
+                height: 80%;
             }
-            #sectionServices3Div1{
-                border: solid orange 20px;
+            .sectionServices3Divp{
+                width: 90%;
+                height: 90%;
+                padding: 5px;
             }
-            #sectionServices3Div2{
-                border: solid orange 20px;
-            }
-            #sectionServices3Div3{
-                border: solid orange 20px;
-            }
-            #sectionServices3Div4{
-                border: solid orange 20px;
-            }
+            
         }
         @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
         }
@@ -2309,7 +2412,7 @@ html body{
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionServices3_2{
                 border: solid yellow 20px;
-                height: 90vh;
+                height: 100vh;
                 grid-template-columns: 60% 40%;
             }
             #sectionServices3_2Div1{
@@ -2337,20 +2440,35 @@ html body{
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3_2{
                 border: solid red 20px;
+                height: 130vh;
+                grid-template-areas: "a a"
+                                     "b c";
+                grid-template-columns: 70% 30%;
+                grid-template-rows: 15% 85%;
             }
             #sectionServices3_2Div1{
                 border: solid red 20px;
+                grid-area: a;
             }
             #sectionServices3_2Div2{
                 border: solid red 20px;
+                grid-area: b;
             }
             #sectionServices3_2Div4{
                 border: solid red 20px;
+                grid-area: c;
+            }
+            .sectionServices3_2Divh{
+                height: 70%;
+                width: 90%;
             }
         }
-        @media screen and (min-width: 321px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices3_2{
                 border: solid yellowgreen 20px;
+                height: 200vh;
+                display: flex;
+                flex-direction: column;
             }
             #sectionServices3_2Div1{
                 border: solid yellowgreen 20px;
@@ -2361,22 +2479,14 @@ html body{
             #sectionServices3_2Div4{
                 border: solid yellowgreen 20px;
             }
-        }
-        @media screen and (min-width: 0px) and (max-width: 320px){
-            .sectionServices3_2{
-                border: solid orange 20px;
-            }
-            #sectionServices3_2Div1{
-                border: solid orange 20px;
-            }
-            #sectionServices3_2Div2{
-                border: solid orange 20px;
-            }
-            #sectionServices3_2Div4{
-                border: solid orange 20px;
+            .sectionServices3_2Divh{
+                height: 70%;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+            .sectionServices3_2{
+                height: 1200px;
+            }
         }
 
 /* ----------- */
@@ -2502,6 +2612,9 @@ html body{
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3_5{
                 border: solid red 20px;
+                height: 120vh;
+                display: flex;
+                flex-direction: column;
             }
             .sectionServices3_5Section1{
                 border: solid red 20px;
@@ -2516,15 +2629,20 @@ html body{
                 border: solid red 5px;
             }
         }
-        @media screen and (min-width: 321px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices3_5{
                 border: solid yellowgreen 20px;
+                display: flex;
+                flex-direction: column;
+                height: 150vh;
             }
             .sectionServices3_5Section1{
                 border: solid yellowgreen 20px;
+                height: 150vh;
             }
             .sectionServices3_5Section2{
                 border: solid yellowgreen 20px;
+                height: 30vh;
             }
             .sectionServices3_5Div1{
                 border: solid yellowgreen 20px;
@@ -2532,25 +2650,18 @@ html body{
             .sectionServices3_5Div2{
                 border: solid yellowgreen 5px;
             }
-        }
-        @media screen and (min-width: 0px) and (max-width: 320px){
-            .sectionServices3_5{
-                border: solid orange 20px;
-            }
-            .sectionServices3_5Section1{
-                border: solid orange 20px;
-            }
-            .sectionServices3_5Section2{
-                border: solid orange 20px;
-            }
-            .sectionServices3_5Div1{
-                border: solid orange 20px;
-            }
-            .sectionServices3_5Div2{
-                border: solid orange 5px;
+            .sectionServices3_5Pic{
+                
+                height: 200%;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+            .sectionServices3_5{
+                height: 1000px;
+            }
+            .sectionServices3_5Section1{
+                height: 1000px;
+            }
         }
         
 /* ----------- */
@@ -2620,25 +2731,21 @@ html body{
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3_7{
                 border: solid red 20px;
+                height: 70vh;
             }
             .sectionServices3_7Div{
                 border: solid red 20px;
             }
         }
-        @media screen and (min-width: 321px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices3_7{
                 border: solid yellowgreen 20px;
+                height: 70vh;
             }
             .sectionServices3_7Div{
-                border: solid yellowgreen 20px;
-            }
-        }
-        @media screen and (min-width: 0px) and (max-width: 320px){
-            .sectionServices3_7{
-                border: solid orange 20px;
-            }
-            .sectionServices3_7Div{
-                border: solid orange 20px;
+                border: solid yellowgreen 5px;
+                height: 80%;
+                width: 100%;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
@@ -2710,25 +2817,21 @@ html body{
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3_9{
                 border: solid red 20px;
+                height: 70vh;
             }
             .sectionServices3_9Div{
                 border: solid red 20px;
             }
         }
-        @media screen and (min-width: 321px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices3_9{
                 border: solid yellowgreen 20px;
+                height: 70vh;
             }
             .sectionServices3_9Div{
-                border: solid yellowgreen 20px;
-            }
-        }
-        @media screen and (min-width: 0px) and (max-width: 320px){
-            .sectionServices3_9{
-                border: solid orange 20px;
-            }
-            .sectionServices3_9Div{
-                border: solid orange 20px;
+                border: solid yellowgreen 5px;
+                height: 80%;
+                width: 100%;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
@@ -2802,6 +2905,7 @@ html body{
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionServices4{
                 border: solid yellow 20px;
+                height: 50vh;
             }
             #sectionServices4Div1{
                 border: solid yellow 20px;
@@ -2816,6 +2920,7 @@ html body{
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices4{
                 border: solid red 20px;
+                height: 60vh;
             }
             #sectionServices4Div1{
                 border: solid red 20px;
@@ -2823,30 +2928,37 @@ html body{
             #sectionServices4Div2{
                 border: solid yellow  20px;
             }
-        }
-        @media screen and (min-width: 321px) and (max-width: 600px){
-            .sectionServices4{
-                border: solid yellowgreen 20px;
-            }
-            #sectionServices4Div1{
-                border: solid yellowgreen 20px;
-            }
-            #sectionServices4Div2{
-                border: solid yellow  20px;
+            .sectionServices4Div1p{
+                height: 70%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 320px){
+        @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices4{
-                border: solid orange 20px;
+                border: solid yellowgreen 20px;
+                height: 80vh;
+                display: flex;
+                flex-direction: column-reverse;
             }
             #sectionServices4Div1{
-                border: solid orange 20px;
+                border: solid yellowgreen 5px;
             }
             #sectionServices4Div2{
-                border: solid yellow 20px;
+                border: solid yellowgreen  5px;
+            }
+            .sectionServices4Div1p{
+                border: solid black 1px;
+                margin: 10px;
+                padding: 10px;
+                width: 90%;
+                height: 70%;
+                text-align: start;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 600px) and (orientation: landscape){
+            .sectionServices4{
+                height: 500px;
+            }
+        
         }
 /* ----------- */    
 
