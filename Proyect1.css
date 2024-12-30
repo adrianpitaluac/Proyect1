@@ -3015,7 +3015,7 @@ html body{
 
 /* ---------------- HEADER --------------- */
 #headerGallery{
-    height: 50vh;
+    height: 70vh;
     padding: 10px;
     display: flex;
     justify-content: end;
@@ -3056,11 +3056,63 @@ html body{
             justify-content: center;
             align-items: center;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            #headerGallery{
+                border: solid pink 20px;
+            }
+            .headerGalleryDiv{
+                border: solid pink 10px;
+            }
+            
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            #headerGallery{
+                border: solid yellow 20px;
+            }
+            .headerGalleryDiv{
+                border: solid yellow 10px;
+            }
+        
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            #headerGallery{
+                border: solid red 20px;
+            }
+            .headerGalleryDiv{
+                border: solid red 10px;
+                height: 85%;
+            }
+        
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            #headerGallery{
+                border: solid yellowgreen 20px;
+                justify-content: center;
+                align-items: end;
+                padding: 5px;
+            }
+            .headerGalleryDiv{
+                border: solid yellowgreen 10px;
+                width: 100%;
+                height: 50%;
+            }
+            .headerGalleryH1{
+                margin: 5px;
+                width: 100%;
+                height: 50%;
+            }
+        
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            #headerGallery{
+                height: 500px;
+            }
+        }
 /* -------------------------------------- */
 
 /* ------ SECTION 0.5 ----- */
 .sectionGallery0_5{
-    height: 20vh;
+    height: 50vh;
     display: flex;
     background-color: rgb(112, 202, 247);
     /* margin: 20px; */
@@ -3083,7 +3135,7 @@ html body{
             margin: 10px;
             padding: 10px;
             width: 90%;
-            height: 10%;
+            height: 20%;
             display: flex;
             justify-content: center;
             align-items: end;
@@ -3096,11 +3148,54 @@ html body{
             height: 60%;
             text-align: center;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionGallery0_5{
+                border: solid pink 20px;
+            }
+            #sectionGallery0_5Div1{
+                border: solid pink 5px;
+            }
+            
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionGallery0_5{
+                border: solid yellow 20px;
+            }
+            #sectionGallery0_5Div1{
+                border: solid yellow 5px;
+            }
+        
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionGallery0_5{
+                border: solid red 20px;
+            }
+            #sectionGallery0_5Div1{
+                border: solid red 5px;
+            }
+        
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionGallery0_5{
+                border: solid yellowgreen 20px;
+                height: 70vh;
+            }
+            #sectionGallery0_5Div1{
+                border: solid yellowgreen 5px;
+                height: 90%;
+            }
+        
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionGallery0_5{
+                height: 400px;
+            }
+        }
 /* ----------- */
 
 /* ------ SECTION 1 ----- */
 .sectionGallery1{
-    height: 60vh;
+    height: 80vh;
     display: grid;
     grid-template-areas: "a b"
                          "c d";
@@ -3151,7 +3246,7 @@ html body{
             margin: 10px;
             padding: 10px;
             width: 90%;
-            height: 10%;
+            height: 20%;
             display: flex;
             justify-content: center;
             align-items: end;
@@ -3166,12 +3261,97 @@ html body{
         .sectionGallery1Pic{
             width: 100%;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionGallery1{
+                border: solid pink 10px;
+            }
+            #sectionGallery1Div1{
+                border: solid pink 10px;
+            }
+            #sectionGallery1Div2{
+                border: solid pink 10px;
+            }
+            #sectionGallery1Div3{
+                border: solid pink 10px;
+            }
+            #sectionGallery1Div4{
+                border: solid pink 10px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionGallery1{
+                border: solid yellow 10px;
+            }
+            #sectionGallery1Div1{
+                border: solid yellow 10px;
+            }
+            #sectionGallery1Div2{
+                border: solid yellow 10px;
+            }
+            #sectionGallery1Div3{
+                border: solid yellow 10px;
+            }
+            #sectionGallery1Div4{
+                border: solid yellow 10px;
+            }
+        
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionGallery1{
+                border: solid red 10px;
+                height: 100vh;
+            }
+            #sectionGallery1Div1{
+                border: solid red 10px;
+            }
+            #sectionGallery1Div2{
+                border: solid red 10px;
+            }
+            #sectionGallery1Div3{
+                border: solid red 10px;
+            }
+            #sectionGallery1Div4{
+                border: solid red 10px;
+            }
+        
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionGallery1{
+                border: solid yellowgreen 10px;
+                height: 150vh;
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+            }
+            #sectionGallery1Div1{
+                border: solid yellowgreen 10px;
+                height: 60%;
+            }
+            #sectionGallery1Div2{
+                border: solid yellowgreen 10px;
+                height: 100%;
+            }
+            #sectionGallery1Div3{
+                border: solid yellowgreen 10px;
+                height: 100%;
+            }
+            #sectionGallery1Div4{
+                border: solid yellowgreen 10px;
+                height: 60%;
+            }
+        
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionGallery1{
+                    height: 700px;
+            }
+        }
 
 /* ----------- */
 
 /* ------ SECTION 1.5 ----- */
 .sectionGallery1_5{
-    height: 40vh;
+    height: 60vh;
     display: flex;
     background-color: rgb(112, 202, 247);
     /* margin: 20px; */
@@ -3209,11 +3389,63 @@ html body{
             justify-content: end;
             align-items: end;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionGallery1_5{
+                border: solid pink 20px;
+            }
+            #sectionGallery1_5Div1{
+                border: solid pink 10px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionGallery1_5{
+                border: solid yellow 20px;
+            }
+            #sectionGallery1_5Div1{
+                border: solid yellow 10px;
+            }
+        
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionGallery1_5{
+                border: solid red 20px;
+            }
+            #sectionGallery1_5Div1{
+                border: solid red 10px;
+            }
+            .sectionGallery1_5Divp{
+                height: 40%;
+            }
+        
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionGallery1_5{
+                border: solid yellowgreen 20px;
+                height: 70vh;
+            }
+            #sectionGallery1_5Div1{
+                border: solid yellowgreen 10px;
+                width: 100%;
+            }
+            .sectionGallery1_5Divp{
+                width: 90%;
+                height: 40%;
+            }
+            .sectionGallery1_5Divh{
+                height: 20%;
+            }
+        
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionGallery1_5{
+                height: 500px;
+            }
+        }
 /* ----------- */
 
 /* ------ SECTION 2----- */
 .sectionGallery2{
-    height: 80vh;
+    height: 90vh;
     display: grid;
     grid-template-areas: "a a a"
                          "b c d";
@@ -3285,11 +3517,100 @@ html body{
         .sectionGallery2Pic{
             width: 100%;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionGallery2{
+                border: solid pink 20px;
+            }
+            #sectionGallery2Div1{
+                border: solid pink 10px;
+            }
+            #sectionGallery2Div2{
+                border: solid pink 10px;
+            }
+            #sectionGallery2Div3{
+                border: solid pink 10px;
+            }
+            #sectionGallery2Div4{
+                border: solid pink 10px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionGallery2{
+                border: solid yellow 20px;
+                height: 100vh;
+                grid-template-rows: 70% 30%;
+            }
+            #sectionGallery2Div1{
+                border: solid yellow 10px;
+            }
+            #sectionGallery2Div2{
+                border: solid yellow 10px;
+            }
+            #sectionGallery2Div3{
+                border: solid yellow 10px;
+            }
+            #sectionGallery2Div4{
+                border: solid yellow 10px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionGallery2{
+                border: solid red 20px;
+                grid-template-rows: 75% 25%;
+            }
+            #sectionGallery2Div1{
+                border: solid red 10px;
+            }
+            #sectionGallery2Div2{
+                border: solid red 10px;
+            }
+            #sectionGallery2Div3{
+                border: solid red 10px;
+            }
+            #sectionGallery2Div4{
+                border: solid red 10px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionGallery2{
+                border: solid yellowgreen 20px;
+                height: 150vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #sectionGallery2Div1{
+                border: solid yellowgreen 10px;
+                height: 80%;
+            }
+            #sectionGallery2Div2{
+                border: solid yellowgreen 10px;
+                height: 30%;
+            }
+            #sectionGallery2Div3{
+                border: solid yellowgreen 10px;
+                height: 30%;
+            }
+            #sectionGallery2Div4{
+                border: solid yellowgreen 10px;
+                height: 30%;
+            }
+            .sectionGallery2Divp{
+                width: 95%;
+            }
+            .sectionGallery2Divp2{
+                width: 95%;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionGallery2{
+                height: 500px;
+            }
+        }
 /* ----------- */
 
 /* ------ SECTION 2.5 ----- */
 .sectionGallery2_5{
-    height: 60vh;
+    height: 90vh;
     display: grid;
     grid-template-areas: "a b";
     grid-template-columns: repeat(2,1fr);
@@ -3345,11 +3666,76 @@ html body{
         .sectionGallery2_5Pic{
             width: 100%;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionGallery2_5{
+                border: solid pink 20px;
+            }
+            #sectionGallery2_5Div1{
+                border: solid pink 5px;
+            }
+            #sectionGallery2_5Div2{
+                border: solid pink 5px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionGallery2_5{
+                border: solid yellow 20px;
+                height: 120vh;
+            }
+            #sectionGallery2_5Div1{
+                border: solid yellow 5px;
+            }
+            #sectionGallery2_5Div2{
+                border: solid yellow 5px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionGallery2_5{
+                border: solid red 20px;
+                height: 150vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #sectionGallery2_5Div1{
+                border: solid red 5px;
+                height: 40%;
+            }
+            #sectionGallery2_5Div2{
+                border: solid red 5px;
+                height: 60%;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionGallery2_5{
+                border: solid yellowgreen 20px;
+                height: 170vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 5px;
+            }
+            #sectionGallery2_5Div1{
+                border: solid yellowgreen 5px;
+                height: 30%;
+            }
+            #sectionGallery2_5Div2{
+                border: solid yellowgreen 5px;
+                height: 70%;
+            }
+            .sectionGallery2_5Divp{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){ 
+            .sectionGallery2_5{
+                height: 1000px;   
+            }
+        }
 /* ----------- */
 
 /* ------ SECTION 3----- */
 .sectionGallery3{
-    height: 60vh;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     background-color: rgb(112, 202, 247);
@@ -3366,33 +3752,89 @@ html body{
         overflow: hidden;
         width: 100%;
     }
+        #sectionGallery3Div1Div1{
+            border: solid orangered 1px;
+            height: 50%;
+            width: 90%;
+            overflow: hidden;
+            display: flex;
+        }
         .sectionGallery3Pic{
             width: 100%;
             object-fit: cover;
 
         }
-    #sectionGallery3Div1Div1{
-        border: solid orangered 1px;
-        height: 50%;
-        width: 90%;
-        overflow: hidden;
-        display: flex;
-    }
-        .sectionGallery3Divh{
-            border: solid black 1px;
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionGallery3{
+                border: solid pink 20px;
+                height: 70vh;
+            }
+            .sectionGallery3Div1{
+                border: solid pink 5px;
+            }
+            #sectionGallery3Div1Div1{
+                border: solid pink 1px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionGallery3{
+                border: solid yellow 20px;
+                height: 200vh;
+                flex-direction: column;
+            }
+            .sectionGallery3Div1{
+                border: solid yellow 5px;
+                flex-direction: row;
+                height: 100%;
+            }
+            #sectionGallery3Div1Div1{
+                border: solid yellow 1px;
+                height: 100%;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionGallery3{
+                border: solid red 20px;
+                height: 150vh;
+                flex-direction: column;
+            }
+            .sectionGallery3Div1{
+                border: solid red 5px;
+                flex-direction: row;
+            }
+            #sectionGallery3Div1Div1{
+                border: solid red 1px;
+                height: 100%;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionGallery3{
+                border: solid yellowgreen 20px;
+                height: 100vh;
+                flex-direction: column;
+                padding: 0px;
+            }
+            .sectionGallery3Div1{
+                border: solid yellowgreen 5px;
+                flex-direction: row;
+                height: 100%;
+            }
+            #sectionGallery3Div1Div1{
+                border: solid yellowgreen 1px;
+                height: 100%;
+
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionGallery3{
+                height: 1200px;
+            }
         }
 /* ----------- */
 
 /* ------ SECTION 4----- */
 .sectionGallery4{
-    height: 30vh;
+    height: 50vh;
     display: grid;
     grid-template-areas: "1 2";
     grid-template-columns: repeat(2,1fr);
@@ -3439,6 +3881,78 @@ html body{
         }
         .sectionGallery4Pic{
             height: 100%;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionGallery4{
+                border: solid pink 20px;
+            }
+            #sectionGallery4Div1{
+                border: solid pink 10px;
+            }
+            #sectionGallery4Div2{
+                border: solid pink 10px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionGallery4{
+                border: solid yellow 20px;
+            }
+            #sectionGallery4Div1{
+                border: solid yellow 10px;
+            }
+            #sectionGallery4Div2{
+                border: solid yellow 10px;
+            }
+            .sectionGallery4Div1p{
+                height: 70%;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionGallery4{
+                border: solid red 20px;
+            }
+            #sectionGallery4Div1{
+                border: solid red 10px;
+            }
+            #sectionGallery4Div2{
+                border: solid red 10px;
+            }
+            .sectionGallery4Div1p{
+                height: 70%;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionGallery4{
+                border: solid yellowgreen 20px;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 5px;
+            }
+            #sectionGallery4Div1{
+                border: solid yellowgreen 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #sectionGallery4Div2{
+                border: solid yellowgreen 10px;
+            }
+            .sectionGallery4Div1p{
+                border: solid black 1px;
+                margin: 10px;
+                padding: 10px;
+                width: 90%;
+                height: 70%;
+                text-align: start;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){ 
+            .sectionGallery4{
+                height: 400px;
+            }
         }
 /* ----------- */   
 /* ......................................  GALLERY  ............................................. */
@@ -3501,6 +4015,21 @@ html body{
         }
     .headerWritingPic{
         height: 100%;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1199px){
+            
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+    
+    }
+    @media screen and (min-width: 601px) and (max-width: 767px){
+    
+    }
+    @media screen and (min-width: 0px) and (max-width: 600px){
+    
+    }
+    @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+        
     }
 /* -------------------------------------- */
 
@@ -3854,6 +4383,21 @@ html body{
         .headerAboutDiv:hover{
             -webkit-text-stroke: 2px #fff;
             color: transparent;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+        
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+        
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+        
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            
         }
 /* -------------------------------------- */
 
@@ -4352,6 +4896,21 @@ html body{
         .headerContactPic{
             grid-area: e;
             height: 100%;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+        
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+        
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+        
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            
         }
 /* -------------------------------------- */
 
