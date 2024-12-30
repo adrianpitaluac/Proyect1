@@ -4008,7 +4008,7 @@ html body{
             margin: 20px;
             padding: 10px;
             width: 90%;
-            height: 10%;
+            height: 20%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -4017,19 +4017,65 @@ html body{
         height: 100%;
     }
     @media screen and (min-width: 1024px) and (max-width: 1199px){
-            
+        #headerWriting{
+            border: solid pink 20px;
+        }
+        .headerWritingDiv1{
+            border: solid pink 10px;
+        }
+        .headerWritingDiv2{
+            border: solid pink 10px;
+        }
+        
     }
     @media screen and (min-width: 768px) and (max-width: 1023px){
-    
+        #headerWriting{
+            border: solid yellow 20px;
+        }
+        .headerWritingDiv1{
+            border: solid yellow 10px;
+        }
+        .headerWritingDiv2{
+            border: solid yellow 10px;
+        }
     }
     @media screen and (min-width: 601px) and (max-width: 767px){
-    
+        #headerWriting{
+            border: solid red 20px;
+        }
+        .headerWritingDiv1{
+            border: solid red 10px;
+        }
+        .headerWritingDiv2{
+            border: solid red 10px;
+        }
     }
     @media screen and (min-width: 0px) and (max-width: 600px){
-    
+        #headerWriting{
+            border: solid yellowgreen 20px;
+            height: 90vh;
+            flex-direction: column;
+            padding: 5px;
+        }
+        .headerWritingDiv1{
+            border: solid yellowgreen 10px;
+            width: 95%;
+        }
+        .headerWritingDiv2{
+            border: solid yellowgreen 10px;
+            width: 95%;
+        }
+        .headerWritingH1{
+            width: 100%;
+        }
+        .headerWritingH3{
+            width: 100%;
+        }
     }
     @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
-        
+        #headerWriting{
+            height: 500px;
+        }
     }
 /* -------------------------------------- */
 
@@ -4038,7 +4084,7 @@ html body{
     height: 40vh;
     display: grid;
     grid-template-areas: "1 2 3";
-    grid-template-columns: 40% 30% 30%;
+    grid-template-columns: 45% 25% 25%;
     column-gap: 10px;
     background-color: rgb(216, 112, 247);
     /* margin: 20px; */
@@ -4067,8 +4113,58 @@ html body{
             margin: 10px;
             padding: 10px;
             width: 90%;
-            height: 10%;
+            height: 20%;
             text-align: start;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionWriting0_5{
+                border: solid pink 20px;
+                height: 70vh;
+            }
+            #sectionWriting0_5Div1{
+                border: solid pink 10px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionWriting0_5{
+                border: solid yellow 20px;
+                grid-template-columns: repeat(3,1fr);
+                height: 70vh;
+            }
+            #sectionWriting0_5Div1{
+                border: solid yellow 10px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionWriting0_5{
+                border: solid red 20px;
+                height: 90vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #sectionWriting0_5Div1{
+                border: solid red 10px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionWriting0_5{
+                border: solid yellowgreen 20px;
+                height: 140vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #sectionWriting0_5Div1{
+                border: solid yellowgreen 10px;
+                height: 100%;
+            }
+            .sectionWriting0_5Div1p{
+                height: 80%;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionWriting0_5{
+                height: 700px;
+            }
         }
 /* ----------- */   
 
@@ -4109,18 +4205,11 @@ html body{
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        height: 100%;
+        height: 90%;
         width: 33%;
+        margin: 10px;
         overflow: hidden;
     }
-        .sectionWriting0_7Divp1{
-            border: solid black 1px;
-            margin: 0px;
-            padding: 10px;
-            width: 90%;
-            height: 60%;
-            text-align: start;
-        }
         .sectionWriting0_7Divh{
             border: solid black 1px;
             margin: 5px;
@@ -4145,6 +4234,156 @@ html body{
         }
         .sectionWritng0_7Pic3{
             height: 60%;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionWriting0_7{
+                border: solid pink 20px;
+                height: 85vh;
+            }
+            #sectionWriting0_7Div1{
+                border: solid pink 5px;
+            }
+            #sectionWriting0_7Div2{
+                border: solid pink 5px;
+            }
+            #sectionWriting0_7Div3{
+                border: solid pink 5px; 
+            }
+            .sectionWritng0_7Pic1{
+                width: 90%;
+            }
+            .sectionWritng0_7Pic2{
+                width: 90%;
+            }
+            .sectionWritng0_7Pic3{
+                width: 90%;
+                height: 100%;
+            }
+            .sectionWriting0_7Divp2{
+                height: 70%;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionWriting0_7{
+                border: solid yellow 20px;
+                height: 80vh;
+            }
+            #sectionWriting0_7Div1{
+                border: solid yellow 5px;
+            }
+            #sectionWriting0_7Div2{
+                border: solid yellow 5px;
+            }
+            #sectionWriting0_7Div3{
+                border: solid yellow 5px;
+                height: 90%;
+            }
+            .sectionWriting0_7Divp2{
+                border: solid black 1px;
+                margin: 0px;
+                padding: 10px;
+                width: 90%;
+                height: 55%;
+                text-align: start;
+            }
+            .sectionWritng0_7Pic3{
+                height: 60%;
+                margin: 5px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionWriting0_7{
+                border: solid red 20px;
+                height: 170vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #sectionWriting0_7Div1{
+                border: solid red 5px;
+                width: 90%;
+            }
+            #sectionWriting0_7Div2{
+                border: solid red 5px;
+                width: 90%;
+            }
+            #sectionWriting0_7Div3{
+                border: solid red 5px;
+                width: 90%;
+                flex-direction: column-reverse;
+            }
+            .sectionWritng0_7Pic1{
+                height: 50%;
+                max-width: 50%;
+            }
+            .sectionWritng0_7Pic2{
+                height: 50%;
+                max-width: 30%;
+            }
+            .sectionWritng0_7Pic3{
+                height: 50%;
+                max-width: 30%;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionWriting0_7{
+                border: solid yellowgreen 20px;
+                height: 200vh;
+                flex-direction: column;
+            }
+            #sectionWriting0_7Div1{
+                border: solid yellowgreen 5px;
+                width: 90%;
+            }
+            #sectionWriting0_7Div2{
+                border: solid yellowgreen 5px;
+                width: 90%;
+            }
+            #sectionWriting0_7Div3{
+                border: solid yellowgreen 5px;
+                width: 90%;
+            }
+            .sectionWritng0_7Pic1{
+                width: 100%;
+                max-height: 100%;
+            }
+            .sectionWritng0_7Pic2{
+                width: 100%;
+                max-height: 100%;
+            }
+            .sectionWritng0_7Pic3{
+                height: 100%;
+                max-width: 100%;
+            }
+            .sectionWriting0_7Divp2{
+                border: solid black 1px;
+                margin: 0px;
+                padding: 10px;
+                width: 100%;
+                height: 60%;
+                text-align: start;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionWriting0_7{
+                height: 700px;
+                flex-direction: row;
+            }
+            .sectionWriting0_7Divp2{
+                height: 60%;
+            }
+            .sectionWritng0_7Pic1{
+                height: 30%;
+                max-width: 100%;
+
+            }
+            .sectionWritng0_7Pic2{
+                height: 30%;
+                max-width: 100%;
+            }
+            .sectionWritng0_7Pic3{
+                height: 30%;
+                max-width: 100%;
+            }
         }
 /* ----------- */
 
@@ -4204,123 +4443,77 @@ html body{
         .sectionWritng0_9Pic{
             height: 100%;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            #sectionWriting0_9{
+                border: solid pink 20px;
+            }
+            .sectionWriting0_9Div1{
+                border: solid pink 5px;
+            }
+            .sectionWriting0_9Div2{
+                border: solid pink 5px;
+            }
+            .sectionWriting0_9p{
+                height: 30%;
+            }
+            
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            #sectionWriting0_9{
+                border: solid yellow 20px;
+            }
+            .sectionWriting0_9Div1{
+                border: solid yellow 5px;
+            }
+            .sectionWriting0_9Div2{
+                border: solid yellow 5px;
+            }
+            .sectionWriting0_9p{
+                height: 40%;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            #sectionWriting0_9{
+                border: solid red 20px;
+            }
+            .sectionWriting0_9Div1{
+                border: solid red 5px;
+            }
+            .sectionWriting0_9Div2{
+                border: solid red 5px;
+            }
+            .sectionWriting0_9p{
+                height: 50%;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            #sectionWriting0_9{
+                border: solid yellowgreen 20px;
+                height: 100vh;
+                flex-direction: column;
+            }
+            .sectionWriting0_9Div1{
+                border: solid yellowgreen 5px;
+                width: 95%;
+            }
+            .sectionWriting0_9Div2{
+                border: solid yellowgreen 5px;
+                width: 95%;
+                height: 60%;
+                margin: 5px;
+            }
+            .sectionWriting0_9p{
+                margin: 5px;
+                width: 90%;
+                height: 70%;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            #sectionWriting0_9{
+                height: 500px;
+            }
+        }
 /* -------------------------------------- */
-
-/* ------ SECTION 1 ----- */
-.sectionWriting1{
-    height: 80vh;
-    display: grid;
-    grid-template-areas: "1 a"
-                         "2 a"
-                         "3 a";
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-    background-color: rgb(216, 112, 247);
-    /* margin: 20px; */
-    border: solid rgb(111, 0, 255) 20px;
-    padding: 50px;
-}
-    #sectionWriting1Div1{
-        grid-area: 1;
-        border: solid orangered 5px;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-    }
-    #sectionWriting1Div2{
-        grid-area: 2;
-        border: solid orangered 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #sectionWriting1Div3{
-        grid-area: 3;
-        border: solid orangered 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #sectionWriting1Div4{
-        grid-area: a;
-        border: solid rgb(0, 255, 38) 5px;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-        .sectionWriting1Divh{
-            border: solid black 1px;
-            margin: 10px;
-            padding: 10px;
-            width: 100%;
-            height: 30%;
-            text-align: center;
-        }
-        .sectionWriting1Divp{
-            border: solid black 1px;
-            padding: 10px;
-            width: 90%;
-            height: 80%;
-            text-align: center;
-        }
-        .sectionWriting1Div4p{
-            border: solid black 1px;
-            padding: 10px;
-            width: 90%;
-            height: 90%;
-            text-align: center;
-        }
-/* ----------- */
-
-/* ------ SECTION 4----- */
-.sectionWriting4{
-    height: 30vh;
-    display: grid;
-    grid-template-areas: "1 2";
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 20px;
-    background-color: rgb(216, 112, 247);
-    /* margin: 20px; */
-    border: solid rgb(111, 0, 255) 20px;
-    padding: 20px;
-}
-    #sectionWriting4Div1{
-        grid-area: "1";
-        border: solid orangered 5px;
-    }
-    #sectionWriting4Div2{
-        grid-area: "2";
-        border: solid orangered 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-        .sectionWriting4Div1p{
-            border: solid black 1px;
-            margin: 10px;
-            padding: 10px;
-            width: 90%;
-            height: 40%;
-            text-align: start;
-        }
-        .sectionWriting4Div1h{
-            border: solid black 1px;
-            margin: 10px;
-            padding: 10px;
-            width: 90%;
-            height: 20%;
-            text-align: start;
-        }
-        .sectionWriting4Div2p{
-            border: solid black 1px;
-            padding: 10px;
-            width: 90%;
-            height: 80%;
-            text-align: center;
-        }
 /* ----------- */   
 /* ......................................  WRITING  ............................................. */
 
