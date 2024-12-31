@@ -4166,7 +4166,7 @@ html body{
                 height: 700px;
             }
             .sectionWriting0_5Div1h{
-                height: 40%;
+                height: 60%;
             }
         }
 /* ----------- */   
@@ -4539,7 +4539,6 @@ html body{
         position: absolute;
         width: 100%;
     }
-
     .headerAboutDiv{
         border: solid rgb(255, 247, 0) 20px;
         height: 80%;
@@ -4581,19 +4580,74 @@ html body{
             color: transparent;
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
-            
+            .headerAboutDiv{
+                border: solid pink 20px;
+                height: 60vh;
+            }
+            .headerAboutH1{
+                font-size: 80px;
+            }
+            .headerAboutH3{
+                font-size: 30px;
+            }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
-        
+            #headerAbout{
+                height: 70vh;
+            }
+            .headerAboutDiv{
+                border: solid yellow 20px;
+                height: 60vh;
+            }
+            .headerAboutH1{
+                font-size: 80px;
+            }
+            .headerAboutH3{
+                font-size: 30px;
+            }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
-        
+            #headerAbout{
+                height: 60vh;
+            }
+            .headerAboutDiv{
+                border: solid red 20px;
+                height: 45vh;
+            }
+            .headerAboutH1{
+                font-size: 60px;
+            }
+            .headerAboutH3{
+                font-size: 20px;
+            }
+            .headerAboutWallpaper{
+                z-index: -1;
+                position: absolute;
+                width: 100%;
+            }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
-        
+            #headerAbout{
+                height: 80vh;
+            }
+            .headerAboutDiv{
+                border: solid yellowgreen 20px;
+                height: 70vh;
+            }
+            .headerAboutH1{
+                font-size: 40px;
+            }
+            .headerAboutH3{
+                font-size: 20px;
+            }
         }
         @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
-            
+            #headerAbout{
+                height: 400px;
+            }
+            .headerAboutDiv{
+                height: 300px;
+            }
         }
 /* -------------------------------------- */
 
@@ -4656,7 +4710,7 @@ html body{
             margin: 10px;
             padding: 10px;
             width: 100%;
-            height: 30%;
+            height: 80%;
             text-align: center;
         }
         .sectionAbout1Divp{
@@ -4676,11 +4730,118 @@ html body{
         .sectionAbout1Pic{
             height: 100%;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionAbout1{
+                border: solid pink 20px;
+                height: 90vh;
+            }
+            #sectionAbout1Div1{
+                border: solid pink 5px;
+            }
+            #sectionAbout1Div2{
+                border: solid pink 5px;
+            }
+            #sectionAbout1Div3{
+                border: solid pink 5px;
+            }
+            #sectionAbout1Div4{
+                border: solid pink 5px;
+            }
+            #sectionAbout1Div5{
+                border: solid pink 5px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionAbout1{
+                border: solid yellow 20px;
+                height: 90vh;
+            }
+            #sectionAbout1Div1{
+                border: solid yellow 5px;
+            }
+            #sectionAbout1Div2{
+                border: solid yellow 5px;
+            }
+            #sectionAbout1Div3{
+                border: solid yellow 5px;
+            }
+            #sectionAbout1Div4{
+                border: solid yellow 5px;
+            }
+            #sectionAbout1Div5{
+                border: solid yellow 5px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionAbout1{
+                border: solid red 20px;
+                height: 110vh;
+            }
+            #sectionAbout1Div1{
+                border: solid red 5px;
+            }
+            #sectionAbout1Div2{
+                border: solid red 5px;
+            }
+            #sectionAbout1Div3{
+                border: solid red 5px;
+            }
+            #sectionAbout1Div4{
+                border: solid red 5px;
+            }
+            #sectionAbout1Div5{
+                border: solid red 5px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionAbout1{
+                border: solid yellowgreen 20px;
+                height: 140vh;
+                grid-template-areas: "b b"
+                                     "d a"
+                                     "c c"
+                                     "e e";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(4,1fr);
+            }
+            #sectionAbout1Div1{
+                border: solid yellowgreen 5px;
+                grid-area: a;
+            }
+            #sectionAbout1Div2{
+                border: solid yellowgreen 5px;
+                grid-area: b;
+            }
+            #sectionAbout1Div3{
+                border: solid yellowgreen 5px;
+                grid-area: c;
+            }
+            #sectionAbout1Div4{
+                border: solid yellowgreen 5px;
+                grid-area: d;
+            }
+            #sectionAbout1Div5{
+                border: solid yellowgreen 5px;
+                grid-area: e;
+            }
+            .sectionAbout1Divp{
+                border: solid black 1px;
+                padding: 10px;
+                width: 90%;
+                height: 90%;
+                text-align: center;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionAbout1{
+                height: 800px;
+            }
+        }
 /* ----------- */
 
 /* ------ SECTION 2----- */
 .sectionAbout2{
-    height: 80vh;
+    height: 200vh;
     display: grid;
     grid-template-areas: "1 a"
                          "2 a"
@@ -4712,6 +4873,7 @@ html body{
         grid-area: b;
         border: solid orangered 5px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -4740,8 +4902,113 @@ html body{
             height: 80%;
             text-align: center;
         }
+        .sectionAbout2DivUl{
+            text-decoration: none;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .sectionAbout2DivLi{
+            border: solid black 1px;
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 100%;
+            text-align: center;
+            text-decoration: none;
+            list-style: none;
+        }
         .sectionAbout2Pic{
             height: 100%;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionAbout2{
+                border: solid pink 20px;
+            }
+            #sectionAbout2Div1{
+                border: solid pink 5px;
+            }
+            #sectionAbout2Div2{
+                border: solid pink 5px;
+            }
+            #sectionAbout2Div3{
+                border: solid pink 5px;
+            }
+            #sectionAbout2Div4{
+                border: solid pink 5px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionAbout2{
+                border: solid yellow 20px;
+            }
+            #sectionAbout2Div1{
+                border: solid yellow 5px;
+            }
+            #sectionAbout2Div2{
+                border: solid yellow 5px;
+            }
+            #sectionAbout2Div3{
+                border: solid yellow 5px;
+            }
+            #sectionAbout2Div4{
+                border: solid yellow 5px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionAbout2{
+                border: solid red 20px;
+                height: 120vh;
+            }
+            #sectionAbout2Div1{
+                border: solid red 5px;
+            }
+            #sectionAbout2Div2{
+                border: solid red 5px;
+            }
+            #sectionAbout2Div3{
+                border: solid red 5px;
+            }
+            #sectionAbout2Div4{
+                border: solid red 5px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionAbout2{
+                border: solid yellowgreen 20px;
+                height: 160vh;
+                grid-template-areas: "b b"
+                                     "a d"
+                                     "c c";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 20% 15% 65%;
+            }
+            #sectionAbout2Div1{
+                border: solid yellowgreen 5px;
+                grid-area: a;
+            }
+            #sectionAbout2Div2{
+                border: solid yellowgreen 5px;
+                grid-area: b;
+            }
+            #sectionAbout2Div3{
+                border: solid yellowgreen 5px;
+                grid-area: c;
+            }
+            #sectionAbout2Div4{
+                border: solid yellowgreen 5px;
+                grid-area: d;
+            }
+            .sectionAbout2Divh{
+                height: 60%;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionAbout2{
+                height: 900px;
+            }
         }
 /* ----------- */
 
@@ -4801,22 +5068,136 @@ html body{
             padding: 0px;
             width: 90%;
             height: 90%;
-            text-align: start;
-            text-justify: start;
+            text-align: end;
         }
-        .sectionAbout3Divp{
+        .sectionAbout3DivLu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+            width: 90%;
+        }
+        .sectionAbout3DivLi{
             border: solid black 1px;
             margin: 0px;
             padding: 10px;
-            width: 90%;
-            height: 15%;
+            width: 100%;
+            height: 20%;
             text-align: start;
+            list-style: none;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionAbout3{
+                border: solid pink 20px;
+                height: 60vh;
+            }
+            #sectionAbout3Div1{
+                border: solid pink 5px;
+            }
+            #sectionAbout3Div2{
+                border: solid pink 5px;
+            }
+            #sectionAbout3Div3{
+                border: solid pink 5px;
+            }
+            #sectionAbout3Div4{
+                border: solid pink 5px;
+            }
+            .sectionAbout3Divp{
+                border: solid black 1px;
+                margin: 0px;
+                padding: 10px;
+                width: 90%;
+                height: 15%;
+                text-align: start;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionAbout3{
+                border: solid yellow 20px;
+                height: 60vh;
+            }
+            #sectionAbout3Div1{
+                border: solid yellow 5px;
+            }
+            #sectionAbout3Div2{
+                border: solid yellow 5px;
+            }
+            #sectionAbout3Div3{
+                border: solid yellow 5px;
+            }
+            #sectionAbout3Div4{
+                border: solid yellow 5px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionAbout3{
+                border: solid red 20px;
+                height: 60vh;
+            }
+            #sectionAbout3Div1{
+                border: solid red 5px;
+            }
+            #sectionAbout3Div2{
+                border: solid red 5px;
+            }
+            #sectionAbout3Div3{
+                border: solid red 5px;
+            }
+            #sectionAbout3Div4{
+                border: solid red 5px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionAbout3{
+                border: solid yellowgreen 20px;
+                height: 120vh;
+                grid-template-areas: "a b"
+                                     "c c"
+                                     "d d";
+                grid-template-columns: 10% 80%;
+                grid-template-rows: 10% 45% 45%;
+                justify-content: space-evenly;
+                padding: 10px;
+            }
+            #sectionAbout3Div1{
+                border: solid yellowgreen 5px;
+                grid-area: a;
+            }
+            #sectionAbout3Div2{
+                border: solid yellowgreen 5px;
+                grid-area: b;
+            }
+            #sectionAbout3Div3{
+                border: solid yellowgreen 5px;
+                grid-area: c;
+                height: 100%;
+            }
+            #sectionAbout3Div4{
+                border: solid yellowgreen 5px;
+                grid-area: d;
+                height: 100%;
+            }
+            .sectionAbout3Divh{
+            border: solid black 1px;
+            margin: 0px;
+            padding: 0px;
+            width: 90%;
+            height: 90%;
+            text-align: end;
+        }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionAbout3{
+                height: 500px;
+            }
         }
 /* ----------- */
 
 /* ------ SECTION 4----- */
 .sectionAbout4{
-    height: 70vh;
+    height: 80vh;
     display: grid;
     grid-template-areas: "a b c"
                          "d e f";
@@ -4896,6 +5277,132 @@ html body{
         .sectionAbout4Pic{
             height: 100%;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionAbout4{
+                border: solid pink 20px;
+                height: 90vh;
+            }
+            #sectionAbout4Div1{
+                border: solid pink 5px;
+            }
+            #sectionAbout4Div2{
+                border: solid pink 5px;
+            }
+            #sectionAbout4Div3{
+                border: solid pink 5px;
+            }
+            #sectionAbout4Div4{
+                border: solid pink 5px;
+            }
+            #sectionAbout4Div5{
+                border: solid pink 5px;
+            }
+            #sectionAbout4Div6{
+                border: solid pink 5px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionAbout4{
+                border: solid yellow 20px;
+                height: 95vh;
+            }
+            #sectionAbout4Div1{
+                border: solid yellow 5px;
+            }
+            #sectionAbout4Div2{
+                border: solid yellow 5px;
+            }
+            #sectionAbout4Div3{
+                border: solid yellow 5px;
+            }
+            #sectionAbout4Div4{
+                border: solid yellow 5px;
+            }
+            #sectionAbout4Div5{
+                border: solid yellow 5px;
+            }
+            #sectionAbout4Div6{
+                border: solid yellow 5px;
+            }
+            .sectionAbout4Divp{
+                border: solid black 1px;
+                margin: 0px;
+                padding: 10px;
+                width: 90%;
+                height: 80%;
+                text-align: start;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionAbout4{
+                border: solid red 20px;
+                height: 140vh;
+                grid-template-areas: "b a"
+                                     "c d"
+                                     "f e";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,1fr);
+            }
+            #sectionAbout4Div1{
+                border: solid red 5px;
+            }
+            #sectionAbout4Div2{
+                border: solid red 5px;
+            }
+            #sectionAbout4Div3{
+                border: solid red 5px;
+            }
+            #sectionAbout4Div4{
+                border: solid red 5px;
+            }
+            #sectionAbout4Div5{
+                border: solid red 5px;
+            }
+            #sectionAbout4Div6{
+                border: solid red 5px;
+            }
+            .sectionAbout4Pic{
+                height: 80%;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionAbout4{
+                border: solid yellowgreen 20px;
+                height: 230vh;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+            #sectionAbout4Div1{
+                border: solid yellowgreen 5px;
+                height: 100%;
+            }
+            #sectionAbout4Div2{
+                border: solid yellowgreen 5px;
+                height: 100%;
+            }
+            #sectionAbout4Div3{
+                border: solid yellowgreen 5px;
+                height: 100%;
+            }
+            #sectionAbout4Div4{
+                border: solid yellowgreen 5px;
+                height: 100%;
+            }
+            #sectionAbout4Div5{
+                border: solid yellowgreen 5px;
+                height: 100%;
+            }
+            #sectionAbout4Div6{
+                border: solid yellowgreen 5px;
+                height: 100%;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionAbout4{
+                height: 1000px;
+            }
+        }
 /* ----------- */   
 
 /* ------ SECTION 5----- */
@@ -4945,12 +5452,20 @@ html body{
         justify-content: center;
         align-items: center;
     }
-        .sectionAbout5Divp{
+        .sectionAbout5DivLu{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 80%;
+            justify-content: space-evenly;
+        }
+        .sectionAbout5DivLi{
             border: solid black 1px;
-            margin: 10px;
             padding: 10px;
-            height: 40%;
+            height: 30%;
+            width: 100%;
             text-align: center;
+            list-style: none;
         }
         .sectionAbout5Divh{
             border: solid black 1px;
@@ -4959,6 +5474,116 @@ html body{
             width: 90%;
             height: 20%;
             text-align: center;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionAbout5{
+                border: solid pink 20px;
+                height: 80vh;
+            }
+            #sectionAbout5Div1{
+                border: solid pink 5px;
+            }
+            #sectionAbout5Div2{
+                border: solid pink 5px;
+            }
+            #sectionAbout5Div3{
+                border: solid pink 5px;
+            }
+            #sectionAbout5Div4{
+                border: solid pink 5px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionAbout5{
+                border: solid yellow 20px;
+            }
+            #sectionAbout5Div1{
+                border: solid yellow 5px;
+            }
+            #sectionAbout5Div2{
+                border: solid yellow 5px;
+            }
+            #sectionAbout5Div3{
+                border: solid yellow 5px;
+            }
+            #sectionAbout5Div4{
+                border: solid yellow 5px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionAbout5{
+                border: solid red 20px;
+                height: 150vh;
+                grid-template-areas: "a"
+                                     "b"
+                                     "c"
+                                     "d";
+                grid-template-columns: 100%;
+                grid-template-rows: 30% 23% 23% 23%;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            #sectionAbout5Div1{
+                border: solid red 5px;
+                height: 100%;
+            }
+            #sectionAbout5Div2{
+                border: solid red 5px;
+                height: 100%;
+                display: flex;
+                justify-content: start;
+                align-items: start;
+            }
+            #sectionAbout5Div3{
+                border: solid red 5px;
+                height: 100%;
+                display: flex;
+                justify-content: start;
+                align-items: start;
+            }
+            #sectionAbout5Div4{
+                border: solid red 5px;
+                height: 100%;
+                display: flex;
+                justify-content: start;
+                align-items: start;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionAbout5{
+                border: solid yellowgreen 20px;
+                height: 150vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+            #sectionAbout5Div1{
+                border: solid yellowgreen 5px;
+                height: 70%;
+                width: 100%;
+            }
+            #sectionAbout5Div2{
+                border: solid yellowgreen 5px;
+                height: 100%;
+                width: 100%;
+            }
+            #sectionAbout5Div3{
+                border: solid yellowgreen 5px;
+                height: 100%;
+                width: 100%;
+            }
+            #sectionAbout5Div4{
+                border: solid yellowgreen 5px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionAbout5{
+                height: 1000px;
+            }
         }
 /* ----------- */   
 
@@ -4999,6 +5624,14 @@ html body{
             height: 10%;
             text-align: center;
         }
+        .sectionAbout6DivPic{
+            grid-area: e;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .sectionAbout6Divh{
             border: solid black 1px;
             margin: 10px;
@@ -5009,16 +5642,22 @@ html body{
             justify-content: center;
             align-items: center;
         }
-        .sectionAbout6DivPic{
-            grid-area: e;
-            border: solid pink 5px;
+        .sectionAbout6DivLu{
+            height: 70%;
             width: 100%;
-            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .sectionAbout6DivLi{
+            grid-area: e;
+            border: solid black 1px;
+            width: 100%;
+            height: 20%;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
-            
         }
         .sectionAbout6Div2Button{
             grid-area: i;
@@ -5029,6 +5668,72 @@ html body{
         }
         .sectionAbout6Pic{
             height: 100%;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionAbout6{
+                border: solid pink 20px;
+            }
+            #sectionAbout6Div1{
+                border: solid pink 5px;
+            }
+            #sectionAbout6Div2{
+                border: solid pink 5px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionAbout6{
+                border: solid yellow 20px;
+                height: 80vh;
+            }
+            #sectionAbout6Div1{
+                border: solid yellow 5px;
+            }
+            #sectionAbout6Div2{
+                border: solid yellow 5px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionAbout6{
+                border: solid red 20px;
+            }
+            #sectionAbout6Div1{
+                border: solid red 5px;
+            }
+            #sectionAbout6Div2{
+                border: solid red 5px;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionAbout6{
+                border: solid yellowgreen 20px;
+                height: 120vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #sectionAbout6Div1{
+                border: solid yellowgreen 5px;
+                height: 100%;
+            }
+            #sectionAbout6Div2{
+                border: solid yellowgreen 5px;
+                height: 60%;
+                grid-template-areas: "a b c"
+                                     "a b c"
+                                     "d e f";
+                grid-template-columns: 20% 50% 20%;
+                grid-template-rows: 20% 50% 20%;
+            }
+            .sectionAbout6DivPic{
+                grid-area: b;
+            }
+            .sectionAbout6Div2Button{
+                grid-area: e;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionAbout6{
+                height: 500px;
+            }
         }
 /* ----------- */ 
 /* ......................................  ABOUT  ............................................. */
