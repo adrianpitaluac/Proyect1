@@ -321,9 +321,9 @@ html body{
         /*max-height: 140%;*/
     }
 }
-@media screen and (min-width: 481px) and (max-width: 800px) and (orientation: landscape){
+@media screen and (min-width: 481px) and (max-width: 1000px) and (orientation: landscape){
     #headerIndex{
-        height: 400px;
+        height: 500px;
         border: solid white 20px;
     }
     .headerIndexDiv{
@@ -434,9 +434,7 @@ html body{
         #sectionIndex1Div4{
             border: solid pink 5px;
         }
-    
     }
-
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .sectionIndex1{
             height: 80vh;
@@ -455,7 +453,6 @@ html body{
         }
     
     }
-
     @media screen and (min-width: 601px) and (max-width: 767px){
         .sectionIndex1{
             grid-template-columns: 60% 40%;
@@ -559,7 +556,7 @@ html body{
         }*/
     
     }
-    @media screen and (min-width: 481px) and (max-width: 800px) and (orientation: landscape){
+    @media screen and (min-width: 481px) and (max-width: 1000px) and (orientation: landscape){
         .sectionIndex1{
             height: 600px;
             padding: 10px;
@@ -779,7 +776,7 @@ html body{
                 
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 800px) and (orientation: landscape){
+        @media screen and (min-width: 481px) and (max-width: 1000px) and (orientation: landscape){
             .sectionIndex2{
                 height: 600px;
                 padding: 20px;
@@ -1050,7 +1047,7 @@ html body{
             height: 80%;
         }
     }
-    @media screen and (min-width: 481px) and (max-width: 800px) and (orientation: landscape){
+    @media screen and (min-width: 481px) and (max-width: 1000px) and (orientation: landscape){
         .sectionIndex3{
             height: 900px;
             padding: 25px;
@@ -1189,7 +1186,7 @@ html body{
     
         }
     }
-    @media screen and (min-width: 481px) and (max-width: 800px) and (orientation: landscape){
+    @media screen and (min-width: 481px) and (max-width: 1000px) and (orientation: landscape){
         .sectionIndex3_2{
             height: 500px;
             border: solid white 20px;
@@ -1361,7 +1358,7 @@ html body{
             max-width: 100%;
         }
     }
-    @media screen and (min-width: 481px) and (max-width: 800px) and (orientation: landscape){
+    @media screen and (min-width: 481px) and (max-width: 1000px) and (orientation: landscape){
         .sectionIndex4{
             height: 600px;
             grid-template-areas: "a"
@@ -6002,7 +5999,7 @@ html body{
     border: solid rgb(0, 200, 107) 20px;
     padding: 10px;
 }
-@media screen and (min-width: 1024px) and (max-width: 1199px){
+@media screen and (min-width: 1024px) and (max-width: 1199px){°
     .sectionContact2{
         border: solid pink 20px;
         height: 90vh;
