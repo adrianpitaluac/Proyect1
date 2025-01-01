@@ -5799,24 +5799,200 @@ html body{
             height: 100%;
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
-            
+            .headerContactDiv{
+                border: solid pink 20px;
+            }
+            #headerContactDiv1{
+                border: solid pink 10px;
+            }
+            #headerContactDiv2{
+                border: solid pink 10px;
+            }
+            .headerContactDivp{
+                height: 15%;
+            }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
-        
+            .headerContactDiv{
+                border: solid yellow 20px;
+            }
+            #headerContactDiv1{
+                border: solid yellow 10px;
+            }
+            #headerContactDiv2{
+                border: solid yellow 10px;
+            }
+            .headerContactDivp{
+                height: 15%;
+            }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
-        
+            .headerContactDiv{
+                border: solid red 20px;
+                height: 80vh;
+            }
+            #headerContactDiv1{
+                border: solid red 10px;
+            }
+            #headerContactDiv2{
+                border: solid red 10px;
+            }
+            .headerContactDivp{
+                height: 15%;
+            }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
-        
+            .headerContactDiv{
+                border: solid yellowgreen 20px;
+                height: 90vh;
+                grid-template-areas: "a"
+                                     "b";
+                grid-template-columns: 100%;
+                grid-template-rows: 70% 30%;
+                padding: 5px;
+            }
+            #headerContactDiv1{
+                border: solid yellowgreen 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #headerContactDiv2{
+                border: solid yellowgreen 10px;
+                display: flex;
+                justify-content: center;
+            }
+            .headerContactDivp{
+                height: 15%;
+            }
         }
         @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
-            
+            .headerContactDiv{
+                height: 600px;
+            }
         }
 /* -------------------------------------- */
 
 /* ------ SECTION 1 ----- */
 .sectionContact1{
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(144, 250, 197);
+    /* margin: 20px; */
+    border: solid rgb(0, 200, 107) 20px;
+    padding: 10px;
+}
+    .sectionWhatsapp{
+        background-color: green;
+        height: 90%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+        .sectionWhatsapp1{
+            background-color: red;
+            height: 50%;
+            width: 70%;
+        }
+        .sectionWhatsapp2{
+            background-color: red;
+            height: 20%;
+            width: 70%;
+        }
+    .sectionLinkedin{
+        background-color: blue;
+        height: 90%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+        .sectionLinkedin1{
+            background-color: red;
+            height: 50%;
+            width: 70%;
+        }
+        .sectionLinkedin2{
+            background-color: red;
+            height: 20%;
+            width: 70%;
+        }
+        .buttonWhatsapp{
+            color: blue;
+            background-color: green;
+        }
+        .buttonLinkedin{
+            color: blue;
+            background-color: blue;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionContact1{
+                border: solid pink 20px;
+            }
+            .sectionWhatsapp{
+                width: 35%;
+            }
+            .sectionLinkedin{
+                width: 35%;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionContact1{
+                border: solid yellow 20px;
+            }
+            .sectionWhatsapp{
+                width: 45%;
+            }
+            .sectionLinkedin{
+                width: 45%;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionContact1{
+                border: solid red 20px;
+                height: 150vh;
+                flex-direction: column;
+            }
+            .sectionWhatsapp{
+                height: 45%;
+                width: 60%;
+            }
+            .sectionLinkedin{
+                height: 45%;
+                width: 60%;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionContact1{
+                border: solid yellowgreen 20px;
+                height: 150vh;
+                flex-direction: column;
+            }
+            .sectionWhatsapp{
+                height: 45%;
+                width: 100%;
+            }
+            .sectionLinkedin{
+                height: 45%;
+                width: 100%;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionContact1{
+                height: 800px;
+            }
+        }
+/* -------------------- */
+
+
+/* ------ SECTION 2 ----- */
+.sectionContact2{
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -5826,61 +6002,124 @@ html body{
     border: solid rgb(0, 200, 107) 20px;
     padding: 10px;
 }
-    .sectionContact1Form{
-        border: solid black 1px;
-        width: 40%;
-        height: 80%;
-        display: grid;
-        padding: 20px;
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+    .sectionContact2{
+        border: solid pink 20px;
+        height: 90vh;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .sectionContact2{
+        border: solid yellow 20px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 767px){
+    .sectionContact2{
+        border: solid red 20px;
+        height: 90vh;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 600px){
+    .sectionContact2{
+        border: solid yellowgreen 20px;
+        height: 110vh;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+    .sectionContact2{
+        height: 600px;
+    }
+}
 
+/* ------- FORMS ------ */
+
+.formBody{
+    background-color: red;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formCamp{
+    background-color: blue;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+}
+.formButton{
+    background-color: green;
+    height: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formCampLabel{
+    background-color: pink;
+    margin: 10px;
+}
+.formCampInput{
+    border: solid yellow 10px;
+    height: 50px;
+    width: 50%;
+}
+.formCampInputMessage{
+    border: solid green 10px;
+    height: 100px;
+    width: 90%;
+}
+.formCampDescription{
+    background-color: pink;
+    width: 90%;
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+    .formBody{
+        background-color: pink;
+        width: 60%;
     }
-    .sectionContact2FormDiv{
-        border: solid black 1px;
-        display: grid;
-        grid-template-areas: "a b"
-                             "c d";
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 50% 50%;
-        padding: 10px;
-        column-gap: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .formBody{
+        background-color: yellow;
+        width: 80%;
     }
-        #sectionContact1FormDiv1Label{
-            grid-area: a;
-            border: solid black 1px;
-            width: 50%;
-        }
-        #sectionContact1FormDiv2Label{
-            grid-area: b;
-            border: solid black 1px;
-            width: 50%;
-        }
-        #sectionContact1FormDiv1Input{
-            grid-area: c;
-            height: 40px;
-        }
-        #sectionContact1FormDiv2Input{
-            grid-area: d;
-            height: 40px;
-        }
-    .sectionContact1FormLabel{
-        border: solid black 1px;
-        width: 50%;
-    }
-    .sectionContact1FormInput{
-        border: solid black 1px;
+}
+@media screen and (min-width: 601px) and (max-width: 767px){
+    .formBody{
+        background-color: red;
         width: 90%;
-        height: 40px;
     }
-    #sectionContact1FormMessageInput{
-        height: 100px;
-        width: 90%;
+}
+@media screen and (min-width: 0px) and (max-width: 600px){
+    .formBody{
+        background-color: yellowgreen;
+        width: 1000%;
     }
-    #sectionContact1FormButton{
-        height: 50px;
-        width: 150px;
-        font-size: 18px;
+    .formCampInput{
+        width: 80%;
+        height: 60px;
     }
+    .formCampInputMessage{
+        width: 100%;
+        height: 150px;
+    }
+    .formCampDescription{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+    
+}
+
 /* ----------- */
+
+/* -------------------- */
 
 /* ......................................  CONTACT  ............................................. */
 

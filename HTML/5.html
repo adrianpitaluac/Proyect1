@@ -51,34 +51,64 @@
     </header>    
 
     <main>
+    
         <section class="sectionContact1">
-            <form class="sectionContact1Form" action="">
-                <div class="sectionContact2FormDiv">
-                    <label id="sectionContact1FormDiv1Label" for="">First Name</label>
-                    <input id="sectionContact1FormDiv1Input" type="text">
-                    <br>
-                    <label id="sectionContact1FormDiv2Label" for="">Second Name</label>
-                    <input id="sectionContact1FormDiv2Input" type="text">
+
+                <div class="sectionWhatsapp">
+                    <div class="sectionWhatsapp1">
+                        ICON
+                    </div>
+                    <button class="buttonWhatsapp">
+                        <a href="https://wa.me/5573697823?text=Hola,%20me%20interesa%20saber%20más%20sobre%20tus%20servicios." target="_blank">
+                            Contáctame por WhatsApp
+                        </a>
+                    </button>
+                    <div class="sectionWhatsapp2">
+                        Text
+                    </div>
                 </div>
-                <br>
 
-                <label class="sectionContact1FormLabel" for="">Email</label>
-                <input class="sectionContact1FormInput" type="text">
-                <br>
+                <div class="sectionLinkedin">
+                    <div class="sectionLinkedin1">
+                        ICON
+                    </div>
+                    <div class="sectionLinkedin2">
+                        Text
+                    </div>
+                    <button class="buttonLinkedin">
+                        <a href="https://www.linkedin.com/messaging/compose/?recipient=adrián-pitalúa-calleja-577a291b3"_blank" style="text-decoration:none;">
+                            Contáctame por LinkedIn
+                        </a>
+                    </button>
+                </div>
 
-                <label class="sectionContact1FormLabel" for="">Subject</label>
-                <input class="sectionContact1FormInput" type="text">
-                <br>
-
-                <label class="sectionContact1FormLabel" for="">Message</label>
-                <input id="sectionContact1FormMessageInput" type="text">
-                <br>
-
-                <button id="sectionContact1FormButton">Submit</button>
-            </form>
-            
         </section>
-        
+
+        <section class="sectionContact2">
+
+            <form action="https://formspree.io/f/mbllzjjz" class="formBody" method="POST">
+                <div class="formCamp">
+                    <label class="formCampLabel" for="name">nombre</label>
+                    <input class="formCampInput" id="name" name="name" required />
+                </div>
+
+                <div class="formCamp">
+                    <label class="formCampLabel" for="email">email</label>
+                    <input class="formCampInput" id="email" name="email" required />
+                </div>
+
+                <div class="formCamp">
+                    <label class="formCampLabel" for="message">mensaje</label>
+                    <textarea class="formCampInputMessage" id="message" name="message" required></textarea>
+                    <p class="formCampDescription">What would you like to discuss?</p>
+                </div>
+
+                <div class="formButton">
+                    <button class="fs-button" type="submit">Enviar</button>
+                </div>
+            </form>
+
+        </section>
     </main>
     
     <footer class="footer">
