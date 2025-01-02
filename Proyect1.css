@@ -168,7 +168,7 @@ html body{
             border: 0;
             background-color: transparent;
             color: white;
-            font-size: 2rem;
+            font-size: 1rem;
             cursor: pointer;
 
         }
@@ -199,6 +199,7 @@ html body{
         .navUl{
             flex-direction: column;
             gap: 0.1rem;
+            font-size: 12px;
         }
         .navLogo{
             margin-left: 20px;
@@ -4364,8 +4365,6 @@ html body{
             background-color: blue;
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionContact1{
-            }
             .sectionWhatsapp{
                 width: 35%;
             }
