@@ -71,7 +71,6 @@ html body{
     }
     .navNew{
         height: 100%;
-        background-color: green;
         flex-direction: row;
         display: flex;
         justify-content: center;
@@ -222,22 +221,19 @@ html body{
     align-items: center;
     /*background-color: rgb(5, 255, 247);*/
     /*margin: 20px;*/
-    border: solid blue 20px;
+    border: solid 20px;
     padding: 10px;
 }
     .headerIndexDiv{
-        border: solid blue 5px;
         height: 60%;
         width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: rgba(0, 0, 300, 0.3)
 
     }
         .headerIndexH1{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 90%;
@@ -248,7 +244,6 @@ html body{
             font-weight:bolder;
         }
         .headerIndexH3{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 50%;
@@ -266,12 +261,6 @@ html body{
         }
 
 @media screen and (min-width: 1024px) and (max-width: 1199px){
-    #headerIndex{
-        border: solid pink 20px;
-    }
-    .headerIndexDiv{
-        border: solid pink 5px;
-    }
 }     
 @media screen and (min-width: 768px) and (max-width: 1023px){
     #headerIndex{
@@ -285,10 +274,6 @@ html body{
 @media screen and (min-width: 601px) and (max-width: 767px){
     #headerIndex{
         height: 50vh;
-        border: solid red 20px;
-    }
-    .headerIndexDiv{
-        border: solid red 5px;
     }
     .headerIndexWallpaper{
         width: 120%;
@@ -298,10 +283,6 @@ html body{
 @media screen and (min-width: 321px) and (max-width: 600px){
     #headerIndex{
         height: 60vh;
-        border: solid greenyellow 20px;
-    }
-    .headerIndexDiv{
-        border: solid greenyellow 5px;
     }
     .headerIndexWallpaper{
         width: 100%;
@@ -311,10 +292,6 @@ html body{
 @media screen and (min-width: 0px) and (max-width: 320px){
     #headerIndex{
         height: 40vh;
-        border: solid orange 20px;
-    }
-    .headerIndexDiv{
-        border: solid orange 5px;
     }
     .headerIndexWallpaper{
         width: 100%;
@@ -324,10 +301,6 @@ html body{
 @media screen and (min-width: 481px) and (max-width: 1000px) and (orientation: landscape){
     #headerIndex{
         height: 500px;
-        border: solid white 20px;
-    }
-    .headerIndexDiv{
-        border: solid white 5px;
     }
     .headerIndexWallpaper{
         max-width: 100%;
@@ -349,7 +322,7 @@ html body{
     row-gap: 10px;
     background-color: rgb(220, 220, 220);
     /* margin: 20px; */
-    border: solid blue 20px;
+    border: solid20px;
     padding: 20px;
     /* background-size: cover; */
     /* background-position: center; */
@@ -357,35 +330,30 @@ html body{
 }
     #sectionIndex1Div1{
         grid-area: 1;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: end;
     }
     #sectionIndex1Div2{
         grid-area: 2;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionIndex1Div3{
         grid-area: 3;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionIndex1Div4{
         grid-area: a;
-        border: solid rgb(0, 255, 38) 5px;
         padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
         .sectionIndex1Divh{
-            border: solid black 1px;
             margin: 20px;
             padding:10px;
             width: 100%;
@@ -393,20 +361,11 @@ html body{
             text-align: center;
         }
         .sectionIndex1Divp{
-            border: solid black 1px;
             padding: 10px;
             width: 100%;
             height: 80%;
             text-align: center;
         }
-    /*    .sectionIndex1Div4p{
-            border: solid black 1px;
-            padding: 10px;
-            width: 90%;
-            height: 90%;
-            text-align: center;
-        }
-    */
         .sectionIndexDiv4img{
             max-width: 100%;
             max-height: 100%;
@@ -420,38 +379,10 @@ html body{
             cursor: pointer;
 
         }
-
-    @media screen and (min-width: 1024px) and (max-width: 1199px){
-        #sectionIndex1Div1{
-            border: solid pink 5px;
-        }
-        #sectionIndex1Div2{
-            border: solid pink 5px;
-        }
-        #sectionIndex1Div3{
-            border: solid pink 5px;
-        }
-        #sectionIndex1Div4{
-            border: solid pink 5px;
-        }
-    }
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .sectionIndex1{
             height: 80vh;
         }
-        #sectionIndex1Div1{
-            border: solid yellow 5px;
-        }
-        #sectionIndex1Div2{
-            border: solid yellow 5px;
-        }
-        #sectionIndex1Div3{
-            border: solid yellow 5px;
-        }
-        #sectionIndex1Div4{
-            border: solid yellow 5px;
-        }
-    
     }
     @media screen and (min-width: 601px) and (max-width: 767px){
         .sectionIndex1{
@@ -459,19 +390,6 @@ html body{
             height: 85vh;
             padding: 20px;
         }
-        #sectionIndex1Div1{
-            border: solid red 5px;
-        }
-        #sectionIndex1Div2{
-            border: solid red 5px;
-        }
-        #sectionIndex1Div3{
-            border: solid red 5px;
-        }
-        #sectionIndex1Div4{
-            border: solid red 5px;
-        }
-    
     }
     @media screen and (min-width: 321px) and (max-width: 600px){
         .sectionIndex1{
@@ -486,19 +404,15 @@ html body{
             row-gap: 0px;
         }
         #sectionIndex1Div1{
-            border: solid greenyellow 5px;
             grid-area: a;
         }
         #sectionIndex1Div2{
-            border: solid greenyellow 5px;
             grid-area: d;
         }
         #sectionIndex1Div3{
-            border: solid greenyellow 5px;
             grid-area: c;
         }
         #sectionIndex1Div4{
-            border: solid greenyellow 5px;
             grid-area: b;
             padding: 5px;
         }
@@ -525,19 +439,15 @@ html body{
             row-gap: 0px;
         }
         #sectionIndex1Div1{
-            border: solid orange 5px;
             grid-area: a;
         }
         #sectionIndex1Div2{
-            border: solid orange 5px;
             grid-area: d;
         }
         #sectionIndex1Div3{
-            border: solid orange 5px;
             grid-area: c;
         }
         #sectionIndex1Div4{
-            border: solid orange 5px;
             grid-area: b;
             padding: 0px;
         }
@@ -551,10 +461,6 @@ html body{
         .sectionIndex1Divp{
             padding: 0px;
         }
-       /* .sectionIndex1Div4p{
-            padding: 0px;
-        }*/
-    
     }
     @media screen and (min-width: 481px) and (max-width: 1000px) and (orientation: landscape){
         .sectionIndex1{
@@ -568,19 +474,15 @@ html body{
             row-gap: 0px;
         }
         #sectionIndex1Div1{
-            border: solid white 5px;
             grid-area: a;
         }
         #sectionIndex1Div2{
-            border: solid white 5px;
             grid-area: d;
         }
         #sectionIndex1Div3{
-            border: solid white 5px;
             grid-area: c;
         }
         #sectionIndex1Div4{
-            border: solid white 5px;
             grid-area: b;
         }
     
@@ -600,40 +502,34 @@ html body{
     row-gap: 10px;
     background-color: rgb(5, 255, 247);
     /* margin: 20px; */
-    border: solid blue 20px;
     padding: 20px;
 }
     #sectionIndex2Div1{
         grid-area: 1;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: end;
     }
     #sectionIndex2Div2{
         grid-area: 2;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionIndex2Div3{
         grid-area: 3;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionIndex2Div4{
         grid-area: a;
-        border: solid rgb(0, 255, 38) 5px;
         padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
         .sectionIndex2Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 100%;
@@ -641,14 +537,12 @@ html body{
             text-align: center;
         }
         .sectionIndex2Divp{
-            border: solid black 1px;
             padding: 10px;
             width: 100%;
             height: 80%;
             text-align: center;
         }
         .sectionIndex2Div4p{
-            border: solid black 1px;
             padding: 10px;
             width: 90%;
             height: 90%;
@@ -659,35 +553,9 @@ html body{
             max-height: 100%;
             
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            #sectionIndex2Div1{
-                border: solid pink 5px;
-            }
-            #sectionIndex2Div2{
-                border: solid pink 5px;
-            }
-            #sectionIndex2Div3{
-                border: solid pink 5px;
-            }
-            #sectionIndex2Div4{
-                border: solid pink 5px;
-            }
-        }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionIndex2{
                 height: 80vh;
-            }
-            #sectionIndex2Div1{
-                border: solid yellow 5px;
-            }
-            #sectionIndex2Div2{
-                border: solid yellow 5px;
-            }
-            #sectionIndex2Div3{
-                border: solid yellow 5px;
-            }
-            #sectionIndex2Div4{
-                border: solid yellow 5px;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
@@ -695,18 +563,6 @@ html body{
                 height: 85vh;
                 grid-template-columns: 40% 60%;
                 padding: 20px;
-            }
-            #sectionIndex2Div1{
-                border: solid red 5px;
-            }
-            #sectionIndex2Div2{
-                border: solid red 5px;
-            }
-            #sectionIndex2Div3{
-                border: solid red 5px;
-            }
-            #sectionIndex2Div4{
-                border: solid red 5px;
             }
         }
         @media screen and (min-width: 321px) and (max-width: 600px){
@@ -721,19 +577,15 @@ html body{
                 row-gap: 0px;
             }
             #sectionIndex2Div1{
-                border: solid greenyellow 5px;
                 grid-area: d;
             }
             #sectionIndex2Div2{
-                border: solid greenyellow 5px;
                 grid-area: b;
             }
             #sectionIndex2Div3{
-                border: solid greenyellow 5px;
                 grid-area: a;
             }
             #sectionIndex2Div4{
-                border: solid greenyellow 5px;
                 grid-area: c;
             }
         }
@@ -750,19 +602,15 @@ html body{
                 row-gap: 0px;
             }
             #sectionIndex2Div1{
-                border: solid orange 5px;
                 grid-area: d;
             }
             #sectionIndex2Div2{
-                border: solid orange 5px;
                 grid-area: b;
             }
             #sectionIndex2Div3{
-                border: solid orange 5px;
                 grid-area: a;
             }
             #sectionIndex2Div4{
-                border: solid orange 5px;
                 grid-area: c;
                 padding: 0px;
             }
@@ -788,19 +636,15 @@ html body{
                 row-gap: 0px;
             }
             #sectionIndex2Div1{
-                border: solid white 5px;
                 grid-area: d;
             }
             #sectionIndex2Div2{
-                border: solid white 5px;
                 grid-area: b;
             }
             #sectionIndex2Div3{
-                border: solid white 5px;
                 grid-area: a;
             }
             #sectionIndex2Div4{
-                border: solid white 5px;
                 grid-area: c;
             }
         }
@@ -817,14 +661,11 @@ html body{
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
-    background-color: rgb(5, 255, 247);
-    /* margin: 20px; */
-    border: solid blue 20px;
+    background-color: rgb(159, 193, 191);
     padding: 20px;
 }
     #sectionIndex3Div1{
         grid-area: "1";
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -832,7 +673,6 @@ html body{
     }
     #sectionIndex3Div2{
         grid-area: "2";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -840,7 +680,6 @@ html body{
     }
     #sectionIndex3Div3{
         grid-area: "3";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -848,7 +687,6 @@ html body{
     }
     #sectionIndex3Div4{
         grid-area: "4";
-        border: solid red 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -856,7 +694,6 @@ html body{
     }
     #sectionIndex3Div5{
         grid-area: "5";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -864,14 +701,12 @@ html body{
     }
     #sectionIndex3Div6{
         grid-area: "6";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
         .sectionIndex3Div{
-            border: solid black 1px;
             margin: 5px;
             padding: 10px;
             width: 90%;
@@ -879,58 +714,20 @@ html body{
             text-align: start;
         }
         .sectionIndex3Divp{
-            border: solid black 1px;
             margin: 0px;
             padding: 10px;
             width: 90%;
             height: 70%;
             text-align: start;
-            background-color: blue;
         }
     @media screen and (min-width: 1024px) and (max-width: 1199px){
         .sectionIndex3{
             height: 90vh;
         }
-        #sectionIndex3Div1{
-            border: solid pink 5px;
-        }
-        #sectionIndex3Div2{
-            border: solid pink 5px;
-        }
-        #sectionIndex3Div3{
-            border: solid pink 5px;
-        }
-        #sectionIndex3Div4{
-            border: solid pink 5px;
-        }
-        #sectionIndex3Div5{
-            border: solid pink 5px;
-        }
-        #sectionIndex3Div6{
-            border: solid pink 5px;
-        }
     }
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .sectionIndex3{
             height: 100vh;
-        }
-        #sectionIndex3Div1{
-            border: solid yellow 5px;
-        }
-        #sectionIndex3Div2{
-            border: solid yellow 5px;
-        }
-        #sectionIndex3Div3{
-            border: solid yellow 5px;
-        }
-        #sectionIndex3Div4{
-            border: solid yellow 5px;
-        }
-        #sectionIndex3Div5{
-            border: solid yellow 5px;
-        }
-        #sectionIndex3Div6{
-            border: solid yellow 5px;
         }
         .sectionIndex3Divp{
             height: 70%;
@@ -940,24 +737,6 @@ html body{
         .sectionIndex3{
             height: 120vh;
             padding: 25px;
-        }
-        #sectionIndex3Div1{
-            border: solid red 5px;
-        }
-        #sectionIndex3Div2{
-            border: solid red 5px;
-        }
-        #sectionIndex3Div3{
-            border: solid red 5px;
-        }
-        #sectionIndex3Div4{
-            border: solid yred 5px;
-        }
-        #sectionIndex3Div5{
-            border: solid red 5px;
-        }
-        #sectionIndex3Div6{
-            border: solid red 5px;
         }
         .sectionIndex3Divp{
             height: 70%;
@@ -978,27 +757,21 @@ html body{
             row-gap: 10px;
         }
         #sectionIndex3Div1{
-            border: solid greenyellow 5px;
             grid-area: a;
         }
         #sectionIndex3Div2{
-            border: solid greenyellow 5px;
             grid-area: b;
         }
         #sectionIndex3Div3{
-            border: solid greenyellow 5px;
             grid-area: c;
         }
         #sectionIndex3Div4{
-            border: solid greenyellow 5px;
             grid-area: d;
         }
         #sectionIndex3Div5{
-            border: solid greenyellow 5px;
             grid-area: e;
         }
         #sectionIndex3Div6{
-            border: solid greenyellow 5px;
             grid-area: f;
         }
         .sectionIndex3Divp{
@@ -1020,27 +793,21 @@ html body{
             row-gap: 10px;
         }
         #sectionIndex3Div1{
-            border: solid orange 5px;
             grid-area: a;
         }
         #sectionIndex3Div2{
-            border: solid orange 5px;
             grid-area: b;
         }
         #sectionIndex3Div3{
-            border: solid orange 5px;
             grid-area: c;
         }
         #sectionIndex3Div4{
-            border: solid orange 5px;
             grid-area: d;
         }
         #sectionIndex3Div5{
-            border: solid orange 5px;
             grid-area: e;
         }
         #sectionIndex3Div6{
-            border: solid orange 5px;
             grid-area: f;
         }
         .sectionIndex3Divp{
@@ -1059,27 +826,21 @@ html body{
             grid-template-rows: repeat(4,1fr);
         }
         #sectionIndex3Div1{
-            border: solid white 5px;
             grid-area: a;
         }
         #sectionIndex3Div2{
-            border: solid white 5px;
             grid-area: b;
         }
         #sectionIndex3Div3{
-            border: solid white 5px;
             grid-area: c;
         }
         #sectionIndex3Div4{
-            border: solid white 5px;
             grid-area: d;
         }
         #sectionIndex3Div5{
-            border: solid white 5px;
             grid-area: e;
         }
         #sectionIndex3Div6{
-            border: solid white 5px;
             grid-area: f;
         }
         .sectionIndex3Divp{
@@ -1096,12 +857,9 @@ html body{
     justify-content: center;
     align-items: center;
     background-color: rgb(5, 255, 247);
-    /* margin: 20px; */
-    border: solid blue 20px;
     padding: 10px;
 }
     .sectionIndex3_2Div{
-        border: solid blue 5px;
         height: 60%;
         width: 90%;
         display: flex;
@@ -1112,7 +870,6 @@ html body{
     }
 
         .sectionIndex3_2H1{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 90%;
@@ -1124,7 +881,6 @@ html body{
 
         }
         .sectionIndex3_2p{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 50%;
@@ -1137,64 +893,40 @@ html body{
     @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionIndex3_2{
                 height: 65vh;
-                border: solid pink 20px;
-            }
-            .sectionIndex3_2Div{
-                border: solid pink 5px;
-        
             }
     }   
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .sectionIndex3_2{
             height: 60vh;
-            border: solid yellow 20px;
-        }
-        .sectionIndex3_2Div{
-            border: solid yellow 5px;
-    
         }
     }
     @media screen and (min-width: 601px) and (max-width: 767px){
         .sectionIndex3_2{
             height: 60vh;
-            border: solid red 20px;
-        }
-        .sectionIndex3_2Div{
-            border: solid red 5px;
-    
         }
     }
     @media screen and (min-width: 321px) and (max-width: 600px){
         .sectionIndex3_2{
             height: 70vh;
-            border: solid yellowgreen 20px;
         }
         .sectionIndex3_2Div{
-            border: solid yellowgreen 5px;
             height: 80%;
-    
         }
     }
     @media screen and (min-width: 0px) and (max-width: 320px){
         .sectionIndex3_2{
             height: 70vh;
-            border: solid orange 20px;
         }
         .sectionIndex3_2Div{
-            border: solid orange 5px;
             height: 80%;
-    
         }
     }
     @media screen and (min-width: 481px) and (max-width: 1000px) and (orientation: landscape){
         .sectionIndex3_2{
             height: 500px;
-            border: solid white 20px;
         }
         .sectionIndex3_2Div{
-            border: solid white 5px;
             height: 80%;
-    
         }
     }
 /* -------------------------------------- */
@@ -1206,24 +938,20 @@ html body{
     grid-template-areas: "1 2";
     grid-template-columns: 50% 50%;
     column-gap: 20px;
-    background-color: rgb(5, 255, 247);
+    background-color: rgb(245, 241, 241);
     /* margin: 20px; */
-    border: solid blue 20px;
     padding: 20px;
 }
     #sectionIndex4Div1{
         grid-area: "1";
-        border: solid orangered 5px;
     }
     #sectionIndex4Div2{
         grid-area: "2";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
         .sectionIndex4Div1p{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -1231,7 +959,6 @@ html body{
             text-align: start;
         }
         .sectionIndex4Div1h{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -1239,7 +966,6 @@ html body{
             text-align: start;
         }
         .sectionIndex4Div2p{
-            border: solid black 1px;
             padding: 10px;
             width: 90%;
             height: 80%;
@@ -1253,34 +979,16 @@ html body{
         .sectionIndex4{
             height: 55vh;
         }
-        #sectionIndex4Div1{
-            border: solid pink 5px;
-        }
-        #sectionIndex4Div2{
-            border: solid pink 5px;
-        }
     }
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .sectionIndex4{
             height: 60vh;
-        }
-        #sectionIndex4Div1{
-            border: solid yellow 5px;
-        }
-        #sectionIndex4Div2{
-            border: solid yellow 5px;
         }
     }
     @media screen and (min-width: 601px) and (max-width: 767px){
         .sectionIndex4{
             height: 60vh;
             grid-template-columns: 40% 60%;
-        }
-        #sectionIndex4Div1{
-            border: solid red 5px;
-        }
-        #sectionIndex4Div2{
-            border: solid red 5px;
         }
         .sectionIndex4Div1p{
             height: 50%;
@@ -1300,7 +1008,6 @@ html body{
             padding: 5px;
         }
         #sectionIndex4Div1{
-            border: solid greenyellow 5px;
             grid-area: b;
             row-gap: 5px;
             display: flex;
@@ -1308,7 +1015,6 @@ html body{
             justify-content:space-evenly;
         }
         #sectionIndex4Div2{
-            border: solid greenyellow 5px;
             grid-area: a;
         }
         .sectionIndex4Div1p{
@@ -1334,7 +1040,6 @@ html body{
             padding: 5px;
         }
         #sectionIndex4Div1{
-            border: solid orange 5px;
             grid-area: b;
             row-gap: 5px;
             display: flex;
@@ -1342,7 +1047,6 @@ html body{
             justify-content:space-evenly;
         }
         #sectionIndex4Div2{
-            border: solid orange 5px;
             grid-area: a;
         }
         .sectionIndex4Div1p{
@@ -1367,11 +1071,9 @@ html body{
             grid-template-columns: 100%;
         }
         #sectionIndex4Div1{
-            border: solid white 5px;
             grid-area: b;
         }
         #sectionIndex4Div2{
-            border: solid white 5px;
             grid-area: a;
         }
         .sectionIndex4Div1p{
@@ -1397,12 +1099,9 @@ html body{
     justify-content: center;
     align-items: center;
     background-color: rgb(247, 112, 112);
-    /* margin: 20px; */
-    border: solid rgb(255, 17, 0) 20px;
     padding: 10px;
 }
     .headerServicesDiv{
-        border: solid rgb(255, 0, 0) 5px;
         height: 90%;
         width: 90%;
         display: flex;
@@ -1413,7 +1112,6 @@ html body{
 
     }
         .headerServicesH1{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -1424,7 +1122,6 @@ html body{
 
         }
         .headerServicesp1{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -1434,7 +1131,6 @@ html body{
             align-items: center;
         }
         .headerServicesp2{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -1449,11 +1145,7 @@ html body{
         
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             #headerServices{
-                border: solid pink 20px;
                 height: 80vh;
-            }
-            .headerServicesDiv{
-                border: solid pink 20px;
             }
             .headerServicesp1{
                 height: 30%;
@@ -1461,11 +1153,7 @@ html body{
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             #headerServices{
-                border: solid yellow 20px;
                 height: 80vh;
-            }
-            .headerServicesDiv{
-                border: solid yellow 20px;
             }
             .headerServicesH1{
                 height: 30%;
@@ -1479,13 +1167,11 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             #headerServices{
-                border: solid red 20px;
                 height: 95vh;
                 flex-direction: column-reverse;
                 padding: 0px;
             }
             .headerServicesDiv{
-                border: solid red 20px;
                 width: 100%;
             }
             .headerServicesPic{
@@ -1495,16 +1181,13 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             #headerServices{
-                border: solid yellowgreen 20px;
                 height: 170vh;
                 flex-direction: column-reverse;
             }
             .headerServicesDiv{
-                border: solid yellowgreen 10px;
                 width: 100%;
             }
             .headerServicesp1{
-                border: solid black 1px;
                 margin: 0px;
                 padding: 5px;
                 width: 95%;
@@ -1519,7 +1202,6 @@ html body{
     
             }
             .headerServicesp2{
-                border: solid black 1px;
                 margin: 10px;
                 padding: 10px;
                 width: 95%;
@@ -1548,34 +1230,28 @@ html body{
     column-gap: 10px;
     row-gap: 10px;
     background-color: lightblue;
-    /* margin: 20px; */
-    border: solid rgb(255, 17, 0) 20px;
     padding: 50px;
 }
     #sectionServices1Div1{
         grid-area: 1;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: end;
     }
     #sectionServices1Div2{
         grid-area: 2;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionServices1Div3{
         grid-area: 3;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionServices1Div4{
         grid-area: a;
-        border: solid rgb(0, 255, 38) 5px;
         padding: 20px;
         display: flex;
         justify-content: center;
@@ -1583,7 +1259,6 @@ html body{
         overflow: hidden;
     }
         .sectionServices1Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 100%;
@@ -1591,7 +1266,6 @@ html body{
             text-align: center;
         }
         .sectionServices1Divp{
-            border: solid black 1px;
             padding: 10px;
             width: 90%;
             height: 80%;
@@ -1602,21 +1276,6 @@ html body{
         }
         
         @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionServices1{
-                border: solid pink 20px;
-            }
-            #sectionServices1Div1{
-                border: solid pink 20px;
-            }
-            #sectionServices1Div2{
-                border: solid pink 20px;
-            }
-            #sectionServices1Div3{
-                border: solid pink 20px;
-            }
-            #sectionServices1Div4{
-                border: solid pink 20px;
-            }
             .sectionServices1Divh{
                 height: 50%;
             }
@@ -1627,20 +1286,9 @@ html body{
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionServices1{
                 height: 80vh;
-                border: solid yellow 20px;
                 padding: 20px;
             }
-            #sectionServices1Div1{
-                border: solid yellow 20px;
-            }
-            #sectionServices1Div2{
-                border: solid yellow 20px;
-            }
-            #sectionServices1Div3{
-                border: solid yellow 20px;
-            }
             #sectionServices1Div4{
-                border: solid yellow 20px;
                 padding: 0px;
             }
             .sectionServices1Divh{
@@ -1657,7 +1305,6 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices1{
-                border: solid red 20px;
                 height: 80vh;
                 padding: 10px;
                 grid-template-areas: "1 a"
@@ -1668,19 +1315,15 @@ html body{
                 justify-content: space-around;
             }
             #sectionServices1Div1{
-                border: solid red 20px;
                 grid-area: "1";
             }
             #sectionServices1Div2{
-                border: solid red 20px;
                 grid-area: "2";
             }
             #sectionServices1Div3{
-                border: solid red 20px;
                 grid-area: b;
             }
             #sectionServices1Div4{
-                border: solid red 20px;
                 padding: 5px;
             }
             .sectionServices1Pic{
@@ -1690,7 +1333,6 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices1{
-                border: solid yellowgreen 20px;
                 height: 120vh;
                 grid-template-areas: "a"
                                      "b"
@@ -1702,19 +1344,15 @@ html body{
                 padding: 5px;
             }
             #sectionServices1Div1{
-                border: solid yellowgreen 20px;
                 grid-area: a;
             }
             #sectionServices1Div2{
-                border: solid yellowgreen 20px;
                 grid-area: d;
             }
             #sectionServices1Div3{
-                border: solid yellowgreen 20px;
                 grid-area: c;
             }
             #sectionServices1Div4{
-                border: solid yellowgreen 20px;
                 grid-area: b;
                 padding: 0px;
             }
@@ -1747,13 +1385,10 @@ html body{
     column-gap: 0px;
     row-gap: 0px;
     background-color: rgb(247, 112, 112);
-    /* margin: 20px; */
-    border: solid rgb(255, 17, 0) 20px;
     padding: 10px;
 }
     #sectionServices2Div1{
         grid-area: "1";
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1761,7 +1396,6 @@ html body{
     }
     #sectionServices2Div2{
         grid-area: "2";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1769,7 +1403,6 @@ html body{
     }
     #sectionServices2Div3{
         grid-area: "3";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1777,14 +1410,12 @@ html body{
     }
     #sectionServices2Div4{
         grid-area: "4";
-        border: solid red 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
         .sectionServices2Divp{
-            border: solid black 1px;
             margin: 0px;
             padding: 10px;
             width: 90%;
@@ -1792,44 +1423,13 @@ html body{
             text-align: start;
         }
         .sectionServices2Divh{
-            border: solid black 1px;
             width: 90%;
             text-align: center;
         }
         
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionServices2{
-                border: solid pink 20px;
-            }
-            #sectionServices2Div1{
-                border: solid pink 20px;
-            }
-            #sectionServices2Div2{
-                border: solid pink 20px;
-            }
-            #sectionServices2Div3{
-                border: solid pink 20px;
-            }
-            #sectionServices2Div4{
-                border: solid pink 20px;
-            }
-        }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionServices2{
-                border: solid yellow 20px;
                 height: 80vh;
-            }
-            #sectionServices2Div1{
-                border: solid yellow 20px;
-            }
-            #sectionServices2Div2{
-                border: solid yellow 20px;
-            }
-            #sectionServices2Div3{
-                border: solid yellow 20px;
-            }
-            #sectionServices2Div4{
-                border: solid yellow 20px;
             }
             .sectionServices2Divp{
                 height: 70%;
@@ -1841,7 +1441,6 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices2{
-                border: solid red 20px;
                 height: 110vh;
                 display: flex;
                 flex-direction: column;
@@ -1849,25 +1448,21 @@ html body{
                 gap: 0px;
             }
                 #sectionServices2Div1{
-                    border: solid red 20px;
                     display: flex;
                     justify-content: center;
                     align-items: end;
                 }
                 #sectionServices2Div2{
-                    border: solid red 20px;
                     display: flex;
                     justify-content: center;
                     align-items: start;
                 }
                 #sectionServices2Div3{
-                    border: solid red 20px;
                     display: flex;
                     justify-content: center;
                     align-items: end;
                 }
                 #sectionServices2Div4{
-                    border: solid red 20px;
                     display: flex;
                     justify-content: center;
                     align-items: start;
@@ -1883,7 +1478,6 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices2{
-                border: solid yellowgreen 20px;
                 height: 150vh;
                 display: flex;
                 flex-direction: column;
@@ -1891,23 +1485,18 @@ html body{
                 padding: 5px;
             }
             #sectionServices2Div1{
-                border: solid yellowgreen 20px;
                 height: 100%;
             }
             #sectionServices2Div2{
-                border: solid yellowgreen 20px;
                 height: 100%;
             }
             #sectionServices2Div3{
-                border: solid yellowgreen 20px;
                 height: 100%;
             }
             #sectionServices2Div4{
-                border: solid yellowgreen 20px;
                 height: 100%;
             }
             .sectionServices2Divp{
-                border: solid black 1px;
                 margin: 0px;
                 padding: 10px;
                 width: 100%;
@@ -1936,15 +1525,12 @@ html body{
     column-gap: 10px;
     row-gap: 10px;
     background-color: purple;
-    /* margin: 20px; */
-    border: solid rgb(255, 17, 0) 20px;
     padding: 10px;
     justify-content: space-around;
     align-items: center;
 }
     #sectionServices2_5Div1{
         grid-area: a;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1953,7 +1539,6 @@ html body{
     }
     #sectionServices2_5Div2{
         grid-area: "2";
-        border: solid orangered 5px;
         align-items: center;
         border-radius: 15px;
         display: flex;
@@ -1964,7 +1549,6 @@ html body{
     }
     #sectionServices2_5Div3{
         grid-area: "3";
-        border: solid orangered 5px;
         align-items: center;
         border-radius: 15px;
         display: flex;
@@ -1975,7 +1559,6 @@ html body{
     }
     #sectionServices2_5Div4{
         grid-area: "4";
-        border: solid red 5px;
         align-items: center;
         border-radius: 15px;
         display: flex;
@@ -1986,7 +1569,6 @@ html body{
     }
     #sectionServices2_5Div5{
         grid-area: "5";
-        border: solid red 5px;
         align-items: center;
         border-radius: 15px;
         display: flex;
@@ -1996,15 +1578,13 @@ html body{
         height: 100%;
     }
         .sectionServices2_5Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 80%;
-            height: 10%;
+            height: 30%;
             text-align: start;
         }
         .sectionServices2_5Divp{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 80%;
@@ -2014,24 +1594,8 @@ html body{
         
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionServices2_5{
-                border: solid pink 20px;
-                height: 90vh;
+                height: 50vh;
                 padding: 20px;
-            }
-            #sectionServices2_5Div1{
-                border: solid pink 20px;
-            }
-            #sectionServices2_5Div2{
-                border: solid pink 20px;
-            }
-            #sectionServices2_5Div3{
-                border: solid pink 20px;
-            }
-            #sectionServices2_5Div4{
-                border: solid pink 20px;
-            }
-            #sectionServices2_5Div5{
-                border: solid pink 20px;
             }
             .sectionServices2_5Divh{
                 height: 30%;
@@ -2056,22 +1620,9 @@ html body{
                 row-gap: 0px;
             }
             #sectionServices2_5Div1{
-                border: solid yellow 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            }
-            #sectionServices2_5Div2{
-                border: solid yellow 20px;
-            }
-            #sectionServices2_5Div3{
-                border: solid yellow 20px;
-            }
-            #sectionServices2_5Div4{
-                border: solid yellow 20px;
-            }
-            #sectionServices2_5Div5{
-                border: solid yellow 20px;
             }
             .sectionServices2_5Divh{
                 width: 90%;
@@ -2087,7 +1638,6 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices2_5{
-                border: solid red 20px;
                 height: 120vh;
                 grid-template-areas: "a a"
                                      "2 3"
@@ -2098,24 +1648,19 @@ html body{
                 align-items: center;
             }
             #sectionServices2_5Div1{
-                border: solid red 20px;
                 padding: 10px;
                 height: 100%;
             }
             #sectionServices2_5Div2{
-                border: solid red 20px;
                 height: 100%;
             }
             #sectionServices2_5Div3{
-                border: solid red 20px;
                 height: 100%;
             }
             #sectionServices2_5Div4{
-                border: solid red 20px;
                 height: 100%;
             }
             #sectionServices2_5Div5{
-                border: solid red 20px;
                 height: 100%;
             }
             .sectionServices2_5Divh{
@@ -2130,31 +1675,13 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices2_5{
-                border: solid yellowgreen 20px;
                 height: 260vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
-            #sectionServices2_5Div1{
-                border: solid yellowgreen 20px;
-
-            }
-            #sectionServices2_5Div2{
-                border: solid yellowgreen 20px;
-            }
-            #sectionServices2_5Div3{
-                border: solid yellowgreen 20px;
-            }
-            #sectionServices2_5Div4{
-                border: solid yellowgreen 20px;
-            }
-            #sectionServices2_5Div5{
-                border: solid yellowgreen 20px;
-            }
             .sectionServices2_5Divh h{
-                border: solid black 1px;
                 margin: 10px;
                 padding: 10px;
                 width: 90%;
@@ -2162,7 +1689,6 @@ html body{
                 text-align: start;
             }
             .sectionServices2_5Divp p{
-                border: solid black 1px;
                 margin: 10px;
                 padding: 10px;
                 width: 90%;
@@ -2189,34 +1715,28 @@ html body{
     column-gap: 10px;
     row-gap: 10px;
     background-color: rgb(247, 112, 112);
-    /* margin: 20px; */
-    border: solid rgb(255, 17, 0) 20px;
     padding: 50px;
 }
     #sectionServices3Div1{
         grid-area: "1";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: end;
     }
     #sectionServices3Div2{
         grid-area: "2";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionServices3Div3{
         grid-area: "3";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionServices3Div4{
         grid-area: a;
-        border: solid rgb(0, 255, 38) 5px;
         padding: 0px;
         display: flex;
         justify-content: center;
@@ -2224,7 +1744,6 @@ html body{
         overflow: hidden;
     }
         .sectionServices3Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 100%;
@@ -2232,7 +1751,6 @@ html body{
             text-align: center;
         }
         .sectionServices3Divp{
-            border: solid black 1px;
             padding: 10px;
             width: 90%;
             height: 80%;
@@ -2247,23 +1765,10 @@ html body{
                 border: solid pink 20px;
                 grid-template-rows: 0.5fr 0.7fr 1.3fr;
             }
-            #sectionServices3Div1{
-                border: solid pink 20px;
-            }
-            #sectionServices3Div2{
-                border: solid pink 20px;
-            }
-            #sectionServices3Div3{
-                border: solid pink 20px;
-            }
-            #sectionServices3Div4{
-                border: solid pink 20px;
-            }
             .sectionServices3Divh{
                 height: 70%;
             }
             .sectionServices3Divp{
-                border: solid black 1px;
                 padding: 10px;
                 width: 90%;
                 height: 90%;
@@ -2272,21 +1777,8 @@ html body{
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionServices3{
-                border: solid yellow 20px;
                 padding: 30px;
                 grid-template-rows: 0.5fr 0.8fr 1.2fr;
-            }
-            #sectionServices3Div1{
-                border: solid yellow 20px;
-            }
-            #sectionServices3Div2{
-                border: solid yellow 20px;
-            }
-            #sectionServices3Div3{
-                border: solid yellow 20px;
-            }
-            #sectionServices3Div4{
-                border: solid yellow 20px;
             }
             .sectionServices3Divh{
                 height: 70%;
@@ -2297,21 +1789,8 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3{
-                border: solid red 20px;
                 height: 80vh;
                 padding: 10px;
-            }
-            #sectionServices3Div1{
-                border: solid red 20px;
-            }
-            #sectionServices3Div2{
-                border: solid red 20px;
-            }
-            #sectionServices3Div3{
-                border: solid red 20px;
-            }
-            #sectionServices3Div4{
-                border: solid red 20px;
             }
             .sectionServices3Divh{
                 margin: 10px;
@@ -2327,23 +1806,10 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices3{
-                border: solid yellowgreen 20px;
                 height: 150vh;
                 display: flex;
                 flex-direction: column;
                 padding: 5px;
-            }
-            #sectionServices3Div1{
-                border: solid yellowgreen 5px;
-            }
-            #sectionServices3Div2{
-                border: solid yellowgreen 5px;
-            }
-            #sectionServices3Div3{
-                border: solid yellowgreen 5px;
-            }
-            #sectionServices3Div4{
-                border: solid yellowgreen 5px;
             }
             .sectionServices3Divh{
                 width: 100%;
@@ -2366,7 +1832,7 @@ html body{
 /* ------ SECTION 3.2 ----- */
 
 .sectionServices3_2{
-    height: 70vh;
+    height: 80vh;
     display: grid;
     grid-template-areas: "1 a"
                          "2 a";
@@ -2374,21 +1840,17 @@ html body{
     grid-template-rows: 15% 85%;
     column-gap: 10px;
     row-gap: 10px;
-    background-color: rgb(247, 112, 112);
-    /* margin: 20px; */
-    border: solid rgb(255, 17, 0) 20px;
+    background-color: rgb(208, 208, 208);
     padding: 10px;
 }
     #sectionServices3_2Div1{
         grid-area: "1";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: end;
     }
     #sectionServices3_2Div2{
         grid-area: "2";
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2396,7 +1858,6 @@ html body{
     }
     #sectionServices3_2Div4{
         grid-area: a;
-        border: solid rgb(0, 255, 38) 5px;
         padding: 20px;
         display: flex;
         justify-content: center;
@@ -2404,7 +1865,6 @@ html body{
         overflow: hidden;
     }
         .sectionServices3_2Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 100%;
@@ -2413,7 +1873,6 @@ html body{
             justify-content: start;
         }
         .sectionServices3_2Divp{
-            border: solid black 1px;
             padding: 10px;
             width: 90%;
             height: 80%;
@@ -2425,17 +1884,7 @@ html body{
 
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionServices3_2{
-                border: solid pink 20px;
                 height: 100vh;
-            }
-            #sectionServices3_2Div1{
-                border: solid pink 20px;
-            }
-            #sectionServices3_2Div2{
-                border: solid pink 20px;
-            }
-            #sectionServices3_2Div4{
-                border: solid pink 20px;
             }
             .sectionServices3_2Divh{
                 height: 70%;
@@ -2447,19 +1896,10 @@ html body{
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionServices3_2{
-                border: solid yellow 20px;
                 height: 120vh;
                 grid-template-columns: 60% 40%;
             }
-            #sectionServices3_2Div1{
-                border: solid yellow 20px;
-            }
-            #sectionServices3_2Div2{
-                border: solid yellow 20px;
-
-            }
             #sectionServices3_2Div4{
-                border: solid yellow 20px;
                 overflow: hidden;
             }
             .sectionServices3_2Divh{
@@ -2475,7 +1915,6 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3_2{
-                border: solid red 20px;
                 height: 130vh;
                 grid-template-areas: "a a"
                                      "b c";
@@ -2483,15 +1922,12 @@ html body{
                 grid-template-rows: 15% 85%;
             }
             #sectionServices3_2Div1{
-                border: solid red 20px;
                 grid-area: a;
             }
             #sectionServices3_2Div2{
-                border: solid red 20px;
                 grid-area: b;
             }
             #sectionServices3_2Div4{
-                border: solid red 20px;
                 grid-area: c;
             }
             .sectionServices3_2Divh{
@@ -2501,19 +1937,9 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices3_2{
-                border: solid yellowgreen 20px;
                 height: 200vh;
                 display: flex;
                 flex-direction: column;
-            }
-            #sectionServices3_2Div1{
-                border: solid yellowgreen 20px;
-            }
-            #sectionServices3_2Div2{
-                border: solid yellowgreen 20px;
-            }
-            #sectionServices3_2Div4{
-                border: solid yellowgreen 20px;
             }
             .sectionServices3_2Divh{
                 height: 70%;
@@ -2533,47 +1959,41 @@ html body{
     display: grid;
     grid-template-areas: "a b";
     grid-template-columns: 35% 65%;
-    background-color: rgb(247, 112, 112);
-    /* margin: 20px; */
-    border: solid rgb(255, 17, 0) 20px;
+    background-color: rgb(186, 186, 186);
     padding: 0px;
     height: 100vh;
 
 }
 .sectionServices3_5Section1{
     grid-area: b;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(247, 112, 112);
-    border: solid rgb(255, 17, 0) 5px;
     margin: 1px;
     padding: 0px;
 }
 .sectionServices3_5Section2{
     grid-area: a;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(247, 112, 112);
-    border: solid rgb(255, 17, 0) 5px;
     margin: 1px;
     padding: 0px;
     overflow: hidden;
 }
     .sectionServices3_5Div1{
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 90%;
     }
     .sectionServices3_5Div2{
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2581,7 +2001,6 @@ html body{
         width: 99%;
     }
         .sectionServices3_5Divp1{
-            border: solid black 1px;
             margin: 0px;
             padding: 5px;
             width: 90%;
@@ -2589,7 +2008,6 @@ html body{
             text-align: center;
         }
         .sectionServices3_5Divp2{
-            border: solid black 1px;
             margin: 0px;
             padding: 5px;
             width: 99%;
@@ -2597,7 +2015,6 @@ html body{
             text-align: start;
         }
         .sectionServices3_5Divp3{
-            border: solid black 1px;
             margin: 0px;
             padding: 5px;
             width: 90%;
@@ -2609,83 +2026,28 @@ html body{
         }
 
         @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionServices3_5{
-                border: solid pink 20px;
-            }
-            .sectionServices3_5Section1{
-                border: solid pink 20px;
-            }
-            .sectionServices3_5Section2{
-                border: solid pink 20px;
-            }
-            .sectionServices3_5Div1{
-                border: solid pink 20px;
-            }
-            .sectionServices3_5Div2{
-                border: solid pink 5px;
-            }
             .sectionServices3_5Pic{
                 height: 100%;
-            }
-
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionServices3_5{
-                border: solid yellow 20px;
-            }
-            .sectionServices3_5Section1{
-                border: solid yellow 20px;
-            }
-            .sectionServices3_5Section2{
-                border: solid yellow 20px;
-            }
-            .sectionServices3_5Div1{
-                border: solid yellow 20px;
-            }
-            .sectionServices3_5Div2{
-                border: solid yellow 5px;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3_5{
-                border: solid red 20px;
                 height: 120vh;
                 display: flex;
                 flex-direction: column;
             }
-            .sectionServices3_5Section1{
-                border: solid red 20px;
-            }
-            .sectionServices3_5Section2{
-                border: solid red 20px;
-            }
-            .sectionServices3_5Div1{
-                border: solid red 20px;
-            }
-            .sectionServices3_5Div2{
-                border: solid red 5px;
-            }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices3_5{
-                border: solid yellowgreen 20px;
                 display: flex;
                 flex-direction: column;
                 height: 150vh;
             }
             .sectionServices3_5Section1{
-                border: solid yellowgreen 20px;
                 height: 150vh;
             }
             .sectionServices3_5Section2{
-                border: solid yellowgreen 20px;
                 height: 30vh;
-            }
-            .sectionServices3_5Div1{
-                border: solid yellowgreen 20px;
-            }
-            .sectionServices3_5Div2{
-                border: solid yellowgreen 5px;
             }
             .sectionServices3_5Pic{
                 
@@ -2713,12 +2075,9 @@ html body{
     justify-content: center;
     align-items: center;
     background-color: rgb(247, 112, 112);
-    /* margin: 20px; */
-    border: solid rgb(255, 17, 0) 20px;
     padding: 10px;
 }
     .sectionServices3_7Div{
-        border: solid rgb(255, 17, 0) 5px;
         height: 60%;
         width: 90%;
         display: flex;
@@ -2728,7 +2087,6 @@ html body{
 
     }
         .sectionServices3_7H1{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 90%;
@@ -2739,7 +2097,6 @@ html body{
 
         }
         .sectionServices3_7H3{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 50%;
@@ -2748,39 +2105,16 @@ html body{
             justify-content: center;
             align-items: center;
         }
-
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionServices3_7{
-                border: solid pink 20px;
-            }
-            .sectionServices3_7Div{
-                border: solid pink 20px;
-            }
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionServices3_7{
-                border: solid yellow 20px;
-            }
-            .sectionServices3_7Div{
-                border: solid yellow 20px;
-            }
-        }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3_7{
-                border: solid red 20px;
                 height: 70vh;
-            }
-            .sectionServices3_7Div{
-                border: solid red 20px;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices3_7{
-                border: solid yellowgreen 20px;
                 height: 70vh;
             }
             .sectionServices3_7Div{
-                border: solid yellowgreen 5px;
                 height: 80%;
                 width: 100%;
             }
@@ -2802,12 +2136,9 @@ html body{
     justify-content: center;
     align-items: center;
     background-color: rgb(247, 112, 112);
-    /* margin: 20px; */
-    border: solid rgb(255, 17, 0) 20px;
     padding: 10px;
 }
     .sectionServices3_9Div{
-        border: solid rgb(255, 17, 0) 5px;
         height: 60%;
         width: 90%;
         display: flex;
@@ -2817,7 +2148,6 @@ html body{
 
     }
         .sectionServices3_9H1{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 90%;
@@ -2828,7 +2158,6 @@ html body{
 
         }
         .sectionServices3_9H3{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 50%;
@@ -2838,38 +2167,16 @@ html body{
             align-items: center;
         }
 
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionServices3_9{
-                border: solid pink 20px;
-            }
-            .sectionServices3_9Div{
-                border: solid pink 20px;
-            }
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionServices3_9{
-                border: solid yellow 20px;
-            }
-            .sectionServices3_9Div{
-                border: solid yellow 20px;
-            }
-        }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3_9{
-                border: solid red 20px;
                 height: 70vh;
-            }
-            .sectionServices3_9Div{
-                border: solid red 20px;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices3_9{
-                border: solid yellowgreen 20px;
                 height: 70vh;
             }
             .sectionServices3_9Div{
-                border: solid yellowgreen 5px;
                 height: 80%;
                 width: 100%;
             }
@@ -2884,30 +2191,25 @@ html body{
 
 /* ------ SECTION 4----- */
 .sectionServices4{
-    height: 30vh;
+    height: 50vh;
     display: grid;
     grid-template-areas: "1 2";
     grid-template-columns: repeat(2,1fr);
     column-gap: 20px;
-    background-color: rgb(247, 112, 112);
-    /* margin: 20px; */
-    border: solid rgb(255, 17, 0) 20px;
+    background-color: rgb(211, 211, 211);
     padding: 20px;
 }
     #sectionServices4Div1{
         grid-area: "1";
-        border: solid orangered 5px;
     }
     #sectionServices4Div2{
         grid-area: "2";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
     }
         .sectionServices4Div1p{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -2915,7 +2217,6 @@ html body{
             text-align: start;
         }
         .sectionServices4Div1h{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -2923,7 +2224,6 @@ html body{
             text-align: start;
         }
         .sectionServices4Div2p{
-            border: solid black 1px;
             padding: 10px;
             width: 90%;
             height: 80%;
@@ -2935,26 +2235,12 @@ html body{
 
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionServices4{
-                border: solid pink 20px;
                 height: 40vh;
-            }
-            #sectionServices4Div1{
-                border: solid pink 20px;
-            }
-            #sectionServices4Div2{
-                border: solid pink 20px;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionServices4{
-                border: solid yellow 20px;
                 height: 50vh;
-            }
-            #sectionServices4Div1{
-                border: solid yellow 20px;
-            }
-            #sectionServices4Div2{
-                border: solid yellow 20px;
             }
             .sectionServices4Div1p{
                 height: 60%;
@@ -2962,14 +2248,7 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices4{
-                border: solid red 20px;
                 height: 60vh;
-            }
-            #sectionServices4Div1{
-                border: solid red 20px;
-            }
-            #sectionServices4Div2{
-                border: solid yellow  20px;
             }
             .sectionServices4Div1p{
                 height: 70%;
@@ -2977,19 +2256,11 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices4{
-                border: solid yellowgreen 20px;
                 height: 80vh;
                 display: flex;
                 flex-direction: column-reverse;
             }
-            #sectionServices4Div1{
-                border: solid yellowgreen 5px;
-            }
-            #sectionServices4Div2{
-                border: solid yellowgreen  5px;
-            }
             .sectionServices4Div1p{
-                border: solid black 1px;
                 margin: 10px;
                 padding: 10px;
                 width: 90%;
@@ -3018,12 +2289,9 @@ html body{
     justify-content: end;
     align-items: center;
     background-color: rgb(112, 202, 247);
-    /* margin: 20px; */
-    border: solid rgb(0, 76, 255) 20px;
     padding: 10px;
 }
     .headerGalleryDiv{
-        border: solid rgb(0, 51, 255) 5px;
         height: 60%;
         width: 50%;
         display: flex;
@@ -3033,7 +2301,6 @@ html body{
 
     }
         .headerGalleryH1{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 90%;
@@ -3044,7 +2311,6 @@ html body{
 
         }
         .headerGalleryH3{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 50%;
@@ -3053,43 +2319,18 @@ html body{
             justify-content: center;
             align-items: center;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            #headerGallery{
-                border: solid pink 20px;
-            }
-            .headerGalleryDiv{
-                border: solid pink 10px;
-            }
-            
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            #headerGallery{
-                border: solid yellow 20px;
-            }
-            .headerGalleryDiv{
-                border: solid yellow 10px;
-            }
-        
-        }
         @media screen and (min-width: 601px) and (max-width: 767px){
-            #headerGallery{
-                border: solid red 20px;
-            }
             .headerGalleryDiv{
-                border: solid red 10px;
                 height: 85%;
             }
-        
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             #headerGallery{
-                border: solid yellowgreen 20px;
                 justify-content: center;
                 align-items: end;
                 padding: 5px;
             }
             .headerGalleryDiv{
-                border: solid yellowgreen 10px;
                 width: 100%;
                 height: 50%;
             }
@@ -3111,15 +2352,12 @@ html body{
 .sectionGallery0_5{
     height: 50vh;
     display: flex;
-    background-color: rgb(112, 202, 247);
-    /* margin: 20px; */
-    border: solid rgb(0, 76, 255) 20px;
+    background-color: rgb(255, 255, 255);
     padding: 0px;
     justify-content: center;
     align-items: center;
 }
     #sectionGallery0_5Div1{
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3128,7 +2366,6 @@ html body{
         width: 90%;
     }
         .sectionGallery0_5Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -3138,47 +2375,17 @@ html body{
             align-items: end;
         }
         .sectionGallery0_5Divp{
-            border: solid black 1px;
             padding: 10px;
             margin: 5px;
             width: 90%;
             height: 60%;
             text-align: center;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionGallery0_5{
-                border: solid pink 20px;
-            }
-            #sectionGallery0_5Div1{
-                border: solid pink 5px;
-            }
-            
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionGallery0_5{
-                border: solid yellow 20px;
-            }
-            #sectionGallery0_5Div1{
-                border: solid yellow 5px;
-            }
-        
-        }
-        @media screen and (min-width: 601px) and (max-width: 767px){
-            .sectionGallery0_5{
-                border: solid red 20px;
-            }
-            #sectionGallery0_5Div1{
-                border: solid red 5px;
-            }
-        
-        }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionGallery0_5{
-                border: solid yellowgreen 20px;
                 height: 70vh;
             }
             #sectionGallery0_5Div1{
-                border: solid yellowgreen 5px;
                 height: 90%;
             }
         
@@ -3201,13 +2408,10 @@ html body{
     column-gap: 10px;
     row-gap: 10px;
     background-color: rgb(112, 202, 247);
-    /* margin: 20px; */
-    border: solid rgb(0, 76, 255) 20px;
     padding: 20px;
 }
     #sectionGallery1Div1{
         grid-area: a;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3215,7 +2419,6 @@ html body{
     }
     #sectionGallery1Div2{
         grid-area: b;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3223,7 +2426,6 @@ html body{
     }
     #sectionGallery1Div3{
         grid-area: c;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3231,7 +2433,6 @@ html body{
     }
     #sectionGallery1Div4{
         grid-area: d;
-        border: solid orangered 5px;
         padding: 0px; 
         display: flex;
         justify-content: center;
@@ -3239,7 +2440,6 @@ html body{
         overflow: hidden;
     }
         .sectionGallery1Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -3249,7 +2449,6 @@ html body{
             align-items: end;
         }
         .sectionGallery1Divp{
-            border: solid black 1px;
             padding: 10px;
             width: 90%;
             height: 60%;
@@ -3258,82 +2457,23 @@ html body{
         .sectionGallery1Pic{
             width: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionGallery1{
-                border: solid pink 10px;
-            }
-            #sectionGallery1Div1{
-                border: solid pink 10px;
-            }
-            #sectionGallery1Div2{
-                border: solid pink 10px;
-            }
-            #sectionGallery1Div3{
-                border: solid pink 10px;
-            }
-            #sectionGallery1Div4{
-                border: solid pink 10px;
-            }
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionGallery1{
-                border: solid yellow 10px;
-            }
-            #sectionGallery1Div1{
-                border: solid yellow 10px;
-            }
-            #sectionGallery1Div2{
-                border: solid yellow 10px;
-            }
-            #sectionGallery1Div3{
-                border: solid yellow 10px;
-            }
-            #sectionGallery1Div4{
-                border: solid yellow 10px;
-            }
-        
-        }
-        @media screen and (min-width: 601px) and (max-width: 767px){
-            .sectionGallery1{
-                border: solid red 10px;
-                height: 100vh;
-            }
-            #sectionGallery1Div1{
-                border: solid red 10px;
-            }
-            #sectionGallery1Div2{
-                border: solid red 10px;
-            }
-            #sectionGallery1Div3{
-                border: solid red 10px;
-            }
-            #sectionGallery1Div4{
-                border: solid red 10px;
-            }
-        
-        }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionGallery1{
-                border: solid yellowgreen 10px;
                 height: 150vh;
                 display: flex;
                 flex-direction: column;
                 padding: 5px;
             }
             #sectionGallery1Div1{
-                border: solid yellowgreen 10px;
                 height: 60%;
             }
             #sectionGallery1Div2{
-                border: solid yellowgreen 10px;
                 height: 100%;
             }
             #sectionGallery1Div3{
-                border: solid yellowgreen 10px;
                 height: 100%;
             }
             #sectionGallery1Div4{
-                border: solid yellowgreen 10px;
                 height: 60%;
             }
         
@@ -3350,15 +2490,12 @@ html body{
 .sectionGallery1_5{
     height: 60vh;
     display: flex;
-    background-color: rgb(112, 202, 247);
-    /* margin: 20px; */
-    border: solid rgb(0, 76, 255) 20px;
+    background-color: rgb(255, 255, 255);
     padding: 0px;
     justify-content: center;
     align-items: center;
 }
     #sectionGallery1_5Div1{
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3367,7 +2504,6 @@ html body{
         width: 90%;
     }
         .sectionGallery1_5Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -3377,7 +2513,6 @@ html body{
             align-items: end;
         }
         .sectionGallery1_5Divp{
-            border: solid black 1px;
             padding: 10px;
             margin: 5px;
             width: 90%;
@@ -3386,42 +2521,16 @@ html body{
             justify-content: end;
             align-items: end;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionGallery1_5{
-                border: solid pink 20px;
-            }
-            #sectionGallery1_5Div1{
-                border: solid pink 10px;
-            }
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionGallery1_5{
-                border: solid yellow 20px;
-            }
-            #sectionGallery1_5Div1{
-                border: solid yellow 10px;
-            }
-        
-        }
         @media screen and (min-width: 601px) and (max-width: 767px){
-            .sectionGallery1_5{
-                border: solid red 20px;
-            }
-            #sectionGallery1_5Div1{
-                border: solid red 10px;
-            }
             .sectionGallery1_5Divp{
                 height: 40%;
             }
-        
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionGallery1_5{
-                border: solid yellowgreen 20px;
                 height: 70vh;
             }
             #sectionGallery1_5Div1{
-                border: solid yellowgreen 10px;
                 width: 100%;
             }
             .sectionGallery1_5Divp{
@@ -3451,13 +2560,10 @@ html body{
     column-gap: 1px;
     row-gap: 10px;
     background-color: rgb(112, 202, 247);
-    /* margin: 10px; */
-    border: solid rgb(0, 76, 255) 20px;
     padding: 10px;
 }
     #sectionGallery2Div1{
         grid-area: a;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -3465,7 +2571,6 @@ html body{
     }
     #sectionGallery2Div2{
         grid-area: b;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3473,7 +2578,6 @@ html body{
     }
     #sectionGallery2Div3{
         grid-area: c;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3481,7 +2585,6 @@ html body{
     }
     #sectionGallery2Div4{
         grid-area: d;
-        border: solid rgb(0, 255, 38) 5px;
         padding: 0px;
         display: flex;
         justify-content: center;
@@ -3489,7 +2592,6 @@ html body{
         overflow: hidden;
     }
         .sectionGallery2Divp{
-            border: solid black 1px;
             padding: 10px;
             width: 70%;
             height: 10%;
@@ -3500,7 +2602,6 @@ html body{
             align-items: center;
         }
         .sectionGallery2Divp2{
-            border: solid black 1px;
             padding: 10px;
             width: 70%;
             height: 15%;
@@ -3514,81 +2615,33 @@ html body{
         .sectionGallery2Pic{
             width: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionGallery2{
-                border: solid pink 20px;
-            }
-            #sectionGallery2Div1{
-                border: solid pink 10px;
-            }
-            #sectionGallery2Div2{
-                border: solid pink 10px;
-            }
-            #sectionGallery2Div3{
-                border: solid pink 10px;
-            }
-            #sectionGallery2Div4{
-                border: solid pink 10px;
-            }
-        }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionGallery2{
-                border: solid yellow 20px;
                 height: 100vh;
                 grid-template-rows: 70% 30%;
-            }
-            #sectionGallery2Div1{
-                border: solid yellow 10px;
-            }
-            #sectionGallery2Div2{
-                border: solid yellow 10px;
-            }
-            #sectionGallery2Div3{
-                border: solid yellow 10px;
-            }
-            #sectionGallery2Div4{
-                border: solid yellow 10px;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionGallery2{
-                border: solid red 20px;
                 grid-template-rows: 75% 25%;
-            }
-            #sectionGallery2Div1{
-                border: solid red 10px;
-            }
-            #sectionGallery2Div2{
-                border: solid red 10px;
-            }
-            #sectionGallery2Div3{
-                border: solid red 10px;
-            }
-            #sectionGallery2Div4{
-                border: solid red 10px;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionGallery2{
-                border: solid yellowgreen 20px;
                 height: 150vh;
                 display: flex;
                 flex-direction: column;
             }
             #sectionGallery2Div1{
-                border: solid yellowgreen 10px;
                 height: 80%;
             }
             #sectionGallery2Div2{
-                border: solid yellowgreen 10px;
                 height: 30%;
             }
             #sectionGallery2Div3{
-                border: solid yellowgreen 10px;
                 height: 30%;
             }
             #sectionGallery2Div4{
-                border: solid yellowgreen 10px;
                 height: 30%;
             }
             .sectionGallery2Divp{
@@ -3612,14 +2665,11 @@ html body{
     grid-template-areas: "a b";
     grid-template-columns: repeat(2,1fr);
     column-gap: 10px;
-    background-color: rgb(112, 202, 247);
-    /* margin: 20px; */
-    border: solid rgb(0, 76, 255) 20px;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
 }
     #sectionGallery2_5Div1{
         grid-area: a;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3627,14 +2677,12 @@ html body{
     }
     #sectionGallery2_5Div2{
         grid-area: b;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
         .sectionGallery2_5Divh1{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 70%;
@@ -3644,7 +2692,6 @@ html body{
             align-items: center;
         }
         .sectionGallery2_5Divh2{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -3654,7 +2701,6 @@ html body{
             align-items: end;
         }
         .sectionGallery2_5Divp{
-            border: solid black 1px;
             padding: 10px;
             width: 90%;
             height: 30%;
@@ -3663,48 +2709,26 @@ html body{
         .sectionGallery2_5Pic{
             width: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionGallery2_5{
-                border: solid pink 20px;
-            }
-            #sectionGallery2_5Div1{
-                border: solid pink 5px;
-            }
-            #sectionGallery2_5Div2{
-                border: solid pink 5px;
-            }
-        }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionGallery2_5{
-                border: solid yellow 20px;
                 height: 120vh;
-            }
-            #sectionGallery2_5Div1{
-                border: solid yellow 5px;
-            }
-            #sectionGallery2_5Div2{
-                border: solid yellow 5px;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionGallery2_5{
-                border: solid red 20px;
                 height: 150vh;
                 display: flex;
                 flex-direction: column;
             }
             #sectionGallery2_5Div1{
-                border: solid red 5px;
                 height: 40%;
             }
             #sectionGallery2_5Div2{
-                border: solid red 5px;
                 height: 60%;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionGallery2_5{
-                border: solid yellowgreen 20px;
                 height: 170vh;
                 display: flex;
                 flex-direction: column;
@@ -3712,11 +2736,9 @@ html body{
                 padding: 5px;
             }
             #sectionGallery2_5Div1{
-                border: solid yellowgreen 5px;
                 height: 30%;
             }
             #sectionGallery2_5Div2{
-                border: solid yellowgreen 5px;
                 height: 70%;
             }
             .sectionGallery2_5Divp{
@@ -3736,12 +2758,9 @@ html body{
     display: flex;
     justify-content: space-around;
     background-color: rgb(112, 202, 247);
-    /* margin: 20px; */
-    border: solid rgb(0, 76, 255) 20px;
     padding: 10px;
 }
     .sectionGallery3Div1{
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3750,7 +2769,6 @@ html body{
         width: 100%;
     }
         #sectionGallery3Div1Div1{
-            border: solid orangered 1px;
             height: 50%;
             width: 90%;
             overflow: hidden;
@@ -3763,61 +2781,45 @@ html body{
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionGallery3{
-                border: solid pink 20px;
                 height: 70vh;
-            }
-            .sectionGallery3Div1{
-                border: solid pink 5px;
-            }
-            #sectionGallery3Div1Div1{
-                border: solid pink 1px;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionGallery3{
-                border: solid yellow 20px;
                 height: 200vh;
                 flex-direction: column;
             }
             .sectionGallery3Div1{
-                border: solid yellow 5px;
                 flex-direction: row;
                 height: 100%;
             }
             #sectionGallery3Div1Div1{
-                border: solid yellow 1px;
                 height: 100%;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionGallery3{
-                border: solid red 20px;
                 height: 150vh;
                 flex-direction: column;
             }
             .sectionGallery3Div1{
-                border: solid red 5px;
                 flex-direction: row;
             }
             #sectionGallery3Div1Div1{
-                border: solid red 1px;
                 height: 100%;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionGallery3{
-                border: solid yellowgreen 20px;
                 height: 100vh;
                 flex-direction: column;
                 padding: 0px;
             }
             .sectionGallery3Div1{
-                border: solid yellowgreen 5px;
                 flex-direction: row;
                 height: 100%;
             }
             #sectionGallery3Div1Div1{
-                border: solid yellowgreen 1px;
                 height: 100%;
 
             }
@@ -3836,25 +2838,20 @@ html body{
     grid-template-areas: "1 2";
     grid-template-columns: repeat(2,1fr);
     column-gap: 20px;
-    background-color: rgb(112, 202, 247);
-    /* margin: 20px; */
-    border: solid rgb(0, 76, 255) 20px;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
 }
     #sectionGallery4Div1{
         grid-area: "1";
-        border: solid orangered 5px;
     }
     #sectionGallery4Div2{
         grid-area: "2";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
     }
         .sectionGallery4Div1p{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -3862,7 +2859,6 @@ html body{
             text-align: start;
         }
         .sectionGallery4Div1h{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -3870,7 +2866,6 @@ html body{
             text-align: start;
         }
         .sectionGallery4Div2p{
-            border: solid black 1px;
             padding: 10px;
             width: 90%;
             height: 80%;
@@ -3879,48 +2874,18 @@ html body{
         .sectionGallery4Pic{
             height: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionGallery4{
-                border: solid pink 20px;
-            }
-            #sectionGallery4Div1{
-                border: solid pink 10px;
-            }
-            #sectionGallery4Div2{
-                border: solid pink 10px;
-            }
-        }
         @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionGallery4{
-                border: solid yellow 20px;
-            }
-            #sectionGallery4Div1{
-                border: solid yellow 10px;
-            }
-            #sectionGallery4Div2{
-                border: solid yellow 10px;
-            }
             .sectionGallery4Div1p{
                 height: 70%;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
-            .sectionGallery4{
-                border: solid red 20px;
-            }
-            #sectionGallery4Div1{
-                border: solid red 10px;
-            }
-            #sectionGallery4Div2{
-                border: solid red 10px;
-            }
             .sectionGallery4Div1p{
                 height: 70%;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionGallery4{
-                border: solid yellowgreen 20px;
                 height: 100vh;
                 display: flex;
                 flex-direction: column;
@@ -3928,17 +2893,12 @@ html body{
                 padding: 5px;
             }
             #sectionGallery4Div1{
-                border: solid yellowgreen 10px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
-            #sectionGallery4Div2{
-                border: solid yellowgreen 10px;
-            }
             .sectionGallery4Div1p{
-                border: solid black 1px;
                 margin: 10px;
                 padding: 10px;
                 width: 90%;
@@ -3964,12 +2924,9 @@ html body{
     display: flex;
     align-items: center;
     background-color: rgb(216, 112, 247);
-    /* margin: 20px; */
-    border: solid rgb(111, 0, 255) 20px;
     padding: 10px;
 }
     .headerWritingDiv1{
-        border: solid rgb(111, 0, 255) 5px;
         height: 80%;
         width: 50%;
         display: flex;
@@ -3980,7 +2937,6 @@ html body{
 
     }
     .headerWritingDiv2{
-        border: solid rgb(111, 0, 255) 5px;
         height: 50%;
         width: 50%;
         display: flex;
@@ -3990,7 +2946,6 @@ html body{
 
     }
         .headerWritingH1{
-            border: solid black 1px;
             margin: 20px;
             padding: 0px;
             width: 90%;
@@ -4001,7 +2956,6 @@ html body{
 
         }
         .headerWritingH3{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 90%;
@@ -4013,53 +2967,16 @@ html body{
     .headerWritingPic{
         height: 100%;
     }
-    @media screen and (min-width: 1024px) and (max-width: 1199px){
-        #headerWriting{
-            border: solid pink 20px;
-        }
-        .headerWritingDiv1{
-            border: solid pink 10px;
-        }
-        .headerWritingDiv2{
-            border: solid pink 10px;
-        }
-        
-    }
-    @media screen and (min-width: 768px) and (max-width: 1023px){
-        #headerWriting{
-            border: solid yellow 20px;
-        }
-        .headerWritingDiv1{
-            border: solid yellow 10px;
-        }
-        .headerWritingDiv2{
-            border: solid yellow 10px;
-        }
-    }
-    @media screen and (min-width: 601px) and (max-width: 767px){
-        #headerWriting{
-            border: solid red 20px;
-        }
-        .headerWritingDiv1{
-            border: solid red 10px;
-        }
-        .headerWritingDiv2{
-            border: solid red 10px;
-        }
-    }
     @media screen and (min-width: 0px) and (max-width: 600px){
         #headerWriting{
-            border: solid yellowgreen 20px;
             height: 90vh;
             flex-direction: column;
             padding: 5px;
         }
         .headerWritingDiv1{
-            border: solid yellowgreen 10px;
             width: 95%;
         }
         .headerWritingDiv2{
-            border: solid yellowgreen 10px;
             width: 95%;
         }
         .headerWritingH1{
@@ -4083,22 +3000,20 @@ html body{
     grid-template-areas: "1 2 3";
     grid-template-columns: 45% 25% 25%;
     column-gap: 10px;
-    background-color: rgb(216, 112, 247);
-    /* margin: 20px; */
-    border: solid rgb(111, 0, 255) 20px;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     justify-content: space-around;
 }
     #sectionWriting0_5Div1{
         grid-area: "1";
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: red;
+        height: 100%;
     }
         .sectionWriting0_5Div1p{
-            border: solid black 1px;
             margin: 5px;
             padding: 10px;
             width: 90%;
@@ -4106,7 +3021,6 @@ html body{
             text-align: start;
         }
         .sectionWriting0_5Div1h{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -4115,43 +3029,29 @@ html body{
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionWriting0_5{
-                border: solid pink 20px;
                 height: 70vh;
-            }
-            #sectionWriting0_5Div1{
-                border: solid pink 10px;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionWriting0_5{
-                border: solid yellow 20px;
+                height: 30vh;
                 grid-template-columns: repeat(3,1fr);
-                height: 70vh;
-            }
-            #sectionWriting0_5Div1{
-                border: solid yellow 10px;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionWriting0_5{
-                border: solid red 20px;
                 height: 90vh;
                 display: flex;
                 flex-direction: column;
             }
-            #sectionWriting0_5Div1{
-                border: solid red 10px;
-            }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionWriting0_5{
-                border: solid yellowgreen 20px;
                 height: 140vh;
                 display: flex;
                 flex-direction: column;
             }
             #sectionWriting0_5Div1{
-                border: solid yellowgreen 10px;
                 height: 100%;
             }
             .sectionWriting0_5Div1p{
@@ -4170,15 +3070,12 @@ html body{
 
 /* ------ SECTION 0_7----- */
 .sectionWriting0_7{
-    height: 60vh;
+    height: 80vh;
     display: flex;
     background-color: rgb(216, 112, 247);
-    /* margin: 20px; */
-    border: solid rgb(111, 0, 255) 20px;
     padding: 10px;
 }
     #sectionWriting0_7Div1{
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -4189,7 +3086,6 @@ html body{
         overflow: hidden;
     }
     #sectionWriting0_7Div2{
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -4200,7 +3096,6 @@ html body{
         overflow: hidden;
     }
     #sectionWriting0_7Div3{
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -4211,7 +3106,6 @@ html body{
         overflow: hidden;
     }
         .sectionWriting0_7Divh{
-            border: solid black 1px;
             margin: 5px;
             padding: 10px;
             width: 90%;
@@ -4219,7 +3113,6 @@ html body{
             text-align: start;
         }
         .sectionWriting0_7Divp2{
-            border: solid black 1px;
             margin: 0px;
             padding: 10px;
             width: 90%;
@@ -4237,17 +3130,7 @@ html body{
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionWriting0_7{
-                border: solid pink 20px;
                 height: 85vh;
-            }
-            #sectionWriting0_7Div1{
-                border: solid pink 5px;
-            }
-            #sectionWriting0_7Div2{
-                border: solid pink 5px;
-            }
-            #sectionWriting0_7Div3{
-                border: solid pink 5px; 
             }
             .sectionWritng0_7Pic1{
                 width: 90%;
@@ -4265,21 +3148,12 @@ html body{
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionWriting0_7{
-                border: solid yellow 20px;
                 height: 80vh;
             }
-            #sectionWriting0_7Div1{
-                border: solid yellow 5px;
-            }
-            #sectionWriting0_7Div2{
-                border: solid yellow 5px;
-            }
             #sectionWriting0_7Div3{
-                border: solid yellow 5px;
                 height: 90%;
             }
             .sectionWriting0_7Divp2{
-                border: solid black 1px;
                 margin: 0px;
                 padding: 10px;
                 width: 90%;
@@ -4293,21 +3167,17 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionWriting0_7{
-                border: solid red 20px;
                 height: 170vh;
                 display: flex;
                 flex-direction: column;
             }
             #sectionWriting0_7Div1{
-                border: solid red 5px;
                 width: 90%;
             }
             #sectionWriting0_7Div2{
-                border: solid red 5px;
                 width: 90%;
             }
             #sectionWriting0_7Div3{
-                border: solid red 5px;
                 width: 90%;
                 flex-direction: column-reverse;
             }
@@ -4326,20 +3196,16 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionWriting0_7{
-                border: solid yellowgreen 20px;
                 height: 200vh;
                 flex-direction: column;
             }
             #sectionWriting0_7Div1{
-                border: solid yellowgreen 5px;
                 width: 90%;
             }
             #sectionWriting0_7Div2{
-                border: solid yellowgreen 5px;
                 width: 90%;
             }
             #sectionWriting0_7Div3{
-                border: solid yellowgreen 5px;
                 width: 90%;
             }
             .sectionWritng0_7Pic1{
@@ -4355,7 +3221,6 @@ html body{
                 max-width: 100%;
             }
             .sectionWriting0_7Divp2{
-                border: solid black 1px;
                 margin: 0px;
                 padding: 10px;
                 width: 100%;
@@ -4393,13 +3258,10 @@ html body{
     padding: 10px;
     display: flex;
     align-items: center;
-    background-color: rgb(216, 112, 247);
-    /* margin: 20px; */
-    border: solid rgb(111, 0, 255) 20px;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
 }
     .sectionWriting0_9Div1{
-        border: solid rgb(111, 0, 255) 5px;
         height: 80%;
         width: 50%;
         display: flex;
@@ -4410,7 +3272,6 @@ html body{
 
     }
     .sectionWriting0_9Div2{
-        border: solid rgb(111, 0, 255) 5px;
         height: 80%;
         width: 50%;
         display: flex;
@@ -4420,7 +3281,6 @@ html body{
 
     }
         .sectionWriting0_9H1{
-            border: solid black 1px;
             margin: 20px;
             padding: 0px;
             width: 90%;
@@ -4431,7 +3291,6 @@ html body{
 
         }
         .sectionWriting0_9p{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 90%;
@@ -4444,60 +3303,30 @@ html body{
             height: 100%;
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
-            #sectionWriting0_9{
-                border: solid pink 20px;
-            }
-            .sectionWriting0_9Div1{
-                border: solid pink 5px;
-            }
-            .sectionWriting0_9Div2{
-                border: solid pink 5px;
-            }
             .sectionWriting0_9p{
                 height: 30%;
             }
             
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
-            #sectionWriting0_9{
-                border: solid yellow 20px;
-            }
-            .sectionWriting0_9Div1{
-                border: solid yellow 5px;
-            }
-            .sectionWriting0_9Div2{
-                border: solid yellow 5px;
-            }
             .sectionWriting0_9p{
                 height: 40%;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
-            #sectionWriting0_9{
-                border: solid red 20px;
-            }
-            .sectionWriting0_9Div1{
-                border: solid red 5px;
-            }
-            .sectionWriting0_9Div2{
-                border: solid red 5px;
-            }
             .sectionWriting0_9p{
                 height: 50%;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             #sectionWriting0_9{
-                border: solid yellowgreen 20px;
                 height: 100vh;
                 flex-direction: column;
             }
             .sectionWriting0_9Div1{
-                border: solid yellowgreen 5px;
                 width: 95%;
             }
             .sectionWriting0_9Div2{
-                border: solid yellowgreen 5px;
                 width: 95%;
                 height: 60%;
                 margin: 5px;
@@ -4537,7 +3366,6 @@ html body{
         width: 100%;
     }
     .headerAboutDiv{
-        border: solid rgb(255, 247, 0) 20px;
         height: 80%;
         width: 90%;
         display: flex;
@@ -4548,7 +3376,6 @@ html body{
 
     }
         .headerAboutH1{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 90%;
@@ -4561,7 +3388,6 @@ html body{
             transition: 0.5s;
         }
         .headerAboutH3{
-            border: solid black 1px;
             margin: 20px;
             padding: 10px;
             width: 50%;
@@ -4572,13 +3398,8 @@ html body{
             font-weight: bold;
             font-size: 50px;
         }
-        .headerAboutDiv:hover{
-            -webkit-text-stroke: 2px #fff;
-            color: transparent;
-        }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .headerAboutDiv{
-                border: solid pink 20px;
                 height: 60vh;
             }
             .headerAboutH1{
@@ -4593,7 +3414,6 @@ html body{
                 height: 70vh;
             }
             .headerAboutDiv{
-                border: solid yellow 20px;
                 height: 60vh;
             }
             .headerAboutH1{
@@ -4608,7 +3428,6 @@ html body{
                 height: 60vh;
             }
             .headerAboutDiv{
-                border: solid red 20px;
                 height: 45vh;
             }
             .headerAboutH1{
@@ -4628,7 +3447,6 @@ html body{
                 height: 80vh;
             }
             .headerAboutDiv{
-                border: solid yellowgreen 20px;
                 height: 70vh;
             }
             .headerAboutH1{
@@ -4661,41 +3479,34 @@ html body{
     column-gap: 10px;
     row-gap: 10px;
     background-color: rgb(231, 241, 195);
-    /* margin: 20px; */
-    border: solid rgb(255, 247, 0) 20px;
     padding: 10px;
 }
     #sectionAbout1Div1{
         grid-area: "1";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: end;
     }
     #sectionAbout1Div2{
         grid-area: "2";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionAbout1Div3{
         grid-area: "3";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionAbout1Div5{
         grid-area: "4";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionAbout1Div4{
         grid-area: a;
-        border: solid red 5px;
         padding: 0px;
         display: flex;
         justify-content: center;
@@ -4703,7 +3514,6 @@ html body{
         overflow: hidden;
     }
         .sectionAbout1Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 100%;
@@ -4711,14 +3521,12 @@ html body{
             text-align: center;
         }
         .sectionAbout1Divp{
-            border: solid black 1px;
             padding: 10px;
             width: 90%;
             height: 80%;
             text-align: center;
         }
         .sectionAbout1Div4p{
-            border: solid black 1px;
             padding: 10px;
             width: 90%;
             height: 90%;
@@ -4729,70 +3537,21 @@ html body{
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionAbout1{
-                border: solid pink 20px;
                 height: 90vh;
-            }
-            #sectionAbout1Div1{
-                border: solid pink 5px;
-            }
-            #sectionAbout1Div2{
-                border: solid pink 5px;
-            }
-            #sectionAbout1Div3{
-                border: solid pink 5px;
-            }
-            #sectionAbout1Div4{
-                border: solid pink 5px;
-            }
-            #sectionAbout1Div5{
-                border: solid pink 5px;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionAbout1{
-                border: solid yellow 20px;
                 height: 90vh;
-            }
-            #sectionAbout1Div1{
-                border: solid yellow 5px;
-            }
-            #sectionAbout1Div2{
-                border: solid yellow 5px;
-            }
-            #sectionAbout1Div3{
-                border: solid yellow 5px;
-            }
-            #sectionAbout1Div4{
-                border: solid yellow 5px;
-            }
-            #sectionAbout1Div5{
-                border: solid yellow 5px;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionAbout1{
-                border: solid red 20px;
                 height: 110vh;
-            }
-            #sectionAbout1Div1{
-                border: solid red 5px;
-            }
-            #sectionAbout1Div2{
-                border: solid red 5px;
-            }
-            #sectionAbout1Div3{
-                border: solid red 5px;
-            }
-            #sectionAbout1Div4{
-                border: solid red 5px;
-            }
-            #sectionAbout1Div5{
-                border: solid red 5px;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionAbout1{
-                border: solid yellowgreen 20px;
                 height: 140vh;
                 grid-template-areas: "b b"
                                      "d a"
@@ -4802,27 +3561,21 @@ html body{
                 grid-template-rows: repeat(4,1fr);
             }
             #sectionAbout1Div1{
-                border: solid yellowgreen 5px;
                 grid-area: a;
             }
             #sectionAbout1Div2{
-                border: solid yellowgreen 5px;
                 grid-area: b;
             }
             #sectionAbout1Div3{
-                border: solid yellowgreen 5px;
                 grid-area: c;
             }
             #sectionAbout1Div4{
-                border: solid yellowgreen 5px;
                 grid-area: d;
             }
             #sectionAbout1Div5{
-                border: solid yellowgreen 5px;
                 grid-area: e;
             }
             .sectionAbout1Divp{
-                border: solid black 1px;
                 padding: 10px;
                 width: 90%;
                 height: 90%;
@@ -4838,7 +3591,7 @@ html body{
 
 /* ------ SECTION 2----- */
 .sectionAbout2{
-    height: 200vh;
+    height: 100vh;
     display: grid;
     grid-template-areas: "1 a"
                          "2 a"
@@ -4847,28 +3600,23 @@ html body{
     grid-template-rows: 25% 25% 50%;
     column-gap: 10px;
     row-gap: 10px;
-    background-color: rgb(231, 241, 195);
-    /* margin: 20px; */
-    border: solid rgb(255, 247, 0) 20px;
+    background-color: rgb(253, 253, 253);
     padding: 10px;
 }
     #sectionAbout2Div1{
         grid-area: 1;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: end;
     }
     #sectionAbout2Div2{
         grid-area: 2;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #sectionAbout2Div3{
         grid-area: b;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -4876,7 +3624,6 @@ html body{
     }
     #sectionAbout2Div4{
         grid-area: a;
-        border: solid rgb(0, 255, 38) 5px;
         padding: 0px;
         display: flex;
         justify-content: center;
@@ -4884,7 +3631,6 @@ html body{
         overflow: hidden;
     }
         .sectionAbout2Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 100%;
@@ -4892,7 +3638,6 @@ html body{
             text-align: center;
         }
         .sectionAbout2Divp{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -4908,7 +3653,6 @@ html body{
             align-items: center;
         }
         .sectionAbout2DivLi{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -4920,61 +3664,13 @@ html body{
         .sectionAbout2Pic{
             height: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionAbout2{
-                border: solid pink 20px;
-            }
-            #sectionAbout2Div1{
-                border: solid pink 5px;
-            }
-            #sectionAbout2Div2{
-                border: solid pink 5px;
-            }
-            #sectionAbout2Div3{
-                border: solid pink 5px;
-            }
-            #sectionAbout2Div4{
-                border: solid pink 5px;
-            }
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionAbout2{
-                border: solid yellow 20px;
-            }
-            #sectionAbout2Div1{
-                border: solid yellow 5px;
-            }
-            #sectionAbout2Div2{
-                border: solid yellow 5px;
-            }
-            #sectionAbout2Div3{
-                border: solid yellow 5px;
-            }
-            #sectionAbout2Div4{
-                border: solid yellow 5px;
-            }
-        }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionAbout2{
-                border: solid red 20px;
                 height: 120vh;
-            }
-            #sectionAbout2Div1{
-                border: solid red 5px;
-            }
-            #sectionAbout2Div2{
-                border: solid red 5px;
-            }
-            #sectionAbout2Div3{
-                border: solid red 5px;
-            }
-            #sectionAbout2Div4{
-                border: solid red 5px;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionAbout2{
-                border: solid yellowgreen 20px;
                 height: 160vh;
                 grid-template-areas: "b b"
                                      "a d"
@@ -4983,19 +3679,15 @@ html body{
                 grid-template-rows: 20% 15% 65%;
             }
             #sectionAbout2Div1{
-                border: solid yellowgreen 5px;
                 grid-area: a;
             }
             #sectionAbout2Div2{
-                border: solid yellowgreen 5px;
                 grid-area: b;
             }
             #sectionAbout2Div3{
-                border: solid yellowgreen 5px;
                 grid-area: c;
             }
             #sectionAbout2Div4{
-                border: solid yellowgreen 5px;
                 grid-area: d;
             }
             .sectionAbout2Divh{
@@ -5020,14 +3712,11 @@ html body{
     column-gap: 10px;
     row-gap: 10px;
     background-color: rgb(231, 241, 195);
-    /* margin: 20px; */
-    border: solid rgb(255, 247, 0) 20px;
     padding: 10px;
     justify-content: space-evenly;
 }
     #sectionAbout3Div1{
         grid-area: "1";
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5035,7 +3724,6 @@ html body{
     }
     #sectionAbout3Div2{
         grid-area: "2";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -5043,7 +3731,6 @@ html body{
     }
     #sectionAbout3Div3{
         grid-area: "3";
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -5052,7 +3739,6 @@ html body{
     }
     #sectionAbout3Div4{
         grid-area: "4";
-        border: solid red 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -5060,7 +3746,6 @@ html body{
         height: 80%;
     }
         .sectionAbout3Divh{
-            border: solid black 1px;
             margin: 0px;
             padding: 0px;
             width: 90%;
@@ -5076,7 +3761,6 @@ html body{
             width: 90%;
         }
         .sectionAbout3DivLi{
-            border: solid black 1px;
             margin: 0px;
             padding: 10px;
             width: 100%;
@@ -5086,23 +3770,9 @@ html body{
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionAbout3{
-                border: solid pink 20px;
                 height: 60vh;
             }
-            #sectionAbout3Div1{
-                border: solid pink 5px;
-            }
-            #sectionAbout3Div2{
-                border: solid pink 5px;
-            }
-            #sectionAbout3Div3{
-                border: solid pink 5px;
-            }
-            #sectionAbout3Div4{
-                border: solid pink 5px;
-            }
             .sectionAbout3Divp{
-                border: solid black 1px;
                 margin: 0px;
                 padding: 10px;
                 width: 90%;
@@ -5112,43 +3782,16 @@ html body{
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionAbout3{
-                border: solid yellow 20px;
                 height: 60vh;
-            }
-            #sectionAbout3Div1{
-                border: solid yellow 5px;
-            }
-            #sectionAbout3Div2{
-                border: solid yellow 5px;
-            }
-            #sectionAbout3Div3{
-                border: solid yellow 5px;
-            }
-            #sectionAbout3Div4{
-                border: solid yellow 5px;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionAbout3{
-                border: solid red 20px;
                 height: 60vh;
-            }
-            #sectionAbout3Div1{
-                border: solid red 5px;
-            }
-            #sectionAbout3Div2{
-                border: solid red 5px;
-            }
-            #sectionAbout3Div3{
-                border: solid red 5px;
-            }
-            #sectionAbout3Div4{
-                border: solid red 5px;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionAbout3{
-                border: solid yellowgreen 20px;
                 height: 120vh;
                 grid-template-areas: "a b"
                                      "c c"
@@ -5159,25 +3802,20 @@ html body{
                 padding: 10px;
             }
             #sectionAbout3Div1{
-                border: solid yellowgreen 5px;
                 grid-area: a;
             }
             #sectionAbout3Div2{
-                border: solid yellowgreen 5px;
                 grid-area: b;
             }
             #sectionAbout3Div3{
-                border: solid yellowgreen 5px;
                 grid-area: c;
                 height: 100%;
             }
             #sectionAbout3Div4{
-                border: solid yellowgreen 5px;
                 grid-area: d;
                 height: 100%;
             }
             .sectionAbout3Divh{
-            border: solid black 1px;
             margin: 0px;
             padding: 0px;
             width: 90%;
@@ -5201,14 +3839,11 @@ html body{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 50% 50%;
     column-gap: 20px;
-    background-color: rgb(231, 241, 195);
-    /* margin: 20px; */
-    border: solid rgb(255, 247, 0) 20px;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
 }
     #sectionAbout4Div1{
         grid-area: a;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -5216,7 +3851,6 @@ html body{
     }
     #sectionAbout4Div2{
         grid-area: b;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5224,7 +3858,6 @@ html body{
     }
     #sectionAbout4Div3{
         grid-area: c;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -5232,7 +3865,6 @@ html body{
     }
     #sectionAbout4Div4{
         grid-area: d;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5240,7 +3872,6 @@ html body{
     }
     #sectionAbout4Div5{
         grid-area: e;
-        border: solid orangered 5px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -5248,7 +3879,6 @@ html body{
     }
     #sectionAbout4Div6{
         grid-area: f;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5256,7 +3886,6 @@ html body{
         overflow: hidden;
     }
         .sectionAbout4Divp{
-            border: solid black 1px;
             margin: 0px;
             padding: 10px;
             width: 90%;
@@ -5264,7 +3893,6 @@ html body{
             text-align: start;
         }
         .sectionAbout4Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -5276,53 +3904,14 @@ html body{
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionAbout4{
-                border: solid pink 20px;
                 height: 90vh;
-            }
-            #sectionAbout4Div1{
-                border: solid pink 5px;
-            }
-            #sectionAbout4Div2{
-                border: solid pink 5px;
-            }
-            #sectionAbout4Div3{
-                border: solid pink 5px;
-            }
-            #sectionAbout4Div4{
-                border: solid pink 5px;
-            }
-            #sectionAbout4Div5{
-                border: solid pink 5px;
-            }
-            #sectionAbout4Div6{
-                border: solid pink 5px;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionAbout4{
-                border: solid yellow 20px;
                 height: 95vh;
             }
-            #sectionAbout4Div1{
-                border: solid yellow 5px;
-            }
-            #sectionAbout4Div2{
-                border: solid yellow 5px;
-            }
-            #sectionAbout4Div3{
-                border: solid yellow 5px;
-            }
-            #sectionAbout4Div4{
-                border: solid yellow 5px;
-            }
-            #sectionAbout4Div5{
-                border: solid yellow 5px;
-            }
-            #sectionAbout4Div6{
-                border: solid yellow 5px;
-            }
             .sectionAbout4Divp{
-                border: solid black 1px;
                 margin: 0px;
                 padding: 10px;
                 width: 90%;
@@ -5332,7 +3921,6 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionAbout4{
-                border: solid red 20px;
                 height: 140vh;
                 grid-template-areas: "b a"
                                      "c d"
@@ -5340,58 +3928,33 @@ html body{
                 grid-template-columns: repeat(2,1fr);
                 grid-template-rows: repeat(3,1fr);
             }
-            #sectionAbout4Div1{
-                border: solid red 5px;
-            }
-            #sectionAbout4Div2{
-                border: solid red 5px;
-            }
-            #sectionAbout4Div3{
-                border: solid red 5px;
-            }
-            #sectionAbout4Div4{
-                border: solid red 5px;
-            }
-            #sectionAbout4Div5{
-                border: solid red 5px;
-            }
-            #sectionAbout4Div6{
-                border: solid red 5px;
-            }
             .sectionAbout4Pic{
                 height: 80%;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionAbout4{
-                border: solid yellowgreen 20px;
                 height: 230vh;
                 display: flex;
                 flex-direction: column;
                 padding: 10px;
             }
             #sectionAbout4Div1{
-                border: solid yellowgreen 5px;
                 height: 100%;
             }
             #sectionAbout4Div2{
-                border: solid yellowgreen 5px;
                 height: 100%;
             }
             #sectionAbout4Div3{
-                border: solid yellowgreen 5px;
                 height: 100%;
             }
             #sectionAbout4Div4{
-                border: solid yellowgreen 5px;
                 height: 100%;
             }
             #sectionAbout4Div5{
-                border: solid yellowgreen 5px;
                 height: 100%;
             }
             #sectionAbout4Div6{
-                border: solid yellowgreen 5px;
                 height: 100%;
             }
         }
@@ -5413,13 +3976,10 @@ html body{
     column-gap: 20px;
     row-gap: 10px;
     background-color: rgb(231, 241, 195);
-    /* margin: 20px; */
-    border: solid rgb(255, 247, 0) 20px;
     padding: 20px;
 }
     #sectionAbout5Div1{
         grid-area: a;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5427,7 +3987,6 @@ html body{
     }
     #sectionAbout5Div2{
         grid-area: b;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5435,7 +3994,6 @@ html body{
     }
     #sectionAbout5Div3{
         grid-area: c;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5443,7 +4001,6 @@ html body{
     }
     #sectionAbout5Div4{
         grid-area: d;
-        border: solid orangered 5px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -5457,7 +4014,6 @@ html body{
             justify-content: space-evenly;
         }
         .sectionAbout5DivLi{
-            border: solid black 1px;
             padding: 10px;
             height: 30%;
             width: 100%;
@@ -5465,7 +4021,6 @@ html body{
             list-style: none;
         }
         .sectionAbout5Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -5474,42 +4029,11 @@ html body{
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionAbout5{
-                border: solid pink 20px;
                 height: 80vh;
-            }
-            #sectionAbout5Div1{
-                border: solid pink 5px;
-            }
-            #sectionAbout5Div2{
-                border: solid pink 5px;
-            }
-            #sectionAbout5Div3{
-                border: solid pink 5px;
-            }
-            #sectionAbout5Div4{
-                border: solid pink 5px;
-            }
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionAbout5{
-                border: solid yellow 20px;
-            }
-            #sectionAbout5Div1{
-                border: solid yellow 5px;
-            }
-            #sectionAbout5Div2{
-                border: solid yellow 5px;
-            }
-            #sectionAbout5Div3{
-                border: solid yellow 5px;
-            }
-            #sectionAbout5Div4{
-                border: solid yellow 5px;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionAbout5{
-                border: solid red 20px;
                 height: 150vh;
                 grid-template-areas: "a"
                                      "b"
@@ -5521,25 +4045,21 @@ html body{
                 align-items: center;
             }
             #sectionAbout5Div1{
-                border: solid red 5px;
                 height: 100%;
             }
             #sectionAbout5Div2{
-                border: solid red 5px;
                 height: 100%;
                 display: flex;
                 justify-content: start;
                 align-items: start;
             }
             #sectionAbout5Div3{
-                border: solid red 5px;
                 height: 100%;
                 display: flex;
                 justify-content: start;
                 align-items: start;
             }
             #sectionAbout5Div4{
-                border: solid red 5px;
                 height: 100%;
                 display: flex;
                 justify-content: start;
@@ -5548,7 +4068,6 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionAbout5{
-                border: solid yellowgreen 20px;
                 height: 150vh;
                 display: flex;
                 flex-direction: column;
@@ -5557,22 +4076,18 @@ html body{
                 padding: 10px;
             }
             #sectionAbout5Div1{
-                border: solid yellowgreen 5px;
                 height: 70%;
                 width: 100%;
             }
             #sectionAbout5Div2{
-                border: solid yellowgreen 5px;
                 height: 100%;
                 width: 100%;
             }
             #sectionAbout5Div3{
-                border: solid yellowgreen 5px;
                 height: 100%;
                 width: 100%;
             }
             #sectionAbout5Div4{
-                border: solid yellowgreen 5px;
                 height: 100%;
                 width: 100%;
             }
@@ -5592,17 +4107,13 @@ html body{
     grid-template-columns: repeat(2,1fr);
     column-gap: 20px;
     background-color: rgb(237, 237, 237);
-    /* margin: 20px; */
-    border: solid rgb(255, 247, 0) 20px;
     padding: 20px;
 }
     #sectionAbout6Div1{
         grid-area: "1";
-        border: solid orangered 5px;
     }
     #sectionAbout6Div2{
         grid-area: "2";
-        border: solid orangered 5px;
         display: grid;
         grid-template-areas: "a b c"
                              "d e f"
@@ -5614,7 +4125,6 @@ html body{
         overflow: hidden;
     }
         .sectionAbout6Divp{
-            border: solid black 1px;
             margin: 10px;
             padding: 0px;
             width: 90%;
@@ -5630,7 +4140,6 @@ html body{
             align-items: center;
         }
         .sectionAbout6Divh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -5648,7 +4157,6 @@ html body{
         }
         .sectionAbout6DivLi{
             grid-area: e;
-            border: solid black 1px;
             width: 100%;
             height: 20%;
             display: flex;
@@ -5658,7 +4166,6 @@ html body{
         }
         .sectionAbout6Div2Button{
             grid-area: i;
-            border: solid black 1px;
             padding: 10px;
             background-color: red;
             color: white;
@@ -5666,53 +4173,16 @@ html body{
         .sectionAbout6Pic{
             height: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionAbout6{
-                border: solid pink 20px;
-            }
-            #sectionAbout6Div1{
-                border: solid pink 5px;
-            }
-            #sectionAbout6Div2{
-                border: solid pink 5px;
-            }
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionAbout6{
-                border: solid yellow 20px;
-                height: 80vh;
-            }
-            #sectionAbout6Div1{
-                border: solid yellow 5px;
-            }
-            #sectionAbout6Div2{
-                border: solid yellow 5px;
-            }
-        }
-        @media screen and (min-width: 601px) and (max-width: 767px){
-            .sectionAbout6{
-                border: solid red 20px;
-            }
-            #sectionAbout6Div1{
-                border: solid red 5px;
-            }
-            #sectionAbout6Div2{
-                border: solid red 5px;
-            }
-        }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionAbout6{
-                border: solid yellowgreen 20px;
                 height: 120vh;
                 display: flex;
                 flex-direction: column;
             }
             #sectionAbout6Div1{
-                border: solid yellowgreen 5px;
                 height: 100%;
             }
             #sectionAbout6Div2{
-                border: solid yellowgreen 5px;
                 height: 60%;
                 grid-template-areas: "a b c"
                                      "a b c"
@@ -5745,17 +4215,13 @@ html body{
     grid-template-columns: repeat(2,1fr);
     column-gap: 20px;
     background-color: rgb(144, 250, 197);
-    /* margin: 20px; */
-    border: solid rgb(0, 200, 107) 20px;
     padding: 20px;
 }
     #headerContactDiv1{
         grid-area: "a";
-        border: solid orangered 5px;
     }
     #headerContactDiv2{
         grid-area: "b";
-        border: solid orangered 5px;
         display: grid;
         grid-template-areas: "a b c"
                              "d e f"
@@ -5767,7 +4233,6 @@ html body{
         overflow: hidden;
     }
         .headerContactDivp{
-            border: solid black 1px;
             margin: 10px;
             padding: 0px;
             width: 90%;
@@ -5775,7 +4240,6 @@ html body{
             text-align: center;
         }
         .headerContactDivh{
-            border: solid black 1px;
             margin: 10px;
             padding: 10px;
             width: 90%;
@@ -5786,7 +4250,6 @@ html body{
         }
         .headerContactDiv2p{
             grid-area: e;
-            border: solid black 1px;
             padding: 10px;
             width: 80%;
             height: 80%;
@@ -5796,43 +4259,18 @@ html body{
             height: 100%;
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .headerContactDiv{
-                border: solid pink 20px;
-            }
-            #headerContactDiv1{
-                border: solid pink 10px;
-            }
-            #headerContactDiv2{
-                border: solid pink 10px;
-            }
             .headerContactDivp{
                 height: 15%;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
-            .headerContactDiv{
-                border: solid yellow 20px;
-            }
-            #headerContactDiv1{
-                border: solid yellow 10px;
-            }
-            #headerContactDiv2{
-                border: solid yellow 10px;
-            }
             .headerContactDivp{
                 height: 15%;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .headerContactDiv{
-                border: solid red 20px;
                 height: 80vh;
-            }
-            #headerContactDiv1{
-                border: solid red 10px;
-            }
-            #headerContactDiv2{
-                border: solid red 10px;
             }
             .headerContactDivp{
                 height: 15%;
@@ -5840,7 +4278,6 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .headerContactDiv{
-                border: solid yellowgreen 20px;
                 height: 90vh;
                 grid-template-areas: "a"
                                      "b";
@@ -5849,14 +4286,12 @@ html body{
                 padding: 5px;
             }
             #headerContactDiv1{
-                border: solid yellowgreen 10px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
             }
             #headerContactDiv2{
-                border: solid yellowgreen 10px;
                 display: flex;
                 justify-content: center;
             }
@@ -5877,13 +4312,12 @@ html body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(144, 250, 197);
-    /* margin: 20px; */
-    border: solid rgb(0, 200, 107) 20px;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
 }
     .sectionWhatsapp{
         background-color: green;
+        border-radius: 20px;
         height: 90%;
         width: 30%;
         display: flex;
@@ -5903,6 +4337,7 @@ html body{
         }
     .sectionLinkedin{
         background-color: blue;
+        border-radius: 20px;
         height: 90%;
         width: 30%;
         display: flex;
@@ -5930,7 +4365,6 @@ html body{
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionContact1{
-                border: solid pink 20px;
             }
             .sectionWhatsapp{
                 width: 35%;
@@ -5940,9 +4374,6 @@ html body{
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionContact1{
-                border: solid yellow 20px;
-            }
             .sectionWhatsapp{
                 width: 45%;
             }
@@ -5952,7 +4383,6 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionContact1{
-                border: solid red 20px;
                 height: 150vh;
                 flex-direction: column;
             }
@@ -5967,7 +4397,6 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionContact1{
-                border: solid yellowgreen 20px;
                 height: 150vh;
                 flex-direction: column;
             }
@@ -5995,30 +4424,20 @@ html body{
     justify-content: center;
     align-items: center;
     background-color: rgb(144, 250, 197);
-    /* margin: 20px; */
-    border: solid rgb(0, 200, 107) 20px;
     padding: 10px;
 }
 @media screen and (min-width: 1024px) and (max-width: 1199px){°
     .sectionContact2{
-        border: solid pink 20px;
         height: 90vh;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    .sectionContact2{
-        border: solid yellow 20px;
     }
 }
 @media screen and (min-width: 601px) and (max-width: 767px){
     .sectionContact2{
-        border: solid red 20px;
         height: 90vh;
     }
 }
 @media screen and (min-width: 0px) and (max-width: 600px){
     .sectionContact2{
-        border: solid yellowgreen 20px;
         height: 110vh;
     }
 }
@@ -6032,6 +4451,7 @@ html body{
 
 .formBody{
     background-color: red;
+    border-radius: 20px;
     height: 100%;
     width: 50%;
     display: flex;
@@ -6040,7 +4460,6 @@ html body{
     align-items: center;
 }
 .formCamp{
-    background-color: blue;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -6048,32 +4467,27 @@ html body{
     align-items: start;
     padding: 10px;
 }
+.formCampLabel{
+    margin: 10px;
+}
+.formCampInput{
+    height: 50px;
+    width: 50%;
+}
+.formCampInputMessage{
+    height: 100px;
+    width: 90%;
+}
+.formCampDescription{
+    width: 90%;
+}
 .formButton{
-    background-color: green;
     height: 10%;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.formCampLabel{
-    background-color: pink;
-    margin: 10px;
-}
-.formCampInput{
-    border: solid yellow 10px;
-    height: 50px;
-    width: 50%;
-}
-.formCampInputMessage{
-    border: solid green 10px;
-    height: 100px;
-    width: 90%;
-}
-.formCampDescription{
-    background-color: pink;
-    width: 90%;
 }
 @media screen and (min-width: 1024px) and (max-width: 1199px){
     .formBody{
@@ -6130,71 +4544,57 @@ html body{
     grid-template-columns: 20% 16% 16% 16% 16% 16%;
     grid-template-rows: 35% 50% 15%;
     column-gap: 5px;
-    row-gap: 5px;
+    row-gap: 05px;
     background-color: rgb(0, 0, 0);
-    border: solid white 20px;
     color: white;
-    justify-content: center;
-    padding: 20px;
+    justify-content: space-between;
 }
     .footerDiv1{
         grid-area: "1";
-        border: solid white 5px; 
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .footerDiv2{
         grid-area: "2";
-        border: solid white 5px; 
         display: flex;
     }
     .footerDiv3{
         grid-area: "3";
-        border: solid white 5px; 
         display: flex;
     }
     .footerDiv4{
         grid-area: "4";
-        border: solid white 5px; 
         display: flex;
     }
     .footerDiv5{
         grid-area: a;
-        border: solid white 5px; 
         display: grid;
         grid-template-areas:    "a b";
         grid-template-columns: 65% 35%;
-        background-color: pink;
-        padding: 0px;
-        column-gap: 0px;
-        row-gap: 0px;
+        width: 100%;
+        background-color: red;
     }
     .footerDiv6{
         grid-area: "5";
-        border: solid white 5px; 
         display: flex;
     }
     .footerDiv7{
         grid-area: "6";
-        border: solid white 5px; 
         display: flex;
     }
     .footerDiv8{
         grid-area: b;
-        border: solid white 5px; 
         display: flex;
     }
     .footerHeader1{
         grid-area: a;
-        background-color: green;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .footerHeader2{
         grid-area: b;
-        background-color: orange;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -6202,8 +4602,7 @@ html body{
     .footerHeaderp{
         background-color: blue;
         width: 100%;
-        margin: 10px;
-        height: 90%;
+        height: 100%;
     }
     .footerDiv1p{
         width: 100%;
@@ -6211,18 +4610,15 @@ html body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0px;
     }
     .footerDiv2p{
         width: 100%;
         height: 100%;
-        margin: 0px;
         padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: start;
-        border: solid red 2px;
     }
         .footerLogo{
             /*width: 100%;*/
@@ -6285,7 +4681,7 @@ html body{
                                     "i i i";
             grid-template-columns: 40% 30% 30%;
             grid-template-rows: 40% 10% 20% 20% 10%;
-            column-gap: 10px;
+            column-gap: 0px;
             row-gap: 0px;
             padding: 0px;
         }
