@@ -163,14 +163,22 @@ html body{
             height: 50px;
             padding:5px;
         }
-        .navButtonAbrir, .navButtonCerrar{
+        .navButtonAbrir{
+            display: block;
+            border: 0;
+            background-color: transparent;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        
+        .navButtonCerrar{
             display: block;
             border: 0;
             background-color: transparent;
             color: white;
             font-size: 1rem;
             cursor: pointer;
-
         }
         .navNew{
             opacity: 0;
