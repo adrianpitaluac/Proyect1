@@ -3641,13 +3641,12 @@ html body{
 
 /* ------ SECTION 2----- */
 .sectionAbout2{
-    height: 100vh;
+    height: 70vh;
     display: grid;
     grid-template-areas: "1 a"
-                         "2 a"
-                         "b b";
+                         "2 a";
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 25% 25% 50%;
+    grid-template-rows: 50% 50%;
     column-gap: 10px;
     row-gap: 10px;
     background-color: rgb(253, 253, 253);
@@ -3657,18 +3656,11 @@ html body{
         grid-area: 1;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: center;
     }
     #sectionAbout2Div2{
         grid-area: 2;
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #sectionAbout2Div3{
-        grid-area: b;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -4015,6 +4007,141 @@ html body{
         }
 /* ----------- */   
 
+/* ------ SECTION 4_5 ----- */
+.sectionAbout4_5{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d e f";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 50% 50%;
+    column-gap: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+    #sectionAbout4_5Div1{
+        grid-area: a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #sectionAbout4_5Div2{
+        grid-area: b;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout4_5Div3{
+        grid-area: c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #sectionAbout4_5Div4{
+        grid-area: d;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionAbout4_5Div5{
+        grid-area: e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    #sectionAbout4_5Div6{
+        grid-area: f;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+        .sectionAbout4_5Divp{
+            margin: 0px;
+            padding: 10px;
+            width: 90%;
+            height: 60%;
+            text-align: start;
+        }
+        .sectionAbout4_5Divh{
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 15%;
+            text-align: start;
+        }
+        .sectionAbout4_5Pic{
+            height: 100%;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionAbout4_5{
+                height: 90vh;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionAbout4_5{
+                height: 95vh;
+            }
+            .sectionAbout4_5Divp{
+                margin: 0px;
+                padding: 10px;
+                width: 90%;
+                height: 80%;
+                text-align: start;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionAbout4_5{
+                height: 140vh;
+                grid-template-areas: "a b"
+                                     "d c"
+                                     "e f";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,1fr);
+            }
+            .sectionAbout4_5Pic{
+                height: 80%;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionAbout4_5{
+                height: 230vh;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+            #sectionAbout4_5Div1{
+                height: 100%;
+            }
+            #sectionAbout4_5Div2{
+                height: 100%;
+            }
+            #sectionAbout4_5Div3{
+                height: 100%;
+            }
+            #sectionAbout4_5Div4{
+                height: 100%;
+            }
+            #sectionAbout4_5Div5{
+                height: 100%;
+            }
+            #sectionAbout4_5Div6{
+                height: 100%;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionAbout4_5{
+                height: 1000px;
+            }
+        }
+/* ----------- */   
+
 /* ------ SECTION 5----- */
 .sectionAbout5{
     height: 80vh;
@@ -4149,6 +4276,88 @@ html body{
         }
 /* ----------- */   
 
+/* ------ SECTION 5_5----- */
+
+.sectionAbout5_5{
+    height: 60vh;
+    display: flex;
+}
+
+    .sectionAbout5_5Div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionAbout5_5DivH1{
+        color: #0014ff;
+        text-align: center;
+    }
+    .sectionAbout5_5DivUl1{
+        width: 25%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .sectionAbout5_5DivUl2{
+        width: 25%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .sectionAbout5_5DivLi{
+        list-style: none;
+        width: 90%;
+        height: 20%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 600px){
+        .sectionAbout5_5{
+            display: grid;
+            grid-template-areas: "a a"
+                                 "b c";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 40% 60%;
+        }
+        .sectionAbout5_5{
+            flex-direction: column;
+        }
+        .sectionAbout5_5Div{
+            grid-area: a;
+        }
+        .sectionAbout5_5DivUl1{
+            grid-area: b;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+        .sectionAbout5_5DivUl2{
+            grid-area: c;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+        .sectionAbout5_5{
+            height: 400px;
+        }
+    }
+
+/* ----------- */ 
+
+
 /* ------ SECTION 6----- */
 .sectionAbout6{
     height: 70vh;
@@ -4253,6 +4462,67 @@ html body{
             }
         }
 /* ----------- */ 
+
+/* ------ SECTION 7 ----- */
+.sectionAbout7{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    .sectionAboutDiv{
+        background-color: rgb(246, 241, 241);
+        box-shadow: 0 0 25px 1px #DD2A7B;
+        border-radius: 10px;
+        height: 90%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+        .sectionAbout7Div1{
+            background: linear-gradient(225deg,#515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+            border-radius: 10px;
+            height: 30%;
+            width: 40%;
+            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .SectionAbout7Div1H1{
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bolder;
+                font-size: 30px;
+            }
+            .logoInstagram{
+                color: white;
+                font-size: 50px;
+            }
+        .sectionAbout7Div2{
+            height: 100%;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .instagramSection{
+            border-radius: 20px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 65%;
+            height: 100%;
+        }
+
+
+/* ----------- */ 
+
 /* ......................................  ABOUT  ............................................. */
 
 /* ......................................  CONTACT  ............................................. */
