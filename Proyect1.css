@@ -3127,7 +3127,7 @@ html body{
     justify-content: center;
     align-items: center;
 }
-.sectionWriting0_7Div{
+.sectionWriting0_7Ref{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -3135,6 +3135,17 @@ html body{
     height: 95%;
     width: 25%;
     margin: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 1px black;
+    border: none;
+}
+.sectionWriting0_7Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     box-shadow: 0 0 10px 1px;
 }
@@ -3344,14 +3355,25 @@ html body{
     justify-content: center;
     align-items: center;
 }
+.sectionWriting0_8Ref{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 95%;
+    width: 25%;
+    margin: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 1px black;
+    border: none;
+}
     .sectionWriting0_8Div{
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: center;
-        height: 95%;
-        width: 25%;
-        margin: 30px;
+        height: 100%;
+        width: 100%;
         overflow: hidden;
         box-shadow: 0 0 10px 1px;
     }
@@ -3415,6 +3437,23 @@ html body{
                 text-align: start;
                 color: white;
                 z-index: 1;
+            }
+            .sectionWriting0_9Tesis1{
+                background-color: red;
+                border: none;
+                border-radius: 5px;
+                height: 50px;
+                width: 200px;
+            }
+            .sectionWriting0_9Tesis2{
+                background-color: blue;
+                border: none;
+                border-radius: 5px;
+                height: 50px;
+                width: 200px;
+                text-decoration: underline;
+                text-decoration-color: white;
+                text-decoration-thickness: 1px; 
             }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionWriting0_8{
@@ -3734,6 +3773,16 @@ html body{
         width: 40%;
         margin: 20px;
     }
+    .section3_7WritingTesiunam{
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        width: 200px;
+        height: 50px;
+        margin: 20px;
+        text-decoration: underline;
+        text-decoration-color: white;
+    }
 .section3_1Section2{
     background-color: rgb(15, 192, 15);
     height: 60vh;
@@ -3769,19 +3818,41 @@ html body{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(Pictures/Fotos/Writing/1.png);
-        position: relative;
     }
-        .section3_1Section2DivOther1::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgb(0, 0, 0, 0.4);
-            z-index: 1;
-        }
+    .section3_1Section2DivOther1::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+                            #section3_1Section2DivOther1{
+                                background-image: url(Pictures/Fotos/Writing/1.png);
+                                position: relative;
+                            }
+                            #section3_2Section2DivOther1{
+                                background-image: url(Pictures/Fotos/Writing/1.png);
+                                position: relative;
+                            }
+                            #section3_3Section2DivOther1{
+                                background-image: url(Pictures/Fotos/Writing/1.png);
+                                position: relative;
+                            }
+                            #section3_4Section2DivOther1{
+                                background-image: url(Pictures/Fotos/Writing/1.png);
+                                position: relative;
+                            }
+                            #section3_5Section2DivOther1{
+                                background-image: url(Pictures/Fotos/Writing/1.png);
+                                position: relative;
+                            }
+                            #section3_6Section2DivOther1{
+                                background-image: url(Pictures/Fotos/Writing/1.png);
+                                position: relative;
+                            }
     .section3_1Section2DivOther2{
         height: 90%;
         width: 50%;
@@ -3790,22 +3861,47 @@ html body{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(Pictures/Fotos/Writing/2.png);
-        position: relative;
     }
-        .section3_1Section2DivOther2::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
+    .section3_1Section2DivOther2::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+                            #section3_1Section2DivOther2{
+                                background-image: url(Pictures/Fotos/Writing/2.png);
+                                position: relative;
+                            }
+                            #section3_2Section2DivOther2{
+                                background-image: url(Pictures/Fotos/Writing/2.png);
+                                position: relative;
+                            }
+                            #section3_3Section2DivOther2{
+                                background-image: url(Pictures/Fotos/Writing/2.png);
+                                position: relative;
+                            }
+                            #section3_4Section2DivOther2{
+                                background-image: url(Pictures/Fotos/Writing/2.png);
+                                position: relative;
+                            }
+                            #section3_5Section2DivOther2{
+                                background-image: url(Pictures/Fotos/Writing/2.png);
+                                position: relative;
+                            }
+                            #section3_6Section2DivOther2{
+                                background-image: url(Pictures/Fotos/Writing/2.png);
+                                position: relative;
+                            }
+        .section3_1Section2DivOtherButton{
             width: 100%;
-            height: 100%;
-            background-color: rgb(0, 0, 0, 0.4);
-            z-index: 1;
         }
         .section3_1Section2DivOtherP{
             background-color: #DD2A7B;
-            width: auto;
+            width: 100%;
             height: auto;
             display: flex;
             justify-content: center;
