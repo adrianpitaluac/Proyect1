@@ -3120,41 +3120,69 @@ html body{
 
 /* ------ SECTION 0_7----- */
 .sectionWriting0_7{
-    height: 80vh;
+    height: 60vh;
     display: flex;
     background-color: rgb(216, 112, 247);
     padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.sectionWriting0_7Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 95%;
+    width: 25%;
+    margin: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 1px;
 }
     #sectionWriting0_7Div1{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        height: 95%;
-        width: 33%;
-        margin: 10px;
-        overflow: hidden;
+        background-image: url(Pictures/Fotos/Writing/5.png);
+        background-size: cover;
+        position: relative;
     }
+        #sectionWriting0_7Div1::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0, 0.4);
+            z-index: 1;
+        }
     #sectionWriting0_7Div2{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        height: 80%;
-        width: 33%;
-        margin: 10px;
-        overflow: hidden;
+        background-image: url(Pictures/Fotos/Writing/6.png);
+        background-size: cover;
+        position: relative;
     }
+        #sectionWriting0_7Div2::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0, 0.4);
+            z-index: 1;
+        }
     #sectionWriting0_7Div3{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center;
-        height: 90%;
-        width: 33%;
-        margin: 10px;
-        overflow: hidden;
+        background-image: url(Pictures/Fotos/Writing/7.png);
+        background-size: cover;
+        position: relative;
     }
+        #sectionWriting0_7Div3::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0, 0.4);
+            z-index: 1;
+        }
         .sectionWriting0_7Divh{
             margin: 5px;
             padding: 10px;
@@ -3168,8 +3196,12 @@ html body{
             width: 90%;
             height: 30%;
             text-align: start;
+            z-index: 1;
+            color: white;
         }
         .sectionWritng0_7Pic1{
+            z-index: -1;
+            position: absolute;
             width: 100%;
         }
         .sectionWritng0_7Pic2{
@@ -3302,9 +3334,215 @@ html body{
         }
 /* ----------- */
 
+/* ------ SECTION 0_8----- */
+.sectionWriting0_8{
+    height: 60vh;
+    display: flex;
+    background-color: rgb(216, 112, 247);
+    padding: 10px;
+    z-index: -3;
+    justify-content: center;
+    align-items: center;
+}
+    .sectionWriting0_8Div{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 95%;
+        width: 25%;
+        margin: 30px;
+        overflow: hidden;
+        box-shadow: 0 0 10px 1px;
+    }
+        #sectionWriting0_8Div1{
+            background-image: url(Pictures/Fotos/Writing/1.png);
+            background-size: cover;
+            position: relative;
+        }
+            #sectionWriting0_8Div1::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(0, 0, 0, 0.4);
+                z-index: 1;
+            }
+        #sectionWriting0_8Div2{
+            background-image: url(Pictures/Fotos/Writing/2.png);
+            background-size: cover;
+            position: relative;
+        }
+            #sectionWriting0_8Div2::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(0, 0, 0, 0.4);
+                z-index: 1;
+            }
+        #sectionWriting0_8Div3{
+            background-image: url(Pictures/Fotos/Writing/3.png);
+            background-size: cover;
+            position: relative;
+        }
+            #sectionWriting0_8Div3::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(0, 0, 0, 0.4);
+                z-index: 1;
+            }
+            .sectionWriting0_8Divh{
+                margin: 5px;
+                padding: 10px;
+                width: 90%;
+                height: 10%;
+                text-align: start;
+            }
+            .sectionWriting0_8Divp2{
+                margin: 0px;
+                padding: 10px;
+                width: 90%;
+                height: 30%;
+                text-align: start;
+                color: white;
+                z-index: 1;
+            }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionWriting0_8{
+                height: 85vh;
+            }
+            .sectionWritng0_8Pic1{
+                width: 90%;
+            }
+            .sectionWritng0_8Pic2{
+                width: 90%;
+            }
+            .sectionWritng0_8Pic3{
+                width: 90%;
+                height: 100%;
+            }
+            .sectionWriting0_8Divp2{
+                height: 70%;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionWriting0_8{
+                height: 80vh;
+            }
+            #sectionWriting0_8Div3{
+                height: 90%;
+            }
+            .sectionWriting0_8Divp2{
+                margin: 0px;
+                padding: 10px;
+                width: 90%;
+                height: 55%;
+                text-align: start;
+            }
+            .sectionWritng0_8Pic3{
+                height: 60%;
+                margin: 5px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionWriting0_8{
+                height: 170vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #sectionWriting0_8Div1{
+                width: 90%;
+            }
+            #sectionWriting0_8Div2{
+                width: 90%;
+            }
+            #sectionWriting0_8Div3{
+                width: 90%;
+                flex-direction: column-reverse;
+            }
+            .sectionWritng0_8Pic1{
+                height: 50%;
+                max-width: 50%;
+            }
+            .sectionWritng0_8Pic2{
+                height: 50%;
+                max-width: 30%;
+            }
+            .sectionWritng0_8Pic3{
+                height: 50%;
+                max-width: 30%;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionWriting0_8{
+                height: 200vh;
+                flex-direction: column;
+            }
+            #sectionWriting0_8Div1{
+                width: 90%;
+            }
+            #sectionWriting0_8Div2{
+                width: 90%;
+            }
+            #sectionWriting0_8Div3{
+                width: 90%;
+            }
+            .sectionWritng0_8Pic1{
+                width: 100%;
+                max-height: 100%;
+            }
+            .sectionWritng0_8Pic2{
+                width: 100%;
+                max-height: 100%;
+            }
+            .sectionWritng0_8Pic3{
+                height: 100%;
+                max-width: 100%;
+            }
+            .sectionWriting0_8Divp2{
+                margin: 0px;
+                padding: 10px;
+                width: 100%;
+                height: 60%;
+                text-align: start;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionWriting0_8{
+                height: 700px;
+                flex-direction: row;
+            }
+            .sectionWriting0_8Divp2{
+                height: 60%;
+            }
+            .sectionWritng0_8Pic1{
+                height: 30%;
+                max-width: 100%;
+
+            }
+            .sectionWritng0_8Pic2{
+                height: 30%;
+                max-width: 100%;
+            }
+            .sectionWritng0_8Pic3{
+                height: 30%;
+                max-width: 100%;
+            }
+        }
+/* ----------- */
+
 /* ---------------- SECTION 0_9 --------------- */
 #sectionWriting0_9{
-    height: 75vh;
+    height: 90vh;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -3312,7 +3550,7 @@ html body{
     padding: 10px;
 }
     .sectionWriting0_9Div1{
-        height: 80%;
+        height: 90%;
         width: 50%;
         display: flex;
         justify-content: center;
@@ -3351,6 +3589,8 @@ html body{
         }
         .sectionWritng0_9Pic{
             height: 100%;
+            box-shadow: 0 0 20px 5px;
+            height: 90%;
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionWriting0_9p{
@@ -3395,6 +3635,185 @@ html body{
 /* -------------------------------------- */
 /* ----------- */   
 /* ......................................  WRITING  ............................................. */
+
+
+/* ....................................  WRITING 3_1  ........................................... */
+
+.section3_1Header{
+    height: 60vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .section3_1HeaderSection{
+        background-color: red;
+        width: 70%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .section3_1HeaderSectionH1{
+            height: 97%;
+            width: auto;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+.section3_1Intro{
+    height: 30vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .section3_1IntroH4{
+        height: 97%;
+        width: 60%;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.section3_1Article{
+    height: 200vh;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .section3_1ArticleH2{
+        background-color: blue;
+        margin: 20px;
+        height: 10%;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section3_1ArticleP{
+        background-color: green;
+        width: 70%;
+        height: auto;
+        margin: 20px;
+        line-height: 1.5;
+        font-size: 18px;
+        text-align: justify;
+    }
+    .section3_1Img{
+        margin: 20px;
+        height: 40%;
+        line-height: 1.5;
+        font-size: 18px;
+        text-align: justify;
+    }
+.section3_1Section1{
+    background-color: orange;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .section3_1Section1H2{
+        background-color: #91aec4;
+        height: 10%;
+        width: 40%;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .section3_1SectionObject{
+        height: 80%;
+        width: 40%;
+        margin: 20px;
+    }
+.section3_1Section2{
+    background-color: rgb(15, 192, 15);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .section3_1Section2H3{
+        background-color: gray;
+        height: 10%;
+        width: 20%;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .section3_1Section2Div{
+        background-color: red;
+        height: 80%;
+        width: 70%;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section3_1Section2DivOther1{
+        height: 90%;
+        width: 50%;
+        margin: 30px;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(Pictures/Fotos/Writing/1.png);
+        position: relative;
+    }
+        .section3_1Section2DivOther1::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+    .section3_1Section2DivOther2{
+        height: 90%;
+        width: 50%;
+        margin: 30px;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(Pictures/Fotos/Writing/2.png);
+        position: relative;
+    }
+        .section3_1Section2DivOther2::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        .section3_1Section2DivOtherP{
+            background-color: #DD2A7B;
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+        }
+
+/* ....................................  WRITING 3_1  ........................................... */
 
 
 /* ......................................  ABOUT  ............................................. */
@@ -4356,6 +4775,60 @@ html body{
     }
 
 /* ----------- */ 
+
+
+/* ------ SECTION 5_5----- */
+.sectionAbout5_7{
+    height: 240vh;
+}
+.sectionAbout5_7SectionGeneral{
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sectionAbout5_7Header{
+    height: 10%;
+    background-color: #91aec4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.sectionAbout5_7Div{
+    border-radius: 20px;
+    width: 40%;
+    height: 23%;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sectionAbout5_7Section{
+    height: 80%;
+    width: 90%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sectionAbout5_7p{
+    height: 20%;
+    width: 100%;
+    background-color: orange;
+}
+.sectionAbout5_7Img{
+    max-height: 80%;
+    max-width: 100%;
+}
+
+
+/* ----------- */  
 
 
 /* ------ SECTION 6----- */
