@@ -3005,15 +3005,6 @@ html body{
             align-items: center;
 
         }
-        .headerWritingH3{
-            margin: 20px;
-            padding: 10px;
-            width: 90%;
-            height: 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
     .headerWritingPic{
         height: 100%;
     }
@@ -3046,13 +3037,10 @@ html body{
 /* ------ SECTION 0.5 ----- */
 .sectionWriting0_5{
     height: 40vh;
-    display: grid;
-    grid-template-areas: "1 2 3";
-    grid-template-columns: 45% 25% 25%;
+    display: flex;
     column-gap: 10px;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
     #sectionWriting0_5Div1{
         grid-area: "1";
@@ -3069,13 +3057,14 @@ html body{
             width: 90%;
             height: 60%;
             text-align: start;
+            font-size: 18px;
         }
         .sectionWriting0_5Div1h{
             margin: 10px;
             padding: 10px;
             width: 90%;
             height: 20%;
-            text-align: start;
+            text-align: center;
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionWriting0_5{
@@ -3128,6 +3117,7 @@ html body{
     align-items: center;
 }
 .sectionWriting0_7Ref{
+    transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -3138,6 +3128,13 @@ html body{
     overflow: hidden;
     box-shadow: 0 0 10px 1px black;
     border: none;
+    cursor: pointer;
+}
+.sectionWriting0_7Ref:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px 0.3px rgba(0, 0, 0, 1);
+    cursor: pointer;
 }
 .sectionWriting0_7Div{
     display: flex;
@@ -3153,6 +3150,9 @@ html body{
         background-image: url(Pictures/Fotos/Writing/5.png);
         background-size: cover;
         position: relative;
+        display: flex;
+        justify-content: end;
+        align-items: center;
     }
         #sectionWriting0_7Div1::before{
             content: "";
@@ -3168,6 +3168,9 @@ html body{
         background-image: url(Pictures/Fotos/Writing/6.png);
         background-size: cover;
         position: relative;
+        display: flex;
+        justify-content: end;
+        align-items: center;
     }
         #sectionWriting0_7Div2::before{
             content: "";
@@ -3183,6 +3186,9 @@ html body{
         background-image: url(Pictures/Fotos/Writing/7.png);
         background-size: cover;
         position: relative;
+        display: flex;
+        justify-content: end;
+        align-items: center;
     }
         #sectionWriting0_7Div3::before{
             content: "";
@@ -3195,11 +3201,18 @@ html body{
             z-index: 1;
         }
         .sectionWriting0_7Divh{
-            margin: 5px;
-            padding: 10px;
+            transition: all 0.2s ease;
+            margin: 100px;
+            padding: 20px;
             width: 90%;
-            height: 10%;
+            height: auto;
             text-align: start;
+            z-index: 1;
+            background-color: red;
+        }
+        .sectionWriting0_7Ref:hover .sectionWriting0_8Divh{
+            transform: scale(1.05);
+            transition: all 0.5s ease;
         }
         .sectionWriting0_7Divp2{
             margin: 0px;
@@ -3356,6 +3369,7 @@ html body{
     align-items: center;
 }
 .sectionWriting0_8Ref{
+    transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -3367,6 +3381,12 @@ html body{
     box-shadow: 0 0 10px 1px black;
     border: none;
 }
+    .sectionWriting0_8Ref:hover{
+                transform: scale(1.05);
+                transition: all 0.5s ease;
+                box-shadow: 0 0 10px 0.3px rgba(0, 0, 0, 1);
+                cursor: pointer;
+    }
     .sectionWriting0_8Div{
         display: flex;
         flex-direction: column;
@@ -3381,6 +3401,9 @@ html body{
             background-image: url(Pictures/Fotos/Writing/1.png);
             background-size: cover;
             position: relative;
+            display: flex;
+            justify-content: end;
+            align-items: center;
         }
             #sectionWriting0_8Div1::before{
                 content: "";
@@ -3396,6 +3419,9 @@ html body{
             background-image: url(Pictures/Fotos/Writing/2.png);
             background-size: cover;
             position: relative;
+            display: flex;
+            justify-content: end;
+            align-items: center;
         }
             #sectionWriting0_8Div2::before{
                 content: "";
@@ -3411,6 +3437,9 @@ html body{
             background-image: url(Pictures/Fotos/Writing/3.png);
             background-size: cover;
             position: relative;
+            display: flex;
+            justify-content: end;
+            align-items: center;
         }
             #sectionWriting0_8Div3::before{
                 content: "";
@@ -3423,12 +3452,19 @@ html body{
                 z-index: 1;
             }
             .sectionWriting0_8Divh{
-                margin: 5px;
-                padding: 10px;
+                margin: 100px;
+                padding: 20px;
                 width: 90%;
-                height: 10%;
+                height: auto;
                 text-align: start;
+                z-index: 1;
+                background-color: red;
             }
+            .sectionWriting0_8Ref:hover .sectionWriting0_8Divh{
+                transform: scale(1.05);
+                transition: all 0.5s ease;
+            }
+            /*
             .sectionWriting0_8Divp2{
                 margin: 0px;
                 padding: 10px;
@@ -3438,6 +3474,7 @@ html body{
                 color: white;
                 z-index: 1;
             }
+            */
             .sectionWriting0_9Tesis1{
                 background-color: red;
                 border: none;
@@ -3671,8 +3708,92 @@ html body{
                 height: 500px;
             }
         }
-/* -------------------------------------- */
 /* ----------- */   
+
+/* ------ SECTION 1 ----- */
+.sectionWriting1{
+    height: 40vh;
+    display: flex;
+    column-gap: 10px;
+    background-color: rgb(51, 156, 37);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+    #sectionWriting1Div1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        height: 100%;
+    }
+        .sectionWriting1Div1p{
+            margin: 5px;
+            padding: 10px;
+            width: 90%;
+            height: 60%;
+            text-align: start;
+            font-size: 18px;
+        }
+        .sectionWriting1Div1h{
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 20%;
+            text-align: center;
+        }
+        .sectionWriting1Button{
+            background-color: green;
+            border: none;
+            border-radius: 5px;
+            width: 150px;
+            height: 50px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionWriting1{
+                height: 70vh;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionWriting1{
+                height: 30vh;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionWriting1{
+                height: 90vh;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media screen and (min-width: 0px) and (max-width: 600px){
+            .sectionWriting1{
+                height: 140vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #sectionWriting0_5Div1{
+                height: 100%;
+            }
+            .sectionWriting0_5Div1p{
+                height: 80%;
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 1100px) and (orientation: landscape){
+            .sectionWriting1{
+                height: 700px;
+            }
+            .sectionWriting1Div1h{
+                height: 60%;
+            }
+        }
+/* ----------- */ 
 /* ......................................  WRITING  ............................................. */
 
 
@@ -3758,20 +3879,10 @@ html body{
     justify-content: center;
     align-items: center;
 }
-    .section3_1Section1H2{
-        background-color: #91aec4;
-        height: 10%;
-        width: 40%;
-        margin: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
     .section3_1SectionObject{
-        height: 80%;
+        height: 90%;
         width: 40%;
-        margin: 20px;
+        margin: 0px;
     }
     .section3_7WritingTesiunam{
         background-color: red;
