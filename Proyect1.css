@@ -278,6 +278,9 @@ html body{
         }
 
 @media screen and (min-width: 1024px) and (max-width: 1199px){
+    #headerIndex{
+        height: 60vh;
+    }
 }     
 @media screen and (min-width: 768px) and (max-width: 1023px){
     #headerIndex{
@@ -678,6 +681,8 @@ html body{
     row-gap: 10px;
     background-color: white;
     padding: 40px;
+    align-content: center;
+    justify-content: center;
     justify-items: center;
     align-items: center;
 }
@@ -741,8 +746,8 @@ html body{
         width: 80%;
         height: 80%;
     }
-        .sectionIndex3Div{
-            margin: 5px;
+        .sectionIndex3Divh{
+            margin: 10px;
             padding: 10px;
             width: 90%;
             height: 10%;
@@ -794,8 +799,17 @@ html body{
     }
     @media screen and (min-width: 601px) and (max-width: 767px){
         .sectionIndex3{
-            height: 100vh;
-            padding: 25px;
+        height: 140vh;
+        display: grid;
+        grid-template-areas: "1 2"
+                             "3 4"
+                             "5 6";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 33% 33% 33%;
+        column-gap: 10px;
+        row-gap: 0px;
+        background-color: pink;
+        padding: 25px;
         }
         .sectionIndex3Divp{
             height: 70%;
@@ -982,6 +996,7 @@ html body{
         justify-content: center;
         align-items: center;
         width: 80%;
+        height: 100%;
     }
         .sectionIndex4Div1p{
             margin: 10px;
@@ -1015,7 +1030,7 @@ html body{
     }
     @media screen and (min-width: 768px) and (max-width: 1023px){
         .sectionIndex4{
-            height: 60vh;
+            height: 90vh;
         }
         #sectionIndex4Div1{
             width: 100%;
@@ -1023,12 +1038,18 @@ html body{
         #sectionIndex4Div2{
             width: 95%;
         }
+        .sectionIndex4DivImg{
+            width: 100%;
+            height: autop;
+        }
     }
     @media screen and (min-width: 601px) and (max-width: 767px){
         .sectionIndex4{
-            height: 60vh;
+            height: 80vh;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-content: center;
         }
         .sectionIndex4Div1p{
             height: 50%;
@@ -1036,6 +1057,9 @@ html body{
         }
         .sectionIndex4Div1h{
             width: 100%;
+        }
+        .sectionIndex4DivImg{
+            height: 100%;
         }
     }
     @media screen and (min-width: 0px) and (max-width: 600px){
@@ -1078,7 +1102,7 @@ html body{
         }
         .sectionIndex4DivImg{
             height: 100%;
-            width: 90%;
+            width: auto;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -1354,7 +1378,7 @@ html body{
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices1{
                 height: 80vh;
-                padding: 10px;
+                padding: 25px;
                 grid-template-areas: "1 a"
                                      "2 a"
                                      "b b";
@@ -1484,10 +1508,14 @@ html body{
             width: 90%;
             text-align: center;
         }
-        
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionServices2{
+                height: 60vh;
+            }
+        }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionServices2{
-                height: 80vh;
+                height: 50vh;
             }
             .sectionServices2Divp{
                 height: 70%;
@@ -1499,7 +1527,7 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices2{
-                height: 110vh;
+                height: 130vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -1510,34 +1538,50 @@ html body{
                     justify-content: space-around;
                     align-content: center;
                     align-items: center;
+                    background-color: red;
+                    width: 80%;
+                    padding: 10px;
+                    margin: 10px;
                 }
                 #sectionServices2Div2{
                     display: flex;
                     justify-content: center;
                     align-content: center;
                     align-items: center;
+                    background-color: blue;
+                    width: 80%;
+                    padding: 10px;
+                    margin: 10px;
                 }
                 #sectionServices2Div3{
                     display: flex;
                     justify-content: center;
                     align-content: center;
                     align-items: center;
+                    width: 80%;
+                    padding: 10px;
+                    margin: 10px;
+                    background-color: red;
                 }
                 #sectionServices2Div4{
                     display: flex;
                     justify-content: center;
                     align-content: center;
                     align-items: center;
+                    width: 80%;
+                    padding: 10px;
+                    margin: 10px;
+                    background-color: blue;
                 }
                     .sectionServices2Divp{
-                        width: 70%;
+                        width: 90%;
                         height: 50%;
                         justify-content: center;
                         align-content: center;
                     }
                     .sectionServices2Divh{
                         width: 70%;
-                        height: 50%;
+                        height: 30%;
                         text-align: center;
                         align-content: center;
                     }
@@ -1811,14 +1855,6 @@ html body{
         background-color: red;
         width: 80%;
     }
-    #sectionServices3Div2{
-        grid-area: "2";
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: red;
-        width: 80%;
-    }
     #sectionServices3Div3{
         grid-area: "3";
         display: flex;
@@ -1857,7 +1893,17 @@ html body{
 
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionServices3{
+                grid-template-columns: 45% 45%;
                 grid-template-rows: 0.5fr 0.7fr 1.3fr;
+            }
+            #sectionServices3Div1{
+                width: 95%;
+            }
+            #sectionServices3Div3{
+                width: 95%;
+            }
+            #sectionServices3Div4{
+                width: 95%;
             }
             .sectionServices3Divh{
                 height: 70%;
@@ -1871,6 +1917,7 @@ html body{
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionServices3{
+                height: 60vh;
                 padding: 30px;
                 grid-template-columns: 50% 50%;
                 grid-template-rows: 0.5fr 0.8fr 1.2fr;
@@ -1884,8 +1931,8 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3{
-                height: 60vh;
-                padding: 10px;
+                height: 80vh;
+                padding: 25px;
                 grid-template-columns: 45% 45%;
             }
             #sectionServices3Div1{
@@ -1917,7 +1964,7 @@ html body{
                 height: 150vh;
                 display: flex;
                 flex-direction: column;
-                padding: 5px;
+                padding: 25px;
             }
             .sectionServices3Divh{
                 width: 100%;
@@ -1993,10 +2040,9 @@ html body{
         .sectionServices3_2Pic{
             width: 100%;
         }
-
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionServices3_2{
-                height: 90vh;
+                height: 70vh;
             }
             .sectionServices3_2Divh{
                 height: 70%;
@@ -2008,8 +2054,9 @@ html body{
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionServices3_2{
-                height: 90vh;
+                height: clamp(850px, 80vh,900px); 
                 grid-template-columns: 60% 40%;
+                padding: 25px;
             }
             #sectionServices3_2Div4{
                 overflow: hidden;
@@ -2017,7 +2064,7 @@ html body{
             .sectionServices3_2Divh{
                 height: 50%;
                 width: 90%;
-            }
+            }ß
             .sectionServices3_2Divp{
                 margin: 10px;
             }
@@ -2027,17 +2074,18 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3_2{
-                height: 90vh;
+                height: 100vh;
                 grid-template-areas: "a a"
                                      "b c";
                 grid-template-columns: 70% 30%;
-                grid-template-rows: 15% 85%;
+                grid-template-rows: 10% 90%;
             }
             #sectionServices3_2Div1{
                 grid-area: a;
             }
             #sectionServices3_2Div2{
                 grid-area: b;
+                height: 90%;
             }
             #sectionServices3_2Div4{
                 grid-area: c;
@@ -2050,9 +2098,10 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionServices3_2{
-                height: 200vh;
+                height: 160vh;
                 display: flex;
                 flex-direction: column;
+                padding: 40px;
             }
             .sectionServices3_2Divh{
                 height: 70%;
@@ -2146,9 +2195,19 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionServices3_5{
-                height: 120vh;
+                height: 150vh;
                 display: flex;
                 flex-direction: column;
+            }
+            .sectionServices3_5Section1{
+                padding: 25px;
+                height: 80%;
+            }
+            .sectionServices3_5Section2{
+                height: 20%;
+            }
+            .sectionServices3_5Div1{
+                padding: 25px;
             }
             .sectionServices3_5Div2{
                 margin: 10px;
@@ -2159,12 +2218,15 @@ html body{
                 display: flex;
                 flex-direction: column;
                 height: 150vh;
+                padding: 25px;
             }
             .sectionServices3_5Section1{
                 height: 150vh;
+                padding: 10px;
             }
             .sectionServices3_5Section2{
                 height: 100%;
+                padding: 10px;
             }
             .sectionServices3_5Pic{
                 
@@ -2539,6 +2601,8 @@ html body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        height: 100%;
+        width: 100%;
     }
     #sectionGallery1Div2{
         grid-area: b;
@@ -2582,12 +2646,31 @@ html body{
         .sectionGallery1Pic{
             width: 100%;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionGallery1Pic{
+                width: auto;
+                height: 100%;
+        }
+
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionGallery1Pic{
+                width: auto;
+                height: 100%;
+        }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+             .sectionGallery1Pic{
+                width: auto;
+                height: 100%;
+        }
+        }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionGallery1{
                 height: 150vh;
                 display: flex;
                 flex-direction: column;
-                padding: 5px;
+                padding: 20px;
             }
             #sectionGallery1Div1{
                 height: 60%;
@@ -2707,7 +2790,7 @@ html body{
     }
         .kayak{
             border-radius: 20px;
-            height: 100%;
+            width: 100%;
         }
     #sectionGallery2Div2{
         grid-area: b;
@@ -2764,26 +2847,31 @@ html body{
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionGallery2{
-                height: 100vh;
-                grid-template-rows: 70% 30%;
+                height: 80vh;
+                grid-template-rows: 50% 30%;
             }
+            .kayak{
+            width: 90%;
+        }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionGallery2{
-                grid-template-rows: 75% 25%;
+                height: 70vh;
+                grid-template-rows: 65% 25%;
             }
             .kayak{
-                height: 70%;
+                width: 80%;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionGallery2{
-                height: 150vh;
+                height: 120vh;
                 display: flex;
                 flex-direction: column;
+                padding: 20px;
             }
             #sectionGallery2Div1{
-                height: 80%;
+                height: 50%;
             }
             #sectionGallery2Div2{
                 height: 30%;
@@ -2795,13 +2883,13 @@ html body{
                 height: 30%;
             }
             .sectionGallery2Divp{
-                width: 95%;
+                width: 80%;
             }
             .sectionGallery2Divp2{
                 width: 95%;
             }
             .kayak{
-                width: 100%;
+                width: 80%;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
@@ -2863,14 +2951,19 @@ html body{
             margin: 10px;
             width: 90%;
             height: 30%;
-            text-align: center;
+            text-align: justify;
         }
         .sectionGallery2_5Pic{
             width: 100%;
         }
+        @media screen and (min-width: 1024px) and (max-width: 1199px){
+            .sectionGallery2_5{
+                height: 80vh;
+            }
+        }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionGallery2_5{
-                height: 120vh;
+                height: 100vh;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
@@ -2885,6 +2978,9 @@ html body{
             #sectionGallery2_5Div2{
                 height: 60%;
             }
+            .sectionGallery2_5Pic{
+                width: 80%;
+            }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionGallery2_5{
@@ -2892,17 +2988,23 @@ html body{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 5px;
+                padding: 20px;
             }
             #sectionGallery2_5Div1{
                 height: 30%;
+            }
+            .sectionGallery2_5Divh2{
+                width: 80%;
             }
             #sectionGallery2_5Div2{
                 height: 70%;
             }
             .sectionGallery2_5Divp{
-                width: 100%;
+                width: 80%;
             }
+            .sectionGallery2_5Pic{
+            width: 80%;
+        }
         }
         @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){ 
             .sectionGallery2_5{
@@ -2958,7 +3060,7 @@ html body{
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionGallery3{
-                height: 150vh;
+                height: 120vh;
                 flex-direction: column;
             }
             .sectionGallery3Div1{
@@ -3024,7 +3126,7 @@ html body{
             padding: 10px;
             width: 90%;
             height: 40%;
-            text-align: start;
+            text-align: justify;
         }
         .sectionGallery4Div1h{
             margin: 10px;
@@ -3037,7 +3139,7 @@ html body{
             padding: 10px;
             width: 90%;
             height: 80%;
-            text-align: center;
+            text-align: justify;
         }
         .sectionGallery4Pic{
             height: 100%;
@@ -3058,7 +3160,7 @@ html body{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 5px;
+                padding: 20px;
             }
             #sectionGallery4Div1{
                 display: flex;
@@ -3071,7 +3173,7 @@ html body{
                 padding: 10px;
                 width: 90%;
                 height: 70%;
-                text-align: start;
+                text-align: justify;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){ 
@@ -3180,33 +3282,45 @@ html body{
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionWriting0_5{
-                height: 70vh;
+                height: 50vh;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionWriting0_5{
-                height: 30vh;
+                height: 60vh;
                 grid-template-columns: repeat(3,1fr);
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionWriting0_5{
-                height: 90vh;
+                height: 70vh;
                 display: flex;
                 flex-direction: column;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionWriting0_5{
-                height: 140vh;
+                height: 90vh;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                justify-items: center;
+                align-items: center;
+                padding: 30px;
             }
             #sectionWriting0_5Div1{
                 height: 100%;
             }
             .sectionWriting0_5Div1p{
-                height: 80%;
+                height: 50%;
+                width: 90%;
+                text-align: justify;
+            }
+            .sectionWriting0_5Div1h{
+                height: 50%;
+                justify-content: center;
+                align-content: center;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
@@ -3370,7 +3484,7 @@ html body{
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionWriting0_7{
-                height: 85vh;
+                height: 50vh;
             }
             .sectionWriting0_7Ref{
                 height: 65%;
@@ -3675,7 +3789,7 @@ html body{
             }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionWriting0_8{
-                height: 85vh;
+                height: 50vh;
             }
             .sectionWriting0_8Ref{
                 height: 65%;
@@ -3897,32 +4011,70 @@ html body{
             height: 90%;
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
+            #sectionWriting0_9{
+                height: 100vh;
+                flex-direction: column;
+            }
+            .sectionWriting0_9Div1{
+                width: 90%;
+                padding: 40px;
+            }
+            .sectionWriting0_9Div2{
+                width: 90%;
+                padding: 40px;
+            }
             .sectionWriting0_9p{
                 height: 30%;
             }
             
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
+            #sectionWriting0_9{
+                height: 120vh;
+                flex-direction: column;
+            }
+            .sectionWriting0_9Div1{
+                width: 90%;
+                padding: 40px;
+            }
+            .sectionWriting0_9Div2{
+                width: 90%;
+                padding: 40px;
+            }
             .sectionWriting0_9p{
                 height: 40%;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
+            #sectionWriting0_9{
+                height: 120vh;
+                flex-direction: column;
+            }
             .sectionWriting0_9p{
                 height: 50%;
+            }
+            .sectionWriting0_9Div1{
+                width: 90%;
+                padding: 40px;
+            }
+            .sectionWriting0_9Div2{
+                width: 90%;
+                padding: 40px;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             #sectionWriting0_9{
-                height: 100vh;
+                height: 120vh;
                 flex-direction: column;
             }
             .sectionWriting0_9Div1{
                 width: 95%;
+                padding: 40px;
             }
             .sectionWriting0_9Div2{
                 width: 95%;
                 height: 60%;
+                padding: 40px;
                 margin: 5px;
             }
             .sectionWriting0_9p{
@@ -3943,10 +4095,10 @@ html body{
     height: 40vh;
     display: flex;
     column-gap: 10px;
-    background-color: grey;
     padding: 20px;
     justify-content: center;
     align-items: center;
+    background-color: gray;
 }
     #sectionWriting1Div1{
         display: flex;
@@ -3985,33 +4137,41 @@ html body{
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px){
             .sectionWriting1{
-                height: 70vh;
+                height: 50vh;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionWriting1{
-                height: 30vh;
+                height: 50vh;
                 grid-template-columns: repeat(3,1fr);
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionWriting1{
-                height: 90vh;
+                height: 60vh;
                 display: flex;
                 flex-direction: column;
+            }
+            #sectionWriting1Div1{
+                height: 90%;
+                width: 90%;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionWriting1{
-                height: 140vh;
+                height: 70vh;
                 display: flex;
                 flex-direction: column;
             }
-            #sectionWriting0_5Div1{
+            #sectionWriting1Div1{
                 height: 100%;
+                padding: 20px;
+                width: 100%;
             }
-            .sectionWriting0_5Div1p{
+            .sectionWriting1Div1p{
+                width: 100%;
                 height: 80%;
+                text-align: justify;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
