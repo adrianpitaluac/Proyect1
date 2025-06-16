@@ -4645,7 +4645,10 @@ html body{
             font-weight: bold;
             font-size: 30px;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px){
+            #headerAbout{
+                height: 70vh;
+            }
             .headerAboutDiv{
                 height: 60vh;
             }
@@ -4658,7 +4661,7 @@ html body{
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             #headerAbout{
-                height: 70vh;
+                height: 60vh;
             }
             .headerAboutDiv{
                 height: 60vh;
@@ -4691,7 +4694,7 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             #headerAbout{
-                height: 80vh;
+                height: 60vh;
             }
             .headerAboutDiv{
                 height: 70vh;
@@ -4701,14 +4704,6 @@ html body{
             }
             .headerAboutH3{
                 font-size: 20px;
-            }
-        }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-            #headerAbout{
-                height: 400px;
-            }
-            .headerAboutDiv{
-                height: 300px;
             }
         }
 /* -------------------------------------- */
@@ -4735,26 +4730,32 @@ html body{
         display: flex;
         justify-content: center;
         align-items: end;
+        background-color: red;
     }
     #sectionAbout1Div2{
         grid-area: "2";
         display: flex;
         justify-content: center;
+        align-content: center;
         align-items: center;
+        justify-items: center;
+        background-color: blue;
     }
     #sectionAbout1Div3{
         grid-area: "3";
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: green;
     }
     #sectionAbout1Div5{
         grid-area: "4";
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: red;
     }
-    #sectionAbout1Div4{
+    #sectionAbout1Div4{ /*pic */
         grid-area: a;
         padding: 0px;
         display: flex;
@@ -4774,6 +4775,8 @@ html body{
             width: 90%;
             height: 80%;
             text-align: center;
+            justify-content: center;
+            align-content: center;
         }
         .sectionAbout1Div4p{
             padding: 10px;
@@ -4784,19 +4787,19 @@ html body{
         .sectionAbout1Pic{
             height: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px){
             .sectionAbout1{
                 height: 90vh;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionAbout1{
-                height: 90vh;
+                height: 100vh;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionAbout1{
-                height: 110vh;
+                height: 100vh;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
@@ -4808,6 +4811,7 @@ html body{
                                      "e e";
                 grid-template-columns: repeat(2,1fr);
                 grid-template-rows: repeat(4,1fr);
+                padding: 20px;
             }
             #sectionAbout1Div1{
                 grid-area: a;
@@ -4858,12 +4862,15 @@ html body{
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: blue;
     }
     #sectionAbout2Div2{
         grid-area: 2;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: red;
+        margin: 10px;
     }
     #sectionAbout2Div4{
         grid-area: a;
@@ -4888,7 +4895,7 @@ html body{
             padding: 10px;
             width: 90%;
             height: 80%;
-            text-align: center;
+            text-align: justify;
         }
         .sectionAbout2DivUl{
             text-decoration: none;
@@ -4910,18 +4917,49 @@ html body{
         .sectionAbout2Pic{
             height: 100%;
         }
+        @media screen and (min-width: 1024px){
+            .sectionAbout2{
+                height: 60vh;
+            }
+            .sectionAbout2Pic{
+                width: auto;
+                height: auto;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .sectionAbout2{
+                height: 60vh;
+            }
+            .sectionAbout2Pic{
+                width: auto;
+                height: auto;
+            }
+        }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionAbout2{
-                height: 120vh;
+                height: 80vh;
+                grid-template-areas: "1 a"
+                                     "2 a";
+                grid-template-columns: 50% 40%;
+                grid-template-rows: 20% 70%;
+                justify-content: center;
+            }
+            .sectionAbout2Pic{
+                width: 100%;
+                height: auto;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionAbout2{
-                height: 100vh;
+                height: 80vh;
+                max-height: 540px;
                 grid-template-areas: "b b"
                                      "a d";
-                grid-template-columns: repeat(2,1fr);
-                grid-template-rows: 35% 65%;
+                grid-template-columns: 25% 65%;
+                grid-template-rows: 55% 45%;
+                margin: 10px;
+                justify-content: center;
+                align-content: center;
             }
             #sectionAbout2Div1{
                 grid-area: a;
@@ -4937,6 +4975,10 @@ html body{
             }
             .sectionAbout2Divh{
                 height: 60%;
+            }
+            .sectionAbout2Pic{
+                width: 90%;
+                height: auto;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
@@ -4969,6 +5011,7 @@ html body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: red;
     }
     #sectionAbout3Div2{
         grid-area: "2";
@@ -4977,6 +5020,7 @@ html body{
         align-items: center;
         flex-direction: column;
         width: 90%;
+        background-color: red;
     }
     #sectionAbout3Div3{
         grid-area: "3";
@@ -4986,6 +5030,7 @@ html body{
         align-items: center;
         flex-direction: column;
         height: 80%;
+        background-color: blue;
     }
     #sectionAbout3Div4{
         grid-area: "4";
@@ -4994,6 +5039,7 @@ html body{
         align-items: center;
         flex-direction: column;
         height: 80%;
+        background-color: yellow;
     }
         .sectionAbout3Divh{
             margin: 0px;
@@ -5009,18 +5055,27 @@ html body{
             align-items: center;
             height: 100%;
             width: 90%;
+            margin: 10px;
+            border: solid black;
         }
         .sectionAbout3DivLi{
-            margin: 0px;
+            margin: 10px;
             padding: 10px;
             width: 100%;
             height: 20%;
             text-align: start;
             list-style: none;
+            border: solid red;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px){
             .sectionAbout3{
-                height: 60vh;
+                height: 80vh;
+            }
+            #sectionAbout3Div3{
+                height: 100%;
+            }
+             #sectionAbout3Div4{
+                height: 100%;
             }
             .sectionAbout3Divp{
                 margin: 0px;
@@ -5032,12 +5087,28 @@ html body{
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionAbout3{
-                height: 60vh;
+                height: 80vh;
+                grid-template-columns: 40% 40%;
+                grid-template-rows: 10% 80%;  
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
             .sectionAbout3{
-                height: 60vh;
+                height: 80vh;
+                grid-template-columns: 40% 40%;
+                grid-template-rows: 10% 80%;   
+            }
+            #sectionAbout3Div3{
+                height: 100%;
+            }
+             #sectionAbout3Div4{
+                height: 100%;
+            }
+            .sectionAbout3DivLu{
+                height: 100%;
+            }
+            .sectionAbout3DivLi{
+                height: 100%;
             }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
@@ -5098,6 +5169,8 @@ html body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        margin: 10px;
+        background-color: red;
     }
     #sectionAbout4Div2{
         grid-area: b;
@@ -5105,6 +5178,8 @@ html body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 10px;
+        background-color: blue;
     }
     #sectionAbout4Div3{
         grid-area: c;
@@ -5112,6 +5187,8 @@ html body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        margin: 10px;
+        background-color: red;
     }
     #sectionAbout4Div4{
         grid-area: d;
@@ -5119,6 +5196,8 @@ html body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 10px;
+        background-color: yellow;
     }
     #sectionAbout4Div5{
         grid-area: e;
@@ -5126,6 +5205,8 @@ html body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        margin: 10px;
+        background-color: red;
     }
     #sectionAbout4Div6{
         grid-area: f;
@@ -5134,13 +5215,15 @@ html body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        margin: 10px;
+        background-color: blue;
     }
         .sectionAbout4Divp{
             margin: 0px;
             padding: 10px;
             width: 90%;
             height: 60%;
-            text-align: start;
+            text-align: justify;
         }
         .sectionAbout4Divh{
             margin: 10px;
@@ -5152,21 +5235,30 @@ html body{
         .sectionAbout4Pic{
             height: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px){
             .sectionAbout4{
-                height: 90vh;
+                height: 70vh;
+                padding: 10px;
+                grid-template-rows: 45% 45%;
+                justify-content: center;
+                align-content: space-evenly;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionAbout4{
-                height: 95vh;
+                height: 140vh;
+                grid-template-areas: "b a"
+                                     "c d"
+                                     "f e";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,1fr);
             }
             .sectionAbout4Divp{
                 margin: 0px;
                 padding: 10px;
                 width: 90%;
                 height: 80%;
-                text-align: start;
+                text-align: justify;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
@@ -5233,6 +5325,8 @@ html body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        margin: 10px;
+        background-color: blue;
     }
     #sectionAbout4_5Div2{
         grid-area: b;
@@ -5240,6 +5334,8 @@ html body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 10px;
+        background-color: red;
     }
     #sectionAbout4_5Div3{
         grid-area: c;
@@ -5247,6 +5343,8 @@ html body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        margin: 10px;
+        background-color: blue;
     }
     #sectionAbout4_5Div4{
         grid-area: d;
@@ -5254,6 +5352,8 @@ html body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 10px;
+        background-color: yellow;
     }
     #sectionAbout4_5Div5{
         grid-area: e;
@@ -5261,6 +5361,8 @@ html body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        margin: 10px;
+        background-color: blue;
     }
     #sectionAbout4_5Div6{
         grid-area: f;
@@ -5269,13 +5371,15 @@ html body{
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        margin: 10px;
+        background-color: red;
     }
         .sectionAbout4_5Divp{
             margin: 0px;
             padding: 10px;
             width: 90%;
             height: 60%;
-            text-align: start;
+            text-align: justify;
         }
         .sectionAbout4_5Divh{
             margin: 10px;
@@ -5287,21 +5391,30 @@ html body{
         .sectionAbout4_5Pic{
             height: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px){
             .sectionAbout4_5{
-                height: 90vh;
+                height: 70vh;
+                padding: 10px;
+                grid-template-rows: 45% 45%;
+                justify-content: center;
+                align-content: space-evenly;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px){
             .sectionAbout4_5{
-                height: 95vh;
+                height: 140vh;
+                grid-template-areas: "b a"
+                                     "c d"
+                                     "f e";
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,1fr);
             }
             .sectionAbout4_5Divp{
                 margin: 0px;
                 padding: 10px;
                 width: 90%;
                 height: 80%;
-                text-align: start;
+                text-align: justify;
             }
         }
         @media screen and (min-width: 601px) and (max-width: 767px){
@@ -5371,6 +5484,9 @@ html body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: red;
+        padding: 20px;
+        margin: 20px;
     }
     #sectionAbout5Div2{
         grid-area: b;
@@ -5379,15 +5495,20 @@ html body{
         justify-content: center;
         align-content: start;
         align-items: center;
+        padding: 20px;
+        margin: 20px;
+        background-color: red;
     }
     #sectionAbout5Div3{
         grid-area: c;
         display: flex;
         flex-direction: column;
         justify-content: center;
-
         align-content: start;
         align-items: center;
+        padding: 20px;
+        margin: 20px;
+        background-color: red;
     }
     #sectionAbout5Div4{
         grid-area: d;
@@ -5396,6 +5517,9 @@ html body{
         justify-content: center;
         align-content: start;
         align-items: center;
+        padding: 20px;
+        margin: 20px;
+        background-color: red;
     }
         .sectionAbout5DivLu{
             display: flex;
@@ -5408,7 +5532,7 @@ html body{
             padding: 10px;
             height: 30%;
             width: 100%;
-            text-align: center;
+            text-align: justify;
             list-style: none;
             font-size: 14px;
         }
@@ -5419,40 +5543,53 @@ html body{
             height: 20%;
             text-align: center;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        .sectionAbout5Divp{
+            margin: 10px;
+            padding: 10px;
+            width: 90%;
+            height: 60%;
+            text-align: justify;
+        }
+        @media screen and (min-width: 1024px){
             .sectionAbout5{
                 height: 80vh;
+                grid-template-columns: 30% 30% 30%;
+                grid-template-rows: 40% 50%;
+                align-content: space-around;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 1023px){
             .sectionAbout5{
                 height: 150vh;
-                grid-template-areas: "a"
-                                     "b"
-                                     "c"
-                                     "d";
-                grid-template-columns: 100%;
-                grid-template-rows: 30% 23% 23% 23%;
-                justify-content: space-evenly;
+                display: flex;
+                flex-direction: column;
                 align-items: center;
             }
             #sectionAbout5Div1{
                 height: 100%;
+                width: 90%;
+                margin: 20px;
             }
             #sectionAbout5Div2{
                 height: 100%;
+                width: 90%;
+                margin: 20px;
                 display: flex;
                 justify-content: start;
                 align-items: start;
             }
             #sectionAbout5Div3{
                 height: 100%;
+                width: 90%;
+                margin: 20px;
                 display: flex;
                 justify-content: start;
                 align-items: start;
             }
             #sectionAbout5Div4{
                 height: 100%;
+                width: 90%;
+                margin: 20px;
                 display: flex;
                 justify-content: start;
                 align-items: start;
@@ -5460,17 +5597,22 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionAbout5{
-                height: 170vh;
+                height: 180vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 10px;
+                padding: 20px;
             }
             #sectionAbout5Div1{
                 height: 70%;
                 width: 100%;
                 margin: 30px;
+                padding: 10px;
+                justify-content: center;
+                align-content: center;
+                justify-items: center;
+                align-items: center;
             }
             #sectionAbout5Div2{
                 height: 90%;
@@ -5484,7 +5626,14 @@ html body{
                 height: 100%;
                 width: 100%;
             }
-        }
+            .sectionAbout5Divh{
+                margin: 10px;
+                padding: 10px;
+                width: 90%;
+                height: 20%;
+                text-align: center;
+            }
+            }
         @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
             .sectionAbout5{
                 height: 1000px;
@@ -5499,13 +5648,13 @@ html body{
     display: flex;
     padding: 20px;
 }
-
     .sectionAbout5_5Div{
         width: 80%;
         height: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: red;
     }
     .sectionAbout5_5DivH1{
         color: #0014ff;
@@ -5524,6 +5673,7 @@ html body{
         justify-content: space-around;
         align-items: center;
         text-align: center;
+        background-color: blue;
     }
     .sectionAbout5_5DivUl2{
         width: 25%;
@@ -5533,6 +5683,7 @@ html body{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        background-color: yellow;
     }
     .sectionAbout5_5DivLi{
         list-style: none;
@@ -5541,15 +5692,77 @@ html body{
         text-align: center;
         display: flex;
         align-items: center;
+        margin: 10px;
+        padding: 10px;
+        border: solid black;
     }
-
-    @media screen and (min-width: 0px) and (max-width: 600px){
+    @media screen and (min-width: 1024px){
         .sectionAbout5_5{
+            height: 100vh;
             display: grid;
             grid-template-areas: "a a"
                                  "b c";
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 40% 60%;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 20% 70%;
+            justify-content: space-around;
+        }
+        .sectionAbout5_5{
+            flex-direction: column;
+        }
+        .sectionAbout5_5Div{
+            grid-area: a;
+        }
+        .sectionAbout5_5DivUl1{
+            grid-area: b;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+        .sectionAbout5_5DivUl2{
+            grid-area: c;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+    @media screen and (min-width: 601px) and (max-width: 1023px){
+        .sectionAbout5_5{
+            height: 100vh;
+            display: grid;
+            grid-template-areas: "a a"
+                                 "b c";
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 20% 70%;
+            justify-content: space-around;
+        }
+        .sectionAbout5_5{
+            flex-direction: column;
+        }
+        .sectionAbout5_5Div{
+            grid-area: a;
+        }
+        .sectionAbout5_5DivUl1{
+            grid-area: b;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+        .sectionAbout5_5DivUl2{
+            grid-area: c;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+    @media screen and (min-width: 0px) and (max-width: 600px){
+        .sectionAbout5_5{
+            height: 100vh;
+            display: grid;
+            grid-template-areas: "a a"
+                                 "b c";
+            grid-template-columns: 45% 45%;
+            grid-template-rows: 20% 70%;
+            justify-content: space-around;
         }
         .sectionAbout5_5{
             flex-direction: column;
@@ -5609,6 +5822,7 @@ html body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: red;
 }
 .sectionAbout5_7Section{
     height: 80%;
@@ -5629,12 +5843,44 @@ html body{
     align-content: center;
     padding: 10px;
     margin: 10px;
+    background-color: yellow;
 }
 .sectionAbout5_7Img{
     max-height: 80%;
     max-width: 100%;
 }
-
+@media screen and (min-width: 601px){
+    .sectionAbout5_7Img{
+        height: 50%;
+        width: auto;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 600px){
+    .sectionAbout5_7{
+        height: 350vh;
+    }
+    .sectionAbout5_7Header{
+        height: 5%;
+    }
+    .sectionAbout5_7SectionGeneral{
+        justify-content: space-around;
+        align-content: space-around;
+        justify-items: center;
+        align-items: center;
+    }
+    .sectionAbout5_7Div{
+        width: 100%;
+        height: auto;
+        margin: 15px;
+    }
+    .sectionAbout5_7p{
+        height: 50%;
+    }
+    .sectionAbout5_7Img{
+        max-width: 100%;
+        max-height: 172px;
+    }
+}
 
 /* ----------- */  
 
@@ -5648,9 +5894,15 @@ html body{
     column-gap: 20px;
     background-color: rgb(237, 237, 237);
     padding: 20px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
 }
     #sectionAbout6Div1{
         grid-area: "1";
+        background-color: red;
+        margin: 10px;
     }
     #sectionAbout6Div2{
         grid-area: "2";
@@ -5661,8 +5913,12 @@ html body{
         grid-template-columns: 20% 50% 20%;
         grid-template-rows: 20% 50% 20%;
         justify-content: center;
+        align-content: center;
+        justify-items: center;
         align-items: center;
         overflow: hidden;
+        height: 100%;
+        width: 100%;
     }
         .sectionAbout6Divp{
             margin: 10px;
@@ -5703,6 +5959,7 @@ html body{
             justify-content: center;
             align-items: center;
             overflow: hidden;
+            text-align: center;
         }
         .sectionAbout6Div2Button{
             border: none;
@@ -5712,7 +5969,49 @@ html body{
             color: white;
         }
         .sectionAbout6Pic{
-            height: 100%;
+            height: 90%;
+            width: auto;
+        }
+        @media screen and (min-width: 1024px){
+            #sectionAbout6Div1{
+                height: 80%;
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            #sectionAbout6Div1{
+                height: 80%;
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+        @media screen and (min-width: 601px) and (max-width: 767px){
+            .sectionAbout6{
+                height: 120vh;
+                display: flex;
+                flex-direction: column;
+            }
+            #sectionAbout6Div1{
+                height: 40%;
+                margin: 20px;
+            }
+            #sectionAbout6Div2{
+                height: 60%;
+                grid-template-areas: "a b c"
+                                     "a b c"
+                                     "d e f";
+                grid-template-columns: 20% 50% 20%;
+                grid-template-rows: 20% 50% 20%;
+                margin: 20px;
+            }
+            .sectionAbout6DivPic{
+                grid-area: b;
+                background-color: blue;
+            }
+            .sectionAbout6Div2Button{
+                grid-area: e;
+            }
         }
         @media screen and (min-width: 0px) and (max-width: 600px){
             .sectionAbout6{
@@ -5721,7 +6020,8 @@ html body{
                 flex-direction: column;
             }
             #sectionAbout6Div1{
-                height: 100%;
+                height: 40%;
+                margin: 20px;
             }
             #sectionAbout6Div2{
                 height: 60%;
@@ -5733,6 +6033,7 @@ html body{
             }
             .sectionAbout6DivPic{
                 grid-area: b;
+                background-color: blue;
             }
             .sectionAbout6Div2Button{
                 grid-area: e;
@@ -5838,6 +6139,7 @@ html body{
         justify-items: center;
         align-items: center;
         overflow: hidden;
+        margin: 20px;
     }
         .headerContactDivp{
             margin: 10px;
@@ -5845,7 +6147,6 @@ html body{
             width: 90%;
             height: 10%;
             text-align: center;
-            font-weight: bolder;
         }
         .headerContactDivh{
             margin: 10px;
@@ -5872,21 +6173,13 @@ html body{
                 height: 15%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 0px) and (max-width: 767px){
             .headerContactDiv{
-                height: 80vh;
-            }
-            .headerContactDivp{
-                height: 15%;
-            }
-        }
-        @media screen and (min-width: 0px) and (max-width: 600px){
-            .headerContactDiv{
-                height: 90vh;
+                height: 70vh;
                 grid-template-areas: "a"
                                      "b";
                 grid-template-columns: 100%;
-                grid-template-rows: 70% 30%;
+                grid-template-rows: 60% 40%;
                 padding: 5px;
             }
             #headerContactDiv1{
@@ -5916,9 +6209,9 @@ html body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: red;
 }
     .sectionContactHeaderp{
-        font-weight: bolder;
         font-size: 25px;
         width: 80%;
         height: 50%;
@@ -6077,61 +6370,73 @@ html body{
                 align-items: center;
             }
                 .sectionContactHeader2p{
-                    font-weight: bolder;
                     font-size: 20px;
                     width: 80%;
                     height: 50%;
                     text-align: justify;
                 }
+        @media screen and (min-width: 0px) and (orientation: portrait){
+            .sectionContactHeader{
+                height: 30vh;
+            }
+            .sectionContact1{
+                height: 140vh;
+                flex-direction: column;
 
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
-            .sectionWhatsapp{
-                width: 35%;
-            }
-            .sectionLinkedin{
-                width: 35%;
-            }
-        }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            .sectionWhatsapp{
-                width: 45%;
-            }
-            .sectionLinkedin{
-                width: 45%;
-            }
-        }
-        @media screen and (min-width: 601px) and (max-width: 767px){
-            .sectionContact1{
-                height: 150vh;
-                flex-direction: column;
             }
             .sectionWhatsapp{
                 height: 45%;
                 width: 60%;
+                margin: 20px;
             }
             .sectionLinkedin{
                 height: 45%;
                 width: 60%;
+                margin: 20px;
             }
-        }
-        @media screen and (min-width: 0px) and (max-width: 600px){
-            .sectionContact1{
-                height: 150vh;
-                flex-direction: column;
-            }
-            .sectionWhatsapp{
-                height: 45%;
-                width: 100%;
-            }
-            .sectionLinkedin{
-                height: 45%;
-                width: 100%;
+            .sectionLinkedin1{
+                font-size: 35px;
             }
             .sectionContactHeaderp{
                 font-size: 20px;
             }
             .sectionContactHeader2p{
                 font-size: 20px;
+            }
+            .sectionWhatsapp2{
+                font-size: 30px;
+            }
+            .sectionWhatsapp3{
+                height: 25%;
+                width: 80%;
+                font-size: clamp(12px, 2vw, 20px);
+            }
+            .sectionLinkedin3{
+                height: 25%;
+                width: 80%;
+                font-size: clamp(12px, 2vw, 20px);
+            }
+            .whatsappIcon{
+                font-size: 20vw;
+            }
+            .linkedinIcon{
+                font-size: 20vw;
+            }
+            .sectionContactHeader2{
+                height: 40vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: red;
+            }
+            .buttonWhatsapp a{
+                font-size: 20px;
+            }
+            .buttonLinkedin a{
+                font-size: 20px;
+            }
+            .yoLinkedin{
+                height: 15vw;
             }
         }
         @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
@@ -6232,28 +6537,20 @@ html body{
         font-weight: bolder;
 
     }
-@media screen and (min-width: 1024px) and (max-width: 1199px){
+@media screen and (min-width: 768px){
     .formBody{
-        background-color: pink;
-        width: 60%;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    .formBody{
-        background-color: yellow;
         width: 80%;
+        height: 80%;
+        justify-content: center;
+        align-content: space-evenly;
+        justify-items: center;
+        align-items: center;
     }
 }
-@media screen and (min-width: 601px) and (max-width: 767px){
-    .formBody{
-        background-color: red;
-        width: 90%;
-    }
-}
-@media screen and (min-width: 0px) and (max-width: 600px){
+@media screen and (min-width: 0px) and (max-width: 767px){
     .formBody{
         background-color: yellowgreen;
-        width: 1000%;
+        width: 90%;
     }
     .formCampInput{
         width: 80%;
