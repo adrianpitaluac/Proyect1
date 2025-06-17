@@ -111,7 +111,7 @@ html body{
         display: none;
 
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) and (orientation: portrait){
         .navScrollBlock{
             overflow: hidden;
         }
@@ -156,70 +156,6 @@ html body{
         .navUl{
             flex-direction: column;
             gap: 1rem;
-        }
-        .navLogo{
-            margin-left: 20px;
-        }
-    }
-    @media screen and (max-width: 768px) and (orientation:landscape){
-        .navDiv{
-            display: flex;
-            height: 50px;
-            padding:5px;
-        }
-        .navButtonAbrir{
-            display: block;
-            border: 0;
-            background-color: transparent;
-            color: white;
-            font-size: 2rem;
-            cursor: pointer;
-        }
-        
-        .navButtonCerrar{
-            display: block;
-            border: 0;
-            background-color: transparent;
-            color: white;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        .navNew{
-            opacity: 0;
-            visibility: hidden;
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            top:0;
-            right:0;
-            background-color: black;
-            align-items: center;
-            justify-content: start;
-            padding: 20px;
-            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
-            gap: 0.5rem;
-            width:120px;
-            max-width: 120px;
-            height: 100vh;
-            z-index: 1000;
-        }
-        .navNew.visible{
-            opacity: 1;
-            visibility: visible;
-            background-color: green;
-        }
-        .navUl{
-            flex-direction: column;
-            gap: 0.1rem;
-            font-size: 15px;
-            height: 100%;
-        }
-        li{
-            text-decoration: none;
-            color: black;
-            height: 10%;
-            width: 70px;
-            transition: 0.1s ease;
         }
         .navLogo{
             margin-left: 20px;
@@ -276,18 +212,17 @@ html body{
             width: 100%;
             overflow: hidden;
         }
-
-@media screen and (min-width: 1024px) and (max-width: 1199px){
+@media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
     #headerIndex{
-        height: 60vh;
+        height: 50vh;
     }
 }     
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
     #headerIndex{
         height: 50vh;
     }
 }  
-@media screen and (min-width: 601px) and (max-width: 767px){
+@media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
     #headerIndex{
         height: 50vh;
         width: 100%;
@@ -301,7 +236,7 @@ html body{
         display: block;
     }
 }  
-@media screen and (min-width: 0px) and (max-width: 600px){
+@media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
     #headerIndex{
         height: 60vh;
         width: 100%;
@@ -318,15 +253,22 @@ html body{
         /*max-height: 140%;*/
     }
 }
-@media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+@media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
     #headerIndex{
         height: 500px;
     }
-    .headerIndexWallpaper{
-        max-width: 100%;
-        max-height: 160%;
+}
+@media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+    #headerIndex{
+        height: 600px;
     }
-} 
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+    #headerIndex{
+        height: 600px;
+    }
+}
 /* -------------------------------------- */
 
 /* ------ SECTION 1 ----- */
@@ -412,7 +354,7 @@ html body{
             cursor: pointer;
 
         }
-    @media screen and (min-width: 768px) and (max-width: 1023px){
+    @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
         .sectionIndex1{
             height: 80vh;
         }
@@ -429,7 +371,7 @@ html body{
                 height: 90%;
             }
     }
-    @media screen and (min-width: 601px) and (max-width: 767px){
+    @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
         .sectionIndex1{
             grid-template-columns: 60% 40%;
             height: 85vh;
@@ -440,7 +382,7 @@ html body{
             padding: 10px;
         }
     }
-    @media screen and (min-width: 0px) and (max-width: 600px){
+    @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait) and (orientation: portrait){
         .sectionIndex1{
             height: 85vh;
             padding: 5px;
@@ -478,30 +420,21 @@ html body{
         }
     
     }
-    @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+    @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
         .sectionIndex1{
-            height: 600px;
-            padding: 10px;
-            grid-template-areas: "a b"
-                                 "c c"
-                                 "d d";
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 40% 30% 30%;
-            row-gap: 0px;
+            height: 650px;
         }
-        #sectionIndex1Div1{
-            grid-area: a;
+    }
+    @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+        .sectionIndex1{
+            height: 700px;
         }
-        #sectionIndex1Div2{
-            grid-area: d;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+        .sectionIndex1{
+            height: 700px;
         }
-        #sectionIndex1Div3{
-            grid-area: c;
-        }
-        #sectionIndex1Div4{
-            grid-area: b;
-        }
-    
     }
 /* ----------- */
 
@@ -584,7 +517,7 @@ html body{
             max-height: 100%;
             
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionIndex2{
                 height: 80vh;
             }
@@ -601,7 +534,7 @@ html body{
                 height: 90%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionIndex2{
                 height: 85vh;
                 grid-template-columns: 40% 60%;
@@ -613,7 +546,7 @@ html body{
             padding: 10px;
         }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionIndex2{
                 height: 85vh;
                 padding: 5px;
@@ -642,28 +575,20 @@ html body{
                 width: 90%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionIndex2{
                 height: 600px;
-                padding: 20px;
-                grid-template-areas: "a a"
-                                     "b b"
-                                     "c d";
-                grid-template-columns: repeat(2,1fr);
-                grid-template-rows: 30% 30% 40%;
-                row-gap: 0px;
+            }   
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionIndex2{
+                height: 600px;
             }
-            #sectionIndex2Div1{
-                grid-area: d;
-            }
-            #sectionIndex2Div2{
-                grid-area: b;
-            }
-            #sectionIndex2Div3{
-                grid-area: a;
-            }
-            #sectionIndex2Div4{
-                grid-area: c;
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionIndex2{
+                height: 600px;
             }
         }
 /* ----------- */
@@ -679,7 +604,7 @@ html body{
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
-    background-color: white;
+    background-color: gray;
     padding: 40px;
     align-content: center;
     justify-content: center;
@@ -760,12 +685,12 @@ html body{
             height: 70%;
             text-align: start;
         }
-    @media screen and (min-width: 1024px) and (max-width: 1199px){
+    @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
         .sectionIndex3{
             height: 90vh;
         }
     }
-    @media screen and (min-width: 768px) and (max-width: 1023px){
+    @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
         .sectionIndex3{
             height: 100vh;
         }
@@ -797,7 +722,7 @@ html body{
             height: 70%;
         }
     }
-    @media screen and (min-width: 601px) and (max-width: 767px){
+    @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
         .sectionIndex3{
         height: 140vh;
         display: grid;
@@ -815,7 +740,7 @@ html body{
             height: 70%;
         }
     }
-    @media screen and (min-width: 0px) and (max-width: 600px){
+    @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
         .sectionIndex3{
             height: 230vh;
             padding: 10px;
@@ -857,37 +782,20 @@ html body{
             height: 80%;
         }
     }
-    @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+    @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
         .sectionIndex3{
-            height: 900px;
-            padding: 25px;
-            grid-template-areas: "a a"
-                                 "b c"
-                                 "d d"
-                                 "e f";
-            grid-template-columns:  50% 50%;
-            grid-template-rows: repeat(4,1fr);
+            height: 800px;
         }
-        #sectionIndex3Div1{
-            grid-area: a;
+    }
+    @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+        .sectionIndex3{
+            height: 800px;
         }
-        #sectionIndex3Div2{
-            grid-area: b;
-        }
-        #sectionIndex3Div3{
-            grid-area: c;
-        }
-        #sectionIndex3Div4{
-            grid-area: d;
-        }
-        #sectionIndex3Div5{
-            grid-area: e;
-        }
-        #sectionIndex3Div6{
-            grid-area: f;
-        }
-        .sectionIndex3Divp{
-            height: 80%;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+        .sectionIndex3{
+            height: 800px;
         }
     }
 /* ----------- */
@@ -934,22 +842,22 @@ html body{
             align-items: center;
             color: white;
         }
-    @media screen and (min-width: 1024px) and (max-width: 1199px){
+    @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionIndex3_2{
                 height: 65vh;
             }
     }   
-    @media screen and (min-width: 768px) and (max-width: 1023px){
+    @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
         .sectionIndex3_2{
             height: 60vh;
         }
     }
-    @media screen and (min-width: 601px) and (max-width: 767px){
+    @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
         .sectionIndex3_2{
             height: 60vh;
         }
     }
-    @media screen and (min-width: 0px) and (max-width: 600px){
+    @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
         .sectionIndex3_2{
             height: 70vh;
             padding: 20px;
@@ -958,13 +866,21 @@ html body{
             height: 90%;
         }
     }
-    @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+    @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
         .sectionIndex3_2{
             height: 500px;
         }
-        .sectionIndex3_2Div{
-            height: 80%;
+    }
+    @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+        .sectionIndex3_2{
+            height: 600px;
         }
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+        .sectionIndex3_2{
+            height: 700px;
+        }   
     }
 /* -------------------------------------- */
 
@@ -1023,12 +939,12 @@ html body{
         .sectionIndex4DivImg{
             width: 100%;
         }
-    @media screen and (min-width: 1024px) and (max-width: 1199px){
+    @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
         .sectionIndex4{
             height: 55vh;
         }
     }
-    @media screen and (min-width: 768px) and (max-width: 1023px){
+    @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
         .sectionIndex4{
             height: 90vh;
         }
@@ -1043,7 +959,7 @@ html body{
             height: autop;
         }
     }
-    @media screen and (min-width: 601px) and (max-width: 767px){
+    @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
         .sectionIndex4{
             height: 80vh;
             display: flex;
@@ -1062,7 +978,7 @@ html body{
             height: 100%;
         }
     }
-    @media screen and (min-width: 0px) and (max-width: 600px){
+    @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
         .sectionIndex4{
             height: 80vh;
             grid-template-areas: "a"
@@ -1108,26 +1024,20 @@ html body{
             background-repeat: no-repeat;
         }
     }
-    @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+    @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+        .sectionIndex4{
+            height: 500px;
+        }
+    }
+    @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+        .sectionIndex4{
+            height: 500px;
+        }
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
         .sectionIndex4{
             height: 600px;
-            grid-template-areas: "a"
-                                 "b";
-            grid-template-rows: 50% 50%;
-            grid-template-columns: 100%;
-        }
-        #sectionIndex4Div1{
-            grid-area: b;
-        }
-        #sectionIndex4Div2{
-            grid-area: a;
-        }
-        .sectionIndex4Div1p{
-            height: 50%;
-            width: 90%;
-        }
-        .sectionIndex4Div1h{
-            width: 90%;
         }
     }
 /* ----------- */    
@@ -1191,7 +1101,7 @@ html body{
             height: 100%;
         }
         
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             #headerServices{
                 height: 80vh;
             }
@@ -1199,7 +1109,7 @@ html body{
                 height: 30%;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             #headerServices{
                 height: 80vh;
                 padding: 20px;
@@ -1217,7 +1127,7 @@ html body{
                 width: 90%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             #headerServices{
                 height: 95vh;
                 flex-direction: column-reverse;
@@ -1231,7 +1141,7 @@ html body{
                 height: 180%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             #headerServices{
                 height: 120vh;
                 flex-direction: column-reverse;
@@ -1267,10 +1177,22 @@ html body{
                 height: 80%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             #headerServices{
                 height: 800px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            #headerServices{
+                height: 800px;
+            }
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            #headerServices{
+                height: 800px;
+            }
+            
         }
 /* -------------------------------------- */
 
@@ -1344,7 +1266,7 @@ html body{
             width: 100%
         }
         
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionServices1{
                 height: 90vh;
             }
@@ -1355,7 +1277,7 @@ html body{
                 height: 90%;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionServices1{
                 height: 80vh;
                 padding: 20px;
@@ -1375,7 +1297,7 @@ html body{
                 width: 170%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionServices1{
                 height: 80vh;
                 padding: 25px;
@@ -1403,7 +1325,7 @@ html body{
                 width: 180%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionServices1{
                 height: 120vh;
                 grid-template-areas: "a"
@@ -1439,10 +1361,23 @@ html body{
                 width: 120%
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionServices1{
-                height: 900px;
+                height: 800px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionServices1{
+                height: 800px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionServices1{
+                height: 800px;
+            }
+            
         }
 /* ----------- */
 
@@ -1508,12 +1443,12 @@ html body{
             width: 90%;
             text-align: center;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionServices2{
                 height: 60vh;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionServices2{
                 height: 50vh;
             }
@@ -1525,7 +1460,7 @@ html body{
                 width: 95%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionServices2{
                 height: 130vh;
                 display: flex;
@@ -1586,7 +1521,7 @@ html body{
                         align-content: center;
                     }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionServices2{
                 height: 150vh;
                 display: flex;
@@ -1624,10 +1559,23 @@ html body{
                 width: 100%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionServices2{
-                height: 900px;
+                height: 650px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionServices2{
+                height: 650px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionServices2{
+                height: 650px;
+            }
+            
         }
 /* ----------- */
 
@@ -1721,7 +1669,7 @@ html body{
             text-align: start;
         }
         
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionServices2_5{
                 height: 70vh;
                 padding: 20px;
@@ -1736,7 +1684,7 @@ html body{
                 height: 80%;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionServices2_5{
                 height: 100vh;
                 grid-template-areas: "a a"
@@ -1764,7 +1712,7 @@ html body{
                 margin: 5px;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionServices2_5{
                 height: 100vh;
                 grid-template-areas: "a a"
@@ -1801,7 +1749,7 @@ html body{
                 height: 80%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionServices2_5{
                 height: 260vh;
                 display: flex;
@@ -1824,10 +1772,41 @@ html body{
                 text-align: start;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionServices2_5{
-                height: 1000px;
+                height: 700px;
+                grid-template-areas: "a a a a"
+                                    "2 3 4 5";
+                grid-template-columns: 23% 23% 23% 23%;
+                grid-template-rows: 40% 60%;
+                column-gap: 10px;
+                padding:10px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionServices2_5{
+                height: 700px;
+                grid-template-areas: "a a a a"
+                                    "2 3 4 5";
+                grid-template-columns: 23% 23% 23% 23%;
+                grid-template-rows: 40% 60%;
+                column-gap: 10px;
+                padding:10px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionServices2_5{
+                height: 700px;
+                grid-template-areas: "a a a a"
+                                    "2 3 4 5";
+                grid-template-columns: 23% 23% 23% 23%;
+                grid-template-rows: 40% 60%;
+                column-gap: 10px;
+                padding:10px;
+            }
+            
         }
 /* ----------- */
 
@@ -1891,7 +1870,7 @@ html body{
             height: 100%;
         }
 
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionServices3{
                 grid-template-columns: 45% 45%;
                 grid-template-rows: 0.5fr 0.7fr 1.3fr;
@@ -1915,7 +1894,7 @@ html body{
                 text-align: center;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionServices3{
                 height: 60vh;
                 padding: 30px;
@@ -1929,7 +1908,7 @@ html body{
                 height: 90%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionServices3{
                 height: 80vh;
                 padding: 25px;
@@ -1959,7 +1938,7 @@ html body{
                 height: 70%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionServices3{
                 height: 150vh;
                 display: flex;
@@ -1977,10 +1956,23 @@ html body{
             }
             
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionServices3{
-                height: 600px;
+                height: 700px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionServices3{
+                height: 700px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionServices3{
+                height: 700px;
+            }
+            
         }
 /* ----------- */
 
@@ -2040,7 +2032,7 @@ html body{
         .sectionServices3_2Pic{
             width: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionServices3_2{
                 height: 70vh;
             }
@@ -2052,7 +2044,7 @@ html body{
                 margin: 10px;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionServices3_2{
                 height: clamp(850px, 80vh,900px); 
                 grid-template-columns: 60% 40%;
@@ -2072,7 +2064,7 @@ html body{
                 height: 50%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionServices3_2{
                 height: 100vh;
                 grid-template-areas: "a a"
@@ -2096,7 +2088,7 @@ html body{
                 width: 90%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionServices3_2{
                 height: 160vh;
                 display: flex;
@@ -2107,10 +2099,26 @@ html body{
                 height: 70%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionServices3_2{
-                height: 1200px;
+                height: 750px;
+                grid-template-columns: 55% 35%;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionServices3_2{
+                height: 750px;
+                grid-template-columns: 55% 35%;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionServices3_2{
+                height: 750px;
+                grid-template-columns: 55% 35%;
+            }
+            
         }
 
 /* ----------- */
@@ -2122,6 +2130,8 @@ html body{
     grid-template-areas: "a b";
     grid-template-columns: 35% 65%;
     background-color: rgb(186, 186, 186);
+    justify-content: center;
+    align-content: center;
     padding: 0px;
     height: 100vh;
 
@@ -2188,12 +2198,12 @@ html body{
             height:100%;
         }
 
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionServices3_5Pic{
                 height: 100%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionServices3_5{
                 height: 150vh;
                 display: flex;
@@ -2213,7 +2223,7 @@ html body{
                 margin: 10px;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionServices3_5{
                 display: flex;
                 flex-direction: column;
@@ -2233,13 +2243,23 @@ html body{
                 height: 200%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionServices3_5{
-                height: 1050px;
+                height: 700px;
             }
-            .sectionServices3_5Section1{
-                height: 1000px;
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionServices3_5{
+                height: 800px;
             }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionServices3_5{
+                height: 1100px;
+            }
+            
         }
         
 /* ----------- */
@@ -2284,12 +2304,12 @@ html body{
             justify-content: center;
             align-items: center;
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionServices3_7{
                 height: 70vh;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionServices3_7{
                 height: 70vh;
             }
@@ -2298,10 +2318,23 @@ html body{
                 width: 100%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionServices3_7{
-                height: 500px;
+                height: 400px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionServices3_7{
+                height: 400px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionServices3_7{
+                height: 600px;
+            }
+            
         }
 /* ----------- */
 
@@ -2345,13 +2378,12 @@ html body{
             justify-content: center;
             align-items: center;
         }
-
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionServices3_9{
                 height: 50vh;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionServices3_9{
                 height: 70vh;
             }
@@ -2360,10 +2392,23 @@ html body{
                 width: 100%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+            .sectionServices3_9{
+                height: 400px;
+            }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionServices3_9{
+                height: 400px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
             .sectionServices3_9{
                 height: 500px;
             }
+            
         }
 /* ----------- */
 
@@ -2411,13 +2456,12 @@ html body{
         .sectionServices4Pic{
             height:100%;
         }
-
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionServices4{
                 height: 50vh;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionServices4{
                 height: 50vh;
             }
@@ -2425,7 +2469,7 @@ html body{
                 height: 60%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionServices4{
                 height: 60vh;
             }
@@ -2433,7 +2477,7 @@ html body{
                 height: 70%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionServices4{
                 height: 80vh;
                 display: flex;
@@ -2447,11 +2491,23 @@ html body{
                 text-align: start;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionServices4{
                 height: 500px;
             }
-        
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionServices4{
+                height: 500px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionServices4{
+                height: 600px;
+            }
+            
         }
 /* ----------- */    
 
@@ -2498,12 +2554,12 @@ html body{
             justify-content: center;
             align-items: center;
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .headerGalleryDiv{
                 height: 85%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             #headerGallery{
                 justify-content: center;
                 align-items: end;
@@ -2520,10 +2576,23 @@ html body{
             }
         
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             #headerGallery{
                 height: 500px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            #headerGallery{
+                height: 600px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            #headerGallery{
+                height: 700px;
+            }
+            
         }
 /* -------------------------------------- */
 
@@ -2563,7 +2632,7 @@ html body{
             align-content: center;
 
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionGallery0_5{
                 height: 70vh;
             }
@@ -2572,10 +2641,23 @@ html body{
             }
         
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionGallery0_5{
                 height: 400px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionGallery0_5{
+                height: 400px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionGallery0_5{
+                height: 400px;
+            }
+            
         }
 /* ----------- */
 
@@ -2646,26 +2728,26 @@ html body{
         .sectionGallery1Pic{
             width: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionGallery1Pic{
                 width: auto;
                 height: 100%;
         }
 
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionGallery1Pic{
                 width: auto;
                 height: 100%;
         }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
              .sectionGallery1Pic{
                 width: auto;
                 height: 100%;
         }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionGallery1{
                 height: 150vh;
                 display: flex;
@@ -2686,10 +2768,23 @@ html body{
             }
         
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionGallery1{
-                    height: 700px;
+                height: 700px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionGallery1{
+                height: 700px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionGallery1{
+                height: 800px;
+            }
+            
         }
 
 /* ----------- */
@@ -2732,12 +2827,12 @@ html body{
             background-color: #c3edd7;
             border-radius: 10px;
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionGallery1_5Divp{
                 height: 40%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionGallery1_5{
                 height: 70vh;
             }
@@ -2753,10 +2848,23 @@ html body{
             }
         
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionGallery1_5{
                 height: 500px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionGallery1_5{
+                height: 500px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionGallery1_5{
+                height: 500px;
+            }
+            
         }
 /* ----------- */
 
@@ -2790,7 +2898,7 @@ html body{
     }
         .kayak{
             border-radius: 20px;
-            width: 100%;
+            height: 100%;
         }
     #sectionGallery2Div2{
         grid-area: b;
@@ -2845,7 +2953,7 @@ html body{
             height: 100%;
             margin: 10px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionGallery2{
                 height: 80vh;
                 grid-template-rows: 50% 30%;
@@ -2854,7 +2962,7 @@ html body{
             width: 90%;
         }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionGallery2{
                 height: 70vh;
                 grid-template-rows: 65% 25%;
@@ -2863,7 +2971,7 @@ html body{
                 width: 80%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionGallery2{
                 height: 120vh;
                 display: flex;
@@ -2892,10 +3000,23 @@ html body{
                 width: 80%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionGallery2{
-                height: 500px;
+                height: 700px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionGallery2{
+                height: 700px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionGallery2{
+                height: 900px;
+            }
+            
         }
 /* ----------- */
 
@@ -2956,17 +3077,17 @@ html body{
         .sectionGallery2_5Pic{
             width: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionGallery2_5{
                 height: 80vh;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionGallery2_5{
                 height: 100vh;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionGallery2_5{
                 height: 150vh;
                 display: flex;
@@ -2982,7 +3103,7 @@ html body{
                 width: 80%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionGallery2_5{
                 height: 170vh;
                 display: flex;
@@ -3006,10 +3127,35 @@ html body{
             width: 80%;
         }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){ 
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionGallery2_5{
-                height: 1000px;   
+                height: 900px;
             }
+            .sectionGallery2_5Pic{
+                height: 70%;
+                width: auto;
+            }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionGallery2_5{
+                height: 800px;
+            }
+            .sectionGallery2_5Pic{
+                height: 70%;
+                width: auto;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionGallery2_5{
+                height: 900px;
+            }
+            .sectionGallery2_5Pic{
+                height: 70%;
+                width: auto;
+            }
+            
         }
 /* ----------- */
 
@@ -3040,12 +3186,12 @@ html body{
             object-fit: cover;
 
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionGallery3{
                 height: 70vh;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionGallery3{
                 height: 200vh;
                 flex-direction: column;
@@ -3058,7 +3204,7 @@ html body{
                 height: 100%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionGallery3{
                 height: 120vh;
                 flex-direction: column;
@@ -3070,7 +3216,7 @@ html body{
                 height: 100%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionGallery3{
                 height: 100vh;
                 flex-direction: column;
@@ -3085,10 +3231,23 @@ html body{
 
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionGallery3{
-                height: 1200px;
+                height: 700px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionGallery3{
+                height: 700px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionGallery3{
+                height: 700px;
+            }
+            
         }
 /* ----------- */
 
@@ -3144,17 +3303,17 @@ html body{
         .sectionGallery4Pic{
             height: 100%;
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionGallery4Div1p{
                 height: 70%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionGallery4Div1p{
                 height: 70%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionGallery4{
                 height: 100vh;
                 display: flex;
@@ -3176,10 +3335,41 @@ html body{
                 text-align: justify;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){ 
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionGallery4{
-                height: 400px;
+                height: 600px;
             }
+            .sectionGallery4Div1p{
+                margin: 20px;
+            }
+            .sectionGallery4Div1h{
+                margin: 20px;
+            }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionGallery4{
+                height: 600px;
+            }
+            .sectionGallery4Div1p{
+                margin: 20px;
+            }
+            .sectionGallery4Div1h{
+                margin: 20px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionGallery4{
+                height: 600px;
+            }
+            .sectionGallery4Div1p{
+                margin: 20px;
+            }
+            .sectionGallery4Div1h{
+                margin: 20px;
+            }
+            
         }
 /* ----------- */   
 /* ......................................  GALLERY  ............................................. */
@@ -3220,7 +3410,7 @@ html body{
     .headerWritingPic{
         height: 100%;
     }
-    @media screen and (min-width: 0px) and (max-width: 600px){
+    @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
         #headerWriting{
             height: 90vh;
             flex-direction: column;
@@ -3239,10 +3429,23 @@ html body{
             width: 100%;
         }
     }
-    @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+    @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
         #headerWriting{
             height: 500px;
         }
+    }
+    @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+        #headerWriting{
+            height: 600px;
+        }
+        
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+        #headerWriting{
+            height: 700px;
+        }
+        
     }
 /* -------------------------------------- */
 
@@ -3280,25 +3483,25 @@ html body{
             height: 20%;
             text-align: center;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionWriting0_5{
                 height: 50vh;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionWriting0_5{
                 height: 60vh;
                 grid-template-columns: repeat(3,1fr);
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionWriting0_5{
                 height: 70vh;
                 display: flex;
                 flex-direction: column;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionWriting0_5{
                 height: 90vh;
                 display: flex;
@@ -3323,13 +3526,23 @@ html body{
                 align-content: center;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionWriting0_5{
-                height: 700px;
+                height: 400px;
             }
-            .sectionWriting0_5Div1h{
-                height: 60%;
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionWriting0_5{
+                height: 400px;
             }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionWriting0_5{
+                height: 600px;
+            }
+            
         }
 /* ----------- */   
 
@@ -3482,7 +3695,7 @@ html body{
             height: 60%;
             overflow: hidden;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionWriting0_7{
                 height: 50vh;
             }
@@ -3504,7 +3717,7 @@ html body{
             }
             
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionWriting0_7{
                 padding: 10px;
             }
@@ -3528,7 +3741,7 @@ html body{
                 text-align: start;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionWriting0_7{
                 height: 100vh;
                 flex-direction:column;
@@ -3566,7 +3779,7 @@ html body{
                 max-width: 30%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionWriting0_7{
                 height: 100vh;
                 flex-direction:column;
@@ -3610,30 +3823,23 @@ html body{
                 text-align: start;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionWriting0_7{
                 height: 400px;
             }
-            .sectionWriting0_7Ref{
-                height: 80%;
-                flex-direction: row;
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionWriting0_7{
+                height: 400px;
             }
-            .sectionWriting0_7Divp2{
-                height: 60%;
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionWriting0_7{
+                height: 500px;
             }
-            .sectionWritng0_7Pic1{
-                height: 30%;
-                max-width: 100%;
-
-            }
-            .sectionWritng0_7Pic2{
-                height: 30%;
-                max-width: 100%;
-            }
-            .sectionWritng0_7Pic3{
-                height: 30%;
-                max-width: 100%;
-            }
+            
         }
 /* ----------- */
 
@@ -3787,7 +3993,7 @@ html body{
                 text-decoration-color: white;
                 text-decoration-thickness: 1px; 
             }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionWriting0_8{
                 height: 50vh;
             }
@@ -3808,7 +4014,7 @@ html body{
                 height: 70%;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionWriting0_8{
                 height: 50vh;
                 padding: 10px;
@@ -3838,7 +4044,7 @@ html body{
                 margin: 5px;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionWriting0_8{
                 height: 100vh;
                 flex-direction:column;
@@ -3885,7 +4091,7 @@ html body{
                 max-width: 30%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionWriting0_8{
                 height: 100vh;
                 flex-direction:column;
@@ -3929,29 +4135,23 @@ html body{
                 text-align: start;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionWriting0_8{
                 height: 400px;
             }
-            .sectionWriting0_8Ref{
-                height: 80%;
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionWriting0_8{
+                height: 400px;
             }
-            .sectionWriting0_8Divp2{
-                height: 60%;
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionWriting0_8{
+                height: 500px;
             }
-            .sectionWritng0_8Pic1{
-                height: 30%;
-                max-width: 100%;
-
-            }
-            .sectionWritng0_8Pic2{
-                height: 30%;
-                max-width: 100%;
-            }
-            .sectionWritng0_8Pic3{
-                height: 30%;
-                max-width: 100%;
-            }
+            
         }
 /* ----------- */
 
@@ -4010,7 +4210,7 @@ html body{
             box-shadow: 0 0 20px 5px;
             height: 90%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             #sectionWriting0_9{
                 height: 100vh;
                 flex-direction: column;
@@ -4028,7 +4228,7 @@ html body{
             }
             
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             #sectionWriting0_9{
                 height: 120vh;
                 flex-direction: column;
@@ -4045,7 +4245,7 @@ html body{
                 height: 40%;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             #sectionWriting0_9{
                 height: 120vh;
                 flex-direction: column;
@@ -4062,7 +4262,7 @@ html body{
                 padding: 40px;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             #sectionWriting0_9{
                 height: 120vh;
                 flex-direction: column;
@@ -4083,10 +4283,23 @@ html body{
                 height: 70%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             #sectionWriting0_9{
-                height: 500px;
+                height: 600px;
             }
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            #sectionWriting0_9{
+                height: 600px;
+            }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            #sectionWriting0_9{
+                height: 800px;
+            }
+            
         }
 /* ----------- */   
 
@@ -4135,18 +4348,18 @@ html body{
             justify-content: center;
             align-items: center;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionWriting1{
                 height: 50vh;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionWriting1{
                 height: 50vh;
                 grid-template-columns: repeat(3,1fr);
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionWriting1{
                 height: 60vh;
                 display: flex;
@@ -4157,7 +4370,7 @@ html body{
                 width: 90%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionWriting1{
                 height: 70vh;
                 display: flex;
@@ -4174,13 +4387,23 @@ html body{
                 text-align: justify;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionWriting1{
-                height: 700px;
+                height: 500px;
             }
-            .sectionWriting1Div1h{
-                height: 60%;
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            .sectionWriting1{
+                height: 500px;
             }
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            .sectionWriting1{
+                height: 600px;
+            }
+            
         }
 /* ----------- */ 
 /* ......................................  WRITING  ............................................. */
@@ -4466,7 +4689,7 @@ html body{
             align-items: center;
         }
 
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .section3_1Section2{
                 height: 60vh;
             }
@@ -4482,7 +4705,7 @@ html body{
                 width: 80%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 767px){
+        @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait){
 
             .section3_1Article{
                 padding: 25px;
@@ -4537,7 +4760,7 @@ html body{
             }
 
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .section3_1Article{
                 padding: 25px;
             }
@@ -4556,7 +4779,7 @@ html body{
             }
 
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .section3_1Section2{
                 height: 60vh;
             }
@@ -4573,7 +4796,7 @@ html body{
             }
             
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .section3_1Section2{
                 height: 60vh;
             }
@@ -4588,6 +4811,16 @@ html body{
                 width: 90%;
                 height: 100%;
             }
+        }
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            
         }
         
 
@@ -4659,7 +4892,7 @@ html body{
                 font-size: 30px;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             #headerAbout{
                 height: 60vh;
             }
@@ -4673,7 +4906,7 @@ html body{
                 font-size: 30px;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             #headerAbout{
                 height: 60vh;
             }
@@ -4692,7 +4925,7 @@ html body{
                 width: 100%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             #headerAbout{
                 height: 60vh;
             }
@@ -4705,6 +4938,16 @@ html body{
             .headerAboutH3{
                 font-size: 20px;
             }
+        }
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            
         }
 /* -------------------------------------- */
 
@@ -4792,17 +5035,17 @@ html body{
                 height: 90vh;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionAbout1{
                 height: 100vh;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionAbout1{
                 height: 100vh;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionAbout1{
                 height: 140vh;
                 grid-template-areas: "b b"
@@ -4835,10 +5078,15 @@ html body{
                 text-align: center;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-            .sectionAbout1{
-                height: 800px;
-            }
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            
         }
 /* ----------- */
 
@@ -4926,7 +5174,7 @@ html body{
                 height: auto;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionAbout2{
                 height: 60vh;
             }
@@ -4935,7 +5183,7 @@ html body{
                 height: auto;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionAbout2{
                 height: 80vh;
                 grid-template-areas: "1 a"
@@ -4949,7 +5197,7 @@ html body{
                 height: auto;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionAbout2{
                 height: 80vh;
                 max-height: 540px;
@@ -4981,10 +5229,15 @@ html body{
                 height: auto;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-            .sectionAbout2{
-                height: 900px;
-            }
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            
         }
 /* ----------- */
 
@@ -5085,14 +5338,14 @@ html body{
                 text-align: start;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionAbout3{
                 height: 80vh;
                 grid-template-columns: 40% 40%;
                 grid-template-rows: 10% 80%;  
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionAbout3{
                 height: 80vh;
                 grid-template-columns: 40% 40%;
@@ -5111,7 +5364,7 @@ html body{
                 height: 100%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionAbout3{
                 height: 120vh;
                 grid-template-areas: "a b"
@@ -5144,10 +5397,15 @@ html body{
             text-align: end;
         }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-            .sectionAbout3{
-                height: 500px;
-            }
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            
         }
 /* ----------- */
 
@@ -5244,7 +5502,7 @@ html body{
                 align-content: space-evenly;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionAbout4{
                 height: 140vh;
                 grid-template-areas: "b a"
@@ -5261,7 +5519,7 @@ html body{
                 text-align: justify;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionAbout4{
                 height: 140vh;
                 grid-template-areas: "b a"
@@ -5274,7 +5532,7 @@ html body{
                 height: 80%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionAbout4{
                 height: 230vh;
                 display: flex;
@@ -5300,10 +5558,15 @@ html body{
                 height: 100%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-            .sectionAbout4{
-                height: 1000px;
-            }
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            
         }
 /* ----------- */   
 
@@ -5400,7 +5663,7 @@ html body{
                 align-content: space-evenly;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .sectionAbout4_5{
                 height: 140vh;
                 grid-template-areas: "b a"
@@ -5417,7 +5680,7 @@ html body{
                 text-align: justify;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionAbout4_5{
                 height: 140vh;
                 grid-template-areas: "a b"
@@ -5430,7 +5693,7 @@ html body{
                 height: 80%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionAbout4_5{
                 height: 230vh;
                 display: flex;
@@ -5456,10 +5719,15 @@ html body{
                 height: 100%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-            .sectionAbout4_5{
-                height: 1000px;
-            }
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            
         }
 /* ----------- */   
 
@@ -5558,7 +5826,7 @@ html body{
                 align-content: space-around;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 1023px){
+        @media screen and (min-width: 601px) and (max-width: 1023px) and (orientation: portrait){
             .sectionAbout5{
                 height: 150vh;
                 display: flex;
@@ -5595,7 +5863,7 @@ html body{
                 align-items: start;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionAbout5{
                 height: 180vh;
                 display: flex;
@@ -5633,11 +5901,16 @@ html body{
                 height: 20%;
                 text-align: center;
             }
-            }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-            .sectionAbout5{
-                height: 1000px;
-            }
+        }
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            
         }
 /* ----------- */   
 
@@ -5725,7 +5998,7 @@ html body{
             padding: 10px;
         }
     }
-    @media screen and (min-width: 601px) and (max-width: 1023px){
+    @media screen and (min-width: 601px) and (max-width: 1023px) and (orientation: portrait){
         .sectionAbout5_5{
             height: 100vh;
             display: grid;
@@ -5754,7 +6027,7 @@ html body{
             padding: 10px;
         }
     }
-    @media screen and (min-width: 0px) and (max-width: 600px){
+    @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
         .sectionAbout5_5{
             height: 100vh;
             display: grid;
@@ -5783,10 +6056,15 @@ html body{
             padding: 10px;
         }
     }
-    @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-        .sectionAbout5_5{
-            height: 400px;
-        }
+
+    @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+    }
+    @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+        
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+        
     }
 
 /* ----------- */ 
@@ -5855,7 +6133,7 @@ html body{
         width: auto;
     }
 }
-@media screen and (min-width: 0px) and (max-width: 600px){
+@media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
     .sectionAbout5_7{
         height: 350vh;
     }
@@ -5880,6 +6158,16 @@ html body{
         max-width: 100%;
         max-height: 172px;
     }
+}
+
+@media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+}
+@media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+    
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+    
 }
 
 /* ----------- */  
@@ -5979,14 +6267,14 @@ html body{
                 padding: 20px;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             #sectionAbout6Div1{
                 height: 80%;
                 margin: 20px;
                 padding: 20px;
             }
         }
-        @media screen and (min-width: 601px) and (max-width: 767px){
+        @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionAbout6{
                 height: 120vh;
                 display: flex;
@@ -6013,7 +6301,7 @@ html body{
                 grid-area: e;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 600px){
+        @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionAbout6{
                 height: 120vh;
                 display: flex;
@@ -6039,10 +6327,15 @@ html body{
                 grid-area: e;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-            .sectionAbout6{
-                height: 500px;
-            }
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            
         }
 /* ----------- */ 
 
@@ -6163,17 +6456,17 @@ html body{
             grid-area: e;
             height: 100%;
         }
-        @media screen and (min-width: 1024px) and (max-width: 1199px){
+        @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .headerContactDivp{
                 height: 15%;
             }
         }
-        @media screen and (min-width: 768px) and (max-width: 1023px){
+        @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
             .headerContactDivp{
                 height: 15%;
             }
         }
-        @media screen and (min-width: 0px) and (max-width: 767px){
+        @media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait){
             .headerContactDiv{
                 height: 70vh;
                 grid-template-areas: "a"
@@ -6196,10 +6489,15 @@ html body{
                 height: 15%;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-            .headerContactDiv{
-                height: 600px;
-            }
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            
         }
 /* -------------------------------------- */
 
@@ -6439,13 +6737,15 @@ html body{
                 height: 15vw;
             }
         }
-        @media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-            .sectionContact1{
-                height: 800px;
-            }
-            .sectionContactHeader, .sectionContactHeader2{
-                height: 80vh;
-            }
+
+        @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+        }
+        @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+            
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+            
         }
 /* -------------------- */
 
@@ -6459,25 +6759,30 @@ html body{
     background-color: rgb(144, 250, 197);
     padding: 10px;
 }
-@media screen and (min-width: 1024px) and (max-width: 1199px){°
+@media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){°
     .sectionContact2{
         height: 90vh;
     }
 }
-@media screen and (min-width: 601px) and (max-width: 767px){
+@media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
     .sectionContact2{
         height: 90vh;
     }
 }
-@media screen and (min-width: 0px) and (max-width: 600px){
+@media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
     .sectionContact2{
         height: 110vh;
     }
 }
-@media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
-    .sectionContact2{
-        height: 600px;
-    }
+
+@media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+}
+@media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+    
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+    
 }
 
 /* ------- FORMS ------ */
@@ -6547,7 +6852,7 @@ html body{
         align-items: center;
     }
 }
-@media screen and (min-width: 0px) and (max-width: 767px){
+@media screen and (min-width: 0px) and (max-width: 767px) and (orientation: portrait){
     .formBody{
         background-color: yellowgreen;
         width: 90%;
@@ -6564,7 +6869,14 @@ html body{
         width: 100%;
     }
 }
-@media screen and (min-width: 481px) and (max-width: 1023px) and (orientation: landscape){
+
+@media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+}
+@media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+    
+}
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
     
 }
 
@@ -6665,12 +6977,12 @@ html body{
             max-height: 100%;
             width: 20%;
         }
-    @media screen and (min-width: 768px) and (max-width: 1023px){
+    @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
         .footerLogo{
             max-width: 60%;
         }
     }
-    @media screen and (min-width: 601px) and (max-width: 767px){
+    @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
         .footer{
             height: 120vh;
             display: grid;
@@ -6709,7 +7021,7 @@ html body{
             max-width: 60%;
         }
     }
-    @media screen and (min-width: 0px) and (max-width: 600px){
+    @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
         .footer{
             height: 150vh;
             grid-template-areas:    "a a a"
@@ -6754,42 +7066,14 @@ html body{
             grid-area: i;
         }
     }
-    @media screen and (min-width: 481px) and (orientation:landscape){
-        .footer{
-            height: 800px;
-            grid-template-areas:    "a a a a"
-                                    "b c d e"
-                                    "b f g h"
-                                    "i i i i";
-            grid-template-columns: 30% 20% 20% 20%;
-            grid-template-rows: 40% 25% 25% 10%;
-            column-gap: 20px;
-            row-gap: 0px;
-            padding: 0px;
-        }
-        .footerDiv1{
-            grid-area: b;
-        }
-        .footerDiv2{
-            grid-area: c;
-        }
-        .footerDiv3{
-            grid-area: d;
-        }
-        .footerDiv4{
-            grid-area: e;
-        }
-        .footerDiv5{
-            grid-area: a;
-        }
-        .footerDiv6{
-            grid-area: g;
-        }
-        .footerDiv7{
-            grid-area: h;
-        }
-        .footerDiv8{
-            grid-area: i;
-        }
+
+    @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
+
+    }
+    @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
+        
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
+        
     }
 /* -------------------------------------- */
