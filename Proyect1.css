@@ -4411,6 +4411,7 @@ html body{
 
 /* ....................................  WRITING 3_1  ........................................... */
 
+/* ------ HEADER ----- */
 .section3_1Header{
     height: 60vh;
     background: linear-gradient(rgb(255, 0, 174),rgb(255, 255, 255));
@@ -4433,6 +4434,10 @@ html body{
             align-items: center;
             
         }
+/* ----------- */ 
+
+/* ------ INTRO ----- */
+
 .section3_1Intro{
     height: 30vh;
     background-color: white;
@@ -4447,6 +4452,9 @@ html body{
         justify-content: center;
         align-items: center;
     }
+/* ----------- */ 
+
+/* ------ ARTICLE ----- */
 .section3_1Article{
     height: auto;
     padding: 50px;
@@ -4481,6 +4489,9 @@ html body{
         border-radius: 5px;
         box-shadow: 0 0 10px 1px black;
     }
+/* ----------- */ 
+
+/* ------ SECTION 1 ----- */
 .section3_1Section1{
     background-color: white;
     height: 110vh;
@@ -4506,6 +4517,9 @@ html body{
         text-decoration: underline;
         text-decoration-color: white;
     }
+/* ----------- */ 
+
+/* ------ SECTION 2 ----- */
 .section3_1Section2{
     background-color: rgb(46, 128, 251);
     height: 70vh;
@@ -4814,13 +4828,55 @@ html body{
         }
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+            .section3_1Header{
+                height: 500px;
+            }
+            .section3_1Intro{
+                height: 300px;
+            }
+            .section3_1Article{
+                height: 2200px;
+            }
+            .section3_1Section1{
+                height: 600px;
+            }
+            .section3_1Section2{
+                height: 500px;
+            }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-            
+            .section3_1Header{
+                height: 600px;
+            }
+            .section3_1Intro{
+                height: 400px;
+            }
+            .section3_1Article{
+                height: 2000px;
+            }
+            .section3_1Section1{
+                height: 800px;
+            }
+            .section3_1Section2{
+                height: 500px;
+            }
         }
         @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-            
+            .section3_1Header{
+                height: 700px;
+            }
+            .section3_1Intro{
+                height: 400px;
+            }
+            .section3_1Article{
+                height: 1700px;
+            }
+            .section3_1Section1{
+                height: 1000px;
+            }
+            .section3_1Section2{
+                height: 600px;
+            }
         }
         
 
@@ -4941,13 +4997,19 @@ html body{
         }
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+            #headerAbout{
+                height: 500px;
+            }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-            
+            #headerAbout{
+                height: 600px;
+            }
         }
         @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-            
+            #headerAbout{
+                height: 800px;
+            }
         }
 /* -------------------------------------- */
 
@@ -5080,13 +5142,19 @@ html body{
         }
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+            .sectionAbout1{
+                height: 700px;
+            }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-            
+            .sectionAbout1{
+                height: 700px;
+            }
         }
         @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-            
+            .sectionAbout1{
+                height: 900px;
+            }
         }
 /* ----------- */
 
@@ -5231,13 +5299,19 @@ html body{
         }
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+            .sectionAbout2{
+                height: 600px;
+            }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-            
+            .sectionAbout2{
+                height: 600px;
+            }
         }
         @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-            
+            .sectionAbout2{
+                height: 600px;
+            }
         }
 /* ----------- */
 
@@ -5399,13 +5473,22 @@ html body{
         }
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+            .sectionAbout3{
+                height: 700px;
+                grid-template-rows: 10% 80%;
+            }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-            
+            .sectionAbout3{
+                height: 700px;
+                grid-template-rows: 10% 80%;
+            }
         }
         @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-            
+            .sectionAbout3{
+                height: 800px;
+                grid-template-rows: 10% 80%;
+            }
         }
 /* ----------- */
 
@@ -5560,13 +5643,19 @@ html body{
         }
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+            .sectionAbout4{
+                height: 700px;
+            }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-            
+            .sectionAbout4{
+                height: 700px;
+            }
         }
         @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-            
+            .sectionAbout4{
+                height: 800px;
+            }
         }
 /* ----------- */   
 
@@ -5721,13 +5810,19 @@ html body{
         }
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+            .sectionAbout4_5{
+                height: 700px;
+            }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-            
+            .sectionAbout4_5{
+                height: 700px;
+            }
         }
         @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-            
+            .sectionAbout4_5{
+                height: 800px;
+            }
         }
 /* ----------- */   
 
@@ -5904,13 +5999,73 @@ html body{
         }
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+            .sectionAbout5{
+                height: 900px;
+                grid-template-columns: 30% 30% 30%;
+                grid-template-rows: 40% 60%;
+            }
+                #sectionAbout5Div1{
+                    margin: 10px;
+                    padding: 10px;
+                }
+                #sectionAbout5Div2{
+                    margin: 10px;
+                    padding: 10px;
+                }
+                #sectionAbout5Div3{
+                    margin: 10px;
+                    padding: 10px;
+                }
+                #sectionAbout5Div4{
+                    margin: 10px;
+                    padding: 10px;
+                }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-            
+            .sectionAbout5{
+                height: 900px;
+                grid-template-columns: 30% 30% 30%;
+                grid-template-rows: 40% 60%;
+            }
+                #sectionAbout5Div1{
+                    margin: 10px;
+                    padding: 10px;
+                }
+                #sectionAbout5Div2{
+                    margin: 10px;
+                    padding: 10px;
+                }
+                #sectionAbout5Div3{
+                    margin: 10px;
+                    padding: 10px;
+                }
+                #sectionAbout5Div4{
+                    margin: 10px;
+                    padding: 10px;
+                }
         }
         @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-            
+            .sectionAbout5{
+                height: 1000px;
+                grid-template-columns: 30% 30% 30%;
+                grid-template-rows: 40% 50%;
+            }
+                #sectionAbout5Div1{
+                    margin: 10px;
+                    padding: 10px;
+                }
+                #sectionAbout5Div2{
+                    margin: 10px;
+                    padding: 10px;
+                }
+                #sectionAbout5Div3{
+                    margin: 10px;
+                    padding: 10px;
+                }
+                #sectionAbout5Div4{
+                    margin: 10px;
+                    padding: 10px;
+                }
         }
 /* ----------- */   
 
@@ -6058,13 +6213,82 @@ html body{
     }
 
     @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+        .sectionAbout5_5{
+            height: 800px;
+            display: grid;
+            grid-template-areas: "a a"
+                                 "b c";
+            grid-template-columns: 40% 40%;
+            grid-template-rows: 20% 70%;
+            justify-content: space-around;
+        }
+        .sectionAbout5_5Div{
+            grid-area: a;
+        }
+        .sectionAbout5_5DivUl1{
+            grid-area: b;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+        .sectionAbout5_5DivUl2{
+            grid-area: c;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
     }
     @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-        
+        .sectionAbout5_5{
+            height: 800px;
+            display: grid;
+            grid-template-areas: "a a"
+                                 "b c";
+            grid-template-columns: 40% 40%;
+            grid-template-rows: 20% 70%;
+            justify-content: space-around;
+        }
+        .sectionAbout5_5Div{
+            grid-area: a;
+        }
+        .sectionAbout5_5DivUl1{
+            grid-area: b;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+        .sectionAbout5_5DivUl2{
+            grid-area: c;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
     }
     @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-        
+        .sectionAbout5_5{
+            height: 800px;
+            display: grid;
+            grid-template-areas: "a a"
+                                 "b c";
+            grid-template-columns: 40% 40%;
+            grid-template-rows: 20% 70%;
+            justify-content: space-around;
+        }
+        .sectionAbout5_5Div{
+            grid-area: a;
+        }
+        .sectionAbout5_5DivUl1{
+            grid-area: b;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+        .sectionAbout5_5DivUl2{
+            grid-area: c;
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
     }
 
 /* ----------- */ 
@@ -6161,13 +6385,37 @@ html body{
 }
 
 @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+    .sectionAbout5_7{
+        height: 1800px;
+    }
+    .sectionAbout5_7Section{
+        height: 100%;
+    }
+    .sectionAbout5_7SectionGeneral{
+        padding: 30px;
+    }
 }
 @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-    
+    .sectionAbout5_7{
+        height: 1800px;
+    }
+    .sectionAbout5_7Section{
+        height: 100%;
+    }
+    .sectionAbout5_7SectionGeneral{
+        padding: 30px;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-    
+    .sectionAbout5_7{
+        height: 2800px;
+    }
+    .sectionAbout5_7Section{
+        height: 100%;
+    }
+    .sectionAbout5_7SectionGeneral{
+        padding: 30px;
+    }
 }
 
 /* ----------- */  
@@ -6329,13 +6577,37 @@ html body{
         }
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+            .sectionAbout6{
+                height: 600px;
+            }
+            #sectionAbout6Div1{
+                height: 80%;
+            }
+            #sectionAbout6Div2{
+                grid-template-rows: 10% 60% 20%;
+            }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-            
+            .sectionAbout6{
+                height: 600px;
+            }
+            #sectionAbout6Div1{
+                height: 80%;
+            }
+            #sectionAbout6Div2{
+                grid-template-rows: 10% 60% 20%;
+            }
         }
         @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-            
+            .sectionAbout6{
+                height: 800px;
+            }
+            #sectionAbout6Div1{
+                height: 80%;
+            }
+            #sectionAbout6Div2{
+                grid-template-rows: 10% 60% 20%;
+            }
         }
 /* ----------- */ 
 
@@ -6491,13 +6763,19 @@ html body{
         }
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+            .headerContactDiv{
+                height: 500px;
+            }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-            
+            .headerContactDiv{
+                height: 600px;
+            }
         }
         @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-            
+            .headerContactDiv{
+                height: 800px;
+            }
         }
 /* -------------------------------------- */
 
@@ -6739,13 +7017,190 @@ html body{
         }
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+            .sectionContactHeader{
+                height: 300px;
+            }
+            .sectionContact1{
+                height: 800px;
+            }
+            .sectionWhatsapp{
+                height: 70%;
+                width: 60%;
+                margin: 20px;
+            }
+            .sectionLinkedin{
+                height: 70%;
+                width: 60%;
+                margin: 20px;
+            }
+            .sectionLinkedin1{
+                font-size: 30px;
+            }
+            .sectionContactHeaderp{
+                font-size: 20px;
+            }
+            .sectionContactHeader2p{
+                font-size: 20px;
+            }
+            .sectionWhatsapp2{
+                font-size: 30px;
+            }
+            .sectionWhatsapp3{
+                height: 25%;
+                width: 80%;
+                font-size: 14px;
+            }
+            .sectionLinkedin3{
+                height: 25%;
+                width: 80%;
+                font-size: 14px;
+            }
+            .whatsappIcon{
+                font-size: 100px;
+            }
+            .linkedinIcon{
+                font-size: 100px;
+            }
+            .sectionContactHeader2{
+                height: 40vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: red;
+            }
+            .buttonWhatsapp a{
+                font-size: 15px;
+            }
+            .buttonLinkedin a{
+                font-size: 15px;
+            }
+            .yoLinkedin{
+                height: 150px;
+            }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-            
+            .sectionContactHeader{
+                height: 300px;
+            }
+            .sectionContact1{
+                height: 800px;
+            }
+            .sectionWhatsapp{
+                height: 70%;
+                width: 60%;
+                margin: 20px;
+            }
+            .sectionLinkedin{
+                height: 70%;
+                width: 60%;
+                margin: 20px;
+            }
+            .sectionLinkedin1{
+                font-size: 30px;
+            }
+            .sectionContactHeaderp{
+                font-size: 20px;
+            }
+            .sectionContactHeader2p{
+                font-size: 20px;
+            }
+            .sectionWhatsapp2{
+                font-size: 30px;
+            }
+            .sectionWhatsapp3{
+                height: 25%;
+                width: 80%;
+                font-size: 14px;
+            }
+            .sectionLinkedin3{
+                height: 25%;
+                width: 80%;
+                font-size: 14px;
+            }
+            .whatsappIcon{
+                font-size: 100px;
+            }
+            .linkedinIcon{
+                font-size: 100px;
+            }
+            .sectionContactHeader2{
+                height: 40vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: red;
+            }
+            .buttonWhatsapp a{
+                font-size: 15px;
+            }
+            .buttonLinkedin a{
+                font-size: 15px;
+            }
+            .yoLinkedin{
+                height: 150px;
+            }
         }
         @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-            
+            .sectionContactHeader{
+                height: 300px;
+            }
+            .sectionContact1{
+                height: 1000px;
+            }
+            .sectionWhatsapp{
+                height: 70%;
+                width: 60%;
+                margin: 20px;
+            }
+            .sectionLinkedin{
+                height: 70%;
+                width: 60%;
+                margin: 20px;
+            }
+            .sectionLinkedin1{
+                font-size: 30px;
+            }
+            .sectionContactHeaderp{
+                font-size: 20px;
+            }
+            .sectionContactHeader2p{
+                font-size: 20px;
+            }
+            .sectionWhatsapp2{
+                font-size: 30px;
+            }
+            .sectionWhatsapp3{
+                height: 25%;
+                width: 80%;
+                font-size: 14px;
+            }
+            .sectionLinkedin3{
+                height: 25%;
+                width: 80%;
+                font-size: 14px;
+            }
+            .whatsappIcon{
+                font-size: 150px;
+            }
+            .linkedinIcon{
+                font-size: 200px;
+            }
+            .sectionContactHeader2{
+                height: 40vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: red;
+            }
+            .buttonWhatsapp a{
+                font-size: 15px;
+            }
+            .buttonLinkedin a{
+                font-size: 15px;
+            }
+            .yoLinkedin{
+                height: 150px;
+            }
         }
 /* -------------------- */
 
@@ -6776,13 +7231,19 @@ html body{
 }
 
 @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+    .sectionContact2{
+        height: 700px;
+    }
 }
 @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-    
+    .sectionContact2{
+        height: 700px;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-    
+    .sectionContact2{
+        height: 900px;
+    }
 }
 
 /* ------- FORMS ------ */
@@ -6871,13 +7332,34 @@ html body{
 }
 
 @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
-
+    .formBody{
+        width: 70%;
+        height: 80%;
+        justify-content: center;
+        align-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+    }
 }
 @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
-    
+    .formBody{
+        width: 70%;
+        height: 80%;
+        justify-content: center;
+        align-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape){
-    
+    .formBody{
+        width: 70%;
+        height: 80%;
+        justify-content: center;
+        align-content: space-evenly;
+        justify-items: center;
+        align-items: center;
+    }
 }
 
 /* ----------- */
