@@ -785,7 +785,7 @@ html body{
 
     @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
         .sectionIndex3{
-            height: 800px;
+            height: 900px;
         }
     }
     @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
@@ -1959,7 +1959,7 @@ html body{
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionServices3{
-                height: 700px;
+                height: 800px;
             }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
@@ -2102,7 +2102,7 @@ html body{
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionServices3_2{
-                height: 750px;
+                height: 850px;
                 grid-template-columns: 55% 35%;
             }
         }
@@ -2246,7 +2246,11 @@ html body{
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionServices3_5{
-                height: 700px;
+                height: 900px;
+                align-content: center;
+            }
+            .sectionServices3_5Section1{
+                height: 850px;
             }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
@@ -2425,6 +2429,10 @@ html body{
 }
     #sectionServices4Div1{
         grid-area: "1";
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
     }
     #sectionServices4Div2{
         grid-area: "2";
@@ -2439,6 +2447,7 @@ html body{
             width: 90%;
             height: 40%;
             text-align: start;
+            background-color: rebeccapurple;
         }
         .sectionServices4Div1h{
             margin: 10px;
@@ -2446,6 +2455,7 @@ html body{
             width: 90%;
             height: 20%;
             text-align: start;
+            background-color: red;
         }
         .sectionServices4Div2p{
             padding: 10px;
@@ -3130,7 +3140,7 @@ html body{
 
         @media screen and (min-width: 0px) and (max-width: 896px) and (orientation: landscape){
             .sectionGallery2_5{
-                height: 900px;
+                height: 1000px;
             }
             .sectionGallery2_5Pic{
                 height: 70%;
@@ -3340,11 +3350,18 @@ html body{
             .sectionGallery4{
                 height: 600px;
             }
+            #sectionGallery4Div1{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
             .sectionGallery4Div1p{
                 margin: 20px;
+                background-color: red;
             }
             .sectionGallery4Div1h{
                 margin: 20px;
+                background-color: blue;
             }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
@@ -4817,6 +4834,14 @@ html body{
             .section3_1Section2Div{
                 height: 60%;
             }
+            .section3_1Section2DivOther1{
+                width: 40%;
+                margin: 10px;
+            } 
+            .section3_1Section2DivOther2{
+                width: 40%;
+                margin: 10px;
+            }    
             .section3_1Section2H3{
                 font-size:20px;
             }
@@ -4835,13 +4860,20 @@ html body{
                 height: 300px;
             }
             .section3_1Article{
-                height: 2200px;
+                height: 1500px;
+            }
+            .section3_1ArticleP{
+                margin: 10px;
+                width: 90%;
             }
             .section3_1Section1{
                 height: 600px;
             }
             .section3_1Section2{
                 height: 500px;
+            }
+            .section3_1Section2Div{
+                width: 90%;
             }
         }
         @media screen and (min-width: 897px) and (max-width: 1023px) and (orientation: landscape){
@@ -5440,14 +5472,14 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionAbout3{
-                height: 120vh;
+                height: 140vh;
                 grid-template-areas: "a b"
                                      "c c"
                                      "d d";
                 grid-template-columns: 10% 80%;
                 grid-template-rows: 10% 45% 45%;
                 justify-content: space-evenly;
-                padding: 10px;
+                padding: 50px;
             }
             #sectionAbout3Div1{
                 grid-area: a;
@@ -5960,7 +5992,7 @@ html body{
         }
         @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionAbout5{
-                height: 180vh;
+                height: 240vh;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -6184,7 +6216,7 @@ html body{
     }
     @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
         .sectionAbout5_5{
-            height: 100vh;
+            height: 120vh;
             display: grid;
             grid-template-areas: "a a"
                                  "b c";
