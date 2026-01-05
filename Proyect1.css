@@ -29,6 +29,7 @@
 a:visited{
     color: white
 }
+
 html body{
     background-color: white;
 }   
@@ -50,7 +51,7 @@ html body{
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: black;
     }
     a:visited{
         color: black
@@ -95,15 +96,6 @@ html body{
         height: 50px;
         width: 70px;
         transition: 0.1s ease;
-    }
-    li:hover{
-        background-color: blue;
-        transition: 0.1s ease;
-        transform: scale(1.1);
-        box-shadow: 5px px 10px 0.3px rgba(0, 0, 0, 1);
-    }
-    li:active{
-        background-color: blue;
     }
     .navButtonAbrir{
         display: none;
@@ -181,6 +173,13 @@ html body{
     background-color: rgba(100, 100, 100, 0.5);
     overflow: hidden;
 }
+    .pSectionIndex{
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: left;
+        font-weight: 310;
+        background-color: red;
+    }
     .headerIndexDiv{
         height: 60%;
         width: 90%;
@@ -199,6 +198,8 @@ html body{
             justify-content: center;
             align-items: center;
             font-weight:bolder;
+            font-size: 3rem;
+            line-height: 1.5;
         }
         .headerIndexH3{
             margin: 20px;
@@ -208,6 +209,8 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 1rem;
+            line-height: 1.5;
         }
         .headerIndexWallpaper{
             z-index: -1;
@@ -312,6 +315,8 @@ html body{
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         width: 80%;
         height: 80%;
+        padding: 10px;
+        overflow: hidden;
     }
     #sectionIndex1Div3{
         grid-area: 3;
@@ -323,6 +328,8 @@ html body{
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         width: 80%;
         height: 80%;
+        padding: 10px;
+        overflow: hidden;
     }
     #sectionIndex1Div4{
         grid-area: a;
@@ -338,14 +345,15 @@ html body{
             padding:10px;
             width: 100%;
             text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 1.5;
         }
         .sectionIndex1Divp{
             padding: 10px;
             width: 100%;
-            height: 80%;
-            text-align: center;
+            height: 100%;
+            color: black;
         }
         .sectionIndexDiv4img{
             max-width: 100%;
@@ -476,11 +484,12 @@ html body{
         display: flex;
         justify-content: center;
         align-items: center;
-         background-color: #B6CADE;
+        background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         width: 80%;
         height: 80%;
+        padding: 10px;
     }
     #sectionIndex2Div3{
         grid-area: 3;
@@ -492,6 +501,7 @@ html body{
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         width: 80%;
         height: 80%;
+        padding: 10px;
     }
     #sectionIndex2Div4{
         grid-area: a;
@@ -508,19 +518,17 @@ html body{
             width: 100%;
             height: 30%;
             text-align: center;
+            font-weight: 500;
+            font-size: 1.5rem;
+            line-height: 1.5;
         }
         .sectionIndex2Divp{
             padding: 10px;
             width: 100%;
-            height: 80%;
-            text-align: center;
+            height: 100%;
             color: white;
-        }
-        .sectionIndex2Div4p{
-            padding: 10px;
-            width: 90%;
-            height: 90%;
-            text-align: center;
+            font-size: 1rem;
+            line-height: 1.5;
         }
         .sectionIndex2Div4img{
             max-width: 100%;
@@ -627,7 +635,7 @@ html body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-         background-color: #B6CADE;
+        background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         width: 80%;
@@ -695,17 +703,25 @@ html body{
     }
         .sectionIndex3Divh{
             margin: 10px;
-            padding: 10px;
             width: 90%;
-            height: 10%;
+            height: 20%;
+            padding: 10px;
             text-align: start;
+            font-weight: 500;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            color: white;
+            background-color: blue;
+            
         }
         .sectionIndex3Divp{
             margin: 0px;
             padding: 10px;
             width: 90%;
-            height: 70%;
+            height: 50%;
             text-align: start;
+            font-size: 1rem;
+            line-height: 1.5;
         }
     @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
         .sectionIndex3{
@@ -801,7 +817,7 @@ html body{
             width: 90%;
         }
         .sectionIndex3Divp{
-            height: 80%;
+            height: 60%;
         }
     }
 
@@ -853,7 +869,7 @@ html body{
             align-items: center;
             color: white;
             font-weight: bold;
-            font-size: 50px;
+            font-size: 2rem;
 
         }
         .sectionIndex3_2p{
@@ -865,6 +881,8 @@ html body{
             justify-content: center;
             align-items: center;
             color: white;
+            font-size: 1rem;
+            line-height: 1.5;
         }
     @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionIndex3_2{
@@ -928,6 +946,9 @@ html body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: #B6CADE;
+            border-radius: 20px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     }
     #sectionIndex4Div2{
         grid-area: "2";
@@ -943,25 +964,17 @@ html body{
             width: 90%;
             height: 40%;
             text-align: start;
-            background-color: #B6CADE;
-            border-radius: 20px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         }
         .sectionIndex4Div1h{
             margin: 10px;
             padding: 10px;
             width: 90%;
             height: 20%;
+            font-weight: 500;
             text-align: start;
-            background-color: #B6CADE;
-            border-radius: 20px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        }
-        .sectionIndex4Div2p{
-            padding: 10px;
-            width: 90%;
-            height: 80%;
-            text-align: center;
+            font-size: 1.3rem;
+            line-height: 1.5;
+            background-color: blue;
         }
         .sectionIndex4DivImg{
             width: 100%;
@@ -1036,11 +1049,11 @@ html body{
         }
         .sectionIndex4Div1p{
             height: 50%;
-            width: 100%;
+            width: 90%;
             margin: 0px;
         }
         .sectionIndex4Div1h{
-            width: 100%;
+            width: 90%;
             margin: 0px;
         }
         .sectionIndex4DivImg{
@@ -1082,6 +1095,13 @@ html body{
     align-items: center;
     padding: 60px;
 }
+        .pSectionServices{
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: left;
+            font-weight: 350;
+            background-color: red;
+    }
     .headerServicesDiv{
         height: 90%;
         width: 45%;
@@ -1100,21 +1120,18 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #B6CADE;
-            border-radius: 20px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            font-weight: 400;
+            font-size: 2.5rem;
+            line-height: 1.5;
     }
         .headerServicesp1{
             margin: 10px;
             padding: 10px;
             width: 80%;
-            height: 5%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #B6CADE;
-            border-radius: 20px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: left;
     }
         .headerServicesp2{
             margin: 10px;
@@ -1122,10 +1139,7 @@ html body{
             width: 80%;
             height: 20%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #B6CADE;
-            border-radius: 20px;
+            text-align: left;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     }
         .headerServicesPic{
@@ -1247,7 +1261,7 @@ html body{
         grid-area: 1;
         display: flex;
         justify-content: center;
-        align-items: end;
+        align-items: center;
         width: 80%;
         height: 80%;
         background-color: #B6CADE;
@@ -1292,12 +1306,15 @@ html body{
             width: 100%;
             height: 30%;
             text-align: center;
+            font-size: 2rem;
+            line-height: 1.5;
+            font-weight: 400;
+
         }
         .sectionServices1Divp{
             padding: 10px;
             width: 90%;
             height: 80%;
-            text-align: center;
         }
         .sectionServices1Pic{
             width: 100%
@@ -1489,7 +1506,10 @@ html body{
         }
         .sectionServices2Divh{
             width: 90%;
+            height: 20%;
             text-align: center;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionServices2{
@@ -1647,11 +1667,12 @@ html body{
         grid-area: a;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: start;
         margin: 20px;
         height: 80%;
         width: 90%;
+        padding: 20px;
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -1666,6 +1687,7 @@ html body{
         align-items: center;
         height: 90%;
         width: 80%;
+        padding: 10px;
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -1680,6 +1702,7 @@ html body{
         align-items: center;
         height: 90%;
         width: 80%;
+        padding: 10px;
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -1694,6 +1717,7 @@ html body{
         align-items: center;
         height: 90%;
         width: 80%;
+        padding: 10px;
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -1708,6 +1732,7 @@ html body{
         align-items: center;
         height: 90%;
         width: 80%;
+        padding: 10px;
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -1717,14 +1742,16 @@ html body{
             padding: 10px;
             width: 80%;
             height: 15%;
-            text-align: start;
+            text-align: left;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         .sectionServices2_5Divp{
             margin: 10px;
             padding: 10px;
-            width: 80%;
+            width: 100%;
             height: 60%;
-            text-align: start;
+            text-align: left;
         }
         
         @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
@@ -1899,6 +1926,7 @@ html body{
         justify-content: center;
         align-items: center;
         width: 80%;
+        padding: 10px;
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -1919,11 +1947,13 @@ html body{
             width: 100%;
             height: 80%;
             text-align: center;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         .sectionServices3Divp{
             padding: 10px;
-            width: 90%;
-            height: 80%;
+            width: 100%;
+            height: 100%;
             text-align: center;
         }
         .sectionServices3Pic{
@@ -2072,6 +2102,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
     }
     #sectionServices3_2Div4{
         grid-area: a;
@@ -2088,6 +2119,8 @@ html body{
             height: 50%;
             display: flex;
             justify-content: start;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         .sectionServices3_2Divp{
             padding: 10px;
@@ -2241,12 +2274,14 @@ html body{
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     }
-        .sectionServices3_5Divp1{
+        .sectionServices3_5Divh2{
             margin: 0px;
             padding: 5px;
             width: 90%;
             height: 80%;
             text-align: center;
+            font-weight: 400;
+            font-size: 1.7rem;
         }
         .sectionServices3_5Divp2{
             margin: 0px;
@@ -2364,6 +2399,8 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
+            font-weight: 400;
+            font-size: 2.2rem;
 
         }
         .sectionServices3_7H3{
@@ -2374,6 +2411,8 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionServices3_7{
@@ -2436,7 +2475,8 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
-
+            font-weight: 400;
+            font-size: 2.2rem;
         }
         .sectionServices3_9H3{
             margin: 20px;
@@ -2446,6 +2486,8 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionServices3_9{
@@ -2498,6 +2540,9 @@ html body{
         flex-direction: column;
         justify-content: space-between;
         align-content: space-between;
+            background-color: #B6CADE;
+            border-radius: 20px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     }
     #sectionServices4Div2{
         grid-area: "2";
@@ -2512,9 +2557,6 @@ html body{
             width: 90%;
             height: 40%;
             text-align: start;
-            background-color: #B6CADE;
-            border-radius: 20px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     }
         .sectionServices4Div1h{
             margin: 10px;
@@ -2522,16 +2564,9 @@ html body{
             width: 90%;
             height: 20%;
             text-align: start;
-            background-color: #B6CADE;
-            border-radius: 20px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            font-weight: 400;
+            font-size: 1.5rem;
     }
-        .sectionServices4Div2p{
-            padding: 10px;
-            width: 90%;
-            height: 80%;
-            text-align: center;
-        }
         .sectionServices4Pic{
             height:100%;
         }
@@ -2604,6 +2639,13 @@ html body{
     align-items: center;
     padding: 10px;
 }
+    .pSectionGallery{
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: left;
+        font-weight: 350;
+        background-color: red;
+    }
     .headerGalleryDiv{
         height: 60%;
         width: 50%;
@@ -2621,6 +2663,8 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
+            font-weight: 400;
+            font-size: 2.5rem;
 
         }
         .headerGalleryH3{
@@ -2631,6 +2675,8 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
+            font-weight: 400;
+            font-size: 1.7rem;
         }
         @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .headerGalleryDiv{
@@ -2699,16 +2745,16 @@ html body{
             display: flex;
             justify-content: center;
             align-items: end;
+            font-weight: 400;
+            font-size: 1.7rem;
         }
         .sectionGallery0_5Divp{
             padding: 10px;
             margin: 5px;
             width: 90%;
             height: 60%;
-            text-align: center;
             justify-content: center;
             align-content: center;
-
         }
         @media screen and (min-width: 0px) and (max-width: 600px) and (orientation: portrait){
             .sectionGallery0_5{
@@ -2772,6 +2818,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
     }
     #sectionGallery1Div3{
         grid-area: c;
@@ -2782,6 +2829,8 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        height: 100%;
     }
     #sectionGallery1Div4{
         grid-area: d;
@@ -2801,12 +2850,13 @@ html body{
             display: flex;
             justify-content: center;
             align-items: end;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         .sectionGallery1Divp{
             padding: 10px;
             width: 90%;
             height: 60%;
-            text-align: center;
         }
         .sectionGallery1Pic{
             width: 100%;
@@ -2900,6 +2950,8 @@ html body{
             background-color: #B6CADE;
             border-radius: 20px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         .sectionGallery1_5Divp{
             padding: 10px;
@@ -2909,9 +2961,6 @@ html body{
             display: flex;
             justify-content: end;
             align-items: end;
-            background-color: #B6CADE;
-            border-radius: 20px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         }
         @media screen and (min-width: 601px) and (max-width: 767px) and (orientation: portrait){
             .sectionGallery1_5Divp{
@@ -3131,37 +3180,28 @@ html body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: #B6CADE;
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        font-weight: 400;
+        font-size: 1.5rem;
     }
-        .sectionGallery2_5Divh1{
-            margin: 10px;
-            padding: 10px;
-            width: 70%;
-            height: 40%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+
         .sectionGallery2_5Divh2{
-            margin: 10px;
+            margin: 20px;
             padding: 10px;
             width: 90%;
             height: 10%;
             display: flex;
             justify-content: center;
             align-items: end;
-            background-color: #B6CADE;
-            border-radius: 20px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         }
         .sectionGallery2_5Divp{
             padding: 10px;
             margin: 10px;
             width: 90%;
-            height: 30%;
+            height: 25%;
             text-align: justify;
-            background-color: #B6CADE;
-            border-radius: 20px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         }
         .sectionGallery2_5Pic{
             width: 100%;
@@ -3375,9 +3415,6 @@ html body{
             width: 90%;
             height: 40%;
             text-align: justify;
-            background-color: #B6CADE;
-            border-radius: 20px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         }
         .sectionGallery4Div1h{
             margin: 10px;
@@ -3388,12 +3425,8 @@ html body{
             background-color: #B6CADE;
             border-radius: 20px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        }
-        .sectionGallery4Div2p{
-            padding: 10px;
-            width: 90%;
-            height: 80%;
-            text-align: justify;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         .sectionGallery4Pic{
             height: 100%;
@@ -3490,6 +3523,13 @@ html body{
     background: linear-gradient(135deg, #00b484, #0014ff);
     color: white;
 }
+    .pSectionWriting{
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: left;
+        font-weight: 350;
+        background-color: red;
+    }
     .headerWritingDiv2{
         height: 50%;
         width: 50%;
@@ -3507,7 +3547,8 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
-
+            font-size: 2.5rem;
+            font-weight: 450;
         }
     .headerWritingPic{
         height: 100%;
@@ -3584,6 +3625,8 @@ html body{
             width: 90%;
             height: 20%;
             text-align: center;
+            font-size: 1.7rem;
+            font-weight: 400;
         }
         @media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait){
             .sectionWriting0_5{
@@ -3768,6 +3811,7 @@ html body{
             text-align: start;
             z-index: 1;
             font-weight: bold;
+            color:white;
         }
         .sectionWriting0_7Ref:hover .sectionWriting0_7Divh{
             transform: scale(1.05);
@@ -4061,6 +4105,7 @@ html body{
                 text-align: start;
                 z-index: 1;
                 font-weight: bold;
+                color:white;
             }
             .sectionWriting0_8Ref:hover .sectionWriting0_8Divh{
                 transform: scale(1.05);
@@ -4296,7 +4341,8 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
-
+            font-size: 1.5rem;
+            font-weight: 400;
         }
         .sectionWriting0_9p{
             margin: 20px;
@@ -4437,6 +4483,8 @@ html body{
             width: 90%;
             height: 20%;
             text-align: center;
+            font-size: 1.5rem;
+            font-weight: 400;
         }
         .sectionWriting1Button{
             background-color: rgb(0, 123, 255);
@@ -4533,7 +4581,8 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            font-size: 2.5rem;
+            font-weight: 400;
         }
 /* ----------- */ 
 
@@ -4552,6 +4601,8 @@ html body{
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.3rem;
+        font-weight: 350;
     }
 /* ----------- */ 
 
@@ -4568,10 +4619,12 @@ html body{
     .section3_1ArticleH2{
         margin: 50px;
         height: 10%;
-        width: 70%;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 1.7rem;
+        font-weight: 400;
     }
     .section3_1ArticleP{
         background-color: white;
@@ -4581,8 +4634,10 @@ html body{
         margin: 50px;
         padding: 30px;
         line-height: 1.5;
-        font-size: 18px;
-        text-align: justify;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 350;
+        line-height: 1.6;
     }
     .section3_1Img{
         margin: 20px;
@@ -4631,14 +4686,15 @@ html body{
 }
     .section3_1Section2H3{
         height: 10%;
-        width: 20%;
+        width: 30%;
         margin: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         color: white;
-        font-size: 25px;
+        font-size: 1.7rem;
+        font-weight: 350;
     }
     .section3_1Section2Div{
         height: 80%;
@@ -5012,6 +5068,13 @@ html body{
     padding: 0px;
     overflow: hidden;
 }
+    .pSectionAbout{
+        font-size: 1rem;
+        line-height: 1.5;
+        text-align: left;
+        font-weight: 350;
+        background-color: red;
+    }
     .headerAboutWallpaper{
         z-index: -1;
         position: absolute;
@@ -5035,8 +5098,8 @@ html body{
             display: flex;
             justify-content: start;
             align-items: center;
-            font-weight: bold;
-            font-size: 80px;
+            font-weight: 500;
+            font-size: 4rem;
             transition: 0.5s;
         }
         .headerAboutH3{
@@ -5047,8 +5110,8 @@ html body{
             display: flex;
             justify-content: start;
             align-items: start;
-            font-weight: bold;
-            font-size: 30px;
+            font-weight: 400;
+            font-size: 2rem;
         }
         @media screen and (min-width: 1024px){
             #headerAbout{
@@ -5056,12 +5119,6 @@ html body{
             }
             .headerAboutDiv{
                 height: 60vh;
-            }
-            .headerAboutH1{
-                font-size: 80px;
-            }
-            .headerAboutH3{
-                font-size: 30px;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait){
@@ -5198,20 +5255,15 @@ html body{
             width: 100%;
             height: 80%;
             text-align: center;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         .sectionAbout1Divp{
             padding: 10px;
             width: 90%;
             height: 80%;
-            text-align: center;
             justify-content: center;
             align-content: center;
-        }
-        .sectionAbout1Div4p{
-            padding: 10px;
-            width: 90%;
-            height: 90%;
-            text-align: center;
         }
         .sectionAbout1Pic{
             height: 100%;
@@ -5305,6 +5357,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        width: 90%;
     }
     #sectionAbout2Div2{
         grid-area: 2;
@@ -5332,6 +5385,8 @@ html body{
             width: 100%;
             height: 30%;
             text-align: center;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         .sectionAbout2Divp{
             margin: 10px;
@@ -5509,6 +5564,8 @@ html body{
             width: 90%;
             height: 90%;
             text-align: end;
+            font-weight: 400;
+            font-size: 1.5rem;
         }
         .sectionAbout3DivLu{
             display: flex;
@@ -5519,19 +5576,20 @@ html body{
             width: 90%;
             margin: 10px;
             background-color: #afd6fd;
-            border-radius: 20px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         }
         .sectionAbout3DivLi{
             margin: 10px;
             padding: 10px;
-            width: 100%;
+            width: 90%;
             height: 20%;
             text-align: start;
             list-style: none;
-            background-color: #65b2ff;
+            background-color: red;
             border-radius: 20px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            font-size: 1rem;
+            font-weight: 400;
         }
         @media screen and (min-width: 1024px){
             .sectionAbout3{
@@ -5714,6 +5772,8 @@ html body{
             width: 90%;
             height: 15%;
             text-align: start;
+            font-size: 1.5rem;
+            font-weight: 400;
         }
         .sectionAbout4Pic{
             height: 100%;
@@ -5884,6 +5944,8 @@ html body{
             width: 90%;
             height: 15%;
             text-align: start;
+            font-size: 1.5rem;
+            font-weight: 400;
         }
         .sectionAbout4_5Pic{
             height: 100%;
@@ -6050,7 +6112,8 @@ html body{
             width: 100%;
             text-align: justify;
             list-style: none;
-            font-size: 14px;
+            font-size: 0.9rem;
+            font-weight: 350;
         }
         .sectionAbout5Divh{
             margin: 10px;
@@ -6058,6 +6121,8 @@ html body{
             width: 90%;
             height: 20%;
             text-align: center;
+            font-size: 1.5rem;
+            font-weight: 400;
         }
         .sectionAbout5Divp{
             margin: 10px;
@@ -6230,7 +6295,7 @@ html body{
     padding: 20px;
 }
     .sectionAbout5_5Div{
-        width: 80%;
+        width: 100%;
         height: 80%;
         display: flex;
         justify-content: center;
@@ -6245,6 +6310,8 @@ html body{
         align-content: center;
         justify-items: center;
         align-items: center;
+        font-size: 1.5rem;
+        font-weight: 400;
     }
     .sectionAbout5_5DivUl1{
         width: 25%;
@@ -6283,6 +6350,8 @@ html body{
         background-color: #91c8ff;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+        font-weight: 350;
     }
     @media screen and (min-width: 1024px){
         .sectionAbout5_5{
@@ -6473,6 +6542,10 @@ html body{
     justify-content: center;
     align-items: center;
 }
+    .sectionAbout5_7HeaderH1{
+        font-size: 1.7rem;
+        font-weight: 400;
+    }
 .sectionAbout5_7Div{
     border-radius: 20px;
     width: 40%;
@@ -6508,6 +6581,9 @@ html body{
     background-color: #6bb5fe;
     border-radius: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 1;
+    font-weight: 400;
 }
 .sectionAbout5_7Img{
     max-height: 80%;
@@ -6643,6 +6719,8 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 1.5rem;
+            font-weight: 400;
         }
         .sectionAbout6DivLu{
             height: 70%;
@@ -6660,13 +6738,16 @@ html body{
             align-items: center;
             overflow: hidden;
             text-align: center;
+            font-size: 1rem;
+            font-weight: 350;
         }
         .sectionAbout6Div2Button{
             border: none;
             grid-area: i;
             padding: 10px;
-            background-color: red;
-            color: white;
+            background-color: red;        
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
         .sectionAbout6Pic{
             height: 90%;
@@ -6872,15 +6953,21 @@ html body{
         overflow: hidden;
         margin: 20px;
     }
+        .pSectionContact{
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: left;
+            font-weight: 350;
+            background-color: red;
+        }
         .headerContactDivp{
             margin: 10px;
-            padding: 0px;
+            padding: 10px;
             width: 90%;
             height: 10%;
             text-align: center;
-            background-color: #7ebdfc;
-            border-radius: 20px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
         }
         .headerContactDivh{
             margin: 10px;
@@ -6890,11 +6977,12 @@ html body{
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 25px;
             font-weight: bolder;
             background-color: #6eb6fd;
             border-radius: 20px;
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            font-size: 1.5rem;
+            font-weight: 400;
         }
         .headerContactPic{
             grid-area: e;
@@ -6960,7 +7048,6 @@ html body{
     background-color: #e3e3e3;
 }
     .sectionContactHeaderp{
-        font-size: 25px;
         width: 80%;
         height: 50%;
     }
@@ -7119,10 +7206,8 @@ html body{
                 background-color: #e3e3e3;
             }
                 .sectionContactHeader2p{
-                    font-size: 20px;
                     width: 80%;
                     height: 50%;
-                    text-align: justify;
                 }
         @media screen and (min-width: 0px) and (orientation: portrait){
             .sectionContactHeader{
@@ -7273,9 +7358,6 @@ html body{
             .sectionContactHeaderp{
                 font-size: 20px;
             }
-            .sectionContactHeader2p{
-                font-size: 20px;
-            }
             .sectionWhatsapp2{
                 font-size: 30px;
             }
@@ -7330,12 +7412,6 @@ html body{
             }
             .sectionLinkedin1{
                 font-size: 30px;
-            }
-            .sectionContactHeaderp{
-                font-size: 20px;
-            }
-            .sectionContactHeader2p{
-                font-size: 20px;
             }
             .sectionWhatsapp2{
                 font-size: 30px;
