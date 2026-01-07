@@ -304,6 +304,7 @@ html body{
         height: 80%;
         justify-self: end;
         margin: 20px;
+        max-width: 500px;
     }
     #sectionIndex1Div2{
         grid-area: 2;
@@ -319,6 +320,7 @@ html body{
         margin: 20px;
         overflow: hidden;
         justify-self: end;
+        max-width: 500px;
     }
     #sectionIndex1Div3{
         grid-area: 3;
@@ -334,6 +336,7 @@ html body{
         padding: 10px;
         overflow: hidden;
         justify-self: end;
+        max-width: 500px;
     }
     #sectionIndex1Div4{
         grid-area: a;
@@ -477,6 +480,7 @@ html body{
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         width: 90%;
         height: 80%;
+        max-width: 600px;
     }
     #sectionIndex2Div2{
         grid-area: 2;
@@ -491,6 +495,7 @@ html body{
         width: 90%;
         height: 80%;
         padding: 10px;
+        max-width: 600px;
     }
     #sectionIndex2Div3{
         grid-area: 3;
@@ -505,6 +510,7 @@ html body{
         width: 90%;
         height: 80%;
         padding: 10px;
+        max-width: 600px;
     }
     #sectionIndex2Div4{
         grid-area: a;
@@ -644,6 +650,7 @@ html body{
         width: 70%;
         height: 80%;
         margin: 10px;
+        max-width: 700px;
     }
     #sectionIndex3Div2{
         grid-area: "2";
@@ -659,6 +666,7 @@ html body{
         width: 70%;
         height: 80%;
         margin: 10px;
+        max-width: 700px;
     }
     #sectionIndex3Div3{
         grid-area: "3";
@@ -674,6 +682,7 @@ html body{
         width: 70%;
         height: 80%;
         margin: 10px;
+        max-width: 700px;
     }
     #sectionIndex3Div4{
         grid-area: "4";
@@ -689,6 +698,7 @@ html body{
         width: 70%;
         height: 80%;
         margin: 10px;
+        max-width: 700px;
     }
     #sectionIndex3Div5{
         grid-area: "5";
@@ -704,6 +714,7 @@ html body{
         width: 70%;
         height: 80%;
         margin: 10px;
+        max-width: 700px;
     }
     #sectionIndex3Div6{
         grid-area: "6";
@@ -719,6 +730,7 @@ html body{
         width: 70%;
         height: 80%;
         margin: 10px;
+        max-width: 700px;
     }
         .sectionIndex3Divh{
             margin: 10px;
@@ -877,6 +889,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 1500px;
     }
         .sectionIndex3_2H1{
             margin: 20px;
@@ -951,23 +964,23 @@ html body{
     display: grid;
     grid-template-areas: "1 2";
     grid-template-columns: 50% 50%;
-    column-gap: 20px;
+    column-gap: 40px;
     padding: 40px;
-    justify-items: center;
-    align-items: center;
     
 }
     #sectionIndex4Div1{
         grid-area: "1";
         width: 80%;
-        height: 80%;
+        height: 100%;
         display: flex;
+        justify-self: right;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: #B6CADE;
-            border-radius: 20px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
     }
     #sectionIndex4Div2{
         grid-area: "2";
@@ -976,6 +989,8 @@ html body{
         align-items: center;
         width: 80%;
         height: 100%;
+        max-width: 700px;
+        background-color: red;
     }
         .sectionIndex4Div1p{
             margin: 10px;
@@ -1120,7 +1135,7 @@ html body{
             text-align: left;
             font-weight: 350;
             background-color: red;
-    }
+        }
     .headerServicesDiv{
         height: 90%;
         width: 45%;
@@ -1129,6 +1144,7 @@ html body{
         align-items: center;
         flex-direction: column;
         overflow: hidden;
+        max-width: 800px;
 
     }
         .headerServicesH1{
@@ -1273,12 +1289,11 @@ html body{
     row-gap: 10px;
     background-color: #e3e3e3;
     padding: 40px;
-    justify-items: center;
-    align-items: center;
 }
     #sectionServices1Div1{
         grid-area: 1;
         display: flex;
+        justify-self: right;
         justify-content: center;
         align-items: center;
         width: 80%;
@@ -1286,10 +1301,12 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
     }
     #sectionServices1Div2{
         grid-area: 2;
         display: flex;
+        justify-self: right;
         justify-content: center;
         align-items: center;
         width: 80%;
@@ -1297,10 +1314,12 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
     }
     #sectionServices1Div3{
         grid-area: 3;
         display: flex;
+        justify-self: right;
         justify-content: center;
         align-items: center;
         width: 80%;
@@ -1308,16 +1327,19 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
     }
     #sectionServices1Div4{
         grid-area: a;
         padding: 20px;
         display: flex;
+        justify-self: center;
         justify-content: center;
         align-items: center;
         overflow: hidden;
         width: 80%;
         height: 90%;
+        max-width: 600px;
     }
         .sectionServices1Divh{
             margin: 10px;
@@ -1462,15 +1484,15 @@ html body{
                          "3 4";
     grid-template-columns: 60% 40%;
     grid-template-rows: 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 40px;
     row-gap: 10px;
     padding: 20px;
-    justify-items: center;
-    align-items: center;
 }
     #sectionServices2Div1{
         grid-area: "1";
         display: flex;
+        justify-self: right;
+        align-self: center;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1479,10 +1501,14 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 800px;
+        margin: 20px;
     }
     #sectionServices2Div2{
         grid-area: "2";
         display: flex;
+        justify-self: left;
+        align-self: center;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -1491,10 +1517,14 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 500px;
+        margin: 20px;
     }
     #sectionServices2Div3{
         grid-area: "3";
         display: flex;
+        justify-self: right;
+        align-self: center;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -1503,10 +1533,14 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 800px;
+        margin: 20px;
     }
     #sectionServices2Div4{
         grid-area: "4";
         display: flex;
+        justify-self: left;
+        align-self: center;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -1515,6 +1549,8 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 500px;
+        margin: 20px;
     }
         .sectionServices2Divp{
             margin: 0px;
@@ -1695,6 +1731,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 1000px;
     }
     #sectionServices2_5Div2{
         grid-area: "2";
@@ -1710,6 +1747,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 300px;
     }
     #sectionServices2_5Div3{
         grid-area: "3";
@@ -1725,6 +1763,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 300px;
     }
     #sectionServices2_5Div4{
         grid-area: "4";
@@ -1740,6 +1779,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 300px;
     }
     #sectionServices2_5Div5{
         grid-area: "5";
@@ -1755,6 +1795,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 300px;
     }
         .sectionServices2_5Divh{
             margin: 10px;
@@ -1927,21 +1968,25 @@ html body{
     row-gap: 10px;
     padding: 50px;
     justify-content: center;
+    justify-items: center;
     align-items: center;
 }
     #sectionServices3Div1{
         grid-area: "1";
         display: flex;
+        justify-self: left;
         justify-content: center;
         align-items: center;
         width: 80%;
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
     }
     #sectionServices3Div3{
         grid-area: "3";
         display: flex;
+        justify-self: left;
         justify-content: center;
         align-items: center;
         width: 80%;
@@ -1949,6 +1994,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
     }
     #sectionServices3Div4{
         grid-area: a;
@@ -1959,6 +2005,7 @@ html body{
         overflow: hidden;
         width: 80%;
         height: 100%;
+        max-width: 600px;
     }
         .sectionServices3Divh{
             margin: 10px;
@@ -2100,6 +2147,7 @@ html body{
     padding: 20px;
     justify-content: center;
     align-content: center;
+    justify-items: center;
     align-items: center;
 }
     #sectionServices3_2Div1{
@@ -2111,6 +2159,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 800px;
     }
     #sectionServices3_2Div2{
         grid-area: "2";
@@ -2122,14 +2171,18 @@ html body{
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         padding: 10px;
+        max-width: 800px;
     }
     #sectionServices3_2Div4{
         grid-area: a;
-        padding: 20px;
+        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        background-color: red;
+        height: 80%;
+        width: 100%;
     }
         .sectionServices3_2Divh{
             margin: 10px;
@@ -2556,12 +2609,14 @@ html body{
     #sectionServices4Div1{
         grid-area: "1";
         display: flex;
+        justify-self: right;
         flex-direction: column;
         justify-content: space-between;
         align-content: space-between;
-            background-color: #B6CADE;
-            border-radius: 20px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        background-color: #B6CADE;
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 800px;
     }
     #sectionServices4Div2{
         grid-area: "2";
@@ -2755,6 +2810,7 @@ html body{
         align-items: center;
         height: 80%;
         width: 50%;
+        max-width: 800px;
     }
         .sectionGallery0_5Divh{
             margin: 10px;
@@ -2821,16 +2877,19 @@ html body{
     #sectionGallery1Div1{
         grid-area: a;
         display: flex;
+        justify-self: right;
         justify-content: center;
         align-items: center;
         overflow: hidden;
         height: 100%;
         width: 100%;
         background-color: red;
+        max-width: 600px;
     }
     #sectionGallery1Div2{
         grid-area: b;
         display: flex;
+        justify-self: left;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -2840,10 +2899,12 @@ html body{
         padding: 10px;
         height: 100%;
         background-color: blue;
+        max-width: 600px;
     }
     #sectionGallery1Div3{
         grid-area: c;
         display: flex;
+        justify-self: right;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -2852,17 +2913,20 @@ html body{
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         padding: 10px;
         height: 100%;
+        max-width: 600px;
     }
     #sectionGallery1Div4{
         grid-area: d;
         padding: 0px; 
         display: flex;
+        justify-self: left;
         justify-content: center;
         align-items: center;
         overflow: hidden;
         width: 100%;
         height: 100%;
         background-color: rebeccapurple;
+        max-width: 600px;
     }
         .sectionGallery1Divh{
             margin: 10px;
@@ -2960,6 +3024,7 @@ html body{
         align-items: center;
         height: 90%;
         width: 60%;
+        max-width: 1000px;
     }
         .sectionGallery1_5Divh{
             margin: 10px;
@@ -3184,7 +3249,7 @@ html body{
     grid-template-areas: "a b";
     grid-template-columns: 35% 35%;
     grid-template-rows: 80%;
-    column-gap: 40px;
+    column-gap: 50px;
     padding: 20px;
     justify-content: center;    
     align-content: center;       
@@ -3192,13 +3257,16 @@ html body{
     #sectionGallery2_5Div1{
         grid-area: a;
         display: flex;
+        justify-self: left;
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        max-width: 600px;
     }
     #sectionGallery2_5Div2{
         grid-area: b;
         display: flex;
+        justify-self: left;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -3207,6 +3275,7 @@ html body{
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         font-weight: 400;
         font-size: 1.5rem;
+        max-width: 700px;
     }
 
         .sectionGallery2_5Divh2{
@@ -3421,6 +3490,8 @@ html body{
         grid-area: "1";
         width: 80%;
         height: 80%;
+        max-width: 800px;
+        justify-self: right;
     }
     #sectionGallery4Div2{
         grid-area: "2";
@@ -3735,6 +3806,8 @@ html body{
     box-shadow: 0 0 10px 1px black;
     border: none;
     cursor: pointer;
+    max-width: 400px;
+    max-height: 400px;
 }
 .sectionWriting0_7Ref:hover{
     transform: scale(1.05);
@@ -4033,6 +4106,8 @@ html body{
     overflow: hidden;
     box-shadow: 0 0 10px 1px black;
     border: none;
+    max-width: 400px;
+    max-height: 400px;
 }
     .sectionWriting0_8Ref:hover{
                 transform: scale(1.05);
@@ -4344,7 +4419,6 @@ html body{
         align-items: center;
         flex-direction: column;
         overflow: hidden;
-
     }
     .sectionWriting0_9Div2{
         height: 80%;
@@ -4353,7 +4427,7 @@ html body{
         justify-content: start;
         align-items: center;
         flex-direction: column;
-
+        max-width: 800px;
     }
         .sectionWriting0_9H1{
             margin: 20px;
@@ -4490,6 +4564,7 @@ html body{
         align-items: center;
         height: 80%;
         width: 80%;
+        max-width: 1000px;
     }
         .sectionWriting1Div1p{
             margin: 5px;
@@ -4660,6 +4735,7 @@ html body{
         font-size: 1rem;
         font-weight: 350;
         line-height: 1.6;
+        max-width: 800px;
     }
     .section3_1Img{
         margin: 20px;
@@ -4684,6 +4760,7 @@ html body{
         margin: 0px;
         border: none;
         box-shadow: 0 0 10px 1px black;
+        max-width: 1000px;
     }
     .section3_7WritingTesiunam{
         background-color: red;
@@ -4725,6 +4802,8 @@ html body{
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 1000px;
+        max-height: 800px;
     }
     .section3_1Section2DivOther1{
         position: relative;
@@ -5237,6 +5316,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
     }
     #sectionAbout1Div2{
         grid-area: "2";
@@ -5252,6 +5332,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
     }
     #sectionAbout1Div3{
         grid-area: "3";
@@ -5265,6 +5346,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
     }
     #sectionAbout1Div5{
         grid-area: "4";
@@ -5278,6 +5360,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
     }
     #sectionAbout1Div4{ /*pic */
         grid-area: a;
@@ -5398,6 +5481,7 @@ html body{
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         width: 80%;
+        max-width: 600px;
     }
     #sectionAbout2Div2{
         grid-area: 2;
@@ -5411,17 +5495,18 @@ html body{
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         width: 80%;
+        max-width: 600px;
     }
     #sectionAbout2Div4{
         grid-area: a;
         display: flex;
         justify-self: center;
-        justify-content: center;
         align-items: center;
         overflow: hidden;
         width: 80%;
         height: 100%;
         overflow: hidden;
+        max-width: 600px;
     }
         .sectionAbout2Divh{
             margin: 10px;
@@ -5555,7 +5640,6 @@ html body{
     padding: 20px;
     justify-content: center;
     align-content: center;
-    justify-items: center;
     align-items: center;
 }
     #sectionAbout3Div1{
@@ -5571,6 +5655,7 @@ html body{
     #sectionAbout3Div2{
         grid-area: "2";
         display: flex;
+        justify-self: left;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -5579,10 +5664,13 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 700px;
+        margin: 20px;
     }
     #sectionAbout3Div3{
         grid-area: "3";
         display: flex;
+        justify-self: right;
         justify-content: center;
         align-content: center;
         align-items: center;
@@ -5592,11 +5680,15 @@ html body{
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         margin: 20px;
+        width: 80%;
+        max-width: 700px;
     }
     #sectionAbout3Div4{
         grid-area: "4";
         display: flex;
+        justify-self: left;
         justify-content: center;
+        align-content: center;
         align-items: center;
         flex-direction: column;
         height: 80%;
@@ -5604,6 +5696,8 @@ html body{
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
         margin: 20px;
+        width: 80%;
+        max-width: 700px;
     }
         .sectionAbout3Divh{
             margin: 0px;
@@ -5742,11 +5836,12 @@ html body{
     display: grid;
     grid-template-areas: "a b c"
                          "d e f";
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 50% 50%;
     column-gap: 20px;
     background-color: rgb(255, 255, 255);
     padding: 20px;
+    margin: 20px;
 }
     #sectionAbout4Div1{
         grid-area: a;
@@ -5756,6 +5851,9 @@ html body{
         align-items: center;
         overflow: hidden;
         margin: 10px;
+        background-color: red;
+        width: 90%;
+        max-width: 500px;
     }
     #sectionAbout4Div2{
         grid-area: b;
@@ -5768,7 +5866,8 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        width: 80%;
+        width: 90%;
+        max-width: 500px;
     }
     #sectionAbout4Div3{
         grid-area: c;
@@ -5778,6 +5877,9 @@ html body{
         align-items: center;
         overflow: hidden;
         margin: 10px;
+        background-color: red;
+        width: 90%;
+        max-width: 500px;
     }
     #sectionAbout4Div4{
         grid-area: d;
@@ -5790,7 +5892,8 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        width: 80%;
+        width: 90%;
+        max-width: 500px;
     }
     #sectionAbout4Div5{
         grid-area: e;
@@ -5800,6 +5903,9 @@ html body{
         align-items: center;
         overflow: hidden;
         margin: 10px;
+        background-color: red;
+        width: 90%;
+        max-width: 500px;
     }
     #sectionAbout4Div6{
         grid-area: f;
@@ -5813,7 +5919,8 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        width: 80%;
+        width: 90%;
+        max-width: 500px;
     }
         .sectionAbout4Divp{
             margin: 0px;
@@ -5923,7 +6030,7 @@ html body{
     display: grid;
     grid-template-areas: "a b c"
                          "d e f";
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 50% 50%;
     column-gap: 20px;
     background-color: rgb(255, 255, 255);
@@ -5937,6 +6044,9 @@ html body{
         align-items: center;
         overflow: hidden;
         margin: 10px;
+        width: 90%;
+        max-width: 500px;
+        background-color: red;
     }
     #sectionAbout4_5Div2{
         grid-area: b;
@@ -5949,7 +6059,8 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        width: 80%;
+        width: 90%;
+        max-width: 500px;
     }
     #sectionAbout4_5Div3{
         grid-area: c;
@@ -5959,6 +6070,9 @@ html body{
         align-items: center;
         overflow: hidden;
         margin: 10px;
+        width: 90%;
+        max-width: 500px;
+        background-color: red;
     }
     #sectionAbout4_5Div4{
         grid-area: d;
@@ -5971,7 +6085,8 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        width: 80%;
+        width: 90%;
+        max-width: 500px;
     }
     #sectionAbout4_5Div5{
         grid-area: e;
@@ -5981,6 +6096,9 @@ html body{
         align-items: center;
         overflow: hidden;
         margin: 10px;
+        width: 90%;
+        max-width: 500px;
+        background-color: red;
     }
     #sectionAbout4_5Div6{
         grid-area: f;
@@ -5994,7 +6112,8 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        width: 80%;
+        width: 90%;
+        max-width: 500px;
     }
         .sectionAbout4_5Divp{
             margin: 0px;
@@ -6602,6 +6721,7 @@ html body{
 /* ------ SECTION 5_7----- */
 .sectionAbout5_7{
     height: 240vh;
+    max-height: 1800px;
 }
 .sectionAbout5_7SectionGeneral{
     height: 90%;
@@ -6632,9 +6752,9 @@ html body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-        background-color: #B6CADE;
-        border-radius: 20px;
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #B6CADE;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     }
 .sectionAbout5_7Section{
     height: 80%;
@@ -7018,6 +7138,7 @@ html body{
         background-color: #B6CADE;
         border-radius: 20px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        max-width: 700px;
     }
     #headerContactDiv2{
         grid-area: "b";
